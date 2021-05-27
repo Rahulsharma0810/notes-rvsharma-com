@@ -1,2 +1,0 @@
-# Planet-CyberSecurity
-Planet-CyberSecurity
