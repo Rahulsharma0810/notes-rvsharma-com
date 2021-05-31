@@ -1,9 +1,7 @@
 - **Getting Started**
   - [Home](/)
-  - [Security](home.md)
+  - [Security](Security/notes.md)
   - [Network](Network/notes.md)
-  - [Networking-Rough](Networking.md)
-
 <!-- Compliances
 - ISO 27001
 - ISO 27017
