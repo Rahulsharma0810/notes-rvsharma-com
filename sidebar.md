@@ -2,8 +2,7 @@
   - [Home](/)
   - [Security](home.md)
   - [Network](Networks/notes.md)
-
-  - [Networking-Rough](networking)
+  - [Networking-Rough](Networking.md)
 
 <!-- Compliances
 - ISO 27001
