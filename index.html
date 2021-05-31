@@ -10,10 +10,8 @@
   <link rel="stylesheet" href="theme.css">
 
   <style>
-  @media screen and (min-width: 768px) {
-    .gitter-open-chat-button {
-      font-size: .9375em;
-    }
+  .cover:before, .cover:after{
+    position: inherit;
   }
 
   iframe {
@@ -30,6 +28,11 @@
     width: 100%;
   }
 
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
   @media only screen and (max-device-width: 500px) {
     iframe.react {
       display: none;
@@ -45,13 +48,14 @@
 <script>
   window.$docsify = {
     name: "RV's Notes",
+    coverpage: true,
     nameLink: {
       '/': '..'
     },
     repo: 'https://github.com/Rahulsharma0810/Planet-CyberSecurity',
     homepage: 'home.md',
     loadSidebar: 'sidebar.md',
-    subMaxLevel: 2,
+    subMaxLevel: 4,
     auto2top: true,
     search: 'auto', // default
     pagination: {}, // default
