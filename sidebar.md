@@ -1,7 +1,7 @@
 - **Getting Started**
   - [Home](/)
   - [Security](home.md)
-  - [Network](Networks/notes.md)
+  - [Network](Network/notes.md)
   - [Networking-Rough](Networking.md)
 
 <!-- Compliances
