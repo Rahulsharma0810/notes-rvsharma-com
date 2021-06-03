@@ -1,11 +1,11 @@
 # Computer Networking
 
 
-# Chapter 1: Computer Networks and the Internet
+## Chapter 1: Computer Networks and the Internet
 
-## 1.1 What is the Internet?
+### 1.1 What is the Internet?
 
-### 1.1.1 A nuts-and-bolts description
+**1.1.1 A nuts-and-bolts description**
 
 The Internet is a computer networks that interconnects hundreds of millions of computing devices through the world. Today not only computers and workstation are being connected to the network, therefore the term *computer network* may sound a bit dated.
 
@@ -23,28 +23,30 @@ Each ISP in itself is a network of packet switches and communication links.
 
 End systems, packet switches and other pieces of the Internet run **protocols** that control the sending and receiving of information within the Internet.
 
-### 1.1.2 A Services Description
+**1.1.2 A Services Description**
+
 The Internet can be described as *an infrastructure that provides services to applications*. These applications (Web, social networks, VoIP...) are said to be **distributed** since they involve multiple end systems that exchange data with each other.
 **Internet applications run on end systems, not in the packet switches or routers**, packet switches facilitate the exchange of data, but they are not concerned with the application that is the source or sink of data.
 
 End systems attached to the Internet provide and **Application Programming Interface (API)** that specifies how a program running on one end system asks the Internet infrastructure to deliver data to a specific destination program running on another end system.
 
-### 1.1.3 What Is a Protocol?
+**1.1.3 What Is a Protocol?**
+
 All the activity in the Internet that involves two or more communicating remote entities is governed by a protocol.
 
 **A protocol defines the format and the order of messages exchanged between two or more communicating entities, as weel as the actions taken on the trasmission and/or receipt of a message or other event**
 
-## 1.2 The Network Edge
+### 1.2 The Network Edge
 Computers and other devices connected to the Internet are often referred to as *end systems* as they sit at the edge of the Internet. They are also called *hosts* as they host, run, applications programs such as a Web Browser or an email client.
 
 Hosts are sometimes further divided into two categories: *clients* and *servers*. The former being desktop, mobile pcs, smartphones, the latter being powerful machines that store and distribute Web pages, streams...
 Nowadays most of the servers reside in large *data centers*
 
-### 1.2.1 Access Networks
+** 1.2.1 Access Networks**
 They are the networks that physically connect end systems to the first router on a path from the end system to any other distant end system.
 Examples: mobile network, national or global ISP, local or regional ISP, home networks enterprise networks.
 
-#### Home Access: DSL, Cable, FITH, Dial-Up and Satellite
+** Home Access: DSL, Cable, FITH, Dial-Up and Satellite**
 Today, the two most prevalent types of broadband residential access are **digital subscriber line (DSL)** and **cable**.
 
 A residence typically obtains DSL access from the telephone company (telco) that provides its wired local phone access. The customer's telco is therefore its ISP.
@@ -59,15 +61,15 @@ Cable Internet access is a shared broadcast medium: each packet travels downstre
 
 Another up-and-coming technology that promises very high speeds is **fiber to the home (FTTH)**. The concept is simple: provide an optical fiber path from the Central Office (CO)
 
-#### Access in the Enterprise and the Home: Ethernet and WiFi
+** Access in the Enterprise and the Home: Ethernet and WiFi**
 On corporate and university campuses, and increasingly in home settings, a **Local Area Network (LAN)** is used to connect an end system to the edge router.
 Ethernet is by far the most prevalent access technology is corporate, university and home networks. Ethernet uses twisted-pair copper wire to connect to an Ethernet switch which is connected into the larger Internet.
 The Internet is increasingly accessed wirelessly: wireless users transmit/receive packets to/from an access point connected into the enterprise's network which in turn is connected to the wired Internet.
 
-#### Wide-Area Wireless Access: 3G and LTE
+** Wide-Area Wireless Access: 3G and LTE**
 Smartphones and Tablets employ the same wireless infrastructure used for cellular telephony to send/receive packets through a base station operated by the cellular network provider. Third generation (3G) wireless and fourth generation (4G) of wide-area network are being deployed. LTE ("Long-Term Evolution") has its root in 3G and can potentially achieve rates in excess of 10 Mbps.
 
-### 1.2.2 Physical Media
+** 1.2.2 Physical Media**
 The book talks about it in detail but we haven't talked about it in class
 
 A bit, when traveling from source to destination, passes through a series of transmitter-receiver pairs, for each pair, the bit is sent by propagating electromagnetic waves or optical pulses across a **physical medium**. This can take many shapes and forms and doesn't have to be of the same type for each transmitter-receiver pair along the path.
@@ -76,9 +78,9 @@ Physical media fall into two categories:
  - **guided media**: the waves are guided along a solid medium (fiber-optic cable, twisted-pair copper wire, coaxial cable)
  - **unguided media**: the waves propagate in the atmosphere and in outer space (wireless LAN, digital satellite channel)
 
-## 1.3 The Network Core
+### 1.3 The Network Core
 
-### 1.3.1 Packet Switching
+#### 1.3.1 Packet Switching
 In a network application, end systems exchange **messages** with each other. To send a message from a source end system to a destination end system, the source breaks long messages into smaller chunks of data known as **packets**.
 Between source and destination, each packet travels through communication links and **packet switches** (for which there are two predominant types, **routers** and **link-layer switches**).
 Packets are transmitted over each communication link at a rate equal to the *full* transmission rate of the link. So, if a source end system or a packet switch is send a packet of L bits over a link with transmission rate R bits/sec, then the time to transmit the packet is L/R seconds.
@@ -95,7 +97,7 @@ In the Internet, every end system has an address called an IP address. When a so
 Each router has a **forwarding table** that maps destination addresses (or portions of the destination addresses) to that router's outbound links. When a packet arrives at the router, the router examines the address and searches its forwarding table, using this destination address, to find the appropriate outbound link.
 A number of special **routing protocols** are used to automatically set the forwarding tables.
 
-### 1.3.2 Circuit Switching
+#### 1.3.2 Circuit Switching
 In circuit-switched networks, the resources needed along a path(buffers, link transmission rate) to provide for communication between the end systems are **reserved** for the duration of the communication sessions.
 When two hosts want to communicate, the network establishes a **dedicated end-to-end connection** between them.
 
@@ -108,7 +110,7 @@ For a TDM link, time is divided into frames of fixed duration, and each frame is
 Packet switching is more flexible, uses resources efficiently and is simpler to implement (even if it requires congestion control).
 Circuit switching offers performance guarantees but uses resources inefficiently
 
-### 1.3.3 A Network of Networks
+#### 1.3.3 A Network of Networks
 To create the Internet, ISPs must be interconnected, thus creating a *network of networks*.
 Much of the evolution of the structure of the Internet is driven by economics and national policy, rather than by performance consideration.
 
@@ -116,11 +118,11 @@ Today's Internet is complex, consisting of a dozen or so tier-1 ISPs and hundred
 
 ![Alt text](_media/network_of_networks.png)
 
-## 1.4 Delay, Loss and Throughput in Packet-Switched Networks
+### 1.4 Delay, Loss and Throughput in Packet-Switched Networks
 
 Computer networks necessarily constrain **throughput** (the amount of data per second that can be transferred) between end system, introduce delays between end systems and can actually lose packets.
 
-### 1.4.1 Overview of Delay in Packet-Switched networks
+#### 1.4.1 Overview of Delay in Packet-Switched networks
 As a packet travels from one node (host or router) to the subsequent host along his path, it suffers from several types of delays at *each* node along the path.
 
 #### Types of Delay
@@ -148,30 +150,30 @@ The propagation delay is the distance between two routers divided by the propaga
 ##### Total nodal delay
 it is the summation of the previous delays
 
-### 1.4.2 Queuing Delay and Packet Loss
+#### 1.4.2 Queuing Delay and Packet Loss
 The queuing delay depends can vary from packet to packet, therefore when characterizing queuing delay, one typically uses statistical measures, such as *average queuing delay, variance of queuing delay, and the probability that the queuing delay exceeds some specified value*.
 
 #### Packet Loss
 A queue preceding a link has finite capacity. If a packet finds a full queue, then the router will **drop** it, the packet will be lost.
 The fraction of lost packets increases as the traffic intensity increases.
 
-### 1.4.3 End-to-End Delay
+#### 1.4.3 End-to-End Delay
 Let's now consider the **total delay, from source to destination** (not only the nodal delay). Let's suppose there are *N-1* routers between the source host and the destination host, then the nodal delays accumulate and give an **end-to-end delay**:
 
 ```
 d(end_end) = N * [d(proc) + d(queue) + d(trans) + d(prop)]
 ```
 
-### 1.4.4 Throughput in Computer Networks
+#### 1.4.4 Throughput in Computer Networks
 Another critical performance measure in computer networks is *end-to-end throughput*.
 The **instantaneous throughput** at any instant of time is the rate (in bits/sec) at which host B is receiving a file.
 If the file consists of *F* bits and the transfers takes *T* seconds to transfer the whole file, then the **average throughput** of the file is *F/T bits/sec*.
 For a simple two-link network, the throughput is the min of all the throughputs, that is the transmission rate of the **bottleneck link**.
 Therefore, the constraining factor for throughput in today's Internet is typically the *access network*.
 
-## 1.5 Protocol Layers and Their Service Models
+### 1.5 Protocol Layers and Their Service Models
 
-### 1.5.1 Layered Architecture
+#### 1.5.1 Layered Architecture
 A layered architecture allows us to discuss a well-defined, specific part of a large and complex system. This simplification itself is of considerable value by providing *modularity*, making it much easier to change the implementation of the service provided by the layer: as long as the layer provides the same service to the layer above it, and uses the same services from the layer below it, the remainder of the system remains unchanged when a layer's implementation is changed.
 
 #### Protocol Layering
@@ -216,7 +218,7 @@ We will refer to the link-layer packets as **frames**
 The job of the physical layer is to move the individual bits within the frame from one node to the next.
 The protocols are link dependent and further depend of the actual transmission medium of the link.
 
-### 1.5.2 Encapsulation
+#### 1.5.2 Encapsulation
 Routers and link-layer switches are both packet switches but routers and link-layer switches do not implement all of the layers in the protocol stack: link-layer switches implement Physical and Link while router add the Network Layer too.
 
 From the Application Layer, the message passes to the transport layer, which appends additional information to it (the **Header**) that will be used by the receiver-side transport layer. The transport layer then adds its own header and passes the datagram to the link layer which adds it own link-layer header information.
@@ -224,7 +226,7 @@ Thus, we see that at each layer, a packet has two types of fields: **header fiel
 
 The process of encapsulation can be more complex: for example a large message may be divided into multiple transport-layer segments, which will be divided into multiple datagrams....
 
-## 1.6 Networks Under Attack
+### 1.6 Networks Under Attack
 
 ### Malware
 Along with all the good files we exchange on the Internet, come malicious software, collectively known as **malware** that can also enter and infect our devices.
@@ -256,16 +258,16 @@ To solve this problem we will need *end-point authentication*.
 The Internet was originally designed to be based on the model of a *group of mutually trusting users attached to a transparent network*, a model in which there is no need for security. Many aspects of the original Internet architecture deeply reflect this notion of mutual trust, such as the ability for one to send a packet to any other user is the default rather than a requested/granted capability.
 However today's Internet certainly does not involve "mutually trusted users": communication among mutually trusted users is the exception rather the rule.
 
-## History of Computer Networking and the Internet
+**History of Computer Networking and the Internet**
 
-# Chapter 2: Application Layer
+## Chapter 2: Application Layer
 Network applications are the *raison d'être* of a computer network. They include  text email, remote access to computers, file transfers, the WorldWideWeb (mid 90s), web searching, e-commerce, Twitter/Facebook, Amazon, Netflix, Youtube, WoW...
 
-## 2.1 Principles of Network Applications
+#### 2.1 Principles of Network Applications
 At the core of network application development is writing programs that run on different **end systems** and communicate with each over the network. The programs running on end systems might be different (server-client architecture) or identical (Peer-to-Peer architecture).
 Importantly we write programs that run on end systems/hosts, not on network-core devices (routers/link-layer switches).
 
-### 2.1.1 Network Application Architectures
+#### 2.1.1 Network Application Architectures
 From the application developer's perspective, the network architecture is fixed and provides a specific set of services to applications.
 The **application architecture**, on the other hand, is chosen by him. In choosing the application architecture, a developer will likely draw one of the two predominant architectural paradigms used in modern network applications:
 
@@ -277,7 +279,7 @@ The **application architecture**, on the other hand, is chosen by him. In choosi
 
 Some applications have hybrid architectures, such as for many instant messaging applications: a server keeps track of the IP addresses of users, but user-to-user messages are sent directly between users.
 
-### 2.1.2 Processes Communicating
+#### 2.1.2 Processes Communicating
 In the jargon of operating systems, it's not programs but **processes** that communicate. A process can be thought of as a program that is running within an end system.
 Processes on two different end systems communicate with each other by exchanging **messages** across the computer network: a sending process creates and sends messages into the network, a receiving process receives these messages and possibly responds by sending messages back.
 
@@ -303,7 +305,7 @@ In order for a process running on one host to send packets to a process running 
  1. The address of the host. In the Internet, the host is identified by its **IP Address**, a 32-bit (or 64) quantity that identifies the host uniquely.
  2. An identifier that specifies the receiving process in the destination host: the destination **port number**. Popular applications have been assigned specific port numbers (web server -> 80)
 
-### 2.1.3 Transport Services Available to Applications
+#### 2.1.3 Transport Services Available to Applications
 What are the services that a transport-layer protocol can offer to applications invoking it?
 
 #### Reliable Data Transfer
@@ -318,7 +320,7 @@ A transport-layer protocol can also provide timing guarantees. Example: guarante
 #### Security
 A transport-layer protocol can provide an application with one or more security services. It could encrypt all data transmitted by sending process and in the receiving host decrypt it.
 
-### 2.1.4 Transport Services Provided by the Internet
+#### 2.1.4 Transport Services Provided by the Internet
 The Internet makes two transport protocols available to applications: TCP and UDP.
 
 #### TCP Services
@@ -341,7 +343,7 @@ These two protocols do not provide timing or throughput guarantees, services not
 
 ![Alt text](_media/app_tras.png)
 
-### 2.1.5 Application-Layer Protocols
+#### 2.1.5 Application-Layer Protocols
 An **application-layer protocol** defines how an application's processes, running on different end systems, pass messages to each other. It defines:
 
  - The type of the messages exchanged (request/response)
@@ -349,12 +351,12 @@ An **application-layer protocol** defines how an application's processes, runnin
  - The semantics of the fields (meaning of the information in fields)
  - The rules for determining whem and how a process sends messages and responds to messages
 
-## 2.2 The Web and HTTP
+### 2.2 The Web and HTTP
 In the early 1990s, a major new application arrived on the scene: the World Wide Web (Berners-Lee 1994), the first application that caught the general public's eye.
 The Web operates *on demand*: users receives what they want, when they want it.
 It is enormously easy for an individual to make information available over the web, hyperlinks and search engines help us navigate through the ocean of web sites...
 
-### 2.2.1 Overview of HTTP
+#### 2.2.1 Overview of HTTP
 The **HyperText Transfer Protocol (HTTP)**, the Web's application-layer protocol is a the heart of the Web. It is implemented in two programs: a client program and a server program.
 The two programs talk to each other by exchanging HTTP messages.
 A **Web page** (or document) consists of objects. An **object** is simply a file (HTML file, jpeg image...) that is *addressable by a single URL*.
@@ -364,7 +366,7 @@ Each URL has two components: the hostname of the server that houses the object a
 **HTTP** uses TCP as its underlying transport protocol.
 The server sends requested files to clients without storing any state information about the client: it is a **stateless protocol**
 
-### 2.2.2 Non-Persistent and Persistent Connections
+#### 2.2.2 Non-Persistent and Persistent Connections
 In many Internet applications, the client and server communicate for an extended period of time, depending on the application and on how the application is being used, the series of requests may be back-to-back, periodically at regular intervals or intermittently. When this is happening over TCP, the developer must take an important decision: should each request/response pair be sent over a *separate* TCP connection or should all of the requests and their corresponding responses be sent over the *same* TCP connection?
 In the former approach, the application is said to use **non-persistent connections** and in the latter it is said to use **persistent connections**
 By default HTTP uses non-persistent connections but can be configured to be use persistent connections.
@@ -382,7 +384,7 @@ If connection isn't used for a pre-decided amount of time, it will be closed.
 
 
 
-### 2.2.3 HTTP Message Format
+#### 2.2.3 HTTP Message Format
 Two types of HTTP messages:
 
 #### HTTP Request Message
@@ -442,7 +444,7 @@ Some common status codes:
  - `404 Not Found`: The requested document doesn't exist on the server
  - `505 HTTP Version Not Supported`: The requested HTTP protocol version is not supported by the server
 
-### 2.2.4 User-Server Interaction: Cookies
+#### 2.2.4 User-Server Interaction: Cookies
 An HTTP server is *stateless* in order to simplify server design and improves performances. A website can identify users using **cookies**.
 Cookie technology has 4 components:
 
@@ -462,7 +464,7 @@ The server can track the user's activity: it knows exactly what pages, in which 
 
 Therefore **cookies can be used to create a user session layer on top of stateless HTTP**.
 
-### 2.2.5 Web Caching
+#### 2.2.5 Web Caching
 A **Web cache**, also called **proxy server** is a network entity that satisfies HTTP requests on behalf of an origin Web server. It has its own disk storage and keeps copies of recently requested objects in this storage.
 
  1. The browser establishes a TCP connection to the web cache, sending an HTTP request for the object to the Web cache.
@@ -476,7 +478,7 @@ They can substantially reduce the response time for a client request and substan
 
 Through the use of **Content Distribution Networks (CDNs)** web caches are increasingly playing an important role in the Internet. A CDN installs many geographically distributed caches throughout the Internet, localizing much of the traffic.
 
-### 2.2.6 The Conditional `GET`
+#### 2.2.6 The Conditional `GET`
 Caches introduce a new problem: what if the copy of an object residing in the cache is stale?
 The **conditional GET** is used to verify that an object is up to date.
 An HTTP request message is a conditional get if
@@ -486,10 +488,10 @@ An HTTP request message is a conditional get if
 
 A conditional get message is sent from the cache to server which responds only if the object has been modified.
 
-## 2.5 DNS - The Internet's Directory Service
+### 2.5 DNS - The Internet's Directory Service
 One identifier for a host is its **hostname** [`cnn.com`, `www.yahoo.com`]. Hostnames are mnemonic and therefore used by humans. Hosts are also identified by **IP addresses**.
 
-### 2.5.1 Services provided by DNS
+#### 2.5.1 Services provided by DNS
 Routers and use IP addresses. The Internet's **domain name system (DNS)** translates hostnames to IP addresses. The DNS is:
 
  1. A distributed database implemented in a hierarchy of **DNS Servers**
@@ -516,7 +518,7 @@ DNS provides other services in addition to translating hostnames to IP addresses
  - **mail server aliasing**: to make email servers' hostnames more mnemonic. This also allows for an e-mail server and an Web server to have the same hostname.
  - **load distribution**: replicated servers can have the same hostname. In this case, a set of IP addresses is associated with one canonical hostname. When a client make a DNS query for a name mapped to a set of addresses, the server responds with the entire set, but rotates the ordering within each reply.
 
-### 2.5.2 Overview of How DNS Works
+#### 2.5.2 Overview of How DNS Works
 From the perspective of the invoking application in the user's host, DNS is a black box providing a simple, straightforward translation service.
 Having one single global DNS server would be simple, but it's not realistic because it would a **single point of failure**, it would have an impossible **traffic volume**, it would be **geographically too distant** from some querying clients, its **maintenance** would be impossible.
 
@@ -545,7 +547,7 @@ Any DNS can be iterative or recursive or both.
 DNS extensively exploits DNS caching in order to improve the delay performance and to reduce the number of DNS messages ricocheting around the Internet.
 In a query chain, when a DNS receives a DNS reply it can cache the mapping in its local memory.
 
-### 2.5.3 DNS Records and Messages
+#### 2.5.3 DNS Records and Messages
 The DNS servers that implement the DNS distributed database store **resource records (RRs)** including RRs that provide hostname-to-IP address mappings.
 Each DNS reply messages carries one or more resource records.
 
@@ -578,9 +580,9 @@ We created a new company. Next we register th domain name `newcompany.com` at a 
 
 To date, there hasn't been an attack that that has successfully impeded the DNS service, DNS has demonstrated itself to be surprisingly robust against attacks. However there have been successful reflector attacks, these can be addressed by appropriate configuration of DNS servers.
 
-## 2.6 Peer-to-Peer Applications
+### 2.6 Peer-to-Peer Applications
 
-### 2.6.1 File Distribution
+#### 2.6.1 File Distribution
 In P2P file distribution, each peer can redistribute any portion of the file it has received to any peers, thereby assisting the server in the distribution process. As of 2012 the most popular P2P file distribution protocol is BitTorrent, developed by Bram Cohen.
 
 #### Scalability of P2P architectures
@@ -616,7 +618,7 @@ The user starts downloading the chunks that have the fewest repeated copies amon
 
 Every 10 seconds the user measures the rate at which she receives bits and determines the four peers that are sending to her at the highest rate. It then reciprocates by sending chunks to these same four peers. The four peers are called **unchocked**. Every 30 seconds it also choses one additional neighbor and sends it chunks. These peers are called **optmistically unchocked**.
 
-### 2.6.2 Distributed Hash Tables (DHTs)
+#### 2.6.2 Distributed Hash Tables (DHTs)
 How to implement a simple database in a P2P network?
 In the P2P system each peer will only hold a small subset of the totality of the (key, value) pairs. Any peer can query the distributed database with a particular key, the database will locate the peers that have the corresponding pair and return the pair to querying peer. Any peer can also insert a new pair in the databse. Such a distributed database is referred to as a **distributed hash table (DHT)**.
 In a P2P file sharing application a DHT can be used to store the chunks associated to the IP of the peer in possession of them.
@@ -640,12 +642,12 @@ If a peer abruptly leaves, its successor and predecessor need to update their in
 
 What if a peer joins? If it only knows one peer, it will ask him what will be his predecessor and successor. The message will reach the predecessor which will send the new arrived its predecessor and successor information. The new arrived can join the DHT making its predecessor successor its own successor and by notifying its predecessor to change its successor information.
 
-## 2.7 Socket Programming: Creating Network Applications
+### 2.7 Socket Programming: Creating Network Applications
 Only code explication ----> skipping
 
-# Chapter 3: Transport Layer
+## Chapter 3: Transport Layer
 
-## 3.1 Introduction and Transport-Layer Services
+### 3.1 Introduction and Transport-Layer Services
 
 A transport-layer protocol provides for **logical communication** (as if the hosts running the processes were directly connected) between application processes running on different hosts. Application processes use the logical communication provided by the transport layer to send messages to each other, free from the worry of the details of the physical infrastructure used.
 **Transport-layer protocols are implemented in the end systems but not in network routers**.
@@ -676,7 +678,7 @@ UDP provides process-to-process delivery and error checking services. Therefore 
 TCP provides **reliable data transfer** using flow control, sequence numbers, acknowledgements and timers. **TCP thus converts IP's unreliable service between end systems into a reliable data transport service between processes**.
 TCP also provides **congestion control**, a service not really provided to the invoking application as it is to the Internet as a whole: **it prevents any TCP connection from swamping the links and routers between communication hosts with an excessive amount of traffic giving each connection traversing a congested link an equal share of the bandwidth.**
 
-## 3.2 Multiplexing and Demultiplexing
+### 3.2 Multiplexing and Demultiplexing
 Here we'll cover multiplexing & demultiplexing in the context of the Internet but **a multiplexing/demultiplexing service is needed for all computer networks**.
 
  - The job of delivering the data in a transport-layer segment to the correct socket is called **demultiplexing**.
@@ -721,7 +723,7 @@ Moreover in today's high-performing Web, servers often use only one process and 
 
 If using persistent HTTP, client and server will exchange messages via the same server socket. If using non-persistent HTTP, a new TCP connection is created and closed for every request/response and hence a new socket is created and closed for every request/response.
 
-## 3.3 Connectionless Transport: UDP
+### 3.3 Connectionless Transport: UDP
 UDP does multiplexing/demultiplexing, light error checking, nothing more. If the developer chooses UDP, the application is almost directly talking with IP.
 Note that with UDP there is no handshaking between sending and receiving transport-layer entities before sending a segment. For this reason UDP is said to be **connectionless**.
 DNS is an example of an application layer protocol that typically uses UDP: there is no handshaking and when a client doesn't receive a reply either it tries sending the query to another name server or it informs the invoking application that it can't get a reply. Why should a developer choose UDP?
@@ -733,7 +735,7 @@ DNS is an example of an application layer protocol that typically uses UDP: ther
 
 It is possible for an application developer to have reliable data transfer when using UDP. This can be done if reliability is built into the application itself (eg adding acknowledgement and retransmission mechanisms) but it is a nontrivial task and may keep the developer busy for a long time.
 
-### 3.3.1 UDP Segment Structure
+#### 3.3.1 UDP Segment Structure
 
 ![Alt text](_media/udp_segment.png)
 
@@ -745,14 +747,14 @@ The UDP header has only four fields, each consisting of two bytes:
 
 This `length` field is needed since the size of the data field may differ from one UDP segment to the next.
 
-### 3.3.2 UDP Checksum
+#### 3.3.2 UDP Checksum
 Provides for error detection, to determine whether the bits in the segment have been altered as it moves from source to destination.
 
 At the send side, UDP performs the 1s complement of the sum of all the 16-bit (max 64) words in the segment, with any overflow encountered during the sum being wrapped around. This result is put in the checksum field of the UDP segment header.
 
 UDP implements error detection according to the **end-end principle**: certain functionality (error detection in this case) must be implemented on an end-end basis: "functions placed at the lower levels may be redundant or of little value when compared to the cost of providing them at the higher level".
 
-## 3.4 Principles of Reliable Data Transfer
+### 3.4 Principles of Reliable Data Transfer
 It is the responsibility of a **realiable data transfer protocol** to implement reliable data service: no transferred data bits are corrupted or lost and all are delivered in the order in which they were sent.
 We will consider the following actions:
 
@@ -762,10 +764,10 @@ We will consider the following actions:
 We use the term packet rather than segment because the concepts explained here applies to computer networks in general.
 We will only consider the case of **unidirectional data transfer** that is data transfer from the sending to the receiving side. The case of reliable **bidirectional** (full-duplex) **data transfer** is not more difficult but more tedious to explain. Nonetheless sending and receiving side will need to transmit packets in *both directions*.
 
-### 3.4.1 Building a Reliable Data Transfer Protocol
+#### 3.4.1 Building a Reliable Data Transfer Protocol
 **Finite-state machine**s (FSM) are boring! And unlikely to be asked at the exam, therefore I decided not to cover them here.
 
-### 3.4.2 Pipelined Reliable Data Transfer Protocols
+#### 3.4.2 Pipelined Reliable Data Transfer Protocols
 In today's high-speed networks stop-and-wait protocols are simply not tolerable: we  cannot send one packet and wait for the ACK and then send the second one, it is inefficient as we can see computing the **utilization of the channel**:
 
 $$ U = \frac{L/R}{RTT+ L/R} $$
@@ -779,13 +781,13 @@ Some consequences:
 
 Two basic approaches toward pipelined error recovery can be identified: **Go-Back-N** and **Selective Repeat**
 
-### 3.4.3 Go-Back-N (GBN)
+#### 3.4.3 Go-Back-N (GBN)
 The sender is allowed to send N packets (**sender window size = N**), the receiver has a window of size **1**.
 If a segment from sender to receiver is lost, the receiver discards all the segments with sequence number greater than the sequence number of the dropped packet, answering with ACK with this sequence number. (no packet re-ordering)
 The sender will wait for ACK in order to move the window and send new packets. The wait is not infinite, after a certain time a timeout will occur and the sender will retransmit all the packets in the sending window.
 In a Go-Back-N protocol, acknowledgements are **cumulative**: if sender receives ACK3 he will know that all the packets from 0 to 3 have been received, even if hasn't received ACK2.
 
-### 3.4.4 Selective Repeat
+#### 3.4.4 Selective Repeat
 When the window-size and bandwidth-delay product are both large, many packets can be in the pipeline and a single packet error can thus cause GBN to retransmit a large number of packets, many unnecessarily.
 **Selective Repeat** avoid unnecessary retransmissions by having the sender retransmit only those that packets it suspects were received in error at the receiver:
 **individual acknowledgements** (opposed to cumulative).
@@ -793,8 +795,8 @@ When the window-size and bandwidth-delay product are both large, many packets ca
 The sender has a timer for each packet in its window. When a timeout occurs, only the missing packet is resent.
 The receiver buffers out of order packets.
 
-## 3.5 Conncetion-Oriented Transport: TCP
-### 3.5.1 The TCP Connection
+### 3.5 Conncetion-Oriented Transport: TCP
+#### 3.5.1 The TCP Connection
 TCP is said to be **connection-oriented** because before one application process can begin to send data to another, the two processes must first "handshake" with each other. During the connection establishment, both sides of the connection will initialize many TCP state variables.
 TCP connection is not an end-to-end TDM or FDM circuit nor is it a virtual circuit as **the connection state resides entirely in the two end systems** and not in the intermediate network elements.
 A TCP connection provides a **full-duplex service**: when a connection between process A and process B, application layer data can flow from A to B and, at the same time, from B to A.
@@ -805,7 +807,7 @@ Both the sender and the receiver have buffers that are set up during the handsha
 The maximum amount if data that can be grabbed and placed in a segment is limited by the **maximum segment size (MSS)**.
 TCP therefore splits data into smaller chunks and pairs each chunk of client data with a TCP header thereby forming **TCP segments** which are passed down to the network layer. When TCP receives a segment at the other end, the segment's data is placed in the TCP connection's receive buffer. **Each side of the connection has its own send buffer and its own receive buffer**
 
-### 3.5.2 TCP Segment Structure
+#### 3.5.2 TCP Segment Structure
 
 ![Alt text](_media/tcp-segment.png)
 
@@ -814,10 +816,11 @@ TCP therefore splits data into smaller chunks and pairs each chunk of client dat
  - 4 bit **header length field**. The TCP header can be of a variable length due to the TCP options field (usually empty therefore usual length is 20 bytes)
  - **options field** used to negotiate MSS or as a window scaling factor for use in high speed networks.
  - **flag field**: 6 bits:
+
  	1. ACK used to indicate that the value carried in the acknowledgement field is valid, that is the segment contains an acknowledgement for a segment that has been successfully received.
-	2. ,  3. and 4. **RST, SYN, FIN** for connection setup and teardown
-	5. **PSH** indicates that the receiver should pass the data to upper layer immediately
-	6. URG indicates that there is data in the segment that the sending side upper layer has marked as urgent.
+ 	2. ,  3. and 4. **RST, SYN, FIN** for connection setup and teardown
+ 	5. **PSH** indicates that the receiver should pass the data to upper layer immediately
+ 	6. URG indicates that there is data in the segment that the sending side upper layer has marked as urgent.
 
 #### Sequence Numbers and Acknowledgment Numbers
 TCP views data as *an unstructured, but ordered, stream of bytes* and TCP's use of sequence numbers reflects this view: sequence numbers are over the stream of bytes and not over the series of transmitted segments.
@@ -829,7 +832,7 @@ TCP is said to provide **cumulative acknowledgements**: if sender receives ACK 5
 What does a host do when it receives out-of-order segments? The receiver buffers the out-of-order bytes and waits for the missing bytes to fill in the gaps.
 Usually both sides of a TCP connection randomly choose an initial sequence number **randomly** both for security and for minimizing the possibility that a segment that is still present in the network from an earlier, already terminated connection between two hosts is mistaken for a valid segment in a later connection between these same two hosts.
 
-### 3.5.3 Round-Trip Time Estimation and Timeout
+#### 3.5.3 Round-Trip Time Estimation and Timeout
 
 TCP uses a timeout/retransmit mechanism to recover from lost segments. The question rises: How long should the timeout intervals be?
 Clearly the timeout should be larger than the connection's round-trip time? How much larger? How can the RTT be evaluated?
@@ -858,7 +861,7 @@ We note that this is an EWMA of the difference of estimated and last measured RT
 An initial `TimeoutInterval` value of 1 second is recommended.
 Also **when a timeout occurs, the value of `TimeoutInterval` is doubled** in order to avoid a premature timeout occurring for a subsequent segment that will soon be acknowledged. As soon as a segment is received and `EstimatedRTT` is updated, the `TimeoutInterval` is again computed using the formula above.
 
-### 3.5.4 Reliable Data Transfer
+#### 3.5.4 Reliable3 Data Transfer
 TCP creates a **reliable data transfer service** on top of IP's unreliable best-effort service. It ensures that the data stream that a process reads out of its TCP receive buffer is *uncorrupted, without gaps, without duplication and in sequence*.
 We supposed until now that an individual timer was associated with each transmitted segment. However timer management can require considerable overhead. Thus the recommended TCP timer management procedures (defined by RFC standards) use only a ***single*** retransmission timer (it is helpful to think of the timer as being *associated with the oldest unacknowledged segment*).
 
@@ -880,7 +883,7 @@ Acknowledgments are cumulative (GBN) but many TCP implementations will buffer co
 Also consider fast retransmit where only the missing packet is resent (SR) instead of all the window (GBN).
 We can see that TCP's error recovery mechanism is categorized as a **hybdrid of GB and SR protocols**.
 
-### 3.5.5 Flow Control
+#### 3.5.5 Flow Control
 The host on each side of a TCP connection set aside a receive buffer for the connection. When TCP receives bytes that are correct and in sequence, it places the data in the receive buffer. The associated application process will read data from this buffer, but necessarily at the instant the data arrives (busy, not interested...). Thus the *the sender can easily overflow the connection's receive bufffer by sending too much data too quickly*. To avoid this event, TCP provides a **flow-control service**.
 Flow control is a *speed-matching service*: matching the rate at which the sender is sending against the rate at which the receiving application is reading.
 
@@ -914,7 +917,7 @@ To solve this problem, TCP requires A to **continue to send segments with one da
 
 We remember that **UDP has no flow control service**
 
-### 3.5.6 TCP Connection Management
+#### 3.5.6 TCP Connection Management
 #### How is the connection established? **Three-way handshake**
 
 ![Alt text](_media/three-way.png)
@@ -940,16 +943,16 @@ The client decides to end the connection:
 #### What if the two ends are not ready for communication?
  A host receives a TCP segment whose port number or source IP address do not match with any of the ongoing sockets in the host -> the host sends a special reset segment to the source (RST flag bit set to 1) and drops the packet (UDP does responds with a special ICMP datagram)
 
-## 3.6 Principles of Congestion Control
+### 3.6 Principles of Congestion Control
 
-### 3.6.1 The Causes and the Costs of Congestion
+#### 3.6.1 The Causes and the Costs of Congestion
 
 #### Scenario 1: Two Senders, A Router with Infinite Buffers
 A -> D, B -> C, A and B connect to the Internet through the same router, B and C connect to the Internet through the same router
 (pas envie)
 
 
-## 3.7 TCP Congestion Control
+### 3.7 TCP Congestion Control
 TCP limits the rate at which it sends traffic into its connection as a function of perceived network congestion.
 The TCP congestion-control mechanism operating at the sender keeps track of an additional variable: the **congestion window**, noted `cwnd` which imposes a constraint on the rate at which a TCP sender can send traffic into the network. Specifically: `LastByteSent - LastByteAcked <= min{cwnd, rwnd}`.
 Limiting the amount of unacknowledged data at the sender we can limit the sender's send rate.
@@ -1002,13 +1005,13 @@ average throughput of a connection = (1.22 * MSS)/(RTT * sqrt(L))
 
 Where L is the loss rate
 
-# Chapter 4: The Network Layer
+## Chapter 4: The Network Layer
 In the chapter, there is an important distinction between the **routing** and **forwarding** functions of the network layer. Forwarding involves the transfer of a packet from an incoming link to an outgoing link *within a single router* while routing involves *all of a network's routers* whose collective interactions via routing protocols determine the paths that packets take on their trips from source to destination.
 
-## 4.1 Introduction
+### 4.1 Introduction
 The primary role of routers is to forward datagrams from input links to output links. Routers do not run nor the application-layer or the transport-layer, they go only up until the network layer.
 
-### 4.1.1 Forwarding and Routing
+#### 4.1.1 Forwarding and Routing
 The role of the network layer is deceptively simple: **to move packets from a sending hosts to a receiving host**. To do so it performs two important functions:
 
  - ***Forwarding***: When a packet arrives to a router's input link, the router must move the packet to the appropriate output link. It is an action **local** to the router
@@ -1025,7 +1028,7 @@ We also need to mark the distinction between routers and *packet switches*.
 #### Connection Setup
 in some computer networks there is a third really important networks-layer function: **connection setup**: a **path-wide** process that sets up connection state in routers.
 
-### 4.1.2 Network Service Models
+#### 4.1.2 Network Service Models
 The **network service model** defines the characteristics of end-to-end transport of packets between sending and receiving end systems. Some possible service for a network layer:
 
  1. Sending side:
@@ -1039,13 +1042,13 @@ The **network service model** defines the characteristics of end-to-end transpor
 
 **The Internet's network layer doesn't provide any of these**: it provides a **best-effort service** there are no timing or bandwidth guarantees, no loss or order guarantees and congestion control indications.
 
-## 4.2 Virtual  Circuit and Datagrams Networks
+### 4.2 Virtual  Circuit and Datagrams Networks
 As in transport layer, the network layer can use connection or connection-less protocols. There however some differences with the transport layer:
 
  - In the network layer these services are **host-to-host** services (not the case for the TL, just look at TCP)
  - The network layer provides either a host-to-host connectionless service or a host-to-host connection service **but no both**. Connection service -> **Virtual-Circuit (VC) networks**, Connectionless service -> **datagram networks**
 
-### 4.2.1 Virtual-Circuit Networks
+#### 4.2.1 Virtual-Circuit Networks
 The Internet is a datagram network but many alternative network architectures (ATM) are virtual-circuit networks. The connections in VC are called **virtual circuits (VCs)3*.
 A VC consists of
 
@@ -1064,7 +1067,7 @@ The routers must maintain **connection state information** for the ongoing conne
 During network-layer setup *all the routers along the path between source and destination are involved in VC setup, and each router is fully aware of all VCs passing through it* (not in TCP: setup and connection only between source and destination).
 The messages used by end ssystems to initiate or terminate a VC are called **signaling messages** and the protocols used to exchange them are called **signaling protocols**.
 
-### 4.2.2 Datagram Networks
+#### 4.2.2 Datagram Networks
 Each time an end system wants to send a packet, it sampts the packet with the address of the destination end system and pops the packet into the network. The routers along the path will use this address to forward it.
 The router has a forward table that *maps destination addresses to link interfaces*. When a packet arrives, it reads the destination address, uses the table to determine what link to use, and forwards the packet to that output link interface.
 
@@ -1072,11 +1075,11 @@ If we consider IPv4, addresses are 32 bits long. To avoid having tables with 2^3
 
 Although routers in datagram networks maintain no connection state information, they nevertheless maintain forwarding state information in their forwarding tables.
 
-### 4.2.3 Origins of VC and Datagram Networks
+#### 4.2.3 Origins of VC and Datagram Networks
 VC has its roots in the telephony world, which uses circuits switching too.
 The datagram model instead comes from the need to simplify as much as possible the network to bring computers together.
 
-## 4.3 What's Inside a Router?
+### 4.3 What's Inside a Router?
 
  - *Input ports*: performs the physical layer functions of incoming link at the router. It is also here that the forwarding table is consulted to determine the output port to which the arriving packet will be forwarded via the switching fabric. Control packets (protocol info) are forwarded to the routing processor.
  - *Switching fabric*: connects input prots to output ports.
@@ -1085,7 +1088,7 @@ The datagram model instead comes from the need to simplify as much as possible t
 
 Input ports, switching fabric and output ports implement the forwarding function and are almost always implemented in hardware (*routing forwarding plane hardware*) while the routing processor implements the routing function and is usually implemented in software running on traditional CPU (*router control plane*)
 
-### 4.3.1 Input Processing
+#### 4.3.1 Input Processing
 The packet arrives and the link and phyisical layer unpacking functions are performed. The forwarding table is computed and updated by the routing processor with a shadow copy typically stored at each input port so that forwarding decision can be made locallly without invoking the centralized routing processor on a per packet basis and thus avoiding a centralized processing bottleneck. The table is transferred to ports through separated bus. The lookup is then just a search (implemented in hardware and using high performance algorithms), speed also depends on the memory technology (DRAM, SRAM...). Lookup is important but input processing also consists of
 
  - physical and link layer processing
@@ -1094,7 +1097,7 @@ The packet arrives and the link and phyisical layer unpacking functions are perf
 
 Input ports than moves the packet to the switching fabric (eventually queuing them if this is busy)
 
-### 4.3.2 Switching
+#### 4.3.2 Switching
 Can be performed in different ways:
 
 #### Switching via memory
@@ -1109,17 +1112,17 @@ To overcome the bandwidth limitation of a single shared bus a more sophisticated
 A *crossbar switch* is an interconnection network consisting of 2N buses that connect N input ports to N output ports. Each vertical bus intersects each horizontal bus at a crosspoint which can be opened or closed at any time by the switch fabric controller. If a packet has to go from input X to output Y, only the crosspoint between the horizontal bus from X and the vertical bus to Y will be closed.
 Thus packets directed to different output ports can be forwarded simultaneously, but not multiple packets directed to the same output port.
 
-### 4.3.3 Output Processing
+#### 4.3.3 Output Processing
 takes packets stored in the output's port's memory and transmits them over the output link, thus selecting de dequeuing packets for transmission and performing the necessary link and physical layer transmission functions.
 
-### 4.3.4 Where Does Queuing Occur?
+#### 4.3.4 Where Does Queuing Occur?
 Queues may form at both the input ports and the output ports. The location and the extent of queuing will depend on traffic load, speed of the switching fabric, and line speed. As the queues grow large, the router's memory can eventually be exhausted and **packet loss** will occur. IS THIS USEFUL ? NOT COVERED BY TEACHER
 
-## 4.4 The Internet Protocol (IP): Forwarding and Addressing in the Internet
+### 4.4 The Internet Protocol (IP): Forwarding and Addressing in the Internet
 We know move to study of the network layer in the Internet. There are two versions of the IP (Internet Protocol) in use today: IPv4 and IPv6.
 There 3 main components in the Internet: the IP Protocol (addressing, datagram format and packet handling conventions), the routing protocol (path selection), the Internet Control Message Protocol (ICMP) (error reporting and network information).
 
-### 4.4.1 Datagram Format
+#### 4.4.1 Datagram Format
 A network layer packet is referred to as a **datagram**.
 
 ![Alt text](_media/ipv4datagram.png)
@@ -1151,7 +1154,7 @@ In IPv4, to comply with fragmentation, the header contains the fields:
 If one fragment contains error or is lost, all the others are dropped and TCP will have the sender retransmit all the data.
 Fragmentation complicates the network and end systems and can be used in lethal DoS attacks such as the Jolt2 attack
 
-### 4.4.2 IPv4 Addressing
+#### 4.4.2 IPv4 Addressing
 The boundary between the host and the physical link is called an **interface**. A router has multiple links connected to it, therefore multiple interfaces and therefore a router has multiple IP addresses and *an IP address is technically associated with an interface rather than with a host or router*.
 IPv4 addresses are 32 bits long (4 bytes) -> max 2^32 possible addresses. They are typically writen in **dotted decimal notation** where each byte of the address is written in deciaml from and separated by a period from the others.
 EX 193.32.216.9 === 11000001 00100000 11011000 00001001
@@ -1205,7 +1208,7 @@ NAT traversal is increasingly provided by Universal Plug and Play. It requires b
 *(private IP address, private port number) -> (public IP address, public port number)*
 If the NAT accepts and creates the mapping, then outsiders can create connections to (public IP address, public port number).
 
-### 4.4.3 Internet Control Message Protocol
+#### 4.4.3 Internet Control Message Protocol
 ICMP is used to communicate network-layer information between hosts and routers, usually for error reporting (ex Destination network unreachable).
 ICMP is considered part of IP but architecturally lies just above IP as ICMP messages are carried inside IP datagrams as payloads.
 ICMP have a type and a code field and carry the header and the first 8 bytes of the datagram that caused the message to be generated in the first place.
@@ -1215,7 +1218,7 @@ Ping and traceroute are implemented using ICMP messages
 Firewalls inspect the datagram and segment header fields denying suspicious datagrams entry into the internal network. Firewalls can block ICMP packages or packets based on port numbers, addresses.
 Additional protection can be provided by IDS, placed at the boundary of the network, performs *deep packet inspection* examining not only headers but also payloads (including application layer data). IDS have databases of packet signatures that are know to be dangerous. As packets flow through the IDS, it tries to match them to signatures in its database, if a match is found, an alert is created. IPS (intrusion prevention system) in addition to detecting, also blocks packets raising alerts.
 
-### 4.4.4 IPv6
+#### 4.4.4 IPv6
 Developed because of IPv4 address space exhaustion
 
 #### Datagram format
@@ -1248,7 +1251,7 @@ The most straightfoward way is a **dual stack** approach where IPv6 nodes also h
 Another approach would be **tunneling** : when two IPv6 nodes are connected by intervening IPv4 routers, we call the IPv4 nodes **tunnel**, the entire IPv6 datagram is put in the payload field of a IPv4 datagram which will be propagated by the tunnel unaware of the details and received by the destination IPv6 node which is able to extract the IPv6 datagram and to route it.
 This migration shows the difficulty in changing network-layer protocols.
 
-# 4.5 Routing Algorithms
+### 4.5 Routing Algorithms
 A host is attached directly to one router, the **default router** for the host (also called **first hop router**). Whenever a host sends a packet, the packet is transferred to its default router, which we'll call **source router**, we'll call the default router for the destination host as the **destination router**. Routing a packet from source to destination boils down to routing the packet from source router to destination router.
 
 The purpose of a routing algorithm is simple: given a set of routers connected by links, it finds a "good" path from source to destination router. *A good path is the least expensive one*.
@@ -1263,12 +1266,12 @@ We can classify routing algorithms in two groups:
 
 We could also make another classification separating **static routing algorithms** (routes change very slowly, eg after human intervention) and **dynamic routing algorithms**( routing change as the load or topology change). Finally another distinction could be made between **load-sensitive** or **load-insensitive** algorithms according to whether link costs vary reflecting the level of congestion.
 
-### 4.5.1 The Link-State (LS) Routing Algorithm
+#### 4.5.1 The Link-State (LS) Routing Algorithm
 All link costs are known. In practice this is accomplished by having each node broadcast link-state packets to all other nodes in the network, each packet containing the identities and costs of its attached links resulting in **all nodes having an identical and complete view of the network** (each node could run the algorithm).
 A link-state algorithm can be ***Dijkstra's algorithm*** or ***Prim's algorithm***.
 Code and example page 394
 
-### 4.5.2 The Distance-Vector (DV) Routing Algorithm
+#### 4.5.2 The Distance-Vector (DV) Routing Algorithm
 The **distance-vector** algorithm is **iterative**, **asynchronous** and **distributed**.
 
  - *Distributed* because each node receives some information from one or more of its directly attached neighbors, performs a calculation and then distributes the results back to its neighbors.
@@ -1281,7 +1284,7 @@ d(x,y) = min_v {c(x,y) + d(v,y)}
 
 ... to be continued
 
-### 4.5.3 Hierarchical Routing
+#### 4.5.3 Hierarchical Routing
 In practice it is not possible to have a network of interconnected routers running the same routing algorithm because of two reasons:
 
  - *Scale* if the number of routers is large, running LS or DV algorithms for the whole network becomes prohibitive for memory, processing, storing and timing costs.
@@ -1293,9 +1296,9 @@ To obtain reachability information from neighboring ASs and propagating the reac
 When a router needs to forward a packet outside its AS and there are multiple gateway routers, the router has to make a choice. One often employed practice is to use **hot-potato routing**: the AS gets rid of the packet as quickly as possible (as inexpensively as possible), the router sends the packet to the gateway router that has the smallest router-to-gateway cost among all gateways with a path to the destination.
 An AS can decide what (internal) destinations to advertise to neighboring ASs: this a *policy* decision.
 
-## 4.6 Routing in the Internet
+### 4.6 Routing in the Internet
 
-### 4.6.1 Intra-AS Routing in the Internet: RIP
+#### 4.6.1 Intra-AS Routing in the Internet: RIP
 Intra-AS routing protocols are also known as **interior gateway protocols**. Historically two of these have been used extensively in the Internet: **Routing Information Protocol (RIP)** and **Open Shortest Path First (OSPF)**.
 
 RIP was started for the Xerox Network Systems (XNS) architecture and was was widely deployed after being included in BSD. It is a **distance-vector** protocol working very similarly to what studied before. RIP uses *hop count* as a cost metric (each link has cost 1). Costs are from source router a destination subnet (not router-to-router as previously seen).
@@ -1310,7 +1313,7 @@ If a router doesn't hear from its neighbor for at least once every 180 seconds, 
 Routers can also request information about its neighbor's cost to a given destination using RIP's request messages, which are transmitted over UDP using port 520.
 RIP is implemented in software but has access to the routing tables through the UNIX kernel.
 
-### 4.6.2 Intra-AS Routing in the Internet: OSPF
+#### 4.6.2 Intra-AS Routing in the Internet: OSPF
 OSPF and the related IS-IS are typically deployed in upper-tier ISPs whereas RIP is deployed in lower-tier ISPs and enterprise networks. Open indicates that the routing protocol speficication is publicly available.
 It was conceived as the successor to RIP. It is however a **link state protocol** that uses **flooding of link-state information** and a **Dijkstra least-cost path algorithm**: routers construct a complete topological map (graph) of the AS, then run Dijkstra's algorithm to determine a shortest-path tree to *all subnets* with itself as the root node. Link costs are individually configured by the networks administrator who might choose to set all the link costs to 1, thus achieving minimum hop routuing or might choose to set the link weights to be *inversely proportional to link capacity* in order to discourage traffic from using low-bandwidth links.
 A router broadcasts routing information to ***all other routers*** in the AS, not just the neighbors. The broadcast happens whenever there is a change in a link's state or every 30 minutes if the link's state doesn't change. OSPF advertisements are contained in **OSPF messages**  that are carried by IP with an upper-lyerprotocol of 89 for OSPF, therefore OSPF must implement reliable message transfer and link-state broadcast; OSP also checks that links are operational using HELLO messages to attached neighbors. OSPF offers some services:
@@ -1320,7 +1323,7 @@ A router broadcasts routing information to ***all other routers*** in the AS, no
  - *integrated support for unicast and multicast routing*
  - *support for hierarchy within a single routing domain*: ability to structure an autonomous system hierarchically. A OSPF AS can be configured hierarchically into areas, each running its own OSPF algorithm, with each router broadcasting its link state to all other routers in that area. **Area border routers** are responsible for routing packets outside the area and one area is configured to be the **backbone area**, which routes traffic between other areas in the AS, it contains area border routers but also normal routers.
 
-### 4.6.3 Inter-AS Routing: BGP
+#### 4.6.3 Inter-AS Routing: BGP
 The **Border Gateway Protocol (BGP)** is the de facto standard inter-AS routing protocol in today's Internet. It provides each AS means to:
 
  - obtain reachability information from neighboring ASs
@@ -1336,7 +1339,7 @@ In BGP an AS is identified by its **globally unique AS number (ASN)** which is a
 
  - *AS-PATH*: contains the ASs through which the advertisement for the prefix has passed. When a prefix is passed into an AS, the AS adds its ASN to the AS-PATH.
  This attribute is used to detect and prevent looping advertisements (if router sees that its AS is already in AS-PATH, it rejects the ad) and to choose among multiple paths to the same prefix.
- -*NEXT-HOP*: **the router interface that begins the AS-PATH**.
+    -*NEXT-HOP*: **the router interface that begins the AS-PATH**.
 
 BGP also includes attributes allowing routers to assign preferences metrics to the routes and indicating how to prefix was inserted into BGP at the origins.
 When a router receives a route advertisement, it uses its **import policy** to decide whether to accept or filter the route and whether to set certain attributes such as the router preference metrics.
@@ -1344,9 +1347,9 @@ When a router receives a route advertisement, it uses its **import policy** to d
 #### BGP Route Selection
 The input of the selection is the set of all routes that have been learned and accepted by the router. If two or more routes exist for the same prefix, elimination rules are applied until only one remains.
 
-# Chapter 8: Security in Computer Networks
+## Chapter 8: Security in Computer Networks
 
-## 8.1 What is Network Security?
+### 8.1 What is Network Security?
 Desirable properties of **secure communication**:
 
  - *Confindentiality*: only sender and receiver should be able to understand the contents of the transmitted message -> encryption
@@ -1361,7 +1364,7 @@ Possible attacks:
 
 These two allow to mount many other types of attacks
 
-## 8.2 Principle of Cryptography
+#### 8.2 Principle of Cryptography
 See Information Science, BA2
 ADDITION:
 
@@ -1375,19 +1378,19 @@ Block ciphers typically use functions that simulate randomly permuted tables. EX
 We need to avoid long messages avoiding that two or more identical ciphertexts (produced for identical cleartexts by a symmetric encryption).
 (I DON'T FINISH THIS PART, IT GOES TOO DEEP INTO ENCRYPTION TECHNIQUES WHICH IS NOT WHAT WE ARE INTERESTED IN)
 
-## 8.3 Message Integrity and Digital Signatures
+### 8.3 Message Integrity and Digital Signatures
 We want to provide **message integrity** (aka message authentication). Message integrity is verified when:
 
  - The message received indeed originated from the sender
  - The message was not tampered with on its way to the receiver
 
-### 8.3.1 Cryptographic Hash Functions
+#### 8.3.1 Cryptographic Hash Functions
 A **hash function** takes an input *m* and computes a fixed length size string *H(m)* known as a hash. A **cryptographic hash function** is required to have an additional property:
 
 **it is computationally infeasible to find any two different messages *x* and *y* such that H(x) = H(y)**
 Some used cryptographic hashing functions are md5, SHA...
 
-### 8.3.2 Message Authentication Code
+#### 8.3.2 Message Authentication Code
 To perform message integrity we also need a shared secret *s*, called the **authentication key**. The procedure is then:
 
  1. Alice creates message *m*, concatenates *m+s* and computes the hash *H(m+s)* to create the **message authentication code (MAC)**
@@ -1398,7 +1401,7 @@ MAC is nice because *it doesn't require any encryption algorithm*
 The most popular standard of mac today is **HMAC** which can be used with either MD5 or SHA-1. The problem then is: how to distribute the secret?
  Physically?
 
-### 8.3.3 Digital Signatures
+#### 8.3.3 Digital Signatures
 A **digital signature** is a cryptographic technique to indicate the owner or creator of a document or to signify one's agreement with a document's content.
 Just as with handwritten signatures, digital signatures should be created in a way that they are **verifiable** (prove that the the author of a signature is indeed the author) and nonforgeable** (prove that only that individual could have signed the document).
 We can use the public and private keys we already created for asymmetric confidentiality.
@@ -1419,7 +1422,7 @@ A **Certification Authority** binds a public key to a particular entity. It has 
  1. A CA verifies that an entity (person, router, ...) is who it says it is. The method depends on the authority
  2. The CA creates a **cerificate** that binds the public key of the entity to the identity. The certificate contains the public key and globally unique identifying information about the owner of the public key. The **certificate is digitally signed by the CA**
 
-## 8.4 End-Point Authentication
+### 8.4 End-Point Authentication
 **End-point authentication** is the process of one entity proving its identity to another entity over a computer network.
 Authentication must be done solely on the basis of messages and data exchanged as part of an **authentication protocol**. Typically this would run before the two communicating parties run some other protocol.
 
@@ -1445,15 +1448,15 @@ The procedure is then:
  3. Alice encrypts it using Alice and Bob's symmetric secret key and sends the encrypted nonce.
  4. Bob decrypts the received nonce and checks for equality with the one he generated.
 
-## 8.5 Securing e-mail
+### 8.5 Securing e-mail
 Security functionalities are provided by many layers of the network stack. Why? There is a need for security at higher layers as well as blanket coverage at lower layers and it easier to provide security at higher layers.
 
-### 8.5.1 Secure E-Mail
+#### 8.5.1 Secure E-Mail
 What features do we want? *Confindentiality, Sender authentication, Receiver authentication*.
  - Confidentiality: to overcome the problem of sharing a symmetric secret, Alice and Bob use asymmetric cryptography. Bob makes his public key publicly available (key server or web page) and Alice encrypts her message with Bob's public key. Bob can decrypt using his private key. However asymmetric crypto is quite inefficient. A *session key* can be used: Alice selects a **random symmetric key**. She uses it to encrypt the message. She the encrypts this key using Bob's public key and concatenates the symmetricly encrypted message and the asymmetricly encrypted key.
  - Sender authentication and message integrity: we suppose that Alice and Bob don't care for confidentiality. They will use **digital signatures** and **message digests**.
  Alice applies a hash function *H* to her message *m*, obtain a message digest, signs the digest with her private key to create a digital signature, concatenates the original message with the signature to create a package and sends the package to Bob's e-mail address.
- Bob uses Alice's public key to the digest and compares the result fo this operation with his own hash *H* of the message.
+    Bob uses Alice's public key to the digest and compares the result fo this operation with his own hash *H* of the message.
  - Confidentiality, sender authentication and message integrity: the two procedures above can be combined, message and digest are concatenated and the treated as a new message which is encrypted using the first technique.
 
 These techniques suppose however that Alice and Bob are able to exchange their public keys. An intruder could in fact send a public key to Bob pretending to be Alice. *Certification is needed*.
@@ -1461,28 +1464,29 @@ These techniques suppose however that Alice and Bob are able to exchange their p
 #### Phil Zimmermann and PGP
 PZ was the creator of PGP. For that he was legally attacked by the US Government, he distributed PGP while it should have stayed a secret weapon in the heads of the defense. The US dropped the case and PGP became the most widely used e-mail encryption software in the world despite the lack of funding, paid staff.
 
-### 8.5.2 PGP
+#### 8.5.2 PGP
 Pretty Good Privacy (PGP) is an e-mail encryption scheme that has become the De Facto standard.
 It uses the same design shown above, giving the option of signing, encrypting or both.
 When PGP is installed, it creates a public key pair for the user, the public key can be posted online while the private key is protected by a password which has to be entered every time the user accesses the private key.
 A PGP message appears after the **MIME** header.
 PGP also provides a mechanism for public key certification. PGP public keys are certified by ***Web of Trust***: Alice can certify any key/username pair when she believes the pair really belong together and, in addition, PGP permits Alice to say that she trusts another user to vouch for the authenticity of more keys. Some PGP users sign each other's key by holding *key-signing parties*.
 
-## 8.6 Securing TCP Connections: SSL
+### 8.6 Securing TCP Connections: SSL
 We now move to the transport layer. The enhanced version of TCP is called **Secure Socket Layer (SSL)**, a slightly modified version of SSL v3 called **Transport Layer Security (TLS)** has been standardized by the IETF.
 Originally developed by Netscape, SSL has enjoyed broad deployment since its origins, providing secure communication between all recent browsers and online services. **SSL provides TCP with confidentiality, data integrity, server authentication and client authentication**.
 SSL is often used over HTTP, however, as it secures TCP, it can be employed by any application that runs over TCP. SSL provides a simple *Application Programming Interface* with sockets, similar to TCP's API.
 When an application wants to use SSL, it must include SSL classes/libraries. **Technically SSL resides in the application layer** but from the developer's perspective it is a transport layer protocol that provides TCP's services enhanced with security services.
 
-### 8.6.1 The Big Picture (primitive almost-SSL)
+#### 8.6.1 The Big Picture (primitive almost-SSL)
 Three phases:
 
  1. **Handshake**: Bob initiates a TCP connection is established (TCP SYN, SYNACK, ACK). Bob sends *SSL Hello*, Alice responds with her certificate containing her public key (the certificate being certified by a CA, Bob is sure that the key belongs to Alice). Bob generates a ***master secrect (MS)***, encrypts it with Alice's public key to create the ***Encrypted Master Secret (EMS)*** and sends it to Alice who will decrypt it with her private key to get the MS which can be used for confidentiality and integrity as seen before.
  2. **Key Derivation** instead of using the MS for integrity and confidentiality, it is safer to use different keys for different functions. Therefore *both* Alice and Bob **use the MS to generate**:
+
  	- Eb = session encryption key for data Bob -> Alice
-	- Mb = session MAC key for data Bob -> Alice
-	- Ea = session encryption key for data Alice -> Bob
-	- Ma = session MAC key for data Alice -> Bob
+ 	- Mb = session MAC key for data Bob -> Alice
+ 	- Ea = session encryption key for data Alice -> Bob
+ 	- Ma = session MAC key for data Alice -> Bob
 The MS could simply be split in four chunks, but real SSL does it differently.
  3. **Data Transfer** TCP is a byte-stream protocol, so where would we put the MAC for the integrity check? SSL breaks the data stream into **records**, appends a MAC to each record and then encrypts record+MAC. However, in a MITM attack, the order of packets could be reversed as TCP sequence numbers are not encrypted. SSL therefore uses sequence numbers. Bob keeps a sequence number counter which begins at zero and is incremented at each record transmission. He includesthe sequence number in the MAC calculation: MAC = hash(data+Mb+SeqNum). Alice tracks Bob's sequence numbers so that she can verify the MAC.
 
@@ -1494,7 +1498,7 @@ The real SSL record:
  - Type: handshake message, data message, connection teardown message
  - Length: used to extract the records out of the TCP byte stream
 
-### 8.6.2 A More Complete Picture
+#### 8.6.2 A More Complete Picture
 SSL allows Alice and Bob to agree on the cryptographic algorithms at the beginning of the SSL session, during handshake. Steps:
 
  1. The client sends a list of cryptographic algorithms it supports, along with a client nonce
@@ -1511,18 +1515,18 @@ Nonces are used to avoid *connection replay attacks* (resending packets sniffed 
 TCP FIN segments can be crafted by an attacker (*truncation attack*), therefore they cannot be used.
 The type field of SSL records is used for these purpose, even if it sent in the clear, it is authenticated at the receivers using record's MAC.
 
-## 8.7 Network-Layer Security: IPsec and Virtual Private Networks
+### 8.7 Network-Layer Security: IPsec and Virtual Private Networks
 The IP security protocol is called **IPsec**, it secures IP datagrams between any two network-layer entities (host, routers)
 
-### 8.7.1 IPsec and Virtual Private Networks (VPNs)
+#### 8.7.1 IPsec and Virtual Private Networks (VPNs)
 An institution extending overt multiple geographical regions might want its own IP network so that the machines in it can communicate securely. Such a disjoint network is a **private network**. A physical private network can be expensive. VPN can be used to deploy and maintain a private network over the existing public Internet. The traffic is sent over the Internet but encrypted before entering the public net.
 Not all traffic sent into the Internet by the gateway routers or laptops will be IPsec secured (only the portion accessing internal resources)
 
-### 8.7.2 The AH and ESP Protocols
+#### 8.7.2 The AH and ESP Protocols
 In the IPsec protocol suite, there are two principal protocols: the **Authentication Header (AH)** protocol and the **Encapsulation Security Payload (ESP)** protocol.
 When a source IPsec entity (router or host) sends secure datagrams to a destination entity it does so with either ESP or AH. AH provides *source authentication* and *data integrity* while ESP provides *source authentication, data integrity and confidentiality*. Because the latter is often critical for VPNs, ESP is much more widely used AH. We will only study ESP.
 
-### 8.7.3 Security Associations
+#### 8.7.3 Security Associations
 Before sending IPsec datagrams from source entity to destination entity, source and destination create a network-layer logical connection called **security association (SA)**. SA is a simplex (unidirectional from source to destination) logical connection. If both entities want to send datagrams to each other, then two SAs need to be established, one in each direction.
 The VPN server (headquarters gateway router) will maintain state information about the SA, which will include:
 
@@ -1535,7 +1539,7 @@ The VPN server (headquarters gateway router) will maintain state information abo
 
 An IPsec entity often maintains state information for many SAs (all outside clients) using its *Security Association Database* (SAD) which is a data structure in the entity's OS kernel.
 
-### 8.7.4 The IPsec Datagram
+#### 8.7.4 The IPsec Datagram
 IPsec has two different packet forms, one for **tunnel mode** and one for **transport mode**, the first one, being more appropriate for VPNs, is more widely deployed than the transport mode, we will therefore only focus on it.
 
 ![Alt text](_media/ipsecdatagram.png)
@@ -1553,7 +1557,7 @@ The protocol number field is set to 50, designating IPsec. The routers along the
 To decide whether outgoing packets should be treated as above or simply let through, the gateway maintains a *Security Policy Database* (SPD) which indicates what types of datagrams (as a function of the source and destination IPs and of the protocol) are to be IPsec processed and, for those that are, which SA should be used.
 **IPsec provides confidentiality, source authentication, data integrity, replay-attack prevention.**
 
-### 8.7.5 IKE: Key Management in IPsec
+#### 8.7.5 IKE: Key Management in IPsec
 Who/What should populate the SAD? For small VPNs this can be done manually. For larger ones there is the ***Internet Key Exchange (IKE) protocol***.
 IKE is similar to the handshake in SSL. Here are the steps:
 
@@ -1562,9 +1566,9 @@ IKE is similar to the handshake in SSL. Here are the steps:
 
 We have two phases to reduce computational costs: we don't need asymmetric cryptography during second phase, allowing IKE to generate many SAs with relatively little computational cost.
 
-## 8.9 Operational Security: Firewalls and Intrusion Detection Systems
+### 8.9 Operational Security: Firewalls and Intrusion Detection Systems
 
-### 8.9.1 Firewalls
+#### 8.9.1 Firewalls
 A firewall is a combination of hardware and software that isolates an organization's internal network from the Internet at large, allowing some packets to pass and blocking others. It has three goals
 
  1. *All traffic from outside to inside, and vice versa, passes through the firewall*
@@ -1584,7 +1588,7 @@ Decisions are made on each packet in isolation. Stateful filters track TCP conne
 #### 3: Application Gateways
 Application Gateways look beyond the IP/TCP/UDP headers and make policy decisions based on application data. An **Application Gateway** is an application-specific server through which all application data must pass. Multiple AG can run on the same host, but each gateway is a separate server with its own processes.
 
-### 8.9.2 Intrusion Detection Systems
+#### 8.9.2 Intrusion Detection Systems
 An **intrusion detection system (IDS)** is a device that alerts when it observes potentially malicious traffic. An **intrusion prevention system (IPS)**  is a device that filters out suspicious traffic. Both types of device perform **deep packet inspection**: they look beyond the header fields and into the actual application data that the packets carry.
 
 An IDS can detect a wide range of attacks, including network mapping, port scans, TCP stack scans, DoS, worms, viruses, OS vulnerability attacks and application vulnerability attacks.
@@ -1593,34 +1597,34 @@ A signature based IDS maintains an extensive database of attack signature, each 
 Signature based IDS, although widely deployed, have a number of limitations: they require a previous knowledge of the attack to generate an accurate signature, false alarms may be generated, they can be slow and fail to detect attacks if overwhelmed.
 Anomaly-based packets study normal traffic and looks for statistically unusual events. They don't rely on previous knowledge of attacks.
 
-# Chapter 5: The Link Layer: Links, Access Networks and LANs
+## Chapter 5: The Link Layer: Links, Access Networks and LANs
 
-## 5.1 Introduction to the Link Layer
+### 5.1 Introduction to the Link Layer
 Some terminology:
 
  - **node** = any device running a link-layer protocol (hosts, routers, switches...)
  - **link** = communication channels connecting adjacent nodes along the path.
  - Over a given link, a transmitting node encapsulates the datagram in a **link-layer frame** and transmits the frame into the link.
 
-### 5.1.1 The Services Provided by The Link Layer
-Possible services offered by a link-layer protocol include:
+#### 5.1.1 The Services Provided by The Link Layer
+#### Possible services offered by a link-layer protocol include:
 
  - *Framing*: all link layer protocols encapsulate each network layer datagram  within a link-layer frame before transmission. A frame consists of a data field, containing the datagram, and a number of header fields, whose structure is determined by the protocol.
  - *Link access*: A **Medium Access Control** (MAC) protocol specifies the rules by which a frame is transmitted onto the link.
  - *Reliable delivery*: the protocol guarantees to move each datagram across the link without loss or errors. A reliable delivery protocol is often used for links highly prone to errors (WiFi) so that the error can be corrected locally, where it happens, rather than forcing an end-to-end retransmission. However it can represent a significant overhead for low bit-error links (cable) and therefore many wired link-layer protocols do not provide a reliable delivery service.
  - *Error detection and correction*: signal attenuation and electromagnetic noise can introduce errors. Because there is no need to forward a datagram that has an error, may link-layer protocols provide a mechanism to detect such bit errors so that they can drop the frames. This can be accomplished transmitting error-detection bits in the frame. Link layer error detection is usually more sophisticated and *implemented in hardware*.
 
-### 5.1.2 Where Is the Link Layer Implemented?
+#### 5.1.2 Where Is the Link Layer Implemented?
 In routers, the link layer is implemented in the line card. Is a host's link layer implemented in hardware or software?
 For the most part, the link layer is implemented in a **network adapter**, sometimes known as **network interface card (NIC)**. At the heart of the NIC is the link-layer controller, usually a single, special purpose chip that implements many of the link-layer services. Thus, much of a link-layer controller's functionality is implemented in hardware.
 Part of the link layer is implemented in software that runs on the host's CPU, this part implement higher-level functionalities.
 Link-Layer is a combination of hardware and software, the place in the protocol stack where software meets hardware.
 
-## 5.2 Error-Detection and -Correction Techniques
+### 5.2 Error-Detection and -Correction Techniques
 Error detection and correction allow the receiver to sometimes, *but not always*, detect that bit errors have occurred. Even with the use of error-detection bits, there still may be **undetected bit errors** (the receiver is unaware of the presence of corrupted bits).
 We want to keep the probability of such an event small. Let's now consider three techniques for detecting errors in the transmitted data: parity checks, checksumming methods and cyclic redundancy checks
 
-### 5.2.1 Parity Checks
+#### 5.2.1 Parity Checks
 Perhaps the simplest form of error detection is the use of a single **parity bit**. Suppose that the information to be sent, *D*, has *d* bits.
 In an even parity scheme, the sender simply includes one additional bit and chooses its value such that the total number of 1s in the *d+1* bits (original + parity bit) is even. (odd parity scheme, parity bit to one if #1s % 2 != 0).
 The receiver only needs to count the number of 1s in the *d+1* bits. If an odd number of 1 valued bits are found with an even parity scheme, the receiver knows that *some odd number* of bit error has occurred.
@@ -1630,19 +1634,19 @@ A single bit error in the original *d* bits will cause the parity of both the co
 This technique also allows to detect an error in the *parity bits*.
 The ability of the receiver to both detect and correct errors is known as **forward error correction (FEC)**
 
-### 5.2.2 Checksumming Methods
+#### 5.2.2 Checksumming Methods
 The *d* bits of data are treated as a sequence of *k*-bit integers for example the Internet checksum already studied: bytes of data are treated as integers and summed, the 1s complement of this sum forms the Internet checksum carried in the header. The receiver checks the checksum by taking the 1s complement of the sum of the received data (including checksum) and checking whether the result is all 1 bits, if there are any 0, an error is indicated. In TCP and UDP the checksum is computed over all fields (header and data).
 Checksumming methods require little packet overhead but they provide relatively weak protection against errors.
 Why is checksumming used in transport layer and cyclic redundancy check used at the link layer?
 Transport layer is implemented in software (OS) and therefore needs a simple and fast error detection scheme while error detection at link layer is implemented in hardware which can perform the more complex CRC operations.
 
-### 5.2.3 Cyclic Redundancy Check (CRC)
+#### 5.2.3 Cyclic Redundancy Check (CRC)
 **Cyclic Redundancy Check (CRC) codes** are also known as **polynomial codes** since it is possible to view the string to be sent as a polynomial whose coefficients are the 0 and 1 values in the bit string with operation interpreted as polynomial arithmetic.
 Sender and receiver must agree on a *r+1* bit pattern know as **generator** which we'll denote as *G*. We require the leftmost bit of G to be a 1. For a given piece of data *D* the sender will choose *r* additional bits, *R*, and append them to *D* such that the resulting *d + r* bit pattern, interpreted as a binary number, is exactly divisible by G using modulo-2 arithmetic.
 Checking is therefore easy: the receiver divides the *d + r* received by bits by *G*, if the remainder is nonzero, an error has occurred, otherwise the data is accepted as being correct.
 All CRC calculations are done in modulo 2 without carries in addition or borrows in subtraction (+ = - = xor).
 
-## 5.3 Multiple Access Links and Protocols
+### 5.3 Multiple Access Links and Protocols
 There are two types of network links: point-to-point and broadcast links. A **point-to-point link** consists of a single sender at one end of the link and a single receiver at the other end of the link. A **broadcast link** can have multiple sending and receiving nodes all connected to the same, single, shared broadcast channel. The term *broadcast* is used because when any node transmits a frame, the channel broadcasts the frame and each other node receives a copy (ex: ethernet, wireless).
 
 The **multiple access problem**: How to coordinate the access of multiple sending and receiving nodes to a shared broadcast channel?
@@ -1651,11 +1655,11 @@ More than two nodes can transmit frames at the same time, which will result in a
 Thus it is necessary to coordinate the transmission of the active nodes.
 We can classify multiple access protocols in three categories: **channel partitioning protocols, random access protocols, taking-turns protocols**.
 
-### 5.3.1 Channel Partitioning Protocols
+#### 5.3.1 Channel Partitioning Protocols
 TDM and FDM (from circuit switching) are in this category.
 A third channel partitioning tool is **code division multiple access (CDMA)** which assigns a different *code* to each node. Each node then uses its unique code to encode the data bits it sends. If the codes are chosen carefully, then all nodes can transmit simultaneously and yet have their respective receivers correctly receive a sender's encoded data bits. Originally used in military systems, it's now widely used for civilian use, particularly in cellular telephony.
 
-### 5.3.2 Random Access Protocols
+#### 5.3.2 Random Access Protocols
 A transmitting node always transmits at the full rate of the channel, *R* bps. When there is a collision, each node involved in the collision repeatedly retransmits its frame until the frame gets through without a collision.
 But when a node experiences a collision, *it waits a random dely before retransmitting the frame*. The delay is chosen independently.
 Here a few of the most commonly used random access protocols:
@@ -1697,7 +1701,7 @@ The wait for random amount of time is required in order to avoid the nodes to ke
 Is the long run fraction of time during which frames are being transmitted without collision. If the propagation delay approaches 0, the efficiency approaches 1.
 Also if the propagation delay becomes very large, efficiency approaches 1.
 
-### 5.3.3 Taking-Turns Protocols
+#### 5.3.3 Taking-Turns Protocols
 There are a lot of them, we'll cover two of the more important, the first one being the **polling protocol**. It requires one of the nodes to be designated as a master node which **polls** each of the nodes in a round-robin fashion.
 The master tells node 1 that it can transmit up to some maximum number of frames, when node 1 is finished (the master checks for energy in the channel) the master tells the same to node 2 and so on.
 The polling protocol eliminates the collisions and empty slots that plague random access protocols, resulting in a much higher efficiency.
@@ -1705,16 +1709,16 @@ However it introduces a *polling delay* (the amount of time required to notify a
 
 The second protocol is the **token-passing protocol** in which there is no master method. A small, special purpose frame known as **token** is exchanged among the nodes in some fixed order. When a node receives a toke, it holds it only if it has some frames to transmit otherwise it immediately forwards it to the next node.If a node has frames to transmit when it receives the token, it sends up to a maximum number of frames and then passes the token. Token passing is decentralized and highly efficient but the failure of one node could crash the entire channel, or a node could neglect to release the token....
 
-### 5.3.4 DOCSIS: The Link-Layer Protocol for Cable Internet Access
+#### 5.3.4 DOCSIS: The Link-Layer Protocol for Cable Internet Access
 The Data-Over-Cable-Service-Interface-Specifications specifies the cable data network architecture and its protocols. DOCSIS uses FDM to divide the downstream and upstream network segments into multiple frequency channels. Each upstream and downstream channel is a broadcast channel. Several cable modems share the same upstream channel (frequency) to the CMTS and thus collision can potentially occur.
 Each upstream channel is divided into intervals of time (TDM-like) each containing a sequence of mini-slots during which cable modems can transmit to the CMTS, which explicitly grants permission to individual modems to transmit during specific mini-slots. This is done sending a special control message known as a MAP message on a downstream channel to specify which cable modem can transmit during which mini-slot.
 Modems send mini-slot-request frames to the CMTS during a special set of interval mini-slots dedicated for this purpose. The requests are transmitted in a random access manner and may collide with each other. The modem cannot detect activity nor collisions: it simply infers that its request experienced collision if it does not receive a response in the next downstream control message.
 When a collision is inferred, a modem uses binary exponential backoff to defer the transmission to a future slot.
 
-## 5.4 Switched Local Area Networks
+### 5.4 Switched Local Area Networks
 Switched local networks connect hosts using link-layer switches which **do not run networks-layer protocols**.
 
-### 5.4.1 Link-Layer Addressing and ARP
+#### 5.4.1 Link-Layer Addressing and ARP
 
 #### MAC Addresses
 Network interfaces in hosts and routers have link-layer addresses, however *link-layer switches do not have link-layer addresses associated with their interfaces* so that they can carry datagrams without having routers or hosts having to explicitly address the frame to the intervening switch.
@@ -1736,7 +1740,7 @@ ARP stands in the boundary between the link and network layers.
 A datagram that has to be sent out of the subnet is first sent to the first-hop router on the path to the final destination (which is outside the subnet). How is its MAC acquired? Using ARP.
 When the frame reaches the next-hop router of the destination subnet, it has to be moved inside, the router having to decide what interface to use. This is done using the forwarding table: the router extracts the datagram and checks the destination IP. The datagram is encapsulated again and sent into the subnet, this time the MAC address of the frame is indeed the destination MAC address of the ultimate destination, which the router acquire via ARP.
 
-### 5.4.2 Ethernet
+#### 5.4.2 Ethernet
 It has pretty much taken over the wired LAN market. Since its invention in the 70's, it has grown and become faster.
 At the beginning the original Ethernet LAN used a coaxial bus to interconnect the nodes, creating a broadcast LAN. By the late 90s, most companies and universities had replaces their LANs with Ethernet installation using a hub-based star topology: hosts and routers are directly connected to a hub with twisted-pair copper wire. A **hub** is a physical layer device that acts on individual bits rather than frames. When a hub receives a bit, it simply recreates it boosting its energy strength and transmits the bit onto all the other interfaces (it's still a broadcast LAN). In the early 2000s, the star topology evolved: the hub was replaced with a **switch**, allowing a collision-less LAN.
 
@@ -1758,7 +1762,7 @@ If there are gaps due to discarded Ethernet frames, the fact that the applicatio
 There are many variants and flavors of Ethernet which have been standardized over the years by the IEEE. They vary in speed: 10 Megabit, 100 Megabit, 1000 Megabit, 10 Gigabit...
 They can also vary in the type of traffic they can transport....
 
-### 5.4.3 Link-Layer Switches
+#### 5.4.3 Link-Layer Switches
 Switch receive and forward frames. They are **transparent**: adapters address each other, without knowing that the switch is sitting in the middle. As they're output rate might be smaller than the input rate, they also have buffers to queue frames.
 
 ### Forwarding and Filtering
@@ -1801,285 +1805,4 @@ Routers network addressing is hierarchical, packets do not normally cycle and th
 
 ![Alt text](_media/interconnectiondevices.png)
 
-### 5.4.4 Virtual Local Area Networks (VLANs)
-
-
-
-# Computer Networking Rough
-
-### OSI model layers
-
-[![img](https://github.com/vald-phoenix/the-osi-model/raw/master/media/osi-model-7-layers.svg)](https://github.com/vald-phoenix/the-osi-model/blob/master/media/osi-model-7-layers.svg)
-
-**Figure:** the OSI layers and their usage.
-
-| Layer | OSI model layer | Protocol Data Unit | Devices                                    | Protocols                                                    |
-| ----- | --------------- | ------------------ | ------------------------------------------ | ------------------------------------------------------------ |
-| 7     | Application     | Data               | L7 firewall                                | HTTP, DNS, DHCP, FTP, Telnet, SSH, SMTP, POP, IMAP, NTP, SNMMP, TLS/SSL, GBP, RIP, SIP, etc. |
-| 6     | Presentation    | Data               | L7 firewall                                | All the above                                                |
-| 5     | Session         | Data               | L7 firewall                                | All the above                                                |
-| 4     | Transport       | Segments           | L4 firewall                                | TCP (connection oriented), UDP (connectionless oriented)     |
-| 3     | Network         | Packets            | Router, Multiplayer Switch, Router         | IPv4, IPv6, IPSec, OSPF, EIGRP                               |
-| 2     | Data Link       | Frames             | Switch, Bridge, NIC, Wireless Access Point | MAC, ARP Ethernet 802.3 (Wired), CDP, LLDP, HDLC, PPP, DSL, L2TP, IEEE 802.11 (Wireless), SONET/SDH |
-| 1     | Physical        | Bits               | All the above                              | Electrical signal (copper wire), Light signal (optical fibre), Radio signal (air) |
-
-#### L7 the application layer
-
-[![img](https://github.com/vald-phoenix/the-osi-model/raw/master/media/7-application-layer.svg)](https://github.com/vald-phoenix/the-osi-model/blob/master/media/7-application-layer.svg)
-
-**Figure:** L7 the application layer
-
-This is the only layer that directly interacts with data from the user. Software applications like web browsers and email clients rely on the application layer to initiate communications. But it should be made clear that client software applications are not part of the application layer; rather the application layer is responsible for the protocols and data manipulation that the software relies on to present meaningful data to the user. Application layer protocols include [HTTP](https://www.cloudflare.com/learning/ddos/glossary/hypertext-transfer-protocol-http/), HTTPS, FTP, SFTP, DNS as well as SMTP (Simple Mail Transfer Protocol is one of the protocols that enables email communications), etc.
-
-#### L6 the presentation layer
-
-[![img](https://github.com/vald-phoenix/the-osi-model/raw/master/media/6-presentation-layer.svg)](https://github.com/vald-phoenix/the-osi-model/blob/master/media/6-presentation-layer.svg)
-
-**Figure:** L6 the presentation layer.
-
-This layer is primarily responsible for preparing data so that it can be used by the application layer; in other words, layer 6 makes the data presentable for applications to consume. The presentation layer is responsible for translation, [encryption](https://www.cloudflare.com/learning/ssl/what-is-encryption/), and compression of data.
-
-Two communicating devices communicating may be using different encoding methods, so layer 6 is responsible for translating incoming data into a syntax that the application layer of the receiving device can understand (UTF8 -> ASCII or ASCII -> EBCDIC).
-
-If the devices are communicating over an encrypted connection, layer 6 is responsible for adding the encryption on the sender’s end as well as decoding the encryption on the receiver's end so that it can present the application layer with unencrypted, readable data (usually through SSL/TLS).
-
-Finally, the presentation layer is also responsible for compressing data it receives from the application layer before delivering it to layer 5. This helps improve the speed and efficiency of communication by minimizing the amount of data that will be transferred, moreover, data compression may be of two types: lossy (data integrity isn't guaranteed) or lossless (data integrity is guaranteed).
-
-#### L5 the session layer
-
-[![img](https://github.com/vald-phoenix/the-osi-model/raw/master/media/5-session-layer.svg)](https://github.com/vald-phoenix/the-osi-model/blob/master/media/5-session-layer.svg)
-
-**Figure:** L5 the session layer.
-
-This is the layer responsible for opening and closing communication between the two devices. The time between when the communication is opened and closed is known as the session. The session layer ensures that the session stays open long enough to transfer all the data being exchanged, and then promptly closes the session in order to avoid wasting resources.
-
-The session layer also synchronizes data transfer with checkpoints. For example, if a 100 megabyte file is being transferred, the session layer could set a checkpoint every 5 megabytes. In the case of a disconnect or a crash after 52 megabytes have been transferred, the session could be resumed from the last checkpoint, meaning only 50 more megabytes of data need to be transferred. Without the checkpoints, the entire transfer would have to begin again from scratch.
-
-Usually, the main tasks of L5 is authentication and authorisation, downloads files as data packets, session management.
-
-#### L4 the transport layer
-
-[![img](https://github.com/vald-phoenix/the-osi-model/raw/master/media/4-transport-layer.svg)](https://github.com/vald-phoenix/the-osi-model/blob/master/media/4-transport-layer.svg)
-
-**Figure:** L4 the transport layer.
-
-This layer is separated by two protocols like Transport Control Protocol and User Datagram Protocol. TCP is following connection-oriented transmission. It's slower but provides feedback (HTTP, FTP, etc). UDP is following connectionless transmission. It's faster but doesn't provide feedback and used when we don't care about the fullness of data (video games, music, movies, etc.).
-
-Layer 4 is responsible for end-to-end communication between the two devices. This includes taking data from the session layer and breaking it up into chunks called segments (or datagrams in case of UDP) before sending it to layer 3. The transport layer on the receiving device is responsible for reassembling the segments into data the session layer can consume.
-
-The transport layer is also responsible for flow control and error control,. Flow control determines an optimal speed of transmission to ensure that a sender with a fast connection doesn’t overwhelm a receiver with a slow connection. The transport layer performs error control on the receiving end by ensuring that the data received is complete , and checks checksums of data units and make use of automatic repeat request if it isn’t.
-
-#### L3 the network layer
-
-[![img](https://github.com/vald-phoenix/the-osi-model/raw/master/media/3-network-layer.svg)](https://github.com/vald-phoenix/the-osi-model/blob/master/media/3-network-layer.svg)
-
-**Figure:** L3 the network layer.
-
-The network layer is responsible for facilitating data transfer between two different networks. **If the two devices communicating are on the same network, then the network layer is unnecessary.** The network layer breaks up segments from the transport layer into smaller units, called packets, on the sender’s device, and reassembling these packets on the receiving device. The network layer also finds the best physical path for the data to reach its destination; this is known as routing.
-
-Main duties of this layer usually are logical addressing (IPv4, IPv6, mask, IP), routing (to whom send packets), Path determination (Open Shortest Path First, Border Gateway Protocol, intermediate system-intermediate system).
-
-#### L2 the data link layer
-
-[![img](https://github.com/vald-phoenix/the-osi-model/raw/master/media/2-data-link-layer.svg)](https://github.com/vald-phoenix/the-osi-model/blob/master/media/2-data-link-layer.svg)
-
-**Figure:** L2 the data link layer.
-
-The data link layer is very similar to the network layer, except the data link layer facilitates data transfer between two devices on the SAME network. The data link layer takes packets from the network layer and breaks them into smaller pieces called frames. Like the network layer, the data link layer is also responsible for flow control and error control in intra-network communication (The transport layer only does flow control and error control for inter-network communications).
-
-Duties usually are logical addressing (network layer), physical addressing (data link layer via MAC addresses of Network Interface Card, Switches), access media, controls how data is placed and received from the media (media access control, error detection).
-
-#### L1 the physical layer
-
-[![img](https://github.com/vald-phoenix/the-osi-model/raw/master/media/1-physical-layer.svg)](https://github.com/vald-phoenix/the-osi-model/blob/master/media/1-physical-layer.svg)
-
-**Figure:** L1 the physical layer.
-
-This layer includes the physical equipment involved in the data transfer, such as the cables and switches. This is also the layer where the data gets converted into a bit stream, which is a string of 1s and 0s. The physical layer of both devices must also agree on a signal convention so that the 1s can be distinguished from the 0s on both devices.
-
-
-**Transport layer ports**
-
-| Category         | Range       | Comments                                                     |
-| ---------------- | ----------- | ------------------------------------------------------------ |
-| Well Known Ports | 0 - 1023    | Used by system processes e.g. SSH(22), DNS(53), FTP(21), etc. |
-| Registered Ports | 1024-49151  | For specific services e.g. PostgreSQL(5432), Redis(6379), etc. |
-| Private Ports    | 49152-65535 | For private purposes e.g. to run an application              |
-
-**Important ports on transport layer**
-
-| Port Number | Protocol | Application                     |
-| ----------- | -------- | ------------------------------- |
-| 20          | TCP      | FTP data                        |
-| 21          | TCP      | FTP control                     |
-| 22          | TCP      | SSH                             |
-| 23          | TCP      | Telnet                          |
-| 25          | TCP      | SMTP                            |
-| 53          | UDP, TCP | DNS                             |
-| 67, 68      | UDP      | DHCP                            |
-| 69          | UDP      | TFTP                            |
-| 80          | TCP      | HTTP                            |
-| 110         | TCP      | POP3                            |
-| 161         | UDP      | SNMP                            |
-| 443         | TCP      | SSL                             |
-| 16384-32767 | UDP      | TRP-base Voice (VoIP) and Video |
-
-**Acronyms**
-
-These acronyms are useful to remember the OSI model.
-
-All People Seem To Need Data Processing (**L7**-**L1**).
-Please Do Not Throw Sausage Pizza Away (**L1**-**L7**).
-
-### TCP/IP model vs OSI model
-
-**TCP/IP Model** helps you to determine how a specific computer should be connected to the internet and how data should be transmitted between them. It helps you to create a virtual network when multiple computer networks are connected together. The purpose of TCP/IP model is to allow communication over large distances.
-
-TCP/IP stands for Transmission Control Protocol/ Internet Protocol. It is specifically designed as a model to offer highly reliable and end-to-end byte stream over an unreliable internetwork.
-
-| OSI Layer |     OSI      | TCP/IP Layer |     TCP/IP     | Protocol Data Unit |
-| :-------: | :----------: | :----------: | :------------: | :----------------: |
-|     7     | Application  |      4       |  Application   |        Data        |
-|     6     | Presentation |      4       |  Application   |        Data        |
-|     5     |   Session    |      4       |  Application   |        Data        |
-|     4     |  Transport   |      3       |   Transport    |      Segments      |
-|     3     |   Network    |      2       |    Internet    |      Packets       |
-|     2     |  Data Link   |      1       | Network Access |       Frames       |
-|     1     |   Physical   |      1       | Network Access |        Bits        |
-
-
-The TCP/IP model defines two end-to-end transport layer protocols: TCP and UDP. The choice will depend on the requirements of the application protocol being used. TCP is connection-oriented, is reliable, and includes flow control, while UDP is a much simpler option that provides *best effort* delivery of individual packets. UDP is connectionless and unreliable, but nevertheless well suited for real-time traffic (such as voice and video) and other applications that use a client-server communication model with simple request- reply queries.
-
-#### IP Header
-On the massive network known as the Internet, computing devices send all kinds of messages to other computing devices. A message might be a tiny ping to check if another device is online or a message could be an entire webpage.
-
-But there's a limit to how large a message can be, since there's a limit to how much data can be reasonably transmitted at once by the physical network connections between devices.
-
-That's why many networking protocols split each message into multiple small **packets**. The Internet Protocol (IP) describes the structure of the packets that whizz around the Internet.
-
-Each IP packet contains both a header (20 or 24 bytes long) and data (variable length). The header includes the IP addresses of the source and destination, plus other fields that help to route the packet. The data is the actual content, such as a string of letters or part of a webpage.
-
-**Packet format**
-
-![A diagram of an IP packet. The header is 24 bytes long and contains 15 fields, including 4 bytes for source IP address and 4 bytes for destination IP address. The payload is variable length.](https://cdn.kastatic.org/ka-perseus-images/337190cba133e19ee9d8b5878453f915971a59cd.svg)
-
-A diagram of an IP packet. The header is 24 bytes long and contains 15 fields, including 4 bytes for source IP address and 4 bytes for destination IP address. The payload is variable length.
-
-You can think of IP packets like postal letters: the header is the envelope with all the routing information that's needed by the post office, and the payload is the letter that's read only by the recipient.
-
-![Diagram of an IP packet as a postal letter. An envelope is shown with "Source IP address" as the return address and "Destination IP address" as the mailing address. The envelope is then shown in an open state, with a letter that says "Data" poking out.](https://cdn.kastatic.org/ka-perseus-images/ee135be8f541bd55939b0ea21a1429fd06158766.svg)
-
-Diagram of an IP packet as a postal letter. An envelope is shown with "Source IP address" as the return address and "Destination IP address" as the mailing address. The envelope is then shown in an open state, with a letter that says "Data" poking out.
-
-Just like the postal system routes postal letters around the world, the Internet Protocol routes IP packets around the Internet.
-
-#### TCP Header
-
-The **Transmission Control Protocol (TCP)** is a transport protocol that is used on top of IP to ensure reliable transmission of packets.
-
-TCP includes mechanisms to solve many of the problems that arise from packet-based messaging, such as lost packets, out of order packets, duplicate packets, and corrupted packets.
-
-Since TCP is the protocol used most commonly on top of IP, the Internet protocol stack is sometimes referred to as **TCP/IP**.
-
-**Packet format**
-
-When sending packets using TCP/IP, the data portion of each [IP packet(Opens in a new window)](https://www.khanacademy.org/a/ip-packets) is formatted as a **TCP segment**.
-
-![Diagram of a TCP segment within an IP packet. The IP packet contains header and data sections. The IP data section is the TCP segment, which itself contains header and data sections.](https://cdn.kastatic.org/ka-perseus-images/e5fdf560fdb40a1c0b3c3ce96f570e5f00fff161.svg)
-
-Diagram of a TCP segment within an IP packet. The IP packet contains header and data sections. The IP data section is the TCP segment, which itself contains header and data sections.
-
-Each TCP segment contains a header and data. The TCP header contains many more fields than the UDP header and can range in size from 202020 to 606060 bytes, depending on the size of the options field.
-
-The TCP header shares some fields with the UDP header: source port number, destination port number, and checksum. To remember how those are used, review the [UDP article](https://www.khanacademy.org/a/user-datagram-protocol-udp).
-
-
-Let's step through the process of transmitting a packet with TCP/IP.
-
-##### Step 1: Establish connection
-
-When two computers want to send data to each other over TCP, they first need to establish a connection using a **three-way handshake**.
-
-![Diagram of two computers with arrows between.  * Arrow goes from Computer 1 to Computer 2 with "SYN" label. * Arrow goes from Computer 2 to Computer 1 with "ACK SYN" label. * Arrow goes from Computer 1 to Computer 2 with "ACK" label.](https://cdn.kastatic.org/ka-perseus-images/d09f9d37ff2a2deb21a8822f8c99ba6b86319f0b.svg)
-
-Diagram of two computers with arrows between.Arrow goes from Computer 1 to Computer 2 with "SYN" label.Arrow goes from Computer 2 to Computer 1 with "ACK SYN" label.Arrow goes from Computer 1 to Computer 2 with "ACK" label.
-
-The first computer sends a packet with the SYN bit set to 111 (SYN = "synchronize?"). The second computer sends back a packet with the ACK bit set to 111 (ACK = "acknowledge!") plus the SYN bit set to 111. The first computer replies back with an ACK.
-
-The SYN and ACK bits are both part of the TCP header:
-
-![A diagram of the TCP header with rows of fields. Each row is 32 bits long. The first row contains a 16-bit source port number and 16-bit destination port number. The second row contains a 32-bit sequence number. The third row contains a 32-bit acknowledgement number. The fourth row contains a 4-bit data offset number, 6 bits that are marked as reserved, 6 control bits (URG, ACK, PSH, RST, SYN, and FIN), and a 16-bit window size number. The fifth row contains a 16-bit checksum and 16-bit urgent pointer. The header ends with options and padding which can be of variable length.](https://cdn.kastatic.org/ka-perseus-images/9a4a79816965be53e1071cf6b0e2991cb4d170ca.svg)
-
-A diagram of the TCP header with rows of fields. Each row is 32 bits long. The first row contains a 16-bit source port number and 16-bit destination port number. The second row contains a 32-bit sequence number. The third row contains a 32-bit acknowledgement number. The fourth row contains a 4-bit data offset number, 6 bits that are marked as reserved, 6 control bits (URG, ACK, PSH, RST, SYN, and FIN), and a 16-bit window size number. The fifth row contains a 16-bit checksum and 16-bit urgent pointer. The header ends with options and padding which can be of variable length.
-
-The ACK and SYN bits are highlighted on the fourth row of the header.
-
-In fact, the three packets involved in the three-way handshake do not typically include any data. Once the computers are done with the handshake, they're ready to receive packets containing actual data.
-
-##### Step 2: Send packets of data
-
-When a packet of data is sent over TCP, the recipient must always acknowledge what they received.
-
-![Diagram of two computers with arrows between.  * Arrow goes from Computer 1 to Computer 2 and shows a box of binary data and the label "Sequence #1". * Arrow goes from Computer 2 to Computer 1 with "ACK" label.](https://cdn.kastatic.org/ka-perseus-images/2cfc6b88b3b5c3a27386503d347524c2065a57d9.svg)
-
-Diagram of two computers with arrows between.Arrow goes from Computer 1 to Computer 2 and shows a box of binary data and the label "Sequence #1".Arrow goes from Computer 2 to Computer 1 with "ACK" label.
-
-The first computer sends a packet with data and a sequence number. The second computer acknowledges it by setting the ACK bit and increasing the acknowledgement number by the length of the received data.
-
-The sequence and acknowledgement numbers are part of the TCP header:
-
-![A diagram of the TCP header with rows of fields. Each row is 32 bits long. The first row contains a 16-bit source port number and 16-bit destination port number. The second row contains a 32-bit sequence number. The third row contains a 32-bit acknowledgement number. The fourth row contains a 4-bit data offset number, 6 bits that are marked as reserved, 6 control bits (URG, ACK, PSH, RST, SYN, and FIN), and a 16-bit window size number. The fifth row contains a 16-bit checksum and 16-bit urgent pointer. The header ends with options and padding which can be of variable length.](https://cdn.kastatic.org/ka-perseus-images/ec71832edb1f2ff1d2ad12da494033ce2b25aafa.svg)
-
-A diagram of the TCP header with rows of fields. Each row is 32 bits long. The first row contains a 16-bit source port number and 16-bit destination port number. The second row contains a 32-bit sequence number. The third row contains a 32-bit acknowledgement number. The fourth row contains a 4-bit data offset number, 6 bits that are marked as reserved, 6 control bits (URG, ACK, PSH, RST, SYN, and FIN), and a 16-bit window size number. The fifth row contains a 16-bit checksum and 16-bit urgent pointer. The header ends with options and padding which can be of variable length.
-
-The 32-bit sequence and acknowledgement numbers are highlighted.
-
-Those two numbers help the computers to keep track of which data was successfully received, which data was lost, and which data was accidentally sent twice.
-
-##### Step 3: Close the connection
-
-Either computer can close the connection when they no longer want to send or receive data.
-
-![Diagram of two computers with arrows between.  * Arrow goes from Computer 1 to Computer 2 with "FIN" label. * Arrow goes from Computer 2 to Computer 1 with "ACK FIN" label. * Arrow goes from Computer 1 to Computer 2 with "ACK" label.](https://cdn.kastatic.org/ka-perseus-images/f158ea181534ee675d0928fa657897cefc04359e.svg)
-
-Diagram of two computers with arrows between.Arrow goes from Computer 1 to Computer 2 with "FIN" label.Arrow goes from Computer 2 to Computer 1 with "ACK FIN" label.Arrow goes from Computer 1 to Computer 2 with "ACK" label.
-
-A computer initiates closing the connection by sending a packet with the FIN bit set to 1 (FIN = finish). The other computer replies with an ACK and another FIN. After one more ACK from the initiating computer, the connection is closed.
-
-**Detecting lost packets**
-
-TCP connections can detect lost packets using a timeout.
-
-![Diagram demonstrating re-transmission of a packet from one computer to another computer. Arrow goes from first computer to second computer and is labeled with "sequence #1" and a string of binary data. A stopwatch is shown in various stages after the arrow, first with 0 time passed, then half the time passed, then all time passed and in an alarm state. The another arrow goes from the first laptop to second laptop, labeled the same as the first.](https://cdn.kastatic.org/ka-perseus-images/b1017461d232cd46fa5b445f80e75568bf31c57c.svg)
-
-Diagram demonstrating re-transmission of a packet from one computer to another computer. Arrow goes from first computer to second computer and is labeled with "sequence #1" and a string of binary data. A stopwatch is shown in various stages after the arrow, first with 0 time passed, then half the time passed, then all time passed and in an alarm state. The another arrow goes from the first laptop to second laptop, labeled the same as the first.
-
-After sending off a packet, the sender starts a timer and puts the packet in a retransmission queue. If the timer runs out and the sender has not yet received an ACK from the recipient, it sends the packet again.
-
-The retransmission may lead to the recipient receiving duplicate packets, if a packet was not actually lost but just very slow to arrive or be acknowledged. If so, the recipient can simply discard duplicate packets. It's better to have the data twice than not at all!
-
-**Handling out of order packets**
-
-TCP connections can detect out of order packets by using the sequence and acknowledgement numbers.
-
-![Diagram of two computers with arrows between.  * Arrow goes from Computer 1 to Computer 2 and shows a box of binary data with the label "Seq #1". * Arrow goes from Computer 2 to Computer 1 with the label "Ack #37". * Arrow goes from Computer 1 to Computer 2 and shows a box of binary data with the label "Seq #73". * Arrow goes from Computer 2 to Computer 1 with the label "Ack #37".](https://cdn.kastatic.org/ka-perseus-images/27f4fa1915c98689623e0ee224416c5290afc65a.svg)
-
-Diagram of two computers with arrows between.Arrow goes from Computer 1 to Computer 2 and shows a box of binary data with the label "Seq #1".Arrow goes from Computer 2 to Computer 1 with the label "Ack #37".Arrow goes from Computer 1 to Computer 2 and shows a box of binary data with the label "Seq #73".Arrow goes from Computer 2 to Computer 1 with the label "Ack #37".
-
-When the recipient sees a higher sequence number than what they have acknowledged so far, they know that they are missing at least one packet in between. In the situation pictured above, the recipient sees a sequence number of #73 but expected a sequence number of #37. The recipient lets the sender know there's something amiss by sending a packet with an acknowledgement number set to the expected sequence number.
-
-Sometimes the missing packet is simply taking a slower route through the Internet and it arrives soon after.
-
-![Diagram of TCP packets arriving out of order. Two computers are shown with arrows going back and forth, with their vertical location indicating the time of sending and arrival:  * An arrow labeled "Seq #1" starts from Computer 1 and ends soon after at Computer 2. * An arrow labeled "Ack #37" starts from Computer 2 and ends soon after at Computer 1. * An arrow labeled "Seq #37" starts from Computer 1 and doesn't end until much later at Computer 2.  * An arrow labeled "Seq #73" starts from Computer 1 and ends soon after at Computer 2 (before the arrow for "Seq #37"). * An arrow labeled "Ack #37" starts from Computer 2 and ends soon after at Computer 1 (before the arrow for "Seq #37").](https://cdn.kastatic.org/ka-perseus-images/c96ec5ae0784f98e14d7a1c45b0dc65203b6bf48.svg)
-
-Diagram of TCP packets arriving out of order. Two computers are shown with arrows going back and forth, with their vertical location indicating the time of sending and arrival:An arrow labeled "Seq #1" starts from Computer 1 and ends soon after at Computer 2.An arrow labeled "Ack #37" starts from Computer 2 and ends soon after at Computer 1.An arrow labeled "Seq #37" starts from Computer 1 and doesn't end until much later at Computer 2.An arrow labeled "Seq #73" starts from Computer 1 and ends soon after at Computer 2 (before the arrow for "Seq #37").An arrow labeled "Ack #37" starts from Computer 2 and ends soon after at Computer 1 (before the arrow for "Seq #37").
-
-Other times, the missing packet may actually be a lost packet and the sender must retransmit the packet.
-
-![Diagram of TCP packets arriving out of order. Two computers are shown with arrows going back and forth, with their vertical location indicating the time of sending and arrival:  * An arrow labeled "Seq #1" starts from Computer 1 and ends soon after at Computer 2. * An arrow labeled "Ack #37" starts from Computer 2 and ends soon after at Computer 1. * An arrow labeled "Seq #37" starts from Computer 1 and ends before reaching Computer 2, with an X indicating it was lost.  * An arrow labeled "Seq #73" starts from Computer 1 and ends soon after at Computer 2. * An arrow labeled "Ack #37" starts from Computer 2 and ends soon after at Computer 1. * An arrow labeled "Seq #37" starts from Computer 1 and ends soon after at Computer 2.](https://cdn.kastatic.org/ka-perseus-images/bdeaf7f92aa9f48d5d103888a63a34704b755104.svg)
-
-Diagram of TCP packets arriving out of order. Two computers are shown with arrows going back and forth, with their vertical location indicating the time of sending and arrival:An arrow labeled "Seq #1" starts from Computer 1 and ends soon after at Computer 2.An arrow labeled "Ack #37" starts from Computer 2 and ends soon after at Computer 1.An arrow labeled "Seq #37" starts from Computer 1 and ends before reaching Computer 2, with an X indicating it was lost.An arrow labeled "Seq #73" starts from Computer 1 and ends soon after at Computer 2.An arrow labeled "Ack #37" starts from Computer 2 and ends soon after at Computer 1.An arrow labeled "Seq #37" starts from Computer 1 and ends soon after at Computer 2.
-
-In both situations, the recipient has to deal with out of order packets. Fortunately, the recipient can use the sequence numbers to reassemble the packet data in the correct order.
-
-![A diagram of TCP data reassembly. ](https://cdn.kastatic.org/ka-perseus-images/5fbe9cbfb51c95ad73beb2c536749908a8057889.svg)
+#### 5.4.4 Virtual Local Area Networks (VLANs)
