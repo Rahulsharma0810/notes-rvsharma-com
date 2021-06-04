@@ -1,5 +1,3 @@
-## Basic Security
-
 Well, the first step in solving a problem is recognizing that there is one. The second most effective step is ensuring that you understand what needs to be solved or, in other words, what is the problem? And if you are presented with questions for which there may be multiple answers (or multiple choices, as in your certification exam), a good starting point is to eliminate all those options that do not apply. In an attempt to summarize what the practice of security could signify, it is probably easier to begin by defining what it is not:
 
 
@@ -34,7 +32,7 @@ A security policy is related to an organization’s business strategy and, as su
 
 - **Procedures** These include step-by-step instructions for performing specific tasks. They define how policies, standards, and guidelines are implemented within the operating environment.
 
-### Basic Security Concepts
+### Security Concepts
 
 **Vulnerability, Threat, and Security Risk**
 

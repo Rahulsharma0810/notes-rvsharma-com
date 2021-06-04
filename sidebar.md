@@ -6,8 +6,8 @@
 
 - **Security**
   - [Basics](Security/notes.md)
-  - [Certifications](Certifications/notes.md)
-  - [Compliances](Security/notes.md)
+  - [Certifications](Security/Certifications/notes.md)
+  - [Compliances](Security/Compliances/notes.md)
 
 
 <!-- Compliances

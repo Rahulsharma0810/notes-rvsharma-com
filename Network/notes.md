@@ -228,7 +228,7 @@ The process of encapsulation can be more complex: for example a large message ma
 
 ### 1.6 Networks Under Attack
 
-### Malware
+#### Malware
 Along with all the good files we exchange on the Internet, come malicious software, collectively known as **malware** that can also enter and infect our devices.
 Once a device infected, the malware can do all kinds of evil things: deleting files, install spyware...
 A compromised host may also be enrolled in a network of thousands of similarly compromised devices, known as **botnet** which can be used for spam or distributed denial-of-service.
@@ -237,7 +237,7 @@ Much of the malware is **self-replicating**: it seeks entry into other hosts fro
  - **Viruses** are malware that requires some form of user interaction to infect the user's device.
  - **Worms** are malware that can enter a device without any explicit user interaction.
 
-### DoS
+#### DoS
 Denial-of-Service attacks render a network, host, or other piece of infrastructure unusable by legittimate users. Most of them fall into one of the three categories:
 
  - *Vulnerability Attack*: a few well-crafted messages are sent to a vulnerable application or operating system running on the targeted host. The service might stop or the host might crash.
@@ -246,15 +246,15 @@ Denial-of-Service attacks render a network, host, or other piece of infrastructu
 
 In a **distributed DoS** (**DDoS**) attack the attacker controls multiple sources and has each source blast traffic at the target.
 
-### Sniffing
+#### Sniffing
 A passive receiver can record a copy of every packet that passes through the network. It is then called a **packet sniffer**.
 Because packet sniffers are *passive* (they do not inject packets into the channel), they are difficult to detect. Some of the best defenses against packet sniffing involve cryptography.
 
-### Spoofing
+#### Spoofing
 The ability to inject packets into the Internet with a false source address is known as **IP Spoofing** and is but one of many ways in which one user can masquerade as another user.
 To solve this problem we will need *end-point authentication*.
 
-### The history of the Internet shaped is structure
+#### The history of the Internet shaped is structure
 The Internet was originally designed to be based on the model of a *group of mutually trusting users attached to a transparent network*, a model in which there is no need for security. Many aspects of the original Internet architecture deeply reflect this notion of mutual trust, such as the ability for one to send a packet to any other user is the default rather than a requested/granted capability.
 However today's Internet certainly does not involve "mutually trusted users": communication among mutually trusted users is the exception rather the rule.
 
@@ -965,10 +965,10 @@ Because TCP uses acknowledgements to trigger (or clock) its increase in congesti
  2. *An acknowledged segment means the network's working, therefore the sender's rate can be increased* (if ACK of unacknowledged segment)
  3. *Bandwidth probing*: the transmission rates increases with ACKs and decreases with loss events: TCP is continuously checking (probing) the congestion state of the network
 
-### TCP Congestion-Control Algorithm
+#### TCP Congestion-Control Algorithm
 Three components :
 
-#### 1 - Slow Start
+##### 1 - Slow Start
 When a TCP connection begins, `cwnd` is usually initialized to a small value of 1 MSS and only one segment is sent. **Each acknowledged packet** will cause the `cwnd` to be increased by 1 MSS and the sender will send now two segments (because the window is increased by one for each ack).
 Therefore the number of segments doubles at each RTT, therefore the sending rate also doubles every RTT. Thus TCP send rate **starts slow but grows exponentially during the slow start phase**.
 When does the growth end?
@@ -978,7 +978,7 @@ When does the growth end?
  - When `cwnd >= ssthresh` slow starts is stopped -> congestion avoidance state
  - Three duplicate ACKs: fast retransmit and fast recovery state
 
-#### 2 - Congestion Avoidance
+##### 2 - Congestion Avoidance
 TCP suppose congestion is present, how to adapt?
 Instead of doubling `cwnd` every RTT, `cwnd` is increased **by just a single MSS every RTT**.
 When should this linear increase stop?
@@ -986,7 +986,7 @@ When should this linear increase stop?
  - Timeout: `cwnd` is set to 1 MSS, and `ssthresh = cwnd (when loss happened) / 2`
  - Three duplicate ACKs: `cwnd = (cwnd / 2) + 3 MSS` and `ssthresh = cwnd (when 3 ACKs received) / 2` -> fast recovery state
 
-#### 3 - Fast Recovery
+##### 3 - Fast Recovery
 `cwnd` is increased by 1 MSS for every duplicate ACK received for the missing state that caused TCP to enter this state. When the ACK arrives for the missing segment, TCP goes into Congestion Avoidance after reducing `cwnd`.
 If a timeout occurs `cwnd` is set to 1 MSS and `ssthresh` is set to half the value of `cwnd` when the loss event occurred.
 Fast recovery is recommended but not required in TCP, in fact only the newer version of TCP, **TCP Reno** incorporated fast recovery.
