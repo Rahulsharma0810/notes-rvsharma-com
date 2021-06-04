@@ -1,9 +1,6 @@
 - **Getting Started**
   - [Home](/)
 
-- **Networks**
-  - [Basics](Network/notes.md)
-
 - **Security**
   - [Basics](Security/notes.md)
   - [Certifications](Security/Certifications/notes.md)
