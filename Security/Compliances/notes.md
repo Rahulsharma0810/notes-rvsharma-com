@@ -1,16 +1,17 @@
 ## PCI-DSS
 
 ### Checklist
-Install and maintain a firewall configuration to protect cardholder data.
-Do not use vendor-supplied defaults for system passwords and other security parameters.
-Protect stored cardholder data.
-Encrypt transmission of cardholder data across open, public networks.
-Use and regularly update anti-virus software.
-Develop and maintain secure systems and applications.
-Restrict access to cardholder data by business need-to-know. Assign a unique ID to each person with computer access. Restrict physical access to cardholder data.
-Track and monitor all access to network resources and cardholder data.
-Regularly test security systems and processes.
-Maintain a policy that addresses information security.
+1. Install and maintain a firewall configuration to protect cardholder data.
+2. Do not use vendor-supplied defaults for system passwords and other security parameters.
+3. Protect stored cardholder data.
+4. Encrypt transmission of cardholder data across open, public networks.
+5. Use and regularly update anti-virus software.
+6. Develop and maintain secure systems and applications.
+7. Restrict access to cardholder data by business need-to-know. Assign a unique ID to each person with computer
+8. access. Restrict physical access to cardholder data.
+9. Track and monitor all access to network resources and cardholder data.
+10. Regularly test security systems and processes.
+11. Maintain a policy that addresses information security.
 
 
 | Version |  Date    |
