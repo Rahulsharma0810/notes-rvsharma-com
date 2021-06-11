@@ -5,20 +5,20 @@ Install and maintain a firewall configuration to protect cardholder data.
 
 | Cloud                                                             | Category                | Plugin                                  | Description                                                                                                  |
 | ----------------------------------------------------------------- | ----------------------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| ![](https://cloud.aquasec.com/assets/img/clouds/oracle-small.png) | Database                | DB Network Security Groups Enabled      | Ensures that all databases have network security groups enabled.                                             |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | EC2                     | Excessive Security Groups               | Determine if there are an excessive number of security groups in the account                                 |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | EC2                     | Detect EC2 Classic Instances            | Ensures AWS VPC is being used for instances instead of EC2 Classic                                           |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | EC2                     | Default Security Group                  | Ensure the default security groups block all traffic by default                                              |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | EC2                     | Open All Ports Protocols                | Determine if security group has all ports or protocols open to the public                                    |
-| ![](https://cloud.aquasec.com/assets/img/clouds/azure-small.png)  | Log Alerts              | SQL Server Firewall Rule Alerts Monitor | Ensures Activity Log Alerts for the create or update and delete SQL Server Firewall Rules events are enabled |
-| ![](https://cloud.aquasec.com/assets/img/clouds/azure-small.png)  | Log Alerts              | Virtual Network Alerts Monitor          | Ensures Activity Log Alerts for the create or update and delete Virtual Networks events are enabled          |
-| ![](https://cloud.aquasec.com/assets/img/clouds/azure-small.png)  | Network Security Groups | Default Security Group                  | Ensures that default security groups block all traffic by default                                            |
-| ![](https://cloud.aquasec.com/assets/img/clouds/azure-small.png)  | Network Security Groups | Open All Ports                          | Ensures Network Security Groups do not expose all ports to the public                                        |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | RDS                     | RDS Publicly Accessible                 | Ensures RDS instances are not launched into the public cloud                                                 |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | Redshift                | Redshift Publicly Accessible            | Ensures Redshift clusters are not launched into the public cloud                                             |
-| ![](https://cloud.aquasec.com/assets/img/clouds/azure-small.png)  | Storage Accounts        | Network Access Default Action           | Ensures that Storage Account access is restricted to trusted networks                                        |
-| ![](https://cloud.aquasec.com/assets/img/clouds/google-small.png) | VPC Network             | Excessive Firewall Rules                | Determines if there are an excessive number of firewall rules in the account                                 |
-| ![](https://cloud.aquasec.com/assets/img/clouds/google-small.png) | VPC Network             | Open All Ports                          | Determines if all ports are open to the public                                                               |
+| ![](assets/oracle-small.png) | Database                | DB Network Security Groups Enabled      | Ensures that all databases have network security groups enabled.                                             |
+| ![](assets/aws-small.png)    | EC2                     | Excessive Security Groups               | Determine if there are an excessive number of security groups in the account                                 |
+| ![](assets/aws-small.png)    | EC2                     | Detect EC2 Classic Instances            | Ensures AWS VPC is being used for instances instead of EC2 Classic                                           |
+| ![](assets/aws-small.png)    | EC2                     | Default Security Group                  | Ensure the default security groups block all traffic by default                                              |
+| ![](assets/aws-small.png)    | EC2                     | Open All Ports Protocols                | Determine if security group has all ports or protocols open to the public                                    |
+| ![](assets/azure-small.png)  | Log Alerts              | SQL Server Firewall Rule Alerts Monitor | Ensures Activity Log Alerts for the create or update and delete SQL Server Firewall Rules events are enabled |
+| ![](assets/azure-small.png)  | Log Alerts              | Virtual Network Alerts Monitor          | Ensures Activity Log Alerts for the create or update and delete Virtual Networks events are enabled          |
+| ![](assets/azure-small.png)  | Network Security Groups | Default Security Group                  | Ensures that default security groups block all traffic by default                                            |
+| ![](assets/azure-small.png)  | Network Security Groups | Open All Ports                          | Ensures Network Security Groups do not expose all ports to the public                                        |
+| ![](assets/aws-small.png)    | RDS                     | RDS Publicly Accessible                 | Ensures RDS instances are not launched into the public cloud                                                 |
+| ![](assets/aws-small.png)    | Redshift                | Redshift Publicly Accessible            | Ensures Redshift clusters are not launched into the public cloud                                             |
+| ![](assets/azure-small.png)  | Storage Accounts        | Network Access Default Action           | Ensures that Storage Account access is restricted to trusted networks                                        |
+| ![](assets/google-small.png) | VPC Network             | Excessive Firewall Rules                | Determines if there are an excessive number of firewall rules in the account                                 |
+| ![](assets/google-small.png) | VPC Network             | Open All Ports                          | Determines if all ports are open to the public                                                               |
 
 ### Requirement 2 - Defaults
 Do not use vendor-supplied defaults for system passwords and other security parameters.
@@ -26,8 +26,8 @@ Do not use vendor-supplied defaults for system passwords and other security para
 
 | Cloud                                                             | Category    | Plugin                | Description                                                                 |
 | ----------------------------------------------------------------- | ----------- | --------------------- | --------------------------------------------------------------------------- |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | KMS         | KMS Default Key Usage | Checks AWS services to ensure the default KMS key is not being used         |
-| ![](https://cloud.aquasec.com/assets/img/clouds/google-small.png) | VPC Network | Default VPC In Use    | Determines whether the default VPC is being used for launching VM instances |
+| ![](assets/aws-small.png)    | KMS         | KMS Default Key Usage | Checks AWS services to ensure the default KMS key is not being used         |
+| ![](assets/google-small.png) | VPC Network | Default VPC In Use    | Determines whether the default VPC is being used for launching VM instances |
 
 
 ### Requirement 3 - Cardholder Data
@@ -35,95 +35,95 @@ Protect stored cardholder data.
 
 | Cloud                                                             | Category           | Plugin                      | Description                                                             |
 | ----------------------------------------------------------------- | ------------------ | --------------------------- | ----------------------------------------------------------------------- |
-| ![](https://cloud.aquasec.com/assets/img/clouds/google-small.png) | Compute            | CSEK Encryption Enabled     | Ensures Customer Supplied Encryption Key Encryption is enabled on disks |
-| ![](https://cloud.aquasec.com/assets/img/clouds/google-small.png) | Cryptographic Keys | Key Rotation                | Ensures cryptographic keys are set to rotate on a regular schedule      |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | EC2                | EBS Encryption Enabled      | Ensures EBS volumes are encrypted at rest                               |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | KMS                | KMS Key Rotation            | Ensures KMS keys are set to rotate on a regular schedule                |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | RDS                | RDS Encryption Enabled      | Ensures at-rest encryption is setup for RDS instances                   |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | SQS                | SQS Encrypted               | Ensures SQS encryption is enabled                                       |
-| ![](https://cloud.aquasec.com/assets/img/clouds/azure-small.png)  | Storage Accounts   | Storage Accounts Encryption | Ensures encryption is enabled for Storage Accounts                      |
-| ![](https://cloud.aquasec.com/assets/img/clouds/azure-small.png)  | Virtual Machines   | VM OS Disk Encryption       | Ensures that VM OS Disk Encryption is enabled for virtual machines      |
-| ![](https://cloud.aquasec.com/assets/img/clouds/azure-small.png)  | Virtual Machines   | VM Data Disk Encryption     | Ensure that Data Disk Encryption is enabled for virtual machines        |
+| ![](assets/google-small.png) | Compute            | CSEK Encryption Enabled     | Ensures Customer Supplied Encryption Key Encryption is enabled on disks |
+| ![](assets/google-small.png) | Cryptographic Keys | Key Rotation                | Ensures cryptographic keys are set to rotate on a regular schedule      |
+| ![](assets/aws-small.png)    | EC2                | EBS Encryption Enabled      | Ensures EBS volumes are encrypted at rest                               |
+| ![](assets/aws-small.png)    | KMS                | KMS Key Rotation            | Ensures KMS keys are set to rotate on a regular schedule                |
+| ![](assets/aws-small.png)    | RDS                | RDS Encryption Enabled      | Ensures at-rest encryption is setup for RDS instances                   |
+| ![](assets/aws-small.png)    | SQS                | SQS Encrypted               | Ensures SQS encryption is enabled                                       |
+| ![](assets/azure-small.png)  | Storage Accounts   | Storage Accounts Encryption | Ensures encryption is enabled for Storage Accounts                      |
+| ![](assets/azure-small.png)  | Virtual Machines   | VM OS Disk Encryption       | Ensures that VM OS Disk Encryption is enabled for virtual machines      |
+| ![](assets/azure-small.png)  | Virtual Machines   | VM Data Disk Encryption     | Ensure that Data Disk Encryption is enabled for virtual machines        |
 
 ### Requirement 4 - Encrypted Transmission
 Encrypt transmission of cardholder data across open, public networks
 
 | Cloud                                                             | Category         | Plugin                         | Description                                                                                                   |
 | ----------------------------------------------------------------- | ---------------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------- |
-| ![](https://cloud.aquasec.com/assets/img/clouds/azure-small.png)  | App Service      | HTTPS Only Enabled             | Ensures HTTPS Only is enabled for App Services, redirecting all HTTP traffic to HTTPS                         |
-| ![](https://cloud.aquasec.com/assets/img/clouds/azure-small.png)  | CDN Profiles     | Detect Insecure Custom Origin  | Ensures that HTTPS is enabled for CDN endpoints with a custom origin                                          |
-| ![](https://cloud.aquasec.com/assets/img/clouds/google-small.png) | CLB              | CLB HTTPS Only                 | Ensures CLBs are configured to only accept connections on HTTPS ports                                         |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | CloudFront       | Insecure CloudFront Protocols  | Detects the use of insecure HTTPS SSL/TLS protocols for use with HTTPS traffic between viewers and CloudFront |
-| ![](https://cloud.aquasec.com/assets/img/clouds/oracle-small.png) | Compute          | Boot Volume Transit Encryption | Ensures in-transit data encryption is enabled on boot volumes.                                                |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | ELB              | Insecure Ciphers               | Detect use of insecure ciphers on ELBs                                                                        |
-| ![](https://cloud.aquasec.com/assets/img/clouds/google-small.png) | SQL              | Database SSL Enabled           | Ensures SQL databases have SSL enabled                                                                        |
-| ![](https://cloud.aquasec.com/assets/img/clouds/azure-small.png)  | Storage Accounts | Storage Accounts HTTPS         | Ensures HTTPS-only traffic is allowed to storage account endpoints                                            |
+| ![](assets/azure-small.png)  | App Service      | HTTPS Only Enabled             | Ensures HTTPS Only is enabled for App Services, redirecting all HTTP traffic to HTTPS                         |
+| ![](assets/azure-small.png)  | CDN Profiles     | Detect Insecure Custom Origin  | Ensures that HTTPS is enabled for CDN endpoints with a custom origin                                          |
+| ![](assets/google-small.png) | CLB              | CLB HTTPS Only                 | Ensures CLBs are configured to only accept connections on HTTPS ports                                         |
+| ![](assets/aws-small.png)    | CloudFront       | Insecure CloudFront Protocols  | Detects the use of insecure HTTPS SSL/TLS protocols for use with HTTPS traffic between viewers and CloudFront |
+| ![](assets/oracle-small.png) | Compute          | Boot Volume Transit Encryption | Ensures in-transit data encryption is enabled on boot volumes.                                                |
+| ![](assets/aws-small.png)    | ELB              | Insecure Ciphers               | Detect use of insecure ciphers on ELBs                                                                        |
+| ![](assets/google-small.png) | SQL              | Database SSL Enabled           | Ensures SQL databases have SSL enabled                                                                        |
+| ![](assets/azure-small.png)  | Storage Accounts | Storage Accounts HTTPS         | Ensures HTTPS-only traffic is allowed to storage account endpoints                                            |
 
 ### Requirement 5 - Anti-Virus and Malware
 Protect all systems against malware and regularly update anti-virus software or programs.
 
 | Cloud                                                            | Category         | Plugin                 | Description                                                             |
 | ---------------------------------------------------------------- | ---------------- | ---------------------- | ----------------------------------------------------------------------- |
-| ![](https://cloud.aquasec.com/assets/img/clouds/azure-small.png) | Virtual Machines | VM Endpoint Protection | Ensures that VM Endpoint Protection is enabled for all virtual machines |
+| ![](assets/azure-small.png) | Virtual Machines | VM Endpoint Protection | Ensures that VM Endpoint Protection is enabled for all virtual machines |
 
 ### Requirement 6 - Secure Systems
 Develop and maintain secure systems and applications.
 
 | Cloud                                                             | Category      | Plugin                      | Description                                                                      |
 | ----------------------------------------------------------------- | ------------- | --------------------------- | -------------------------------------------------------------------------------- |
-| ![](https://cloud.aquasec.com/assets/img/clouds/google-small.png) | Compute       | OS Login Enabled            | Ensures OS login is enabled for the project                                      |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | ConfigService | Config Service Enabled      | Ensures the AWS Config Service is enabled to detect changes to account resources |
-| ![](https://cloud.aquasec.com/assets/img/clouds/oracle-small.png) | Database      | DB Private Subnet Only      | Ensures that all database systems are in private subnets only.                   |
-| ![](https://cloud.aquasec.com/assets/img/clouds/oracle-small.png) | Identity      | Password Requires Lowercase | Ensures password policy requires at least one lowercase letter.                  |
-| ![](https://cloud.aquasec.com/assets/img/clouds/oracle-small.png) | Identity      | Password Requires Numbers   | Ensures password policy requires at least one number.                            |
-| ![](https://cloud.aquasec.com/assets/img/clouds/oracle-small.png) | Identity      | Password Requires Symbols   | Ensures password policy requires at least one symbol.                            |
-| ![](https://cloud.aquasec.com/assets/img/clouds/oracle-small.png) | Identity      | Password Requires Uppercase | Ensures password policy requires at least one uppercase character.               |
-| ![](https://cloud.aquasec.com/assets/img/clouds/oracle-small.png) | Identity      | Minimum Password Length     | Ensures password policy requires a minimum password length.                      |
+| ![](assets/google-small.png) | Compute       | OS Login Enabled            | Ensures OS login is enabled for the project                                      |
+| ![](assets/aws-small.png)    | ConfigService | Config Service Enabled      | Ensures the AWS Config Service is enabled to detect changes to account resources |
+| ![](assets/oracle-small.png) | Database      | DB Private Subnet Only      | Ensures that all database systems are in private subnets only.                   |
+| ![](assets/oracle-small.png) | Identity      | Password Requires Lowercase | Ensures password policy requires at least one lowercase letter.                  |
+| ![](assets/oracle-small.png) | Identity      | Password Requires Numbers   | Ensures password policy requires at least one number.                            |
+| ![](assets/oracle-small.png) | Identity      | Password Requires Symbols   | Ensures password policy requires at least one symbol.                            |
+| ![](assets/oracle-small.png) | Identity      | Password Requires Uppercase | Ensures password policy requires at least one uppercase character.               |
+| ![](assets/oracle-small.png) | Identity      | Minimum Password Length     | Ensures password policy requires a minimum password length.                      |
 
 ### Requirement 7 - Restrict Access
 Restrict access to cardholder data by business need to know.
 
 | Cloud                                                             | Category                | Plugin                        | Description                                                                                                     |
 | ----------------------------------------------------------------- | ----------------------- | ----------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| ![](https://cloud.aquasec.com/assets/img/clouds/azure-small.png)  | App Service             | Authentication Enabled        | Ensures Authentication is enabled for App Services, redirecting unauthenticated users to the login page.        |
-| ![](https://cloud.aquasec.com/assets/img/clouds/azure-small.png)  | Blob Service            | Blob Container Private Access | Ensures that all blob containers do not have anonymous public access set                                        |
-| ![](https://cloud.aquasec.com/assets/img/clouds/google-small.png) | Compute                 | VM Instances Least Privilege  | Ensures that instances are not configured to use the default service account with full access to all cloud APIs |
-| ![](https://cloud.aquasec.com/assets/img/clouds/azure-small.png)  | File Service            | File Service All Access ACL   | Ensures file shares do not allow full write, delete, or read ACL permissions                                    |
-| ![](https://cloud.aquasec.com/assets/img/clouds/oracle-small.png) | File Storage            | NFS Public Access             | Ensures that all file systems do not have public access.                                                        |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | IAM                     | Root Account In Use           | Ensures the root account is not being actively used                                                             |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | IAM                     | IAM User Admins               | Ensures the number of IAM admins in the account are minimized                                                   |
-| ![](https://cloud.aquasec.com/assets/img/clouds/oracle-small.png) | Identity                | Users MFA Enabled             | Ensures a multi-factor authentication device is enabled for all users within the account.                       |
-| ![](https://cloud.aquasec.com/assets/img/clouds/azure-small.png)  | Network Security Groups | Open All Ports                | Ensures Network Security Groups do not expose all ports to the public                                           |
-| ![](https://cloud.aquasec.com/assets/img/clouds/oracle-small.png) | Object Store            | Bucket Public Access Type     | Ensures object store buckets do not allow global write, delete, or read permissions                             |
-| ![](https://cloud.aquasec.com/assets/img/clouds/azure-small.png)  | Queue Service           | Queue Service All Access ACL  | Ensures queues do not allow full write, delete, or read ACL permissions                                         |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | S3                      | S3 Bucket All Users Policy    | Ensures S3 bucket policies do not allow global write, delete, or read permissions                               |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | S3                      | S3 Bucket All Users ACL       | Ensures S3 buckets do not allow global write, delete, or read ACL permissions                                   |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | SQS                     | SQS Cross Account Access      | Ensures SQS policies disallow cross-account access                                                              |
-| ![](https://cloud.aquasec.com/assets/img/clouds/azure-small.png)  | Table Service           | Table Service All Access ACL  | Ensures tables do not allow full write, delete, or read ACL permissions                                         |
+| ![](assets/azure-small.png)  | App Service             | Authentication Enabled        | Ensures Authentication is enabled for App Services, redirecting unauthenticated users to the login page.        |
+| ![](assets/azure-small.png)  | Blob Service            | Blob Container Private Access | Ensures that all blob containers do not have anonymous public access set                                        |
+| ![](assets/google-small.png) | Compute                 | VM Instances Least Privilege  | Ensures that instances are not configured to use the default service account with full access to all cloud APIs |
+| ![](assets/azure-small.png)  | File Service            | File Service All Access ACL   | Ensures file shares do not allow full write, delete, or read ACL permissions                                    |
+| ![](assets/oracle-small.png) | File Storage            | NFS Public Access             | Ensures that all file systems do not have public access.                                                        |
+| ![](assets/aws-small.png)    | IAM                     | Root Account In Use           | Ensures the root account is not being actively used                                                             |
+| ![](assets/aws-small.png)    | IAM                     | IAM User Admins               | Ensures the number of IAM admins in the account are minimized                                                   |
+| ![](assets/oracle-small.png) | Identity                | Users MFA Enabled             | Ensures a multi-factor authentication device is enabled for all users within the account.                       |
+| ![](assets/azure-small.png)  | Network Security Groups | Open All Ports                | Ensures Network Security Groups do not expose all ports to the public                                           |
+| ![](assets/oracle-small.png) | Object Store            | Bucket Public Access Type     | Ensures object store buckets do not allow global write, delete, or read permissions                             |
+| ![](assets/azure-small.png)  | Queue Service           | Queue Service All Access ACL  | Ensures queues do not allow full write, delete, or read ACL permissions                                         |
+| ![](assets/aws-small.png)    | S3                      | S3 Bucket All Users Policy    | Ensures S3 bucket policies do not allow global write, delete, or read permissions                               |
+| ![](assets/aws-small.png)    | S3                      | S3 Bucket All Users ACL       | Ensures S3 buckets do not allow global write, delete, or read ACL permissions                                   |
+| ![](assets/aws-small.png)    | SQS                     | SQS Cross Account Access      | Ensures SQS policies disallow cross-account access                                                              |
+| ![](assets/azure-small.png)  | Table Service           | Table Service All Access ACL  | Ensures tables do not allow full write, delete, or read ACL permissions                                         |
 
 ### Requirement 8 - Identify Access
 Identify and authenticate access to system components.
 
 | Cloud                                                             | Category     | Plugin                        | Description                                                                                                       |
 | ----------------------------------------------------------------- | ------------ | ----------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| ![](https://cloud.aquasec.com/assets/img/clouds/azure-small.png)  | App Service  | Authentication Enabled        | Ensures Authentication is enabled for App Services, redirecting unauthenticated users to the login page.          |
-| ![](https://cloud.aquasec.com/assets/img/clouds/azure-small.png)  | Blob Service | Blob Container Private Access | Ensures that all blob containers do not have anonymous public access set                                          |
-| ![](https://cloud.aquasec.com/assets/img/clouds/oracle-small.png) | File Storage | NFS Public Access             | Ensures that all file systems do not have public access.                                                          |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | IAM          | Minimum Password Length       | Ensures password policy requires a password of at least a minimum number of characters                            |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | IAM          | Password Requires Symbols     | Ensures password policy requires the use of symbols                                                               |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | IAM          | Maximum Password Age          | Ensures password policy requires passwords to be reset every 180 days                                             |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | IAM          | Password Reuse Prevention     | Ensures password policy prevents previous password reuse                                                          |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | IAM          | Root MFA Enabled              | Ensures a multi-factor authentication device is enabled for the root account                                      |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | IAM          | Users MFA Enabled             | Ensures a multi-factor authentication device is enabled for all users within the account                          |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | IAM          | Access Keys Rotated           | Ensures access keys are not older than 180 days in order to reduce accidental exposures                           |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | IAM          | Access Keys Last Used         | Detects access keys that have not been used for a period of time and that should be decommissioned                |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | IAM          | Password Expiration           | Ensures password policy enforces a password expiration                                                            |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | IAM          | Password Requires Lowercase   | Ensures password policy requires at least one lowercase letter                                                    |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | IAM          | Password Requires Numbers     | Ensures password policy requires the use of numbers                                                               |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | IAM          | Password Requires Uppercase   | Ensures password policy requires at least one uppercase letter                                                    |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | IAM          | Users Password Last Used      | Detects users with password logins that have not been used for a period of time and that should be decommissioned |
+| ![](assets/azure-small.png)  | App Service  | Authentication Enabled        | Ensures Authentication is enabled for App Services, redirecting unauthenticated users to the login page.          |
+| ![](assets/azure-small.png)  | Blob Service | Blob Container Private Access | Ensures that all blob containers do not have anonymous public access set                                          |
+| ![](assets/oracle-small.png) | File Storage | NFS Public Access             | Ensures that all file systems do not have public access.                                                          |
+| ![](assets/aws-small.png)    | IAM          | Minimum Password Length       | Ensures password policy requires a password of at least a minimum number of characters                            |
+| ![](assets/aws-small.png)    | IAM          | Password Requires Symbols     | Ensures password policy requires the use of symbols                                                               |
+| ![](assets/aws-small.png)    | IAM          | Maximum Password Age          | Ensures password policy requires passwords to be reset every 180 days                                             |
+| ![](assets/aws-small.png)    | IAM          | Password Reuse Prevention     | Ensures password policy prevents previous password reuse                                                          |
+| ![](assets/aws-small.png)    | IAM          | Root MFA Enabled              | Ensures a multi-factor authentication device is enabled for the root account                                      |
+| ![](assets/aws-small.png)    | IAM          | Users MFA Enabled             | Ensures a multi-factor authentication device is enabled for all users within the account                          |
+| ![](assets/aws-small.png)    | IAM          | Access Keys Rotated           | Ensures access keys are not older than 180 days in order to reduce accidental exposures                           |
+| ![](assets/aws-small.png)    | IAM          | Access Keys Last Used         | Detects access keys that have not been used for a period of time and that should be decommissioned                |
+| ![](assets/aws-small.png)    | IAM          | Password Expiration           | Ensures password policy enforces a password expiration                                                            |
+| ![](assets/aws-small.png)    | IAM          | Password Requires Lowercase   | Ensures password policy requires at least one lowercase letter                                                    |
+| ![](assets/aws-small.png)    | IAM          | Password Requires Numbers     | Ensures password policy requires the use of numbers                                                               |
+| ![](assets/aws-small.png)    | IAM          | Password Requires Uppercase   | Ensures password policy requires at least one uppercase letter                                                    |
+| ![](assets/aws-small.png)    | IAM          | Users Password Last Used      | Detects users with password logins that have not been used for a period of time and that should be decommissioned |
 
-## Requirement 9 - Physical Access
+### Requirement 9 - Physical Access
 Restrict physical access to cardholder data.
 
 No plugins have been mapped to this control.
@@ -135,25 +135,25 @@ Track and monitor all access to network resources and cardholder data.
 
 | Cloud                                                             | Category   | Plugin                           | Description                                                                                   |
 | ----------------------------------------------------------------- | ---------- | -------------------------------- | --------------------------------------------------------------------------------------------- |
-| ![](https://cloud.aquasec.com/assets/img/clouds/oracle-small.png) | Audit      | Log Retention Period             | Ensures that the audit log retention period is configured correctly.                          |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | CloudFront | CloudFront Logging Enabled       | Ensures CloudFront distributions have request logging enabled.                                |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | CloudTrail | CloudTrail Enabled               | Ensures CloudTrail is enabled for all regions within an account                               |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | CloudTrail | CloudTrail Bucket Access Logging | Ensures CloudTrail logging bucket has access logging enabled to detect tampering of log files |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | EC2        | VPC Flow Logs Enabled            | Ensures VPC flow logs are enabled for traffic logging                                         |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | ELB        | ELB Logging Enabled              | Ensures load balancers have request logging enabled.                                          |
-| ![](https://cloud.aquasec.com/assets/img/clouds/google-small.png) | Logging    | Project Ownership Logging        | Ensures that logging and log alerts exist for project ownership assignments and changes       |
-| ![](https://cloud.aquasec.com/assets/img/clouds/google-small.png) | Logging    | Storage Permissions Logging      | Ensures that logging and log alerts exist for storage permission changes                      |
-| ![](https://cloud.aquasec.com/assets/img/clouds/google-small.png) | Logging    | VPC Network Logging              | Ensures that logging and log alerts exist for VPC network changes                             |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | S3         | S3 Bucket Logging                | Ensures S3 bucket logging is enabled for S3 buckets                                           |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | Transfer   | Transfer Logging Enabled         | Ensures AWS Transfer servers have CloudWatch logging enabled.                                 |
+| ![](assets/oracle-small.png) | Audit      | Log Retention Period             | Ensures that the audit log retention period is configured correctly.                          |
+| ![](assets/aws-small.png)    | CloudFront | CloudFront Logging Enabled       | Ensures CloudFront distributions have request logging enabled.                                |
+| ![](assets/aws-small.png)    | CloudTrail | CloudTrail Enabled               | Ensures CloudTrail is enabled for all regions within an account                               |
+| ![](assets/aws-small.png)    | CloudTrail | CloudTrail Bucket Access Logging | Ensures CloudTrail logging bucket has access logging enabled to detect tampering of log files |
+| ![](assets/aws-small.png)    | EC2        | VPC Flow Logs Enabled            | Ensures VPC flow logs are enabled for traffic logging                                         |
+| ![](assets/aws-small.png)    | ELB        | ELB Logging Enabled              | Ensures load balancers have request logging enabled.                                          |
+| ![](assets/google-small.png) | Logging    | Project Ownership Logging        | Ensures that logging and log alerts exist for project ownership assignments and changes       |
+| ![](assets/google-small.png) | Logging    | Storage Permissions Logging      | Ensures that logging and log alerts exist for storage permission changes                      |
+| ![](assets/google-small.png) | Logging    | VPC Network Logging              | Ensures that logging and log alerts exist for VPC network changes                             |
+| ![](assets/aws-small.png)    | S3         | S3 Bucket Logging                | Ensures S3 bucket logging is enabled for S3 buckets                                           |
+| ![](assets/aws-small.png)    | Transfer   | Transfer Logging Enabled         | Ensures AWS Transfer servers have CloudWatch logging enabled.                                 |
 
 ### Requirement 11 - Test Systems
 Regularly test security systems and processes.
 
 | Cloud                                                             | Category | Plugin         | Description                                             |
 | ----------------------------------------------------------------- | -------- | -------------- | ------------------------------------------------------- |
-| ![](https://cloud.aquasec.com/assets/img/clouds/aws-small.png)    | RDS      | RDS Restorable | Ensures RDS instances can be restored to a recent point |
-| ![](https://cloud.aquasec.com/assets/img/clouds/google-small.png) | SQL      | DB Restorable  | Ensures SQL instances can be restored to a recent point |
+| ![](assets/aws-small.png)    | RDS      | RDS Restorable | Ensures RDS instances can be restored to a recent point |
+| ![](assets/google-small.png) | SQL      | DB Restorable  | Ensures SQL instances can be restored to a recent point |
 
 ### Requirement 12 - Policy
 Maintain a policy that addresses information security for all personnel.
