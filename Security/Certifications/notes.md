@@ -1271,7 +1271,7 @@ Containers are a virtual operating environment.
 * Use Windows Containers for Windows workloads.
 
 Architecture of a Docker container
-* Container components:
+*  Container components:
     * (1) Code (2) Libraries (3) Virtual Kernel.
     * Runs on Docker.
     * Installed on host Operating System.
