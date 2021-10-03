@@ -1496,16 +1496,12 @@ Admin Activity and Data Access.
 1. Admin Activity logs contain log entries for API calls or other administrative actions that modify the configuration or metadata of resources. Admin Activity audit logs are enabled for all services and cannot be configured.
 2. Data Access audit logs record API calls that create, modify, or read user-provided data. These are disabled by default and should be enabled.
 
-```
 There are three kinds of Data Access audit log information:
-```
-```
-o Admin read: Records operations that read metadata or configuration
-information. Admin Activity audit logs record writes of metadata and
-configuration information that cannot be disabled.
-o Data read: Records operations that read user-provided data.
-o Data write: Records operations that write user-provided data.
-```
+
+**Admin read**: Records operations that read metadata or configuration information. Admin Activity audit logs record writes of metadata and configuration information that cannot be disabled.
+**Data read**: Records operations that read user-provided data.
+**Data write**: Records operations that write user-provided data.
+
 It is recommended to have an effective default audit config configured in such a way that:
 
 1. logtype is set to DATA_READ (to log user activity tracking) and DATA_WRITES (to log changes/tampering to user data).
@@ -3196,16 +3192,15 @@ To prevent use of default network, a project should not have a default network.
 The default network has a preconfigured network configuration and automatically
 generates the following insecure firewall rules:
 
-```
- default-allow-internal: Allows ingress connections for all protocols and ports among
+- default-allow-internal: Allows ingress connections for all protocols and ports among
 instances in the network.
- default-allow-ssh: Allows ingress connections on TCP port 22(SSH) from any source
+- default-allow-ssh: Allows ingress connections on TCP port 22(SSH) from any source
 to any instance in the network.
- default-allow-rdp: Allows ingress connections on TCP port 3389(RDP) from any
+- default-allow-rdp: Allows ingress connections on TCP port 3389(RDP) from any
 source to any instance in the network.
- default-allow-icmp: Allows ingress ICMP traffic from any source to any instance in
+- default-allow-icmp: Allows ingress ICMP traffic from any source to any instance in
 the network.
-```
+
 These automatically created firewall rules do not get audit logged and cannot be configured
 to enable firewall rule logging.
 

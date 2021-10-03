@@ -1,8 +1,8 @@
-# AWS-SCS-C01
+## AWS-SCS-C01
 
-## Domain 1
+### Domain 1
 
-### Security Basics
+#### Security Basics
 
 **CIA**
 
@@ -22,7 +22,7 @@
 * CloudTrail, CloudWatch.
 
 
-### How does AWS Secure their Stuff?
+#### How does AWS Secure their Stuff?
 
 Physical and Environmental Security
 * AWS consist of regions, with 2+ availability zones, each made up of multiple data centres.
@@ -63,7 +63,7 @@ Exam Tips
 * Remember that the corporate Amazon.com network is completely segregated from the AWS network. Permissions / reviews are required when an employee wants to access AWS. Permissions are revoked as soon as nologin for 90 days.
 
 
-### Shared Responsibility Model
+#### Shared Responsibility Model
 
 What is it?
 * Security WITHIN the cloud is the responsibility of the customer.
@@ -87,7 +87,7 @@ https://aws.amazon.com/compliance/shared-responsibility-model/
 Basically, if the customer has no access to the underlying OS/software/infrastructure, then it is AWS's responsibility.
 
 
-### Shared Responsibility - AWS service types
+#### Shared Responsibility - AWS service types
 
 Infrastructure services - compute services such as EC2, EBS, Auto Scaling, VPC
 * You can architect and build cloud infrastructure, control the OS, configure and operate any identity management system that provides access to the user layer of the virtualization stack.
@@ -110,7 +110,7 @@ Exam Tips: Have a STRONG understanding of the shared responsibility model.
 3. Abstracted services (S3, Glacier, DynamoDB, SQS, SES) - AWS responsible for almost everything, except for the application layer e.g. TLS / access controls.
 
 
-### Security IN AWS
+#### Security IN AWS
 
 Controls that you need:
 * __Visibility__: AWS Config - managed and custom rules
@@ -132,9 +132,9 @@ Other services applying to all controls
 * AWS Trusted Advisor - advises on security, budgeting, system performance and reliability
 
 
-## Domain 2
+### Domain 2
 
-### IAM, S3 & Security Policies
+#### IAM, S3 & Security Policies
 
 IAM provides:
 * Centralised control of your AWS account
@@ -161,7 +161,7 @@ IAM Permissions Boundary for IAM Entities (users/roles)
 * https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_PermissionsBoundary
 
 
-### IAM Root User Scenario
+#### IAM Root User Scenario
 
 _Scenario: You have have started as a sysadmin at a cloud-based company. Previous admin used only the root-user._
 
@@ -171,7 +171,7 @@ First thing to do = rotate everything
 * Delete Access Key ID / Secret Access Key (don't create new access keys via. root user)
 * Verify and delete IAM users that are not-legitimate.
 
-### IAM Policies
+#### IAM Policies
 
 **Policy contains PARC**
 
@@ -222,7 +222,7 @@ IAM policies specify what you are allowed to do with any AWS resource. You attac
     - To establish cross-account access, in the trusting account (Account A), you create an IAM policy that grants the trusted account (Account B) access to specificresources. Account B can then delegate this access to its IAM users. Account B cannot delegate more access to its IAM users than the permissions that it has been granted by Account A.
 
 
-### S3 Bucket Policies
+#### S3 Bucket Policies
 
 S3 bucket policies specify what actions are allowed or denied on the bucket.
 * They are attached only to S3 buckets.
@@ -242,7 +242,7 @@ Use the __AWS Policy Generator__ to generate a S3 bucket policy.
 In any AWS policy (IAM, S3, Key), a __DENY will always override an ALLOW__.
 
 
-### S3 Object Access Control Lists (ACLs)
+#### S3 Object Access Control Lists (ACLs)
 
 S3 ACLs are a legacy access control mechanism. AWS recommends sticking to IAM policies and S3 bucket policies.
 However, S3 ACLs can be applied to individual objects/files as opposed to S3 bucket policies.
@@ -263,7 +263,7 @@ __Conflict policy example__: IAM user policy denying all S3 read vs. S3 bucket w
 
 EXAM: Best exam practise is by creating your own S3 Bucket Policies, S3 Object ACLs, IAM User Policies etc.
 
-### Policy Conflicts (EXAM ESSENTIAL TOPIC)
+#### Policy Conflicts (EXAM ESSENTIAL TOPIC)
 
 What happens if an IAM policy conflicts with an S3 policy which conflicts with an S3 ACL?
 
@@ -290,7 +290,7 @@ __Policy Conflict flow__:
 This flow will be examined heavily with scenarios containing 2-3 different policies.
 
 
-### Forcing Encryption on S3
+#### Forcing Encryption on S3
 
 Use S3 bucket policy to enforce encryption - prevent read without SSL enabled:
 ```javascript
@@ -310,7 +310,7 @@ Use S3 bucket policy to enforce encryption - prevent read without SSL enabled:
 }
 ```
 
-### Cross-Region Replication
+#### Cross-Region Replication
 
 Cross-region replication replicates objects from one region to another. By default, this is done using SSL. You don't need to enable encryption.
 
@@ -355,7 +355,7 @@ Resources:
 * What does S3 replicate: https://docs.aws.amazon.com/AmazonS3/latest/dev/replication-what-is-isnot-replicated.html
 
 
-### Securing S3 Using CloudFront
+#### Securing S3 Using CloudFront
 
 Force users to only access S3 via. CloudFront instead of direct access via. S3 URL.
 
@@ -384,7 +384,7 @@ S3 bucket policy to restrict access via. CloudFront:
 }
 ```
 
-### Using SSL Certificates using CloudFront
+#### Using SSL Certificates using CloudFront
 
 DEFAULT SSL CERTIFICATE: If you are happy for users to access your content using *.cloudfront.net domain name.
 
@@ -395,7 +395,7 @@ You must store your custom SSL Certificate using:
 * AWS Certificate Manager (ACM)
 * Only in the `us-east-1` region = US East (N. Virginia)
 
-### Secure S3 Using Pre-Signed URLs
+#### Secure S3 Using Pre-Signed URLs
 
 Another method of accessing objects inside S3 - done via. SDKs (Python, Java, Go) or CLI.
 
@@ -408,7 +408,7 @@ $ aws s3 presign s3://acloudgurupresigned/hello.txt --expires-in 300 # presign U
 https://acloudgurupresigned.s3.amazonaws.com/hello.txt?AWSACcessKeyId=XXX&Expires=XXX&x-amz-security-token=XXX&Signature=XXX
 ```
 
-### Security Token Service (STS) (IMPORTANT EXAM TOPIC)
+#### Security Token Service (STS) (IMPORTANT EXAM TOPIC)
 
 STS grants users limited and temporary access to AWS resources.
 
@@ -464,7 +464,7 @@ High-Level Summary:
 2. Authenticate (as Identity Broker) against STS.
 3. Authenticate (as Application) against AWS service to obtain access to resource.
 
-### Web Identity Federation / Amazon Cognito
+#### Web Identity Federation / Amazon Cognito
 
 Web Identity Federation lets you give users access to AWS resources after they have successfully authenticated with a web-based identity provider like Amazon/Facebook/Google. User trades authentication code from Web ID provider for an AWS STS token.
 
@@ -492,7 +492,7 @@ Cognito User Pools: user directories used to manage sign-up and sign-in function
 * User sign-in directly via. User Pool or indirectly via. identity provider (Amazon/Facebook/Google)
 * Cognito acts as identity broker between ID provider and AWS.
 
-### Glacier Vault Lock
+#### Glacier Vault Lock
 
 Glacier is a low-cost storage service for data archiving and long-term backup.
 * _Archives_: a single file or multiple files stored in a .tar or .zip.
@@ -529,7 +529,7 @@ Steps to configuring Vault Locks:
 Vault Lock Policy vs. Vault Access Policy:
 * https://docs.aws.amazon.com/amazonglacier/latest/dev/vault-lock.html
 
-### AWS Organisations
+#### AWS Organisations
 
 AWS Organisations is an account management service that lets you consolidate multiple AWS accounts into an organisation so that you can consolidate billing, group your AWS accounts into logical groupings for access control and attach Service Control Policies.
 
@@ -538,7 +538,7 @@ SCPs enable you to restrict, at the account level of granularity, what services 
 https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scp.html
 
 
-### IAM Credential Report
+#### IAM Credential Report
 
 IAM Credential Report is a CSV-formatted report which lists all users in the accounts + status of their various credentials, including
 * Passwords: enabled, last used, last rotated, next rotation.
@@ -574,7 +574,7 @@ An IAM Policy with permissions to generate IAM Credential Reports
 ```
 
 
-### Summary / Exam Tips
+#### Summary / Exam Tips
 
 Resetting Root Users
 * Create new root user password / strong password policy.
@@ -610,11 +610,11 @@ STS / Identity Provider
 * User provides credentials to Identity Provider (AD/FB/Google) -> AWS STS -> User accesses AWS resource -> AWS resource checks IAM -> access is provided to user.
 
 
-## Domain 3
+### Domain 3
 
-### Logging and Monitoring
+#### Logging and Monitoring
 
-### AWS CloudTrail
+#### AWS CloudTrail
 
 AWS CloudTrail is a web service that records AWS API calls for your account and delivers log files to you.
 * User interacts with AWS platform via. Console or API Call.
@@ -662,7 +662,7 @@ Validating CT log file integrity:
 * Digest files can be used to validate the integrity of the log file
 * You can use the AWS CLI to perform validation.
 
-### CloudTrail Log Protection
+#### CloudTrail Log Protection
 
 Log files are encrypted by default (AES-256) even if the bucket itself doesn't show encryption turned on.
 
@@ -694,7 +694,7 @@ How to ensure that logs are retained for X years?
     * Go to S3 bucket -> Management Tab -> "Add lifecycle rule" button -> Configure bucket expiration
 * OR move files to AWS Glacier for long-term storage.
 
-### AWS CloudWatch
+#### AWS CloudWatch
 
 AWS CloudWatch is a monitoring service for AWS cloud resources and the applications you run on AWS.
 
@@ -741,7 +741,7 @@ CloudWatch Events:
 * Rules: match incoming events and route them to one or more targets
 * Targets: Lambda, SNS topics. SQS queues, Kinesis Streams and more
 
-### AWS Config
+#### AWS Config
 
 AWS Config is a fully managed service that provides you with an AWS resource inventory, configuration history and configuration change notifications to enable security and governance.
 
@@ -800,7 +800,7 @@ Monitoring Config:
 
 AWS Config is a big part of the exam, so read the Config FAQ: https://aws.amazon.com/config/faq/
 
-### Set up an alert if Root user logs in / pro-active alerting (will be tested in exam)
+#### Set up an alert if Root user logs in / pro-active alerting (will be tested in exam)
 
 Set up an alert if the Root user logs in and makes API calls
 1. Turn on CloudTrail-CloudWatch logs integration
@@ -813,7 +813,7 @@ Set up an alert if the Root user logs in and makes API calls
 5. Test the alarm and receive an SNS notification
 6. Look up the event and take corrective actions
 
-### AWS Cloud Hardware Security Module (CloudHSM)
+#### AWS Cloud Hardware Security Module (CloudHSM)
 
 _This topic is not really examined - can mostly skip it._
 
@@ -824,7 +824,7 @@ AWS CloudHSM service helps meet corporate, contractual and regulatory compliance
 Enables: Control of data, evidence of control, meet tough compliance controls
 Provides: Secure key storage (generate, store public/private keys), cryptographic operations, tamper-resistant Hardware Security Module
 
-### AWS Inspector and AWS Trusted Advisor - examined
+#### AWS Inspector and AWS Trusted Advisor - examined
 
 AWS Inspector
 * Automated security assessment service that helps improve security/compliance of applications on AWS.
@@ -846,7 +846,7 @@ AWS Trusted Advisor
 * Some recommendations available to basic plan:
     * Security Groups (unrestricted ports), IAM use, MFA on Root, Service Limits (usage limits), exposed EBS snapshots etc.
 
-### Logging
+#### Logging
 
 Understand the 4 logging services and their differences: _CloudTrail, CloudWatch, Config, VPC Flow Logs_
 
@@ -882,11 +882,11 @@ Storage of log files:
     * 99.99999% durability and 99.99% availability of objects over a given year
 
 
-## Domain 4
+### Domain 4
 
-### Infrastructure Security
+#### Infrastructure Security
 
-### AWS Key Management Service (KMS)
+#### AWS Key Management Service (KMS)
 
 KMS is a managed service that makes it easy for you to create and control the encryption keys used to encrypt your data + uses Hardware Security Modules (HSMs) to protect the security of your keys.
 
@@ -951,7 +951,7 @@ Scenario #2: User disables a KMS key - AWS Config monitoring KMS events.
 
 Read the AWS KMS FAQ: https://aws.amazon.com/kms/faqs/
 
-### KMS Key Rotation Options
+#### KMS Key Rotation Options
 
 Extensive re-use of encryption keys is not recommended.
 Best practice is to rotate keys on a regular basis.
@@ -977,7 +977,7 @@ Key Rotation: Customer Managed Keys w/ Imported Key Material
 * Create a new CMK -> update apps / key-alias to use the new CMK (be careful of old-key deletion)
 
 
-### Using KMS with EBS
+#### Using KMS with EBS
 
 Using KMS to encrypt Elastic Block Storage (EBS) volumes.
 
@@ -996,7 +996,7 @@ How to encrypt an existing EBS volume / the Root Device volume (default vol when
 5. Launch the AMI. Your Root Device volume will now be encrypted.
 
 
-### EC2 and importing a Customer Managed Key Pair (for SSH access) - MAC USERS ONLY
+#### EC2 and importing a Customer Managed Key Pair (for SSH access) - MAC USERS ONLY
 
 1. Generate a private-key using RSA 2048 bits:
 `$ openssl genpkey -algorithm RSA -out private_key.pem -pkeyopt rsa_keygen_bits:2048`
@@ -1013,7 +1013,7 @@ You CANNOT take your private/public-key pair and import it into KMS.
 You must follow the external Key Material import process to generate a CMK.
 
 
-### EC2 and Key Pairs (SSH access)
+#### EC2 and Key Pairs (SSH access)
 
 Creating additional/multiple key pairs for an EC2 instance.
 1. Provision EC2 with an original key pair + SSH into instance `$ ssh ec2-user@public-ec2-ip -i KeyPairOriginal.pem`
@@ -1042,14 +1042,14 @@ Additional notes:
 * You cannot use KMS with SSH for EC2 because Amazon is involved in generation of KMS keys.
 * You can use CloudHSM with SSH for EC2 because you can export CloudHSM keys.
 
-### AWS Marketplace Security Products
+#### AWS Marketplace Security Products
 
 You can purchase security products from 3rd-party vendors on the AWS Marketplace.
 * Includes: firewalls, hardened OS's, WAF's, Antivirus, Security Monitoring etc.
 * Billed: free, hourly, monthly, annually, BYOL etc.
 * Recommended reading: steps on CIS OS Hardening
 
-### AWS Web Application Firewall (WAF) & AWS Shield
+#### AWS Web Application Firewall (WAF) & AWS Shield
 
 AWS Web Application Firewall (WAF): monitors/controls HTTP/HTTPS requests that are forwarded to CloudFront or an Application Load Balancer.
 * Config includes: access based on IP, query string params.
@@ -1072,7 +1072,7 @@ AWS Shield
 * You won't pay if you are a victim of an attack.
 
 
-### EC2 Dedicated Instances vs. EC2 Dedicated Hosts
+#### EC2 Dedicated Instances vs. EC2 Dedicated Hosts
 
 EC2 Dedicated Instances
 * Run in a VPC on dedicated physical hardware separate from other AWS accounts, for a single customer.
@@ -1093,7 +1093,7 @@ EC2 Dedicated Hosts
 Provision Dedicated Instances / Dedicated Hosts via. EC2 service when launching an instance.
 
 
-### AWS Hypervisors, Isolation of AWS Resources, AWS Firewalls
+#### AWS Hypervisors, Isolation of AWS Resources, AWS Firewalls
 
 AWS Hypervisor
 * Hypervisor or virtual machine monitor (VMM) is software, firmware, hardware that creates an runs virtual machines.
@@ -1134,7 +1134,7 @@ Memory Scrubbing:
 * Memory is not returned to the pool of free memory available for new allocations until scrubbing is complete.
 * I.e. disk-recovery tools to find other customer's data won't work.
 
-### KMS Grants
+#### KMS Grants
 
 KMS Grants are an alternate access control mechanism to a Key Policy
 * Programmatically delegate use of KMS CMKs to other AWS principals (another user in your account / another account)
@@ -1181,7 +1181,7 @@ aws kms encrypt --plaintext "hello" --key-id <key_arn> --profile dave
 https://docs.aws.amazon.com/cli/latest/reference/kms/create-grant.html
 ```
 
-### KMS Policy Conditions - ViaService
+#### KMS Policy Conditions - ViaService
 
 Policy Conditions can be used to specify a condition within a Key Policy or IAM Policy
 
@@ -1211,7 +1211,7 @@ ViaService example: CMK may be used for "Encrypt" action ONLY if request comes f
 }
 ```
 
-### KMS Cross Account Access for CMKs
+#### KMS Cross Account Access for CMKs
 
 2 steps to provide cross-account access.
 
@@ -1238,7 +1238,7 @@ Example IAM policy in account HELLO for cross account access to CMK in WORLD
 ```
 
 
-### Microservices
+#### Microservices
 
 Monolithic applications
 * Difficult to change.
@@ -1262,7 +1262,7 @@ Microservices
 * Scale only components you need to = highly flexible and cost efficient applications.
 
 
-### Containers in AWS
+#### Containers in AWS
 
 Containers are a virtual operating environment.
 * A standardised unit with everything that the software needs to run e.g. libraries, system code and runtime.
@@ -1302,7 +1302,7 @@ Elastic Container Service (ECS)
 4. Configure cluster.
 
 
-### Container Security
+#### Container Security
 
 1. Don't store secrets
 * Use IAM roles instead of hardcoding user credentials.
