@@ -130,7 +130,7 @@ Authentication, authorization, and accounting are three security functions that 
 |      | [Amazon Web ACLs](https://aws.amazon.com/waf/)                          | Cloud Armor                 |
 |      | [Amazon Athena](https://aws.amazon.com/athena/)                         | BigQuery                    |
 |      | [Amazon Secret Manager](https://aws.amazon.com/secrets-manager/)        | Cloud Secret Manager        |
-
+|      | [Amazon Paramter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html)        |        |
 ## AWS
 
 ### Perform Log Analysis with Amazon GuardDuty
