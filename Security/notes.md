@@ -136,9 +136,7 @@ Authentication, authorization, and accounting are three security functions that 
 
 [Amazon GuardDuty](https://aws.amazon.com/guardduty/) helps you analyze and process data from different data sources such as CloudTrail event logs, [VPC Flow Logs](https://blog.runpanther.io/aws-security-logging-vpc-flow-logs/), and DNS Logs. GuardDuty uses sophisticated machine learning, anomaly detection, and integrated threat intelligence to identify and prioritize potential threats. Additionally, GuardDuty monitors your AWS account for signs of compromised access such as unusual API calls or deployments in a region not used before.
 
-GuardDuty extracts the relevant fields from logs to help you profile and identify anomalies. You can review these findings through your AWS management console, integrate them into event management or workflow systems, or trigger AWS Lambda for automated remediation or prevention. Here is how GuardDuty displays its findings:
-
-![img](https://lh3.googleusercontent.com/N7xU6-oBXaojtYbS9Bi28gm6Dn1omDkpDIBg5Lh-uE8cHYipX5Exh2LY03LiOF13IZ4kK0Fc7d8lMwRxtO3pRuilMGQ0nP0liEifGRVA258lKVilHhNxI6BFaqdn2fSaRwPzWpCL)
+GuardDuty extracts the relevant fields from logs to help you profile and identify anomalies. You can review these findings through your AWS management console, integrate them into event management or workflow systems, or trigger AWS Lambda for automated remediation or prevention.
 
 GuardDuty findings can be aggregated into a single account (controlled by your security team) by issuing invites to all of your member accounts. This approach gives higher visibility into all accounts owned by an organization. [This walkthrough](https://aws.amazon.com/blogs/security/how-to-manage-amazon-guardduty-security-findings-across-multiple-accounts/) demonstrates how to set up this configuration.
 
@@ -168,9 +166,7 @@ You can work with the Amazon Inspector service using either the [Amazon Inspecto
 
 This service takes security findings and normalizes them into Amazon Security Findings Format (or ASFF). After normalizing, it sends them all back out through Amazon CloudWatch events to many AWS partners that are capable of consuming them. With the ASFF format, you can, for instance, write a [Splunk Phantom](https://www.splunk.com/en_us/software/splunk-security-orchestration-and-automation.html) runbook, a [Demisto](https://www.demisto.com/) runbook, a Lambda function, send it to [Rapid7](https://www.rapid7.com/), or cut a ticket in [Jira](https://www.atlassian.com/software/jira).
 
-SecurityHub also lets you create insights into Security Hub. Insights are a collection of findings that are grouped together to identify common security issues that may require remediation action. The following screenshot shows how SecurityHub brings various AWS security services under a single hood:
-
-![img](https://lh3.googleusercontent.com/ziCdXhASDAT-A9WJqWJXJmQdEAToeOO6h__ZYCygKPILoJL75-R0SXuetPYQum7ZCkb-kC8yFVpbD1OT3jNjvbYCap55ZBMb3PxX1VzkZYpHmJkLc-0skjlNuqPbnL1toAeChYXU)
+SecurityHub also lets you create insights into Security Hub. Insights are a collection of findings that are grouped together to identify common security issues that may require remediation action. The following screenshot shows how SecurityHub brings various AWS security services under a single hood
 
 Security Hub is accessible through the [Security Hub console](https://console.aws.amazon.com/securityhub/) when you sign in to the AWS Management Console. You can also use the Security Hub API, which lets you issue HTTPS requests directly to the service. As of June 2019, AWS Security Hub is [generally available](https://aws.amazon.com/about-aws/whats-new/2019/06/aws-security-hub-now-generally-available/).
 
@@ -178,9 +174,7 @@ Security Hub is accessible through the [Security Hub console](https://console.aw
 
 [TrustedAdvisor](https://aws.amazon.com/premiumsupport/technology/trusted-advisor/) is a real-time guidance solution that monitors your AWS infrastructure and compares it to AWS best practices such as identifying security gaps, fault tolerance, and service limits. Post this comparison, it provides recommendations and action links.
 
-The Trusted Advisor notification feature notifies you about your AWS resource deployment. You can track recent changes or check status on the console dashboard. You can also use [AWS Identity and Access Management](https://blog.runpanther.io/serverless-app-repo-intro/) (IAM) to control access to specific checks or check categories. You can also create alerts and automate actions with Amazon CloudWatch. The following screenshot shows how TrustedAdvisor details AWS best practices recommended for your AWS infrastructure:
-
-![img](https://lh5.googleusercontent.com/_nZkcUWdqor04kOuZtzBvdpp1XXY9m7v5KYChxtdDhtIFixc8_23gALVwERG7E5NptsrhZsOSxmm-NkIxi2qpq0wAzKAt4KsCaE_woxExUCrn3ao59-GivwtNqAYfHLv5YPZRzRK)
+The Trusted Advisor notification feature notifies you about your AWS resource deployment. You can track recent changes or check status on the console dashboard. You can also use [AWS Identity and Access Management](https://blog.runpanther.io/serverless-app-repo-intro/) (IAM) to control access to specific checks or check categories. You can also create alerts and automate actions with Amazon CloudWatch. The following screenshot shows how TrustedAdvisor details AWS best practices recommended for your AWS infrastructure
 
 Trusted Advisor is available in the AWS Management Console. All AWS users have access to the data for the [seven core checks](https://aws.amazon.com/premiumsupport/trustedadvisor/). Users with business or enterprise-level support can access [all checks](https://aws.amazon.com/premiumsupport/trustedadvisor/best-practices/).
 
