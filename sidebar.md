@@ -4,7 +4,7 @@
 
 - **Security**
 
-  - [Concepts](Security/Concepts/basic.md)
+  - [Concepts](Security/Concepts/basics.md)
 
 - **Cloud Security**
 
