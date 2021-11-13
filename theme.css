@@ -1,14 +1,14 @@
 :root {
   --theme-hue: 152;
-  --theme-lightness : 26%;
+  --theme-lightness: 26%;
   --mono-hue: calc(var(--theme-hue) + 400);
   --mono-saturation: 5%;
 
   --link-color: var(--theme-color);
 
   /* add rounded corners */
-  --border-radius-s: .25em;
-  --border-radius-m: .5em;
+  --border-radius-s: 0.25em;
+  --border-radius-m: 0.5em;
   --border-radius-l: 1.5em;
 
   /* Sidebar Menu */
@@ -17,15 +17,16 @@
   --sidebar-padding: 0 var(--sidebar-horizontal-padding);
   --sidebar-nav-indent: 0;
   --sidebar-nav-link-margin: 0 calc(-1 * var(--sidebar-horizontal-padding)) 0 0;
-  --sidebar-nav-pagelink-padding: .25em 0 0 20px;
+  --sidebar-nav-pagelink-padding: 0.25em 0 0 20px;
   /* active page link styling */
   --sidebar-nav-link-font-weight--active: bold;
   --sidebar-nav-link-before-content-l3: "";
   --sidebar-nav-link-before-content-l3--active: "→";
   /* section headings */
   --sidebar-nav-strong-font-size: var(--font-size-s);
-  --sidebar-nav-strong-margin: 2em calc(-1 * var(--sidebar-horizontal-padding)) .25em 0;
-  --sidebar-nav-strong-padding: .25em 0 0;
+  --sidebar-nav-strong-margin: 2em calc(-1 * var(--sidebar-horizontal-padding))
+    0.25em 0;
+  --sidebar-nav-strong-padding: 0.25em 0 0;
 
   /* syntax highlighting tweaks for contrast accessibility */
   --code-theme-comment: hsl(0, 0%, 44%);
@@ -46,7 +47,7 @@ img[alt*="github stars" i] {
 }
 
 .sidebar-nav li > strong {
-  letter-spacing: .15ch;
+  letter-spacing: 0.15ch;
 }
 
 .app-sub-sidebar {
@@ -69,6 +70,10 @@ img[alt*="github stars" i] {
 
 @media screen and (max-width: 1250px) {
   /* prevent transparent part of GitHub Corner intercepting clicks */
-  .github-corner { pointer-events: none; }
-  .github-corner path { pointer-events: all; }
+  .github-corner {
+    pointer-events: none;
+  }
+  .github-corner path {
+    pointer-events: all;
+  }
 }
