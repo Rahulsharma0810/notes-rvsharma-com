@@ -3,7 +3,20 @@
   - [Home](/)
 
 - **Security**
+
   - [Concepts](Security/Concepts/basic.md)
-  - [Clouds](Security/Cloud/)
-  <!-- - [Compliances](Security/Compliances/notes.md)
-  - [Certifications](Security/Certifications/notes.md) -->
+
+- **Cloud Security**
+
+  - [Cloud Tools Comparison](Security/Cloud/cloudcompare.md)
+  - [Amazon Web Services](Security/Cloud/aws.md)
+  - [Google Cloud Platform](Security/Cloud/gcp.md)
+  - [Microsoft Azure](Security/Cloud/azure.md)
+
+- **Security Compliances**
+
+  - [PCI-DSS](Security/Compliances/pci-dss.md)
+
+- **Security Certifications**
+
+  - [AWS Security Speciality](Security/Certifications/aws-security-speciality.md)
