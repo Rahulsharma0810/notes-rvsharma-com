@@ -19,12 +19,7 @@
 
 - **Infrastructure Security**
 
-  - [Custom navbar](Security/Infrastructure/_navbar.md)
-
-  <!-- - [Cloud Tools Comparison](Security/Cloud/cloudcompare.md)
-  - [Amazon Web Services](Security/Cloud/aws.md)
-  - [Google Cloud Platform](Security/Cloud/gcp.md)
-  - [Microsoft Azure](Security/Cloud/azure.md) -->
+  - [K8s Security Practices](Security/Infrastructure/Tools/k8s-best-practices.md)
 
 - **Security Compliances**
 
