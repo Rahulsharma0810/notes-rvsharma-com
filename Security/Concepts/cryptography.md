@@ -9,8 +9,11 @@ Cryptography is a method of using advanced mathematical principles in storing an
 ### Cryptography Terms
 
 **Encryption**: It is the process of locking up information using cryptography. Information that has been locked this way is encrypted.
+
 **Decryption**: The process of unlocking the encrypted information using cryptographic techniques.
+
 **Key**: A secret like a password used to encrypt and decrypt information. There are a few different types of keys used in cryptography.
+
 **Steganography**: It is actually the science of hiding information from people who would snoop on you. The difference between steganography and encryption is that the would-be snoopers may not be able to tell there's any hidden information in the first place.
 
 What is Symmetric Encryption?
