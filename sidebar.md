@@ -17,6 +17,15 @@
   - [Google Cloud Platform](Security/Cloud/gcp.md)
   - [Microsoft Azure](Security/Cloud/azure.md)
 
+- **Infrastructure Security**
+
+  - [Custom navbar](Security/Infrastructure/_navbar.md)
+
+  <!-- - [Cloud Tools Comparison](Security/Cloud/cloudcompare.md)
+  - [Amazon Web Services](Security/Cloud/aws.md)
+  - [Google Cloud Platform](Security/Cloud/gcp.md)
+  - [Microsoft Azure](Security/Cloud/azure.md) -->
+
 - **Security Compliances**
 
   - [PCI-DSS](Security/Compliances/pci-dss.md)
