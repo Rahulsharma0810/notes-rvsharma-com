@@ -6,6 +6,10 @@
 
   - [Concepts](Security/Concepts/basics.md)
 
+- **Data Encryption**
+
+  - [Cryptography Concepts](Security/Concepts/cryptography.md)
+
 - **Cloud Security**
 
   - [Cloud Tools Comparison](Security/Cloud/cloudcompare.md)

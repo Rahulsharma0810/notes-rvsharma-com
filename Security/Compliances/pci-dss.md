@@ -1,6 +1,6 @@
-# Payment Card Industry Data Security Standard
+## Payment Card Industry Data Security Standard
 
-## Requirement 1 - Firewalls
+### Requirement 1 - Firewalls
 
 Install and maintain a firewall configuration to protect cardholder data.
 
@@ -21,7 +21,7 @@ Install and maintain a firewall configuration to protect cardholder data.
 | GCP    | VPC Network             | Excessive Firewall Rules                | Determines if there are an excessive number of firewall rules in the account                                 |
 | GCP    | VPC Network             | Open All Ports                          | Determines if all ports are open to the public                                                               |
 
-## Requirement 2 - Defaults
+### Requirement 2 - Defaults
 
 Do not use vendor-supplied defaults for system passwords and other security parameters.
 
@@ -30,7 +30,7 @@ Do not use vendor-supplied defaults for system passwords and other security para
 | AWS   | KMS         | KMS Default Key Usage | Checks AWS services to ensure the default KMS key is not being used         |
 | GCP   | VPC Network | Default VPC In Use    | Determines whether the default VPC is being used for launching VM instances |
 
-## Requirement 3 - Cardholder Data
+### Requirement 3 - Cardholder Data
 
 Protect stored cardholder data.
 
@@ -46,7 +46,7 @@ Protect stored cardholder data.
 | Azure | Virtual Machines   | VM OS Disk Encryption       | Ensures that VM OS Disk Encryption is enabled for virtual machines      |
 | Azure | Virtual Machines   | VM Data Disk Encryption     | Ensure that Data Disk Encryption is enabled for virtual machines        |
 
-## Requirement 4 - Encrypted Transmission
+### Requirement 4 - Encrypted Transmission
 
 Encrypt transmission of cardholder data across open, public networks
 
@@ -61,7 +61,7 @@ Encrypt transmission of cardholder data across open, public networks
 | GCP    | SQL              | Database SSL Enabled           | Ensures SQL databases have SSL enabled                                                                        |
 | Azure  | Storage Accounts | Storage Accounts HTTPS         | Ensures HTTPS-only traffic is allowed to storage account endpoints                                            |
 
-## Requirement 5 - Anti-Virus and Malware
+### Requirement 5 - Anti-Virus and Malware
 
 Protect all systems against malware and regularly update anti-virus software or programs.
 
@@ -69,7 +69,7 @@ Protect all systems against malware and regularly update anti-virus software or 
 | ----- | ---------------- | ---------------------- | ----------------------------------------------------------------------- |
 | Azure | Virtual Machines | VM Endpoint Protection | Ensures that VM Endpoint Protection is enabled for all virtual machines |
 
-## Requirement 6 - Secure Systems
+### Requirement 6 - Secure Systems
 
 Develop and maintain secure systems and applications.
 
@@ -84,7 +84,7 @@ Develop and maintain secure systems and applications.
 | Oracle | Identity      | Password Requires Uppercase | Ensures password policy requires at least one uppercase character.               |
 | Oracle | Identity      | Minimum Password Length     | Ensures password policy requires a minimum password length.                      |
 
-## Requirement 7 - Restrict Access
+### Requirement 7 - Restrict Access
 
 Restrict access to cardholder data by business need to know.
 
@@ -106,7 +106,7 @@ Restrict access to cardholder data by business need to know.
 | AWS    | SQS                     | SQS Cross Account Access      | Ensures SQS policies disallow cross-account access                                                              |
 | Azure  | Table Service           | Table Service All Access ACL  | Ensures tables do not allow full write, delete, or read ACL permissions                                         |
 
-## Requirement 8 - Identify Access
+### Requirement 8 - Identify Access
 
 Identify and authenticate access to system components.
 
@@ -129,13 +129,13 @@ Identify and authenticate access to system components.
 | AWS    | IAM          | Password Requires Uppercase   | Ensures password policy requires at least one uppercase letter                                                    |
 | AWS    | IAM          | Users Password Last Used      | Detects users with password logins that have not been used for a period of time and that should be decommissioned |
 
-## Requirement 9 - Physical Access
+### Requirement 9 - Physical Access
 
 Restrict physical access to cardholder data.
 
 No plugins have been mapped to this control.
 
-## Requirement 10 - Track Access
+### Requirement 10 - Track Access
 
 Track and monitor all access to network resources and cardholder data.
 
@@ -153,7 +153,7 @@ Track and monitor all access to network resources and cardholder data.
 | AWS    | S3         | S3 Bucket Logging                | Ensures S3 bucket logging is enabled for S3 buckets                                           |
 | AWS    | Transfer   | Transfer Logging Enabled         | Ensures AWS Transfer servers have CloudWatch logging enabled.                                 |
 
-## Requirement 11 - Test Systems
+### Requirement 11 - Test Systems
 
 Regularly test security systems and processes.
 
@@ -162,7 +162,7 @@ Regularly test security systems and processes.
 | AWS   | RDS      | RDS Restorable | Ensures RDS instances can be restored to a recent point |
 | GCP   | SQL      | DB Restorable  | Ensures SQL instances can be restored to a recent point |
 
-## Requirement 12 - Policy
+### Requirement 12 - Policy
 
 Maintain a policy that addresses information security for all personnel.
 
