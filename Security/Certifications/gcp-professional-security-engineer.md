@@ -1,6 +1,6 @@
 ## Professional Cloud Security Engineer Certification
 
-### Best Practices
+## Best Practices
 
 ### Infrastructure
 
