@@ -18,9 +18,9 @@
   - [Microsoft Azure](Security/Cloud/azure.md)
 
 - **Infrastructure Security**
+
   - [K8s Security Practices](Security/Infrastructure/Tools/k8s-best-practices.md)
   - [K8s Cheatsheet](Security/Infrastructure/Tools/k8s-checklist.md)
-
 
 - **Security Compliances**
 

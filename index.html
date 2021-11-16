@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Learning & Notes</title>
   <meta name="description" content="Learning & Notes By Rahul Sharma">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="shortcut icon" href="https://raw.githubusercontent.com/boardgameio/boardgame.io/main/docs/favicon.png" type="image/png" sizes="16x16">
+  <link rel="shortcut icon" href="https://raw.githubusercontent.com/boardgameio/boardgame.io/main/docs/favicon.png"
+    type="image/png" sizes="16x16">
   <link rel="stylesheet" href="//unpkg.com/docsify-themeable@0/dist/css/theme-simple.css">
   <link rel="stylesheet" href="theme.css">
-
+  <link href="unpkg.com/@fortawesome/fontawesome-free/css/fontawesome.css" />
+  <link href="unpkg.com/@fortawesome/fontawesome-free/css/brands.css" />
+  <link href="unpkg.com/@fortawesome/fontawesome-free/css/regular.css" />
+  <link href="unpkg.com/@fortawesome/fontawesome-free/css/solid.css" />
   <style>
-  .cover:before, .cover:after{
-    position: inherit;
-  }
-
-  iframe {
-    box-shadow: 0 0 10px var(--mono-tint2);
-    border-radius: var(--border-radius-l);
-    background: var(--mono-tint3);
-  }
-
-  iframe.plain {
-    box-shadow: none;
-    border: none;
-    background: transparent;
-    min-width: 0;
-    width: 100%;
-  }
-
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  @media only screen and (max-device-width: 500px) {
-    iframe.react {
-      display: none;
+    .cover:before,
+    .cover:after {
+      position: inherit;
     }
-  }
+
+    /* :root {
+      --sidebar-width: 45rem;
+    } */
+
+    iframe {
+      box-shadow: 0 0 10px var(--mono-tint2);
+      border-radius: var(--border-radius-l);
+      background: var(--mono-tint3);
+    }
+
+    iframe.plain {
+      box-shadow: none;
+      border: none;
+      background: transparent;
+      min-width: 0;
+      width: 100%;
+    }
+
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media only screen and (max-device-width: 500px) {
+      iframe.react {
+        display: none;
+      }
+    }
   </style>
 </head>
 
@@ -59,10 +70,21 @@
     auto2top: true,
     search: 'auto', // default
     pagination: {}, // default
-    plugins: [],
+    formatUpdated: '{DD}-{MM}-{YY}',
+    plugins: [
+      function (hook, vm) {
+        hook.beforeEach(function (html) {
+          return (
+            html +
+            '\n----\n' +
+            'Updated on {docsify-updated}'
+          );
+        });
+      }
+    ],
     markdown: {
       renderer: {
-        code: function(code, lang) {
+        code: function (code, lang) {
           if (lang == 'codepen') {
             return code;
           }
@@ -72,6 +94,14 @@
           return this.origin.code.apply(this, arguments);
         }
       }
+    },
+    remoteMarkdown: {
+      tag: 'remoteMarkdownUrl',
+    },
+    autoHeaders: {
+      separator: 'decimal',
+      levels: '3',
+      scope: '#main' // <-------- this
     }
   }
 </script>
@@ -82,6 +112,10 @@
 <script src="//unpkg.com/docsify-pagination@2/dist/docsify-pagination.min.js"></script>
 <script src="//unpkg.com/docsify-tabs@1"></script>
 <script src="//unpkg.com/docsify-edit-on-github@1/index.js"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+<script src="//unpkg.com/docsify-remote-markdown/dist/docsify-remote-markdown.min.js"></script>
+<script src="//unpkg.com/docsify-fontawesome/dist/docsify-fontawesome.min.js"></script>
+
 <script>
   window.$docsify.plugins.push(EditOnGithubPlugin.create(
     'https://github.com/Rahulsharma0810/Planet-CyberSecurity/blob/main/docs/documentation/',
