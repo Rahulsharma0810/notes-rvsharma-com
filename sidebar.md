@@ -29,3 +29,5 @@
 - **Security Certifications**
 
   - [AWS Security Speciality](Security/Certifications/aws-security-speciality.md)
+  - [GCP Professional Security](Security/Certifications/gcp-professional-security-engineer.md)
+  
