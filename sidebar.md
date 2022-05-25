@@ -13,6 +13,7 @@
 - **Cloud Security**
 
   - [Cloud Tools Comparison](Security/Cloud/cloudcompare.md)
+  - [Proprietary Tools](Security/Infrastructure/Tools/security-tools.md)
   - [Amazon Web Services](Security/Cloud/aws.md)
   - [Google Cloud Platform](Security/Cloud/gcp.md)
   - [Microsoft Azure](Security/Cloud/azure.md)
