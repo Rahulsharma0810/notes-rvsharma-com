@@ -26,8 +26,8 @@
 
   - [PCI-DSS](Security/Compliances/pci-dss.md)
 
-- **Security Certifications**
+- **Certifications**
 
   - [AWS Security Speciality](Security/Certifications/aws-security-speciality.md)
   - [GCP Professional Security](Security/Certifications/gcp-professional-security-engineer.md)
-  
+  - [GCP Professional Cloud Architect](Security/Certifications/gcp-professional-cloud-architect.md)
