@@ -12,7 +12,7 @@
 
 - **Interview Q&A**
 
-  - [Web Security](Security/Concepts/cryptography.md)
+  - [Web Security](Security/interview-questions/web-application-security.md)
 
 - **Cloud Security**
 
