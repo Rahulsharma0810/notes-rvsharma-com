@@ -1,7 +1,3 @@
-- **Getting Started**
-
-  - [Home](/)
-
 - **Security**
 
   - [Concepts](Security/Concepts/basics.md)
@@ -34,5 +30,5 @@
 - **Certifications**
 
   - [AWS Security Speciality](Security/Certifications/aws-security-speciality.md)
-  - [GCP Professional Security](Security/Certifications/gcp-professional-security-engineer.md)
-  - [GCP Professional Cloud Architect](Security/Certifications/gcp-professional-cloud-architect.md)
+  - [GCP Pro Security](Security/Certifications/gcp-professional-security-engineer.md)
+  - [GCP Pro Cloud Architect](Security/Certifications/gcp-professional-cloud-architect.md)

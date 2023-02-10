@@ -1,12 +1,18 @@
-<!-- _coverpage.md -->
+<div class="logo-container">
+  <div class="heats">
+    <div class="h"></div>
+    <div class="h"></div>
+    <img src="https://raw.githubusercontent.com/Rahulsharma0810/rahulsharma0810/main/images/display_picture.png">
+  </div>
+</div>
 
-![logo](https://raw.githubusercontent.com/Rahulsharma0810/rahulsharma0810/main/images/display_picture.png)
+# Rahul Sharma
 
-# Rahul Sharma's Notes
+> Backyard for cybersecurity notes.
 
-[Visit Profile](https://rvsharma.com)
 [GitHub](https://github.com/Rahulsharma0810)
+[Profile](https://rvsharma.com)
 
 <!-- background color -->
 
-![color](#000000)
+![color](#081020)

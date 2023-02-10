@@ -2,124 +2,51 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Learning & Notes</title>
-  <meta name="description" content="Learning & Notes By Rahul Sharma">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="shortcut icon" href="https://raw.githubusercontent.com/boardgameio/boardgame.io/main/docs/favicon.png"
-    type="image/png" sizes="16x16">
-  <link rel="stylesheet" href="//unpkg.com/docsify-themeable@0/dist/css/theme-simple.css">
-  <link rel="stylesheet" href="theme.css">
-  <link href="unpkg.com/@fortawesome/fontawesome-free/css/fontawesome.css" />
-  <link href="unpkg.com/@fortawesome/fontawesome-free/css/brands.css" />
-  <link href="unpkg.com/@fortawesome/fontawesome-free/css/regular.css" />
-  <link href="unpkg.com/@fortawesome/fontawesome-free/css/solid.css" />
-  <style>
-    .cover:before,
-    .cover:after {
-      position: inherit;
-    }
+  <!-- Basic -->
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    /* :root {
-      --sidebar-width: 45rem;
-    } */
+  <!-- Search Engine -->
+  <meta name="description" content="Rahul Sharma's CyberSecurity Notes">
+  <meta name="image"
+    content="https://raw.githubusercontent.com/Rahulsharma0810/rahulsharma0810/main/images/display_picture.pngˀ">
+  <title>Rahul Sharma's Notes</title>
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-    iframe {
-      box-shadow: 0 0 10px var(--mono-tint2);
-      border-radius: var(--border-radius-l);
-      background: var(--mono-tint3);
-    }
+  <!-- Schema.org for Google -->
+  <meta itemprop="name" content="Rahul Sharma's Notes">
+  <meta itemprop="description" content="Rahul Sharma's CyberSecurity Notes">
+  <meta itemprop="image"
+    content="https://raw.githubusercontent.com/Rahulsharma0810/rahulsharma0810/main/images/display_picture.pngˀ">
 
-    iframe.plain {
-      box-shadow: none;
-      border: none;
-      background: transparent;
-      min-width: 0;
-      width: 100%;
-    }
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Rahul Sharma's Notes">
+  <meta name="twitter:description" content="Rahul Sharma's CyberSecurity Notes">
+  <meta name="twitter:image"
+    content="https://raw.githubusercontent.com/Rahulsharma0810/rahulsharma0810/main/images/display_picture.pngˀ">
 
-    img {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    @media only screen and (max-device-width: 500px) {
-      iframe.react {
-        display: none;
-      }
-    }
-  </style>
+  <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+  <meta property="og:title" content="Rahul Sharma's Notes">
+  <meta property="og:description" content="Rahul Sharma's CyberSecurity Notes">
+  <meta property="og:image"
+    content="https://raw.githubusercontent.com/Rahulsharma0810/rahulsharma0810/main/images/display_picture.pngˀ">
+  <meta property="og:logo"
+    content="https://raw.githubusercontent.com/Rahulsharma0810/rahulsharma0810/main/images/display_picture.png">
+  <meta property="og:site_name" content="Rahul Sharma's Notes">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="style.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/codecopy/umd/codecopy.min.css">
 </head>
 
 <body>
   <div id="app"></div>
 </body>
+<script src="main.min.js"></script>
+<script src="//unpkg.com/docsify@latest/lib/docsify.min.js"></script>
+<script src="//unpkg.com/docsify@latest/lib/plugins/external-script.min.js"></script>
+<script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/codecopy/umd/codecopy.min.js"></script>
 
-<script>
-  window.$docsify = {
-    name: "RV's Notes",
-    coverpage: true,
-    nameLink: {
-      '/': '..'
-    },
-    repo: 'https://github.com/Rahulsharma0810/Planet-CyberSecurity',
-    homepage: 'home.md',
-    loadSidebar: 'sidebar.md',
-    subMaxLevel: 3,
-    auto2top: true,
-    search: 'auto', // default
-    pagination: {}, // default
-    formatUpdated: '{DD}-{MM}-{YY}',
-    plugins: [
-      function (hook, vm) {
-        hook.beforeEach(function (html) {
-          return (
-            html +
-            '\n----\n' +
-            'Updated on {docsify-updated}'
-          );
-        });
-      }
-    ],
-    markdown: {
-      renderer: {
-        code: function (code, lang) {
-          if (lang == 'codepen') {
-            return code;
-          }
-          if (lang == 'react') {
-            return code;
-          }
-          return this.origin.code.apply(this, arguments);
-        }
-      }
-    },
-    remoteMarkdown: {
-      tag: 'remoteMarkdownUrl',
-    },
-    autoHeaders: {
-      separator: 'decimal',
-      levels: '3',
-      scope: '#main' // <-------- this
-    }
-  }
-</script>
-
-<script src="//unpkg.com/docsify@4"></script>
-<script src="//unpkg.com/docsify-themeable@0"></script>
-<script src="//unpkg.com/docsify@4/lib/plugins/search.min.js"></script>
-<script src="//unpkg.com/docsify-pagination@2/dist/docsify-pagination.min.js"></script>
-<script src="//unpkg.com/docsify-tabs@1"></script>
-<script src="//unpkg.com/docsify-edit-on-github@1/index.js"></script>
-<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
-<script src="//unpkg.com/docsify-remote-markdown/dist/docsify-remote-markdown.min.js"></script>
-<script src="//unpkg.com/docsify-fontawesome/dist/docsify-fontawesome.min.js"></script>
-
-<script>
-  window.$docsify.plugins.push(EditOnGithubPlugin.create(
-    'https://github.com/Rahulsharma0810/Planet-CyberSecurity/blob/main/docs/documentation/',
-    null,
-    'Edit on GitHub'
-  ));
-</script>
+</html>

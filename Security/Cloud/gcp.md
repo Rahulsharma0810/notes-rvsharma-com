@@ -15,3 +15,5 @@ The Security Command Center includes a variety of tools and features to help org
 - Security policy management: A set of tools and controls for defining and enforcing security policies across an organization's GCP environment.
 
 Overall, GCP Security Command Center is designed to help organizations effectively manage and secure their Google Cloud environments, and to identify and respond to potential threats and vulnerabilities in a timely and effective manner.
+
+## Google Chronicles
