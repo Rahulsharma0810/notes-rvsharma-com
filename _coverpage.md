@@ -1,6 +1,6 @@
 <!-- _coverpage.md -->
 
-![logo](https://rvsharma.com/images/about.webp)
+![logo](https://raw.githubusercontent.com/Rahulsharma0810/rahulsharma0810/main/images/display_picture.png)
 
 # Rahul Sharma's Notes
 
