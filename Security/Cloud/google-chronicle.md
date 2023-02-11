@@ -59,7 +59,7 @@ The advantages of Chronicle include:
 
 - Raw log search: Raw log search is available within Chronicle, so customers can search against the data just as it was created by the source system.
 
-Note: YARA-L Languages For wrtting Chronicle rule
+Note: YARA-L Language used for writing Chronicle rule.
 
 ## Demo
 
@@ -67,4 +67,4 @@ Note: YARA-L Languages For wrtting Chronicle rule
 
 Chronicle Dashboards built upon the capabilities of looker(visual layer) and bigquery (data layer).
 
-https://www.youtube.com/watch?v=qWT7oy8rhck
+In the UDM Search query editor, you can search for structured data by using various UDM fields. The query editor also allows you to filter out specific events and adjust the date range of your search. Results are displayed in real-time, and you can also click on rows to see more detailed information. In the future, Chronicle plans to add more customization options to the raw log viewer and new features such as templates and saved queries.
