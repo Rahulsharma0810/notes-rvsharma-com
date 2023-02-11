@@ -93,7 +93,7 @@ Customer Security Responsibilities
 - Configuration of AWS-provided firewall - VPC rules, security groups, network ACLs etc.
 
 Diagram of the Shared Responsibility Model:
-https://aws.amazon.com/compliance/shared-responsibility-model/
+<https://aws.amazon.com/compliance/shared-responsibility-model/>
 
 Basically, if the customer has no access to the underlying OS/software/infrastructure, then it is AWS's responsibility.
 
@@ -175,8 +175,8 @@ Critical Terms:
 IAM Permissions Boundary for IAM Entities (users/roles)
 
 - A Permissions Boundary is using a managed policy to set the _maximum permissions_ that an identity-based policy can grant to an IAM entity.
-- https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html
-- https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_PermissionsBoundary
+- <https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html>
+- <https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_PermissionsBoundary>
 
 #### IAM Root User Scenario
 
@@ -384,8 +384,8 @@ What is NOT replicated
 
 Resources:
 
-- Cross-Region Replication: https://docs.aws.amazon.com/AmazonS3/latest/dev/replication.html
-- What does S3 replicate: https://docs.aws.amazon.com/AmazonS3/latest/dev/replication-what-is-isnot-replicated.html
+- Cross-Region Replication: <https://docs.aws.amazon.com/AmazonS3/latest/dev/replication.html>
+- What does S3 replicate: <https://docs.aws.amazon.com/AmazonS3/latest/dev/replication-what-is-isnot-replicated.html>
 
 #### Securing S3 Using CloudFront
 
@@ -409,13 +409,13 @@ S3 bucket policy to restrict access via. CloudFront:
 
 ```javascript
 {
-	"Sid": "1",
-	"Effect": "Allow",
-	"Principal": {
-		"AWS": "arn:aws:iam::cloudfront:user/CloudFront Origin Access Identity EAF5XXXXXXXXX"
-		},
-	"Action": "s3:GetObject",
-	"Resource": "arn:aws:s3:::AWSDOC-EXAMPLE-BUCKET/*"
+ "Sid": "1",
+ "Effect": "Allow",
+ "Principal": {
+  "AWS": "arn:aws:iam::cloudfront:user/CloudFront Origin Access Identity EAF5XXXXXXXXX"
+  },
+ "Action": "s3:GetObject",
+ "Resource": "arn:aws:s3:::AWSDOC-EXAMPLE-BUCKET/*"
 }
 ```
 
@@ -576,7 +576,7 @@ Steps to configuring Vault Locks:
 
 Vault Lock Policy vs. Vault Access Policy:
 
-- https://docs.aws.amazon.com/amazonglacier/latest/dev/vault-lock.html
+- <https://docs.aws.amazon.com/amazonglacier/latest/dev/vault-lock.html>
 
 #### AWS Organisations
 
@@ -584,7 +584,7 @@ AWS Organisations is an account management service that lets you consolidate mul
 
 SCPs enable you to restrict, at the account level of granularity, what services and actions the users, groups, and roles in those accounts can do. However, an SCP never grants permissions. The SCP limits permissions for entities in member accounts, including each AWS account root user. SCPs are available only in an AWS organization that has all features enabled, SCPs aren't available if your organization has enabled only the consolidated billing features.
 
-https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scp.html
+<https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scp.html>
 
 #### IAM Credential Report
 
@@ -687,9 +687,9 @@ Provides:
 
 - Logs API call details (for supported services)
 
-Supported services: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.html
-Un-supported services: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-unsupported-aws-services.html
-CloudTrail limits: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/WhatIsCloudTrail-Limits.html
+Supported services: <https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.html>
+Un-supported services: <https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-unsupported-aws-services.html>
+CloudTrail limits: <https://docs.aws.amazon.com/awscloudtrail/latest/userguide/WhatIsCloudTrail-Limits.html>
 
 Log info:
 
@@ -874,7 +874,7 @@ Monitoring Config:
 - Use CloudTrail with Config to provide deeper insight into resources.
 - Use CloudTrail to monitor access to Config - e.g. someone stopping Config Recorder would be monitored in CloudTrail.
 
-AWS Config is a big part of the exam, so read the Config FAQ: https://aws.amazon.com/config/faq/
+AWS Config is a big part of the exam, so read the Config FAQ: <https://aws.amazon.com/config/faq/>
 
 #### Set up an alert if Root user logs in / pro-active alerting (will be tested in exam)
 
@@ -927,7 +927,7 @@ AWS Trusted Advisor
 
 Understand the 4 logging services and their differences: _CloudTrail, CloudWatch, Config, VPC Flow Logs_
 
-Resources: White-paper _Security at Scale: Logging in AWS_ https://d1.awsstatic.com/whitepapers/compliance/AWS_Security_at_Scale_Logging_in_AWS_Whitepaper.pdf
+Resources: White-paper _Security at Scale: Logging in AWS_ <https://d1.awsstatic.com/whitepapers/compliance/AWS_Security_at_Scale_Logging_in_AWS_Whitepaper.pdf>
 
 Control access to log files:
 
@@ -991,10 +991,11 @@ Customer-managed CMK: Importing your own Key Material into KMS
 1. Create a customer-managed CMK with no key material by selecting "External" for the key material origin (not usable yet).
 2. Import key material - select Wrapping Algorithm SHA1.
 3. Import key material - download Wrapping Key (public key) as `PublicKey.bin` and Import Token `ImportTokenxxx`.
-4. Use `openssl` and follow instructions here to generate key material and encrypt it with the Wrapping Key: https://docs.aws.amazon.com/kms/latest/developerguide/importing-keys-encrypt-key-material.html.
+4. Use `openssl` and follow instructions here to generate key material and encrypt it with the Wrapping Key: <https://docs.aws.amazon.com/kms/latest/developerguide/importing-keys-encrypt-key-material.html>.
    - Generate a 256-bit symmetric key and save it in a file named `PlaintextKeyMaterial.bin`:
      `$ openssl rand -out PlaintextKeyMaterial.bin 32`
    - Encrypt the key material with the public Wrapping Key you downloaded earlier
+
    ```
    $ openssl rsautl -encrypt \
                 -in PlaintextKeyMaterial.bin \
@@ -1004,6 +1005,7 @@ Customer-managed CMK: Importing your own Key Material into KMS
                 -pubin \
                 -out EncryptedKeyMaterial.bin
    ```
+
 5. Upload `EncryptedKeyMaterial.bin` and `ImportTokenxxx`.
 6. The key is now available for use.
 
@@ -1033,7 +1035,7 @@ Scenario #2: User disables a KMS key - AWS Config monitoring KMS events.
 - Standard or Custom Rule (Lambda) is triggered which detects the KMS-disable.
 - Rule will notify AWS Config -> AWS Config fires off SNS notification to security team.
 
-Read the AWS KMS FAQ: https://aws.amazon.com/kms/faqs/
+Read the AWS KMS FAQ: <https://aws.amazon.com/kms/faqs/>
 
 #### KMS Key Rotation Options
 
@@ -1291,7 +1293,7 @@ Policy Conditions can be used to specify a condition within a Key Policy or IAM 
 
 KMS provides a set of predefined **Condition Keys**.
 
-- See https://docs.aws.amazon.com/kms/latest/developerguide/policy-conditions.html.
+- See <https://docs.aws.amazon.com/kms/latest/developerguide/policy-conditions.html>.
 
 Use **kms:ViaService** to allow or deny access to your CMK according to which service the request originated from.
 
@@ -1444,4 +1446,4 @@ Elastic Container Service (ECS)
 - Avoid the public internet use ECS Interface Endpoints (similar to VPC endpoints).
 - If you must use public internet, Use TLS to secure end-to-end communication between end-users and your applications running in containers.
 - If you are using TLS certificates, best-practice is to use **Amazon Certificate Manager (ACM)** as it provides a single, central interface for storing and managing certificates and it integrates well with many AWS services.
-- Read https://aws.amazon.com/blogs/compute/maintaining-transport-layer-security-all-the-way-to-your-container-part-2-using-aws-certificate-manager-private-certificate-authority/.
+- Read <https://aws.amazon.com/blogs/compute/maintaining-transport-layer-security-all-the-way-to-your-container-part-2-using-aws-certificate-manager-private-certificate-authority/>.

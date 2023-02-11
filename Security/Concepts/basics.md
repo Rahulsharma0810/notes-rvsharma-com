@@ -75,7 +75,7 @@ To understand how the CIA triad works in practice, consider the example of a ban
 
 But there's more to the three principles than just what's on the surface. Here are some examples of how they operate in everyday IT environments.
 
-** Best practices for implementing the CIA triad **
+**Best practices for implementing the CIA triad**
 
 In implementing the CIA triad, an organization should follow a general set of best practices. Some best practices, divided by each of the three subjects, include:
 

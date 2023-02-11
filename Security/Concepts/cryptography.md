@@ -46,7 +46,7 @@ Asymmetric encryption is mostly used in day-to-day communication channels, espec
 
 **Algorithm of ASymmetric Encryption**
 
-- [DH](https://en.wikipedia.org/wiki/Diffie-Hellman_key_exchange) - A method of exchanging cryptographic keys securely over a public channel. Unlike RSA, the Diffie-Hellman Key Exchange is not encryption, and is only a way for two parties to agree on a shared secret value. Since the keys generated are completely pseudo-random, DH key exchanges can provide forward secrecy (https://en.wikipedia.org/wiki/Forward_secrecy).
+- [DH](https://en.wikipedia.org/wiki/Diffie-Hellman_key_exchange) - A method of exchanging cryptographic keys securely over a public channel. Unlike RSA, the Diffie-Hellman Key Exchange is not encryption, and is only a way for two parties to agree on a shared secret value. Since the keys generated are completely pseudo-random, DH key exchanges can provide forward secrecy (<https://en.wikipedia.org/wiki/Forward_secrecy>).
 - [ECC](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography) - Public-key cryptosystems based on the algebraic structure of elliptic curves over finite fields.
 - [RSA](<https://en.wikipedia.org/wiki/RSA_(cryptosystem)>) - One of the first practical public-key cryptosystems and is widely used for secure data transmission. In RSA, this asymmetry is based on the practical difficulty of factoring the product of two large prime numbers, the factoring problem.
 
@@ -78,9 +78,7 @@ SSL/TLS uses both asymmetric and symmetric encryption, quickly look at digitally
 | **Speed**                | Symmetric encryption is fast technique                                     | Asymmetric encryption is slower in terms of speed.                                           |
 | **Algorithms**           | RC4, AES, DES, 3DES, and QUAD.                                             | RSA, Diffie-Hellman, ECC algorithms.                                                         |
 
-Ref : https://www.ssl2buy.com/wiki/symmetric-vs-asymmetric-encryption-what-are-differences
-
-
+Ref : <https://www.ssl2buy.com/wiki/symmetric-vs-asymmetric-encryption-what-are-differences>
 
 ### Password Storage Concepts
 

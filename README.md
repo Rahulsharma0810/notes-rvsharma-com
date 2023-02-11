@@ -1,4 +1,4 @@
-### Hello World,
+### Hello World
 
 Place where I write about what I read and do, D2D (day-to-day). This is a space for sharing and documenting my thoughts, insights, and experiences as I engage with various materials and activities.
 

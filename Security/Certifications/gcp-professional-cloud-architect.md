@@ -62,7 +62,7 @@ Example: _us-central1-a_
 - Machines that run more for than 25% of the month (incremental discount for each percent past 25%)
 - No upfront costs and not tied to machine type
 
-Example: https://cloudplatform.googleblog.com/2014/04/introducing-sustained-use-discounts.html
+Example: <https://cloudplatform.googleblog.com/2014/04/introducing-sustained-use-discounts.html>
 
 _Note:_ Understand, watch a video about it, read Joe's notes.
 
@@ -75,7 +75,7 @@ _Note:_ Understand, watch a video about it, read Joe's notes.
 
 - All data is encrypted at rest
 - Network encryption
-  ** All control information is encrypted
+  **All control information is encrypted
   ** All WAN traffic to be encrypted automatically
   \*\* Moving towards encrypting all local traffic within data centres
 
@@ -423,7 +423,7 @@ TBA
   - Performance is way below that of a Local SSD but is still fast.
 - Can resize while in use but will need file system update within VM
   - Max file size: 10TB
-- Pricing = Incremental storage difference _ ($ _ time)
+- Pricing = Incremental storage difference _($_ time)
 
 ![Creating a snapshot](https://cloud.google.com/compute/images/creating-snapshot.png "Creating a snapshot")
 ![Deleting a snapshot](https://cloud.google.com/compute/images/deleting-snapshot.png "Deleting a snapshot")
@@ -573,9 +573,9 @@ When should I use it?
     - GCE Instances
     - Network Load Balancers
   - Global Static IP (Anycast IP)
-    _ Global Load Balancers
+    _Global Load Balancers
     _ HTTP(S)
-    _ SSL Proxy
+    _SSL Proxy
     _ TCP Proxy
     _Note:_
 - Pay for IPs that are not in use

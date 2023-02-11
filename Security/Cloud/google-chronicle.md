@@ -63,6 +63,8 @@ Note: YARA-L Languages For wrtting Chronicle rule
 
 ## Demo
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VEUTofLMQJo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-qy
-Chrinicles Dashboards built upon the capabilities of looker(visual layer) and bigquery (data layer).
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/VEUTofLMQJo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Chronicle Dashboards built upon the capabilities of looker(visual layer) and bigquery (data layer).
+
+https://www.youtube.com/watch?v=qWT7oy8rhck

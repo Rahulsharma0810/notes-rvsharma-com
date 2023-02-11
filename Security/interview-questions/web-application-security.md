@@ -126,8 +126,8 @@ Q20: How can I prevent XSS?
 
   - Sanitizing user input: Use input filters to block or sanitize input that contains potentially malicious code.
 
-
 Q27: What is the difference between encryption, encoding, and hashing?Related To: Cryptography
+
 - Encryption, encoding, and hashing are all techniques used to protect data and prevent unauthorized access. However, they are used for different purposes and have different characteristics.
 
   Encryption
