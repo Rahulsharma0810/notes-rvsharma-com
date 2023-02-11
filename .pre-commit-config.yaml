@@ -1,0 +1,16 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: check-executables-have-shebangs
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: detect-private-key
+      - id: check-added-large-files
+      - id: check-yaml
+      - id: fix-encoding-pragma
+  - repo: https://github.com/shssoichiro/oxipng
+    rev: v8.0.0
+    hooks:
+      - id: oxipng
+        args: ["-o", "6"]
