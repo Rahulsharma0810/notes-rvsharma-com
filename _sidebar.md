@@ -18,6 +18,8 @@
   - [Google Cloud Platform](Security/Cloud/gcp.md)
   - [Microsoft Azure](Security/Cloud/azure.md)
 
+  - [Google Chronicle](Security/Cloud/google-chronicle.md)
+
 - **Infrastructure Security**
 
   - [K8s Security Practices](Security/Infrastructure/Tools/k8s-best-practices.md)
