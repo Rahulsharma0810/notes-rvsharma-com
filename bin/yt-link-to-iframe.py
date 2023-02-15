@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-
+import re
 
 def convert_youtube_html_to_embedded_iframe(file_contents):
     youtube_html_url_pattern = re.compile(r'https://www.youtube.com/watch\?v=([a-zA-Z0-9_]+)')

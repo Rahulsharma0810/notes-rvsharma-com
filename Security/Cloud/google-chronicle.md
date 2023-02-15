@@ -83,7 +83,7 @@ Overview of Chronicle's Ingestion Service:
 
 - Chronicle's ingestion service normalizes unstructured log data into the Unified Data Model (UDM) for increased speed of search and detection.
 - Parsing is done through Logstash-style configuration files that extract, manipulate, and write data into a UDM event or entity.
-- Over 500 default parsers are available for standard log formats, making it easy for customers to bring their security logs and start using the platform.
+- Over 500 [default parsers](https://cloud.google.com/chronicle/docs/ingestion/parser-list/supported-default-parsers) are available for standard log formats, making it easy for customers to bring their security logs and start using the platform.
 
 ![](img/google-chronicle/2023-02-13-16-36-47.png)
 
@@ -143,7 +143,7 @@ Keep in mind that this is just a basic example, and you may need to modify the p
 
 **Parsing API**
 
-Chronicles provide API for configuring parsers.
+Chronicles provides API for configuring parsers.
 
 ![](img/google-chronicle/2023-02-13-17-36-19.png)
 
@@ -155,36 +155,36 @@ launch](https://cloud.google.com/chronicle/docs/supported-datasets)
 There are four main methods of getting data into Google Chronicle:
 ![](img/google-chronicle/2023-02-13-18-04-18.png)
 
-- Chronicle forwarder
-- Pulling data from cloud sources
-- Pushing data into Chronicle through the ingestion API
-- Directly fetching log data from Google Cloud
+- Chronicle forwarder.
+- Pulling data from cloud sources.
+- Pushing data into Chronicle through the ingestion API.
+- Directly fetching log data from Google Cloud.
 
 **Chronicle forwarder:**
 
 ![](img/google-chronicle/2023-02-13-18-05-17.png)
 
-- Primarily used for gathering data from on-premises sources but can also be deployed in cloud environments
-- Deployed as a Docker container running on Linux VM (Windows version also exists)
-- Supports collection of different types of data such as syslog via TLS, Kafka topics, local files, and Splunk
-- It can be deployed multiple times behind a load balancer for HA and load balancing
-- Configuration is done using a YAML file, which can be modified to add or remove data sources and log types
+- Primarily used for gathering data from on-premises sources but can also be deployed in cloud environments.
+- Deployed as a Docker container running on Linux VM (Windows version also exists).
+- Supports collection of different types of data such as syslog via TLS, Kafka topics, local files, and Splunk.
+- It can be deployed multiple times behind a load balancer for HA and load balancing.
+- Configuration is done using a YAML file, which can be modified to add or remove data sources and log types.
 
 **Pulling data from cloud sources:**
 
 ![](img/google-chronicle/2023-02-13-18-07-56.png)
 
-- Data from sources like GCS, S3, Azure Blob Storage, Microsoft 365, Azure Active Directory, and others can be fetched directly
-- Requires configuring API token or credentials
-- Configurable through Chronicle UI by an administrator
+- Data from sources like GCS, S3, Azure Blob Storage, Microsoft 365, Azure Active Directory, and others can be fetched directly.
+- Requires configuring API token or credentials.
+- Configurable through Chronicle UI by an administrator.
 
 **Pushing data through the ingestion API:**
 
 ![](img/google-chronicle/2023-02-13-18-09-22.png)
 
-- Presents a way for partners and MSPs to send data directly to Chronicle without using forwarders or cloud source feeds
-- Four distinct endpoints, authenticated with an OAuth token
-- Endpoints allow posting data in unstructured log format or pre-formatted UDM format
+- Presents a way for partners and MSPs to send data directly to Chronicle without using forwarders or cloud source feeds.
+- Four distinct endpoints, authenticated with an OAuth token.
+- Endpoints allow posting data in unstructured log format or pre-formatted UDM format.
 
 ![](img/google-chronicle/2023-02-13-18-09-57.png)
 
@@ -192,12 +192,102 @@ There are four main methods of getting data into Google Chronicle:
 
 ![](img/google-chronicle/2023-02-13-18-10-22.png)
 
-- Only applicable to Google Cloud data
-- Recently introduced in the Google Cloud console
-- Allows attaching Chronicle instance to Google Cloud subscription with a few clicks
-- Automatically enables collection of data from the Security Command Center, Cloud audit logs, and Cloud asset inventory
-- Filters allow further tuning of data
+- Only applicable to Google Cloud data.
+- Recently introduced in the Google Cloud console.
+- Allows attaching Chronicle instance to Google Cloud subscription with a few clicks.
+- Automatically enables collection of data from the Security Command Center, Cloud audit logs, and Cloud asset inventory.
+- Filters allow further tuning of data.
 
-Troubleshooting and General Errors :
+**Reference Links**
 
-[Getting Data: How to guide for troubleshooting Forwarder issues / monitoring Forwarder health](<https://2567647.fs1.hubspotusercontent-na1.net/hubfs/2567647/Chronical%20Technical%20Training/Forwarder%20FAQ%20(go_forwarder-faq).pdf>)
+Troubleshooting and General Errors : [Getting Data: How to guide for troubleshooting Forwarder issues / monitoring Forwarder health](<https://2567647.fs1.hubspotusercontent-na1.net/hubfs/2567647/Chronical%20Technical%20Training/Forwarder%20FAQ%20(go_forwarder-faq).pdf>)
+
+[Getting Data: How-to guide: Overview Ingest API with example configuration
+launch](https://2567647.fs1.hubspotusercontent-na1.net/hubfs/2567647/Chronical%20Technical%20Training/%5BChronicle%5D%20How%20to%20use%20the%20Ingestion%20API.pdf)
+
+[Getting Data: Help Center on Ingestion API
+](https://cloud.google.com/chronicle/docs/reference/ingestion-api)
+
+[Supported default parsers](https://cloud.google.com/chronicle/docs/ingestion/parser-list/supported-default-parsers)
+
+[Parsing Data: How-to: JSON parser example guide](https://2567647.fs1.hubspotusercontent-na1.net/hubfs/2567647/Chronical%20Technical%20Training/%5BChronicle%5D%20How%20to%20parse%20JSON%20data.pdf)
+
+[Parsing Data: How-to: KeyValue example guide](<https://2567647.fs1.hubspotusercontent-na1.net/hubfs/2567647/Chronical%20Technical%20Training/%5BChronicle%5D%20How%20to%20parse%20key-value%20data%20(1).pdf>)
+
+## Authentication
+
+Chronicles SSO can be set up via identity providers like Google workspace, jumpcloud, octa etc.
+
+Guides:
+
+- [Authenication: How to guide for configuring Workspace Cloud Identity IdP](https://2567647.fs1.hubspotusercontent-na1.net/hubfs/2567647/Chronical%20Technical%20Training/%5BChronicle%5D%20How%20to%20configure%20Google%20Cloud%20Identity%20as%20a%20Chronicle%20IdP.pdf)
+
+- [Authentication: How to guide for configuring Okta IdP](https://2567647.fs1.hubspotusercontent-na1.net/hubfs/2567647/Chronical%20Technical%20Training/%5BChronicle%5D%20How%20to%20configure%20Okta%20as%20a%20Chronicle%20IdP.pdf)
+
+- [Authenication: How to guide for configuring Azure IdP](https://2567647.fs1.hubspotusercontent-na1.net/hubfs/2567647/Chronical%20Technical%20Training/%5BChronicle%5D%20How%20to%20configure%20Azure%20Active%20Directory%20as%20a%20Chronicle%20IdP.pdf)
+
+### Role Based Access Control
+
+Roles are associated with a set of product permissions. Assigning a role to a user grants the user the permissions associated with that [role](https://cloud.google.com/chronicle/docs/administration/rbac?hl=en#roles_and_permissions).
+
+Chronicle includes the following predefined roles:
+
+- Administrator: Manages the role-based access control policies for your enterprise. Can also edit or view any Chronicle page.
+- Editor: Can edit Chronicle pages, including the ability to create and edit rules for the Detection Engine.
+- Viewer: Can view any Chronicle page, but cannot make any changes.
+- ViewerWithNoDetectAccess: Can view all Chronicle pages that do not include detections (principally the Rules and Reference Lists pages).
+
+- RBAC can be assigned from Chronicles dashboard.
+
+Reference Links:
+
+- [Authorization: Help Center: Role-Based Access Control (RBAC)
+  ](https://cloud.google.com/chronicle/docs/administration/rbac?hl=en)
+
+## Rules
+
+**What is YARA?**
+
+YARA is a rule-based language used for identifying and classifying malware and other types of malicious software. It was created by Victor Alvarez of VirusTotal in 2007 and has since become a widely-used tool for detecting and analyzing malware.
+
+YARA rules consist of a set of strings and/or regular expressions that describe certain patterns found in the files or processes being analyzed. These rules can be used to scan files, memory, and network traffic to detect malware and other malicious activity.
+
+YARA is commonly used by malware analysts, incident responders, and security researchers to detect and analyze new strains of malware, as well as to identify patterns and characteristics of known malware families. It is an open-source tool that can be customized and extended to meet specific needs.
+
+**What is YARA-L?**
+
+YARA-L (YARA Language Extension) is a set of extensions to the YARA rule-based language that enables more advanced and powerful malware detection and analysis. It was developed by the cybersecurity firm ReversingLabs to address some of the limitations of the original YARA language.
+
+YARA-L extends the original YARA language by adding new features such as improved regular expression support, advanced math functions, and the ability to define custom data types. It also includes support for more advanced file types, such as PDF and Microsoft Office documents, and allows for more granular control over the analysis of these files.
+
+One of the key features of YARA-L is its ability to analyze and classify malware based on metadata and other non-executable file characteristics. This allows for more accurate and effective detection of malware, even in cases where the malware has been obfuscated or disguised in some way.
+
+YARA-L is widely used by malware analysts, incident responders, and security researchers to detect and analyze new and emerging threats, as well as to identify patterns and characteristics of known malware families. It is an open-source tool that can be customized and extended to meet specific needs.
+
+**Chronicles Uses YARA-L.**
+
+### Creating Rules
+
+![](img/google-chronicle/2023-02-16-04-47-15.png)
+
+Basic Rule Syntax
+
+```YARA
+rule detect_clop_ransomware {
+  meta:
+    author = "Your Name"
+    description = "Detects the Clop ransomware family"
+  strings:
+    $clop_string = "clop_marker_here"
+  condition:
+    $clop_string in (filedata and filesize < 10MB) and $event_type == "file-event" and ($filename matches "*.exe" or $filename matches "*.js")
+}
+```
+
+This rule is designed to detect the Clop ransomware based on a unique string marker that is known to be associated with that malware. The rule uses a string variable named "$clop_string" to define the marker.
+
+The "condition" section of the rule specifies that the marker must be found in the file data of a file event that has a file size of less than 10MB, and that the event type must be "file-event". It also specifies that the file name must match the patterns ".exe" or ".js", which are known file types used by the Clop ransomware.
+
+<iframe width="100%" height="315" src="https://www.youtube.com/watch?v=RMDpGkLHON8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Ref: [YARA-L 2.0 Syntax](https://cloud.google.com/chronicle/docs/detection/yara-l-2-0-syntax)

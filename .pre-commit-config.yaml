@@ -12,7 +12,7 @@ repos:
     hooks:
       - id: youtube-link-to-iframe
         name: YouTube Link to Iframe
-        entry: /opt/homebrew/bin/python3 bin/yt-link-to-iframe.py
+        entry: python bin/yt-link-to-iframe.py
         files: \.(md)$
         types: [markdown]
         language: python
