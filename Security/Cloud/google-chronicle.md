@@ -288,6 +288,6 @@ This rule is designed to detect the Clop ransomware based on a unique string mar
 
 The "condition" section of the rule specifies that the marker must be found in the file data of a file event that has a file size of less than 10MB, and that the event type must be "file-event". It also specifies that the file name must match the patterns ".exe" or ".js", which are known file types used by the Clop ransomware.
 
-<iframe width="100%" height="315" src="https://www.youtube.com/watch?v=RMDpGkLHON8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/RMDpGkLHON8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Ref: [YARA-L 2.0 Syntax](https://cloud.google.com/chronicle/docs/detection/yara-l-2-0-syntax)
