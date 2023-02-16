@@ -200,7 +200,7 @@ There are four main methods of getting data into Google Chronicle:
 
 **Reference Links**
 
-Troubleshooting and General Errors : [Getting Data: How to guide for troubleshooting Forwarder issues / monitoring Forwarder health](<https://2567647.fs1.hubspotusercontent-na1.net/hubfs/2567647/Chronical%20Technical%20Training/Forwarder%20FAQ%20(go_forwarder-faq).pdf>)
+Troubleshooting and General Errors: [Getting Data](<https://2567647.fs1.hubspotusercontent-na1.net/hubfs/2567647/Chronical%20Technical%20Training/Forwarder%20FAQ%20(go_forwarder-faq).pdf>): How to guide for troubleshooting Forwarder issues / monitoring Forwarder health](<https://2567647.fs1.hubspotusercontent-na1.net/hubfs/2567647/Chronical%20Technical%20Training/Forwarder%20FAQ%20(go_forwarder-faq).pdf>)
 
 [Getting Data: How-to guide: Overview Ingest API with example configuration
 launch](https://2567647.fs1.hubspotusercontent-na1.net/hubfs/2567647/Chronical%20Technical%20Training/%5BChronicle%5D%20How%20to%20use%20the%20Ingestion%20API.pdf)
@@ -291,3 +291,43 @@ The "condition" section of the rule specifies that the marker must be found in t
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/RMDpGkLHON8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Ref: [YARA-L 2.0 Syntax](https://cloud.google.com/chronicle/docs/detection/yara-l-2-0-syntax)
+
+[How to write a rule for a single / multi-event](https://cloud.google.com/chronicle/docs/detection/yara-l-2-0-overview)
+
+Chronicle Detection Engine API enables you to create, run, and manage security rules [Detection API](https://cloud.google.com/chronicle/docs/reference/detection-engine-api)
+
+Chronicle APIs enable customers to programmatically access their security data directly through API calls to the Chronicle platform [Chronicle Search API](https://cloud.google.com/chronicle/docs/reference/search-api?hl=en)
+
+## Investing Threats
+
+Chronicle data can be queried in Bigquery and later digest in looker, graphana etc for visualization.
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/56hiL2oeL64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Best Practices in Bigquery.
+
+- Do not use select \*
+- Optimize join patterns - place the table with the largest number of rows first, followed by the table with the fewest rows, and then place the remaining tables by decreasing size.
+- Use the `_PARTITIONDATE` or `_PARTITIONTIME` pseudo to filter the partitions.
+
+**Ways to investigate a threat**
+
+Must see
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/supMPkj-jjs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Reference Links
+
+- [Chronicle Data Lake structure - reference (incl. Dataset & Tables, Schema, Retention)](<https://2567647.fs1.hubspotusercontent-na1.net/hubfs/2567647/Chronical%20Technical%20Training/%5BChronicle%5D%20Data%20Lake%20structure%20-%20Reference%20Guide%20(1).pdf>)
+
+## Responding to Threats
+
+Google acquires Siemplifycloud in early 2022 for SOAR capabilities
+
+Must See
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/N0Ra0r1eoZc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Guide - [Siemplify Integration](https://2567647.fs1.hubspotusercontent-na1.net/hubfs/2567647/Chronical%20Technical%20Training/Chronicle%20&%20Siemplify%20Integration.pdf)
+
+---
