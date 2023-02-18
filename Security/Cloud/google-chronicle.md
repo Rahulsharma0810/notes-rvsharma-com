@@ -1,4 +1,4 @@
-## Fundamentals
+# Fundamentals
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/5NjLrnH2LfY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -138,7 +138,6 @@ After processing, the log line will be transformed into a structured event with 
 timestamp: 2022-12-01T12:34:56Z
 log_level: ERROR
 message: This is an error message
-Keep in mind that this is just a basic example, and you may need to modify the parser based on the specific format of your logs.
 ```
 
 **Parsing API**
