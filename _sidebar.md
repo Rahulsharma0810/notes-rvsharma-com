@@ -22,6 +22,10 @@
 
 - **Infrastructure Security**
 
+  - [K8s Security](Security/Books/k8s-Security.md)
+
+- **Infrastructure Security**
+
   - [K8s Security Practices](Security/Infrastructure/Tools/k8s-best-practices.md)
   - [K8s Cheatsheet](Security/Infrastructure/Tools/k8s-checklist.md)
 
