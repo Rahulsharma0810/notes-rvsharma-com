@@ -273,3 +273,186 @@ By implementing these plans, organizations can effectively respond to incidents,
 | Threat                     | Potential event or action that can exploit vulnerabilities                       | Malware, phishing attacks, social engineering                  |
 | Vulnerability              | Weakness or flaw in a system's security defenses                                 | Unpatched software vulnerability that allows remote access     |
 | Zero Day                   | Previously unknown software vulnerability                                        | Exploiting a newly discovered flaw before it is patched        |
+
+## Chapter 3
+
+### Access Control Concepts
+
+1. Subjects:
+
+   - A user requesting access to a computer system.
+   - A client accessing a web application.
+   - A process running on a server.
+   - A program requesting data from a database.
+
+2. Objects:
+
+   - A computer system that holds sensitive information.
+   - A file or document stored on a server.
+   - A database containing customer records.
+   - A printer or scanner connected to a network.
+
+3. Rules:
+
+   - Firewall access control list: A rule that allows access from the inside network to the outside network.
+   - File access rule: A rule that defines which users have read, write, or delete permissions for a specific file.
+   - Time-based access rule: A rule that restricts access to a resource during specific hours of the day.
+   - Identity verification rule: A rule that compares the validated identity of a subject to an access control list before granting access.
+
+4. Defense in Depth:
+
+   - Multifactor authentication (MA): Requiring a username, password, and a code sent to a phone for login.
+   - Firewall segregation: Using multiple firewalls to separate untrusted networks from trusted networks with sensitive data.
+   - Physical security layers: Restricting building access, server room access, and network access using access control measures.
+
+   ![](img/isc2-CC/2023-06-06-01-50-23.png)
+
+5. Principle of Least Privilege:
+
+   - User access permissions: Granting employees access only to the systems and applications necessary to perform their job duties.
+   - Privilege escalation: Using the "sudo" command in Linux to temporarily assume higher privileges for specific activities.
+
+6. Privileged Access Management:
+
+   - Just-in-time privileged access: Granting specific subsets of privileges to an identity in real-time when needed.
+   - Limiting administrative privileges: Allowing administrators to perform privileged actions only when necessary, reducing the risk of ransomware attacks.
+
+7. Segregation of Duties:
+
+   - Invoice approval process: Requiring a manager's approval before payment can be made.
+   - System configuration change: Requiring technical and management review and approval before implementing proposed changes.
+
+8. Two-Person Integrity:
+
+   - High-security area access: Requiring at least two individuals to be present to enter a restricted area.
+   - Life safety measures: Ensuring there is always someone available to assist in case of emergencies within secure areas.
+
+9. Authorized Versus Unauthorized Personnel:
+
+   - ID badge access control: Allowing access to a data center only for individuals with authorized ID badges.
+   - File system permissions: Granting read, write, and delete permissions to authorized users while denying access to unauthorized users.
+
+10. User Provisioning:
+    - New employee onboarding: Security administrator creating a new user ID for a newly hired employee.
+    - Privilege changes: Modifying user privileges based on changes in job roles or responsibilities.
+
+### Physical access controls
+
+Physical Security Controls:
+
+- Physical access controls are tangible items used to prevent, monitor, or detect direct contact with systems or areas within a facility.
+- Examples of physical access controls: security guards, fences, motion detectors, locked doors or gates, sealed windows, lights, cable protection, laptop locks, badges, swipe cards, guard dogs, cameras, mantraps, turnstiles, alarms.
+
+Types of Physical Security Controls:
+
+1. Badge Systems and Gate Entry:
+
+   - Turnstiles, mantraps, and remotely/system-controlled door locks are used for human traffic control.
+   - Access control system with enrollment station assigns and activates an access control device (e.g., badge).
+   - Different card types: bar code, magnetic stripe, proximity, smart, hybrid.
+
+2. Environmental Design:
+
+   - Crime Prevention through Environmental Design (CPTED) aims to create safer workspaces through passive design elements.
+   - It includes factors like building construction standards, data center design, and circulation flow to enhance physical security.
+
+   ![](img/isc2-CC/2023-06-06-02-11-33.png)
+
+3. Biometrics:
+   - Biometric authentication uses unique individual characteristics for identity verification.
+   - Physiological biometrics: fingerprints, iris scan, retinal scan, palm scan, venous scan.
+   - Behavioral biometrics: voiceprints, signature dynamics, keystroke dynamics.
+
+Monitoring:
+
+- Physical access controls and monitoring personnel and equipment entering/leaving, and auditing/logging all physical events are vital for overall security.
+
+Monitoring Examples:
+
+1. Security Guards:
+
+   - Security guards deter unauthorized access and prevent theft or abuse of equipment or information.
+
+2. Cameras:
+
+   - Cameras provide surveillance and monitoring, acting as a deterrent and providing evidence if combined with other sensors.
+
+3. Alarm Systems:
+
+   - Door/window alarms notify personnel when opened unexpectedly.
+   - Fire alarms activate in response to heat or smoke, alerting people nearby and local response personnel.
+   - Panic buttons activate alerts to police or security personnel.
+
+4. Logs:
+   - Physical logs, such as sign-in sheets or electronic access control logs, are important for legal compliance and forensic investigations.
+   - Regular log reviews and proper log retention guidelines are necessary.
+   - Log anomalies help identify security-related issues, such as gaps in timestamps or account lockouts.
+
+Note: Business and legal requirements for log retention may vary, and it's important to consult the legal department for specific guidelines.
+
+### Logical Access Controls
+
+| Discretionary Access Control (DAC) | Description                                                  |
+| ---------------------------------- | ------------------------------------------------------------ |
+| Definition                         | Access control method enforced over all subjects and objects in an information system. |
+| Permissions and Actions            | Subjects can pass information to other subjects/objects, grant privileges, change security attributes, choose attributes for new/revised objects, and change access control rules. |
+| Example Scenario                   | Users (Steve and Aidan) in a UNIX environment can establish/change permissions on files they create/own. Access control is determined by the discretion of the object owner. |
+| Example                            | Chmod, Setuid                                                |
+| Mandatory Access Control (MAC) | Description                                                  |
+| ------------------------------ | ------------------------------------------------------------ |
+| Definition                     | Access control method uniformly enforced across all subjects and objects within an information system. |
+| Access Control Actions         | Only designated security administrators can modify security rules. Subjects are constrained from passing information to unauthorized entities, granting privileges, changing security attributes, choosing attributes for new/modified objects, and changing access control rules. |
+| Example Scenario               | Security administrators assign access rights/permissions to subjects and objects within the system, and subjects cannot control access themselves. |
+| Example                        | SeLinux (object is labeled with a security context)          |
+
+| Role-based Access Control (RBAC) | Description                                                  |
+| -------------------------------- | ------------------------------------------------------------ |
+| Definition                       | User permissions are based on predefined roles.              |
+| Role Assignment                  | Roles are created and assigned appropriate access privileges. Users are assigned to roles based on their job responsibilities. |
+| Access Management                | When a user takes on a job, they are assigned to the relevant role. If a user leaves the role, their access associated with that role is removed. Suitable for environments with high staff turnover and multiple personnel with similar access requirements. |
+| Example                          | Linux Kernel (Linux PAM (Pluggable Authentication Modules) framework) |
+
+### Summary
+
+- Access is based on three elements: subjects, objects, and rules. Trustworthiness and the need for access help determine access.
+- Defense in depth is an information security strategy that establishes variable barriers across multiple layers and missions of an organization.
+- The Principle of Least Privilege emphasizes that users should have the minimum access necessary to perform their job.
+- Privileged Access Management reduces risk by limiting administrative privileges to when they are needed and ensuring authorized access during approved activities.
+- Segregation of duties and two-person integrity help reduce insider threats, and user provisioning manages user identities from hire to termination.
+- Physical access controls include security measures such as guards, fences, locks, alarms, and mantraps/turnstiles.
+- Logical access controls, also known as technical controls, can be software or hardware-based and manage access through settings or parameters.
+- Discretionary Access Control (DAC) is an access control policy enforced over all subjects and objects in an information system.
+- Mandatory Access Control (MAC) enforces a uniform access control policy across all subjects and objects within an information system.
+- Role-based Access Control (RBAC) sets up user permissions based on roles, simplifying access management.
+
+### Terms and Definations
+
+Here is the information arranged in a table format:
+
+| Term                                                  | Definition                                                   |
+| ----------------------------------------------------- | ------------------------------------------------------------ |
+| Audit                                                 | Independent review and examination of records and activities to assess the adequacy of system controls, to ensure compliance with established policies and operational procedures. |
+| Crime Prevention through Environmental Design (CPTED) | An architectural approach to the design of buildings and spaces which emphasizes passive features to reduce the likelihood of criminal activity. |
+| Defense in Depth                                      | Information security strategy integrating people, technology, and operations capabilities to establish variable barriers across multiple layers and missions of the organization. |
+| Discretionary Access Control (DAC)                    | A certain amount of access control is left to the discretion of the object's owner, or anyone else who is authorized to control the object's access. |
+| Encrypt                                               | To protect private information by putting it into a form that can only be read by people who have permission to do so. |
+| Firewalls                                             | Devices that enforce administrative security policies by filtering incoming traffic based on a set of rules. |
+| Insider Threat                                        | An entity with authorized access that has the potential to harm an information system through destruction, disclosure, modification of data, and/or denial of service. |
+| iOS                                                   | An operating system manufactured by Apple Inc. Used for mobile devices. |
+| Layered Defense                                       | The use of multiple controls arranged in series to provide several consecutive controls to protect an asset; also called defense in depth. |
+| Linux                                                 | An operating system that is open source, making its source code legally available to end users. |
+| Log Anomaly                                           | A system irregularity that is identified when studying log entries which could represent events of interest for further surveillance. |
+| Logging                                               | Collecting and storing user activities in a log, which is a record of the events occurring within an organization's systems and networks. |
+| Logical Access Control Systems                        | An automated system that controls an individual's ability to access computer system resources based on validation of their identity and assignment of access privileges. |
+| Mandatory Access Control                              | Access control that requires the system itself to manage access controls in accordance with the organization's security policies. |
+| Mantrap                                               | An entrance to a building or an area that requires people to pass through two doors with only one door opened at a time. |
+| Object                                                | Passive information system-related entity containing or receiving information. Access to an object implies access to the information it contains. |
+| Physical Access Controls                              | Controls implemented through tangible mechanisms such as walls, fences, guards, locks, etc., to secure physical spaces and assets. |
+| Principle of Least Privilege                          | The principle that users and programs should have only the minimum privileges necessary to complete their tasks. |
+| Privileged Account                                    | An information system account with approved authorizations of a privileged user. |
+| Ransomware                                            | A type of malicious software that locks the computer screen or files, thus preventing or limiting a user from accessing their system and data until money is paid. |
+| Role-based access control (RBAC)                      | An access control system that sets up user permissions based on roles. |
+| Rule                                                  | An instruction developed to allow or deny access to a system by comparing the validated identity of the subject to an access control list. |
+| Segregation of Duties                                 | The practice of ensuring that an organizational process cannot be completed by a single person, therefore forces collusion to reduce insider threats. |
+| Subject                                               | An individual process or device that causes information to flow among objects or change the system state. |
+| Technical Controls                                    | The security controls (e.g., safeguards or counter           |
