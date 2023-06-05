@@ -1,5 +1,3 @@
-# ISC2 - Certified in CyberSecurity
-
 ## Chapter 1 Security Principal
 
 The CIA Triad (Confidentiality, Integrity, and Availability) defines the core principles of security.
