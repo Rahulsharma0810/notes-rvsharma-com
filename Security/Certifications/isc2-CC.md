@@ -392,25 +392,25 @@ Note: Business and legal requirements for log retention may vary, and it's impor
 
 ### Logical Access Controls
 
-| Discretionary Access Control (DAC) | Description                                                  |
-| ---------------------------------- | ------------------------------------------------------------ |
-| Definition                         | Access control method enforced over all subjects and objects in an information system. |
-| Permissions and Actions            | Subjects can pass information to other subjects/objects, grant privileges, change security attributes, choose attributes for new/revised objects, and change access control rules. |
-| Example Scenario                   | Users (Steve and Aidan) in a UNIX environment can establish/change permissions on files they create/own. Access control is determined by the discretion of the object owner. |
-| Example                            | Chmod, Setuid                                                |
-| Mandatory Access Control (MAC) | Description                                                  |
-| ------------------------------ | ------------------------------------------------------------ |
-| Definition                     | Access control method uniformly enforced across all subjects and objects within an information system. |
-| Access Control Actions         | Only designated security administrators can modify security rules. Subjects are constrained from passing information to unauthorized entities, granting privileges, changing security attributes, choosing attributes for new/modified objects, and changing access control rules. |
-| Example Scenario               | Security administrators assign access rights/permissions to subjects and objects within the system, and subjects cannot control access themselves. |
-| Example                        | SeLinux (object is labeled with a security context)          |
+| Discretionary Access Control (DAC) | Description                                                                                                                                                                                                                                                                        |
+| ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Definition                         | Access control method enforced over all subjects and objects in an information system.                                                                                                                                                                                             |
+| Permissions and Actions            | Subjects can pass information to other subjects/objects, grant privileges, change security attributes, choose attributes for new/revised objects, and change access control rules.                                                                                                 |
+| Example Scenario                   | Users (Steve and Aidan) in a UNIX environment can establish/change permissions on files they create/own. Access control is determined by the discretion of the object owner.                                                                                                       |
+| Example                            | Chmod, Setuid                                                                                                                                                                                                                                                                      |
+| Mandatory Access Control (MAC)     | Description                                                                                                                                                                                                                                                                        |
+| ------------------------------     | ------------------------------------------------------------                                                                                                                                                                                                                       |
+| Definition                         | Access control method uniformly enforced across all subjects and objects within an information system.                                                                                                                                                                             |
+| Access Control Actions             | Only designated security administrators can modify security rules. Subjects are constrained from passing information to unauthorized entities, granting privileges, changing security attributes, choosing attributes for new/modified objects, and changing access control rules. |
+| Example Scenario                   | Security administrators assign access rights/permissions to subjects and objects within the system, and subjects cannot control access themselves.                                                                                                                                 |
+| Example                            | SeLinux (object is labeled with a security context)                                                                                                                                                                                                                                |
 
-| Role-based Access Control (RBAC) | Description                                                  |
-| -------------------------------- | ------------------------------------------------------------ |
-| Definition                       | User permissions are based on predefined roles.              |
-| Role Assignment                  | Roles are created and assigned appropriate access privileges. Users are assigned to roles based on their job responsibilities. |
+| Role-based Access Control (RBAC) | Description                                                                                                                                                                                                                                                   |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Definition                       | User permissions are based on predefined roles.                                                                                                                                                                                                               |
+| Role Assignment                  | Roles are created and assigned appropriate access privileges. Users are assigned to roles based on their job responsibilities.                                                                                                                                |
 | Access Management                | When a user takes on a job, they are assigned to the relevant role. If a user leaves the role, their access associated with that role is removed. Suitable for environments with high staff turnover and multiple personnel with similar access requirements. |
-| Example                          | Linux Kernel (Linux PAM (Pluggable Authentication Modules) framework) |
+| Example                          | Linux Kernel (Linux PAM (Pluggable Authentication Modules) framework)                                                                                                                                                                                         |
 
 ### Summary
 
@@ -429,30 +429,400 @@ Note: Business and legal requirements for log retention may vary, and it's impor
 
 Here is the information arranged in a table format:
 
-| Term                                                  | Definition                                                   |
-| ----------------------------------------------------- | ------------------------------------------------------------ |
+| Term                                                  | Definition                                                                                                                                                                         |
+| ----------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Audit                                                 | Independent review and examination of records and activities to assess the adequacy of system controls, to ensure compliance with established policies and operational procedures. |
-| Crime Prevention through Environmental Design (CPTED) | An architectural approach to the design of buildings and spaces which emphasizes passive features to reduce the likelihood of criminal activity. |
-| Defense in Depth                                      | Information security strategy integrating people, technology, and operations capabilities to establish variable barriers across multiple layers and missions of the organization. |
-| Discretionary Access Control (DAC)                    | A certain amount of access control is left to the discretion of the object's owner, or anyone else who is authorized to control the object's access. |
-| Encrypt                                               | To protect private information by putting it into a form that can only be read by people who have permission to do so. |
-| Firewalls                                             | Devices that enforce administrative security policies by filtering incoming traffic based on a set of rules. |
-| Insider Threat                                        | An entity with authorized access that has the potential to harm an information system through destruction, disclosure, modification of data, and/or denial of service. |
-| iOS                                                   | An operating system manufactured by Apple Inc. Used for mobile devices. |
-| Layered Defense                                       | The use of multiple controls arranged in series to provide several consecutive controls to protect an asset; also called defense in depth. |
-| Linux                                                 | An operating system that is open source, making its source code legally available to end users. |
-| Log Anomaly                                           | A system irregularity that is identified when studying log entries which could represent events of interest for further surveillance. |
-| Logging                                               | Collecting and storing user activities in a log, which is a record of the events occurring within an organization's systems and networks. |
-| Logical Access Control Systems                        | An automated system that controls an individual's ability to access computer system resources based on validation of their identity and assignment of access privileges. |
-| Mandatory Access Control                              | Access control that requires the system itself to manage access controls in accordance with the organization's security policies. |
-| Mantrap                                               | An entrance to a building or an area that requires people to pass through two doors with only one door opened at a time. |
-| Object                                                | Passive information system-related entity containing or receiving information. Access to an object implies access to the information it contains. |
-| Physical Access Controls                              | Controls implemented through tangible mechanisms such as walls, fences, guards, locks, etc., to secure physical spaces and assets. |
-| Principle of Least Privilege                          | The principle that users and programs should have only the minimum privileges necessary to complete their tasks. |
-| Privileged Account                                    | An information system account with approved authorizations of a privileged user. |
-| Ransomware                                            | A type of malicious software that locks the computer screen or files, thus preventing or limiting a user from accessing their system and data until money is paid. |
-| Role-based access control (RBAC)                      | An access control system that sets up user permissions based on roles. |
-| Rule                                                  | An instruction developed to allow or deny access to a system by comparing the validated identity of the subject to an access control list. |
-| Segregation of Duties                                 | The practice of ensuring that an organizational process cannot be completed by a single person, therefore forces collusion to reduce insider threats. |
-| Subject                                               | An individual process or device that causes information to flow among objects or change the system state. |
-| Technical Controls                                    | The security controls (e.g., safeguards or counter           |
+| Crime Prevention through Environmental Design (CPTED) | An architectural approach to the design of buildings and spaces which emphasizes passive features to reduce the likelihood of criminal activity.                                   |
+| Defense in Depth                                      | Information security strategy integrating people, technology, and operations capabilities to establish variable barriers across multiple layers and missions of the organization.  |
+| Discretionary Access Control (DAC)                    | A certain amount of access control is left to the discretion of the object's owner, or anyone else who is authorized to control the object's access.                               |
+| Encrypt                                               | To protect private information by putting it into a form that can only be read by people who have permission to do so.                                                             |
+| Firewalls                                             | Devices that enforce administrative security policies by filtering incoming traffic based on a set of rules.                                                                       |
+| Insider Threat                                        | An entity with authorized access that has the potential to harm an information system through destruction, disclosure, modification of data, and/or denial of service.             |
+| iOS                                                   | An operating system manufactured by Apple Inc. Used for mobile devices.                                                                                                            |
+| Layered Defense                                       | The use of multiple controls arranged in series to provide several consecutive controls to protect an asset; also called defense in depth.                                         |
+| Linux                                                 | An operating system that is open source, making its source code legally available to end users.                                                                                    |
+| Log Anomaly                                           | A system irregularity that is identified when studying log entries which could represent events of interest for further surveillance.                                              |
+| Logging                                               | Collecting and storing user activities in a log, which is a record of the events occurring within an organization's systems and networks.                                          |
+| Logical Access Control Systems                        | An automated system that controls an individual's ability to access computer system resources based on validation of their identity and assignment of access privileges.           |
+| Mandatory Access Control                              | Access control that requires the system itself to manage access controls in accordance with the organization's security policies.                                                  |
+| Mantrap                                               | An entrance to a building or an area that requires people to pass through two doors with only one door opened at a time.                                                           |
+| Object                                                | Passive information system-related entity containing or receiving information. Access to an object implies access to the information it contains.                                  |
+| Physical Access Controls                              | Controls implemented through tangible mechanisms such as walls, fences, guards, locks, etc., to secure physical spaces and assets.                                                 |
+| Principle of Least Privilege                          | The principle that users and programs should have only the minimum privileges necessary to complete their tasks.                                                                   |
+| Privileged Account                                    | An information system account with approved authorizations of a privileged user.                                                                                                   |
+| Ransomware                                            | A type of malicious software that locks the computer screen or files, thus preventing or limiting a user from accessing their system and data until money is paid.                 |
+| Role-based access control (RBAC)                      | An access control system that sets up user permissions based on roles.                                                                                                             |
+| Rule                                                  | An instruction developed to allow or deny access to a system by comparing the validated identity of the subject to an access control list.                                         |
+| Segregation of Duties                                 | The practice of ensuring that an organizational process cannot be completed by a single person, therefore forces collusion to reduce insider threats.                              |
+| Subject                                               | An individual process or device that causes information to flow among objects or change the system state.                                                                          |
+| Technical Controls                                    | The security controls (e.g., safeguards or counter                                                                                                                                 |
+
+## Chapter 4
+
+Network Basics
+
+Lots of network basics, like tcp/udp, safeports, ipv4 ipv6 etc etc.
+
+![](img/isc2-CC/2023-06-06-03-10-21.png)
+![](img/isc2-CC/2023-06-07-00-33-45.png)
+
+Important to Note:
+As in IPv4, there are some addresses and ranges that are reserved for special uses:
+
+• `::1` is the local loopback address, used the same as `127.0.0.1` in IPv4.
+
+• The range 2001:db8.: to 2001:db8ffff.ffff.:ffff:ffff:ffff:ffff is reserved for documentation use,
+as in the examples above.
+
+• fc00: to fdffffffffffffffffffffffffff.:ffff are addresses reserved for internal network use and
+are not routable on the internet.
+
+### Network (Cyber) Threats and Attacks
+
+There are various types of threats in cybersecurity. Here are some common ones:
+
+1. Malware: Malicious software, including viruses, worms, Trojans, ransomware, spyware, and adware, designed to disrupt, damage, or gain unauthorized access to computer systems.
+
+2. Phishing: An attempt to deceive individuals into revealing sensitive information, such as passwords, credit card numbers, or social security numbers, by disguising as a trustworthy entity in electronic communication.
+
+3. Social Engineering: Manipulating individuals to disclose confidential information or perform actions that can compromise security, often through psychological manipulation and exploiting human vulnerabilities.
+
+4. Denial-of-Service (DoS) Attacks: Overloading a system, network, or website with excessive requests or traffic, causing it to become unavailable to legitimate users.
+
+5. Insider Threats: Security risks posed by individuals within an organization who have authorized access but misuse their privileges or intentionally harm the organization's systems, data, or operations.
+
+6. Advanced Persistent Threats (APTs): Targeted and sophisticated attacks that involve a prolonged intrusion into a network or system, aiming to steal sensitive information or gain control over resources.
+
+7. Zero-day Exploits: Vulnerabilities or weaknesses in software that are unknown to the software vendor and can be exploited by attackers before a patch or fix is developed and released.
+
+8. Data Breaches: Unauthorized access, acquisition, or exposure of sensitive information, such as personal identifiable information (PII) or financial data, often resulting in identity theft, fraud, or reputational damage.
+
+9. Man-in-the-Middle (MitM) Attacks: Interception and alteration of communication between two parties without their knowledge, allowing an attacker to eavesdrop, modify, or inject malicious content into the communication.
+
+10. SQL Injection: Exploiting vulnerabilities in web applications that do not properly validate user input, allowing attackers to manipulate databases and execute unauthorized commands.
+
+**Identifying Threats and tools used to prevent them**
+
+1. **Intrusion Detection System (IDS)**:
+
+   - IDS monitors network traffic or system activities to identify and alert about suspicious or malicious behavior.
+   - Example: Snort is an open-source IDS that analyzes network traffic in real-time, detects potential threats, and generates alerts.
+
+2. **Host-based IDS (HIDS)**:
+
+   - HIDS operates on individual hosts or endpoints, monitoring their activities, file integrity, and system logs.
+   - Example: OSSEC (Open Source HIDS) monitors log files, detects unauthorized system changes, and alerts administrators.
+
+3. **Network-based IDS (NIDS)**:
+
+   - NIDS analyzes network traffic to detect malicious activity and potential intrusions at the network level.
+   - Example: Suricata is an open-source NIDS that inspects network packets, detects threats, and triggers alerts.
+
+4. **SIEM (Security Information and Event Management)**:
+
+   - SIEM tools collect and analyze security event logs from various sources to provide centralized security monitoring, event correlation, and incident response capabilities.
+   - Example: Splunk is a popular SIEM platform that aggregates and correlates logs from various sources, enabling security teams to identify and respond to security incidents.
+
+5. **Anti-malware/Antivirus**:
+
+   - Anti-malware or antivirus software detects, blocks, and removes malicious software (malware) from systems.
+   - Example: McAfee and Norton are well-known antivirus solutions that scan files, emails, and websites for malware, and quarantine or remove detected threats.
+
+6. **Scans**:
+
+   - Scanning tools perform various types of security scans to identify vulnerabilities, misconfigurations, or weaknesses in systems or networks.
+   - Example: Nessus is a widely used vulnerability scanning tool that identifies security issues, such as outdated software versions, weak passwords, or open ports, through automated scans.
+
+7. **Firewall**:
+
+   - Firewalls control and filter network traffic based on predefined rules, allowing or blocking specific connections and protecting against unauthorized access.
+   - Example: pfSense is an open-source firewall that inspects incoming and outgoing traffic, applies firewall policies, and enforces network security rules.
+
+8. **Intrusion Protection System (IPS - NIPS/HIPS)**:
+   - IPS actively monitors network traffic or system activities and takes proactive measures to block or prevent potential intrusions.
+   - Network-based IPS (NIPS): Example - Cisco Firepower IPS inspects network packets, detects threats, and can automatically block malicious traffic.
+   - Host-based IPS (HIPS): Example - OSSEC (Open Source HIDS) can function as a HIPS by monitoring and blocking suspicious activities on individual hosts.
+
+Each of these tools plays a specific role in strengthening cybersecurity defenses and protecting against different types of threats. It's common for organizations to use a combination of these tools as part of a comprehensive security strategy to detect, prevent, and respond to security incidents effectively.
+
+### Network security Infrastructure
+
+Memorandum of Understanding (MOU)/Memorandum of Agreement (MOA) - Sharing resource from other company i case of disaster or emergency.
+
+**Cloud Service Models**
+
+| Service Model | Description                                                              | Examples                                               |
+| ------------- | ------------------------------------------------------------------------ | ------------------------------------------------------ |
+| SaaS          | Provides software applications over the internet.                        | Salesforce, Google Workspace, Dropbox                  |
+| PaaS          | Provides a platform for developing, testing, and deploying applications. | Heroku, Microsoft Azure App Service, Google App Engine |
+| IaaS          | Provides virtualized computing resources as a service.                   | Amazon EC2, Microsoft Azure VMs, Google Compute Engine |
+
+**Managed Service Provider (MSP):**
+
+- An MSP manages IT assets and functions for another company.
+- Small- and medium-sized businesses outsource their IT needs to MSPs for expertise and day-to-day operations.
+- MSPs offer services such as network and security monitoring, patching, and help desk support.
+- They may provide cloud-based services like managed detection and response (MDR).
+
+**Service-Level Agreement (SLA):**
+
+- An agreement between a cloud service provider and customer that defines the quality of services.
+- Specifies measurable properties and requirements for the cloud services.
+- Covers availability, security, controls, support, data privacy, disaster recovery, and more.
+- Important for setting expectations, outlining remedies for non-compliance, and documenting service parameters.
+
+**Network Design:**
+
+- Network design aims to meet data communication requirements and optimize performance.
+- Security considerations include network segmentation, DMZs, VLANs, and VPNs.
+- Network segmentation controls traffic between devices and isolates networks.
+- DMZs are isolated areas accessed by external visitors for hosting public resources.
+- VLANs logically segment networks without changing the physical topology.
+- VPNs provide secure communication tunnels over untrusted networks.
+
+**Defense in Depth:**
+
+- Defense in depth is a layered security approach to protect an organization's systems.
+- It uses multiple types of access controls across different layers to avoid relying on a single security measure.
+- Layers can include data controls, application protection, host security, internal network controls, perimeter security, physical barriers, and policies/procedures.
+- Each layer adds a level of protection and deterrence to attackers.
+- It involves both technological and administrative controls to minimize risks and empower insiders.
+
+#### Zero Trust
+
+**Zero Trust** is an approach to network security that is particularly relevant and beneficial in cloud environments. In the cloud, where traditional network perimeters are less defined, Zero Trust provides a framework for securing data, applications, and resources. Here's how Zero Trust is implemented in the cloud:
+
+1. Identity-based Access Control: Zero Trust in the cloud revolves around strong identity and access management. It ensures that every user, device, and application is properly authenticated and authorized before accessing resources. This is achieved through techniques such as multi-factor authentication (MFA), identity federation, and fine-grained access controls.
+
+2. Least Privilege: Zero Trust emphasizes the Principle of Least Privilege, which means granting users and systems only the minimum privileges necessary to perform their tasks. This reduces the risk of unauthorized access and limits the potential impact of a security breach.
+
+3. Microsegmentation: Just as in traditional networks, microsegmentation is a key component of Zero Trust in the cloud. It involves dividing the cloud environment into smaller segments and applying access controls and security policies at each segment. This helps contain and isolate potential threats, preventing lateral movement within the network.
+
+4. Continuous Monitoring and Analytics: Zero Trust in the cloud relies on continuous monitoring and analytics to detect anomalies and potential security breaches. This involves analyzing user behavior, network traffic, and other indicators to identify any suspicious activities and take proactive measures.
+
+5. Encryption and Data Protection: Zero Trust emphasizes the use of encryption and data protection techniques to secure data both in transit and at rest. This ensures that even if data is intercepted or compromised, it remains unintelligible to unauthorized parties.
+
+6. Automation and Orchestration: Zero Trust in the cloud leverages automation and orchestration capabilities to enforce security policies consistently across the cloud environment. This helps ensure that security controls are consistently applied and reduces the risk of human error.
+
+7. Auditing and Compliance: Zero Trust in the cloud includes robust auditing and compliance capabilities. It enables organizations to track and monitor user activities, access requests, and system changes, providing an audit trail for forensic analysis and meeting regulatory compliance requirements.
+
+By implementing Zero Trust in the cloud, organizations can significantly enhance their security posture, protect sensitive data, and mitigate the risks associated with cloud computing. It provides a holistic and adaptive security framework that aligns with the dynamic and distributed nature of cloud environments.
+
+#### Network Access Control (NAC)
+
+Network Access Control (NAC) is a security concept and set of technologies that enforce policies and controls for devices attempting to connect to a network. It verifies the identity of devices or users, assesses their security posture, and enforces access privileges based on predefined policies. NAC helps prevent unauthorized or non-compliant devices from accessing the network, improves network visibility and control, and ensures compliance with security standards. It plays a crucial role in securing modern networks, especially in BYOD, IoT, and cloud computing environments.
+
+In Google Cloud Platform (GCP), Network Access Control (NAC) refers to the set of services and features that help organizations secure their cloud infrastructure and control access to resources. Here's a summary of NAC in GCP:
+
+- Virtual Private Cloud (VPC): Allows you to create private networks and define firewall rules to control inbound and outbound traffic within your cloud environment.
+
+- Cloud Identity-Aware Proxy (IAP): Enables secure access to web applications by enforcing access control policies based on user identity, context, and multi-factor authentication.
+
+- Cloud Identity and Access Management (IAM): Centralized access control system for managing user and service account permissions, allowing you to define fine-grained access policies and control resource-level access.
+
+- Cloud Firewall: Stateful firewall service that allows you to define network-level firewall rules to control traffic between your VPC networks and the internet.
+
+- Cloud Armor: DDoS protection and web application firewall service that helps safeguard your cloud applications from malicious traffic and common web attacks.
+
+These services in GCP provide the necessary tools to secure your cloud infrastructure, manage user access, define firewall rules, and protect against security threats. By leveraging these features, organizations can establish effective network access control measures in their GCP environments.
+
+#### Microsegmentation
+
+Microsegmentation is a network security technique that involves dividing a network into smaller segments or microsegments. Each microsegment operates as an isolated and secure zone, with its own set of security policies and controls. By implementing microsegmentation, organizations can enhance their network security and minimize the potential impact of a security breach.
+
+Key characteristics of microsegmentation include:
+
+1. Granular Control: Microsegmentation allows for precise control over network traffic by defining specific security policies for each microsegment. This enables organizations to restrict communication between different segments and enforce strict access controls.
+
+2. Enhanced Security: By implementing security policies at the microsegment level, organizations can prevent lateral movement of threats within their network. Even if a breach occurs in one microsegment, it remains contained, limiting the potential impact on other segments.
+
+3. Zero Trust Approach: Microsegmentation aligns with the zero trust security model, where access to resources is granted on a need-to-know basis and verified continuously. Every communication between microsegments is authenticated and authorized, reducing the attack surface and improving overall security.
+
+4. Application-Aware Protection: Microsegmentation focuses on protecting individual applications and workloads by isolating them into separate segments. This allows for tailored security measures based on the specific requirements and vulnerabilities of each application.
+
+5. Scalability and Flexibility: Microsegmentation can be applied to both on-premises and cloud environments, providing scalability and flexibility as organizations expand their infrastructure. It allows for dynamic segmentation that can adapt to changing network requirements.
+
+By implementing microsegmentation, organizations can enhance their network security posture, improve visibility into network traffic, and minimize the impact of security incidents by containing them within individual segments.
+
+## Chapter 5
+
+#### **Security Operations**
+
+**Data Handling**
+
+All ideas, data, information, or knowledge go through six major phases during their lifetime.
+Conceptually, these involve:
+
+• Creation of the knowledge, which was previously undocumented.
+
+• Storing or recording it in some fashion that makes it explicit.
+
+• Using the knowledge, which may cause the information to be modified, supplemented, or
+partially deleted.
+
+• Sharing the data with other users-whether as a copy or by moving the data from one
+location to another.
+
+• Archiving the data when it is temporarily not needed.
+
+• Destroying the data when it is no longer needed
+
+<img src="img/isc2-CC/2023-06-07-00-34-13.png" style="zoom:50%;" />
+
+
+
+**Data Handling**
+
+**Data handling** practices are crucial for ensuring the confidentiality, integrity, and availability of data within an organization. This involves classifying and labeling data based on its sensitivity, documenting retention requirements, and properly destroying data that is no longer needed. Here's a breakdown of the key concepts:
+
+1. Classification: Data classification involves assessing the potential impact or loss to the organization if the information is compromised. This includes evaluating its characteristics of confidentiality, integrity, and availability. Classifications are derived from laws, regulations, standards, or business expectations. Examples of classification levels include:
+
+- Highly restricted: Data that, if compromised, could put the organization's future existence at risk and may lead to significant harm, loss of life, or property damage.
+- Moderately restricted: Data whose compromise could result in the loss of temporary competitive advantage, revenue, or disruption of planned investments or activities.
+- Low sensitivity (internal use only): Data whose compromise may cause minor disruptions, delays, or impacts.
+- Unrestricted public data: Data that is already publicly available and can be freely disseminated.
+
+2. Labeling: Security labels are used to assign a level of sensitivity to data assets. The higher the sensitivity level, the greater the presumed harm to the organization, and the more stringent security measures are required. Clear boundaries between classification labels may not always exist, but organizations should aim for a manageable number of classifications (typically two or three).
+
+3. Retention: Data retention refers to the period for which data should be kept, based on industry standards, laws, regulations, or the organization's own policies. Data should only be retained as long as it remains beneficial. Organizations need to maintain an accurate inventory of data assets, including their location, retention period, and destruction requirements. Regular reviews should be conducted to reduce the volume of stored information and ensure that only necessary data is preserved.
+
+4. Destruction: Data destruction is necessary when an asset reaches its retention limit or is no longer needed. Remanence, which is data that remains on media even after deletion, can pose a security risk. Various methods can be employed for data destruction, such as clearing the device by overwriting it with random values, purging to eliminate residual physical effects, or physically destroying the media through shredding, burning, or other means. The choice of method depends on the level of sensitivity and the type of media.
+
+**Logging and Monitoring:**
+
+- Logging is the process of capturing events and activities in a system or network, providing a record of what has occurred.
+- Monitoring involves the continuous observation of logs and system activities to detect anomalies, security incidents, and performance issues.
+- Effective logging and monitoring practices help identify security breaches, track system usage, and ensure compliance.
+- Example: Regular log reviews can detect policy violations, security incidents, and operational problems promptly.
+
+**Event Logging Best Practices**
+
+Different tools are used to log events depending on whether the attack risk is from traffic coming into or leaving
+the infrastructure. Ingress monitoring refers to surveillance and assessment of all inbound communications
+traffic and access attempts. Devices and tools that offer log and alert opportunities for ingress monitoring
+include:
+
+• Firewalls
+
+• Gateways
+
+• Remote authentication servers
+
+• IDS/IPS tools
+
+• SIEM solutions
+
+• Anti-malware solutions
+
+**Egress monitoring** is used to regulate data leaving the organization's IT environment. This is also known as
+data loss prevention (DLP) or data leak protection. A DLP solution should be deployed so that it can inspect all
+forms of data leaving the organization, including:
+
+• Email (content and attachments)
+
+• Copy to portable media
+
+• File Transfer Protocol (FTP)
+
+• Posting to web pages/websites
+
+• Applications/application programming interfaces (APIs)
+
+**Encryption Overview**
+
+Almost every action taken in the modern digital world involves cryptography. Encryption protects personal and
+business transactions; digitally signed software updates verify a creator or supplier's claim to authenticity.
+Digitally signed contracts, binding on all parties, are routinely exchanged via email without fear of being
+repudiated later by the sender.
+
+Cryptography is used to protect information by keeping its meaning or content secret and making it unintelligible
+to someone who does not have a way to decrypt (unlock) that protected information. The objective of every
+encryption system is to transform an original set of data, called plaintext, into an otherwise unintelligible
+encrypted form, called ciphertext.
+
+Properly used, alone or in combination, cryptographic solutions provide a range of services that can help achieve
+required systems security postures in many ways:
+
+• Confidentiality. Cryptography provides confidentiality by hiding or obscuring a message so that it cannot be
+understood by anyone except the intended recipient. Confidentiality keeps information secret from those
+who are not authorized to have it.
+
+• Integrity. Hash functions and digital signatures can provide integrity services that allow a recipient to
+verify a message has not been altered by malice or error. These include simple message integrity controls.
+Any changes, deliberate or accidental, will result in the two results (by sender and by recipient) being
+different.
+
+**Symmetric encryption and asymmetric encryption:**
+
+|               | Symmetric Encryption                                         | Asymmetric Encryption                                        |
+| ------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Key Type      | Single shared key                                            | Public key and private key pair                              |
+| Usage         | Encryption and decryption with the same key                  | Encryption with the public key, decryption with the private key |
+| Key Exchange  | Key must be securely shared between parties                  | Public key can be freely distributed                         |
+| Speed         | Faster and more efficient for large data volumes             | Slower and computationally more expensive                    |
+| Examples      | AES (Advanced Encryption Standard),                          | RSA (Rivest-Shamir-Adleman),                                 |
+|               | DES (Data Encryption Standard),                              | Diffie-Hellman,                                              |
+|               | 3DES (Triple Data Encryption Standard)                       | ECC (Elliptic Curve Cryptography)                            |
+| Advantages    | - Fast and efficient encryption/decryption processes<br>- Suitable for bulk data encryption<br>- Requires less computational power and resources<br>- Widely supported and implemented algorithms | - Provides secure key exchange<br>- Supports digital signatures and authentication<br>- Enables secure communication without prior key exchange<br>- Supports secure data transmission |
+| Disadvantages | - Requires secure key distribution<br>- Lack of scalability for large networks<br>- Limited key management options<br>- Prone to key compromise due to single key usage | - Slower encryption/decryption processes<br>- More computationally expensive<br>- Requires larger key sizes for equivalent security<br>- Limited algorithm options for specific use cases |
+
+**Encryption, Hashing, and Salting**
+
+|               | Encryption                                                   | Hashing                                                      | Salting                                                      |
+| ------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Purpose       | Protects data by transforming it into a ciphertext that can be reversed using a decryption key | Converts data into a fixed-length hash value that cannot be reversed to obtain the original data | Adds random data (salt) to the input before hashing to enhance security |
+| Usage         | Confidentiality and privacy of data                          | Data integrity verification and password storage             | Password storage and protection against precomputed hash attacks |
+| Key/Value     | Encryption key required to encrypt and decrypt data          | No key required                                              | Random salt value added to the input data                    |
+| Examples      | AES (Advanced Encryption Standard), RSA (Rivest-Shamir-Adleman) | MD5 (Message Digest Algorithm 5), SHA-256 (Secure Hash Algorithm 256-bit) | bcrypt, scrypt, PBKDF2                                       |
+| Advantages    | - Provides confidentiality of data<br>- Allows reversible encryption and decryption | - Provides data integrity verification<br>- Produces a fixed-length hash value | - Enhances password security<br>- Protects against precomputed hash attacks |
+| Disadvantages | - Requires secure key management and distribution<br>- May introduce computational overhead | - Hash values cannot be reversed to obtain original data<br>- Vulnerable to hash collisions | - Requires additional storage for salt values                |
+|               |                                                              | - Vulnerable to brute-force attacks                          | - Salts may be compromised if not adequately protected       |
+|               |                                                              |                                                              | - Requires additional computation for salting and verification |
+
+It's important to note that while encryption focuses on confidentiality, hashing emphasizes data integrity and salting primarily enhances password security.
+
+#### System hardening
+
+Configuration management involves managing and controlling the configuration of software, hardware, and network infrastructure. It includes maintaining an inventory of IT assets, establishing baselines as reference points, implementing updates and patches to address issues and improve security, and ensuring compliance with regulations. It provides benefits such as stability, security, compliance, efficiency, scalability, and effective change management.
+
+**Best Practice Securoty Policies**
+
+**Data Handling Policy:**
+
+1. Data Classification: Establish a classification system to categorize data based on its sensitivity and define appropriate handling and protection measures for each category.
+2. Access Controls: Implement access controls to ensure that data is only accessible to authorized individuals, including user authentication, role-based access, and data encryption where necessary.
+
+**Password Policy:**
+
+1. Complexity Requirements: Set guidelines for creating strong passwords, including minimum length, a combination of alphanumeric and special characters, and regular password updates.
+2. Multi-Factor Authentication: Encourage or require the use of multi-factor authentication to add an extra layer of security, such as using a combination of passwords, biometrics, or tokens for authentication.
+
+**Change Management Policy:**
+
+1. Request Process: Establish a formal process for submitting change requests, including necessary documentation and information about the proposed changes.
+2. Approval and Rollback Procedures: Define criteria for approving or rejecting change requests, assign responsibility for reviewing and approving changes, and establish procedures for rolling back changes in case of unforeseen issues or negative impacts.
+
+**Bring Your Own Device (BYOD) Policy:**
+
+1. Device Registration and Security: Require employees to register their personal devices used for work purposes, implement security measures such as device encryption and remote wiping capabilities to protect sensitive data.
+2. Usage Guidelines: Provide guidelines on acceptable use of personal devices, including restrictions on accessing certain websites, downloading unauthorized apps, or sharing company data outside approved channels.
+
+**Acceptable Use Policy:**
+
+1. Authorized Usage: Specify acceptable use of company resources, such as computers, internet access, and email, ensuring that employees use these resources for work-related purposes only.
+2. Prohibited Activities: Outline activities that are strictly prohibited, such as unauthorized access to systems, sharing confidential information, or engaging in illegal or unethical behavior.
+
+#### Security Training
+
+"There is no patch of human stupidity"
+
+**Train the employess**
+
+- Phishing
+- Social Engineering
+- Password Protection
+
+**Terms and Defination**
+
+| Degaussing | A technique of erasing data on disk or tape (including video tapes) that, when performed properly, ensures that there is insufficient magnetic remanence to reconstruct data. |
+| ---------- | ------------------------------------------------------------ |
