@@ -1,4 +1,6 @@
-## Chapter 1 Security Principal
+## Chapter 1
+
+**Security Principal**
 
 The CIA Triad (Confidentiality, Integrity, and Availability) defines the core principles of security.
 
@@ -669,8 +671,6 @@ location to another.
 
 <img src="img/isc2-CC/2023-06-07-00-34-13.png" style="zoom:50%;" />
 
-
-
 **Data Handling**
 
 **Data handling** practices are crucial for ensuring the confidentiality, integrity, and availability of data within an organization. This involves classifying and labeling data based on its sensitivity, documenting retention requirements, and properly destroying data that is no longer needed. Here's a breakdown of the key concepts:
@@ -754,30 +754,30 @@ different.
 
 **Symmetric encryption and asymmetric encryption:**
 
-|               | Symmetric Encryption                                         | Asymmetric Encryption                                        |
-| ------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Key Type      | Single shared key                                            | Public key and private key pair                              |
-| Usage         | Encryption and decryption with the same key                  | Encryption with the public key, decryption with the private key |
-| Key Exchange  | Key must be securely shared between parties                  | Public key can be freely distributed                         |
-| Speed         | Faster and more efficient for large data volumes             | Slower and computationally more expensive                    |
-| Examples      | AES (Advanced Encryption Standard),                          | RSA (Rivest-Shamir-Adleman),                                 |
-|               | DES (Data Encryption Standard),                              | Diffie-Hellman,                                              |
-|               | 3DES (Triple Data Encryption Standard)                       | ECC (Elliptic Curve Cryptography)                            |
-| Advantages    | - Fast and efficient encryption/decryption processes<br>- Suitable for bulk data encryption<br>- Requires less computational power and resources<br>- Widely supported and implemented algorithms | - Provides secure key exchange<br>- Supports digital signatures and authentication<br>- Enables secure communication without prior key exchange<br>- Supports secure data transmission |
-| Disadvantages | - Requires secure key distribution<br>- Lack of scalability for large networks<br>- Limited key management options<br>- Prone to key compromise due to single key usage | - Slower encryption/decryption processes<br>- More computationally expensive<br>- Requires larger key sizes for equivalent security<br>- Limited algorithm options for specific use cases |
+|               | Symmetric Encryption                                                                                                                                                                              | Asymmetric Encryption                                                                                                                                                                     |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Key Type      | Single shared key                                                                                                                                                                                 | Public key and private key pair                                                                                                                                                           |
+| Usage         | Encryption and decryption with the same key                                                                                                                                                       | Encryption with the public key, decryption with the private key                                                                                                                           |
+| Key Exchange  | Key must be securely shared between parties                                                                                                                                                       | Public key can be freely distributed                                                                                                                                                      |
+| Speed         | Faster and more efficient for large data volumes                                                                                                                                                  | Slower and computationally more expensive                                                                                                                                                 |
+| Examples      | AES (Advanced Encryption Standard),                                                                                                                                                               | RSA (Rivest-Shamir-Adleman),                                                                                                                                                              |
+|               | DES (Data Encryption Standard),                                                                                                                                                                   | Diffie-Hellman,                                                                                                                                                                           |
+|               | 3DES (Triple Data Encryption Standard)                                                                                                                                                            | ECC (Elliptic Curve Cryptography)                                                                                                                                                         |
+| Advantages    | - Fast and efficient encryption/decryption processes<br>- Suitable for bulk data encryption<br>- Requires less computational power and resources<br>- Widely supported and implemented algorithms | - Provides secure key exchange<br>- Supports digital signatures and authentication<br>- Enables secure communication without prior key exchange<br>- Supports secure data transmission    |
+| Disadvantages | - Requires secure key distribution<br>- Lack of scalability for large networks<br>- Limited key management options<br>- Prone to key compromise due to single key usage                           | - Slower encryption/decryption processes<br>- More computationally expensive<br>- Requires larger key sizes for equivalent security<br>- Limited algorithm options for specific use cases |
 
 **Encryption, Hashing, and Salting**
 
-|               | Encryption                                                   | Hashing                                                      | Salting                                                      |
-| ------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Purpose       | Protects data by transforming it into a ciphertext that can be reversed using a decryption key | Converts data into a fixed-length hash value that cannot be reversed to obtain the original data | Adds random data (salt) to the input before hashing to enhance security |
-| Usage         | Confidentiality and privacy of data                          | Data integrity verification and password storage             | Password storage and protection against precomputed hash attacks |
-| Key/Value     | Encryption key required to encrypt and decrypt data          | No key required                                              | Random salt value added to the input data                    |
-| Examples      | AES (Advanced Encryption Standard), RSA (Rivest-Shamir-Adleman) | MD5 (Message Digest Algorithm 5), SHA-256 (Secure Hash Algorithm 256-bit) | bcrypt, scrypt, PBKDF2                                       |
-| Advantages    | - Provides confidentiality of data<br>- Allows reversible encryption and decryption | - Provides data integrity verification<br>- Produces a fixed-length hash value | - Enhances password security<br>- Protects against precomputed hash attacks |
-| Disadvantages | - Requires secure key management and distribution<br>- May introduce computational overhead | - Hash values cannot be reversed to obtain original data<br>- Vulnerable to hash collisions | - Requires additional storage for salt values                |
-|               |                                                              | - Vulnerable to brute-force attacks                          | - Salts may be compromised if not adequately protected       |
-|               |                                                              |                                                              | - Requires additional computation for salting and verification |
+|               | Encryption                                                                                     | Hashing                                                                                          | Salting                                                                     |
+| ------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------- |
+| Purpose       | Protects data by transforming it into a ciphertext that can be reversed using a decryption key | Converts data into a fixed-length hash value that cannot be reversed to obtain the original data | Adds random data (salt) to the input before hashing to enhance security     |
+| Usage         | Confidentiality and privacy of data                                                            | Data integrity verification and password storage                                                 | Password storage and protection against precomputed hash attacks            |
+| Key/Value     | Encryption key required to encrypt and decrypt data                                            | No key required                                                                                  | Random salt value added to the input data                                   |
+| Examples      | AES (Advanced Encryption Standard), RSA (Rivest-Shamir-Adleman)                                | MD5 (Message Digest Algorithm 5), SHA-256 (Secure Hash Algorithm 256-bit)                        | bcrypt, scrypt, PBKDF2                                                      |
+| Advantages    | - Provides confidentiality of data<br>- Allows reversible encryption and decryption            | - Provides data integrity verification<br>- Produces a fixed-length hash value                   | - Enhances password security<br>- Protects against precomputed hash attacks |
+| Disadvantages | - Requires secure key management and distribution<br>- May introduce computational overhead    | - Hash values cannot be reversed to obtain original data<br>- Vulnerable to hash collisions      | - Requires additional storage for salt values                               |
+|               |                                                                                                | - Vulnerable to brute-force attacks                                                              | - Salts may be compromised if not adequately protected                      |
+|               |                                                                                                |                                                                                                  | - Requires additional computation for salting and verification              |
 
 It's important to note that while encryption focuses on confidentiality, hashing emphasizes data integrity and salting primarily enhances password security.
 
@@ -825,4 +825,4 @@ Configuration management involves managing and controlling the configuration of 
 **Terms and Defination**
 
 | Degaussing | A technique of erasing data on disk or tape (including video tapes) that, when performed properly, ensures that there is insufficient magnetic remanence to reconstruct data. |
-| ---------- | ------------------------------------------------------------ |
+| ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
