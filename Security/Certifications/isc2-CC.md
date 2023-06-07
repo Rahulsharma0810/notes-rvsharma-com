@@ -4,7 +4,7 @@
 
 The CIA Triad (Confidentiality, Integrity, and Availability) defines the core principles of security.
 
-![](img/isc2-CC/2023-06-05-02-28-11.png)
+<img src="img/isc2-CC/2023-06-05-02-28-11.png" style="zoom:50%;" />
 
 Confidentiality: Protecting information from improper disclosure while allowing authorized access.
 Integrity: Ensuring completeness, accuracy, and consistency of information and systems.
@@ -54,7 +54,7 @@ Compliance with privacy regulations is essential to avoid penalties and protect 
    - Risk Mitigation: This involves implementing measures to reduce the likelihood or impact of a risk. Examples include implementing firewalls and intrusion detection systems to mitigate the risk of unauthorized access to a network or conducting regular backups to mitigate the risk of data loss.
    - Risk Transfer: Organizations can transfer risk to another party, typically through insurance policies or outsourcing certain functions. For instance, transferring the risk of property damage due to natural disasters to an insurance company.
 
-![](img/isc2-CC/2023-06-05-02-42-33.png)
+<img src="img/isc2-CC/2023-06-05-02-42-33.png" style="zoom:50%;" />
 
 4. Risk Monitoring and Review: Risk management is an ongoing process that requires continuous monitoring and review of the effectiveness of risk mitigation measures. This step involves regular assessments, updates to risk profiles, and adjusting risk treatment strategies as needed. Examples of risk monitoring and review include:
    - Regularly reviewing security logs and conducting vulnerability assessments to identify new risks and vulnerabilities.
@@ -174,7 +174,7 @@ In summary, the chapter emphasized the importance of adhering to legal and ethic
 - **Containment** involves gathering evidence, choosing an appropriate containment strategy, identifying the source of the event, and isolating the source.
 - **Post-incident** activities include identifying evidence for retention, documenting lessons learned, and complying with regulatory requirements if necessary.
 
-![](img/isc2-CC/2023-06-05-03-45-12.png)
+<img src="img/isc2-CC/2023-06-05-03-45-12.png" style="zoom:50%;" />
 
 - Consulting with management involves identifying critical information, avoiding single points of failure, training staff in incident response, and coordinating communication with different stakeholders.
 - An incident response team is a cross-functional group of individuals who investigate and respond to security incidents, including representatives from senior management, information security, legal, public affairs/communications, and engineering.
@@ -306,8 +306,7 @@ By implementing these plans, organizations can effectively respond to incidents,
    - Multifactor authentication (MA): Requiring a username, password, and a code sent to a phone for login.
    - Firewall segregation: Using multiple firewalls to separate untrusted networks from trusted networks with sensitive data.
    - Physical security layers: Restricting building access, server room access, and network access using access control measures.
-
-   ![](img/isc2-CC/2023-06-06-01-50-23.png)
+     <img src="img/isc2-CC/2023-06-06-01-50-23.png" style="zoom:50%;" />
 
 5. Principle of Least Privilege:
 
@@ -358,7 +357,7 @@ Types of Physical Security Controls:
    - Crime Prevention through Environmental Design (CPTED) aims to create safer workspaces through passive design elements.
    - It includes factors like building construction standards, data center design, and circulation flow to enhance physical security.
 
-   ![](img/isc2-CC/2023-06-06-02-11-33.png)
+   <img src="img/isc2-CC/2023-06-06-02-11-33.png" style="zoom:50%;" />
 
 3. Biometrics:
    - Biometric authentication uses unique individual characteristics for identity verification.
@@ -394,18 +393,19 @@ Note: Business and legal requirements for log retention may vary, and it's impor
 
 ### Logical Access Controls
 
-| Discretionary Access Control (DAC) | Description                                                                                                                                                                                                                                                                        |
-| ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Definition                         | Access control method enforced over all subjects and objects in an information system.                                                                                                                                                                                             |
-| Permissions and Actions            | Subjects can pass information to other subjects/objects, grant privileges, change security attributes, choose attributes for new/revised objects, and change access control rules.                                                                                                 |
-| Example Scenario                   | Users (Steve and Aidan) in a UNIX environment can establish/change permissions on files they create/own. Access control is determined by the discretion of the object owner.                                                                                                       |
-| Example                            | Chmod, Setuid                                                                                                                                                                                                                                                                      |
-| Mandatory Access Control (MAC)     | Description                                                                                                                                                                                                                                                                        |
-| ------------------------------     | ------------------------------------------------------------                                                                                                                                                                                                                       |
-| Definition                         | Access control method uniformly enforced across all subjects and objects within an information system.                                                                                                                                                                             |
-| Access Control Actions             | Only designated security administrators can modify security rules. Subjects are constrained from passing information to unauthorized entities, granting privileges, changing security attributes, choosing attributes for new/modified objects, and changing access control rules. |
-| Example Scenario                   | Security administrators assign access rights/permissions to subjects and objects within the system, and subjects cannot control access themselves.                                                                                                                                 |
-| Example                            | SeLinux (object is labeled with a security context)                                                                                                                                                                                                                                |
+| Discretionary Access Control (DAC) | Description                                                  |
+| ---------------------------------- | ------------------------------------------------------------ |
+| Definition                         | Access control method enforced over all subjects and objects in an information system. |
+| Permissions and Actions            | Subjects can pass information to other subjects/objects, grant privileges, change security attributes, choose attributes for new/revised objects, and change access control rules. |
+| Example Scenario                   | Users (Steve and Aidan) in a UNIX environment can establish/change permissions on files they create/own. Access control is determined by the discretion of the object owner. |
+| Example                            | Chmod, Setuid                    |
+
+| **Mandatory Access Control (MAC)** | **Description**                                              |
+| ---------------------------------- | ------------------------------------------------------------ |
+| **Definition**                     | Access control method uniformly enforced across all subjects and objects within an information system. |
+| **Access Control Actions**         | Only designated security administrators can modify security rules. Subjects are constrained from passing information to unauthorized entities, granting privileges, changing security attributes, and changing access control rules. |
+| **Example Scenario**               | Security administrators assign access rights/permissions to subjects and objects within the system, and subjects cannot control access themselves. |
+| **Example**                        | SELinux (object is labeled with a security context)          |
 
 | Role-based Access Control (RBAC) | Description                                                                                                                                                                                                                                                   |
 | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -465,8 +465,8 @@ Network Basics
 
 Lots of network basics, like tcp/udp, safeports, ipv4 ipv6 etc etc.
 
-![](img/isc2-CC/2023-06-06-03-10-21.png)
-![](img/isc2-CC/2023-06-07-00-33-45.png)
+<img src="(img/isc2-CC/2023-06-06-03-10-21.png" style="zoom:50%;" />
+<img src="(img/isc2-CC/2023-06-07-00-33-45.png" style="zoom:50%;" />
 
 Important to Note:
 As in IPv4, there are some addresses and ranges that are reserved for special uses:
