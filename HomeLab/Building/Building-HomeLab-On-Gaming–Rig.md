@@ -1,0 +1,126 @@
+
+I ran HomeLab from last 5 years on ESXI 6.7 with 1 Control Plane and 4 Nodes on top with Ubuntu on Dell Optiplex Tower Servers.
+
+From past 2 years i wanted to upgrade the system to run LLM Locally as well to upgrade it for better CPU and Memory.
+
+I made the choice to make a gaming rig, because of Obvious power full reasons.
+
+I live near NCR area, I have found a lot better prices compared to Amazon Or Flipkart even in big billion or Festive Sale.
+
+Hardware :
+
+**MotherBoard**: ASUS Rog X670E-E
+
+**Processor**:  AMD Ryzen 9 7950X
+
+**Memory**: 16GB X 2 [Predator Vesta II](https://www.predatorstorage.com/products/predator-vesta-ii-7200-mhz-rgb-ram-ddr5.html)
+
+**Cooling**: Ant Esports ARGB Cooler, With RGB Fans and Digital Temperature Display.
+
+**Case**:  [ThermalTake Core P6](https://www.thermaltake.com/core-p6-tempered-glass-snow-mid-tower-chassis.html) (Hell Heavy and Solid) ❤️
+
+## Time to Choose OS
+
+I have below KPI or KRIs in mind before Installing anything (Although i Have tried all possibilities in the build),
+
+- Performance is Must(Saving Compute on GUI).
+- Easy Kubernetes via Virtualization.
+- Able to use GPU 4080/4090 For LLM Use and Training.
+- Flexing 👨‍❤️‍👨
+  - RGB Lights on Fans can be controlled.
+  - Temperature Digits on ARGB Cooler Display.
+
+### Windows 11
+
+Pros :
+
+- Out of the box Support for Motherboard, Other Accesories.
+- Ant esports software available in windows for ARGB Display.
+
+Cons:
+
+- WSL is impossible For K8s Clustering.
+  - WSL Use Dynamic Allocation for Disk Size, Fixed Sizing could have been better.
+- WSL2 Isn't straight forward to provide to Local Static IP.
+
+**Some Notes on, How i tried to setup WSL2 in Windows**
+
+```bash
+#~/.wslconfig
+
+[wsl2]
+memory=24GB #Limit configured to 75%(24GB)-25%(6GB).
+```
+
+[Source]( https://fizzylogic.nl/2023/01/05/how-to-configure-memory-limits-in-wsl2)
+
+**Setup For WSL2 Ubuntu**
+
+To install WSL on manual location, needs to download the tar from [ubuntu cloud image](https://cloud-images.ubuntu.com/wsl/noble/current/)
+
+```
+wsl --import microk8s D:\microk8s "C:\Users\sharm\Downloads\ubuntu-noble-wsl-amd64-ubuntu24.04lts.rootfs.tar.gz" --version 2
+```
+
+Config below for disable automounts.
+
+```
+[boot]
+systemd=true
+
+[automount]
+enabled = false
+```
+
+Used Snap to install MicroK8S.
+
+Not found a way to manage cluster for example, editing kube-apiserver.yaml to add IP for cert etc.
+
+**Side Notes** : Armory Crate and AuraSync are the software, which get installed to control RGB fans stuff. However the software is laggy. I Install OpenRGB in windows and Uninstalled Armory.
+Please see [[#Awesome OpenRGB]]
+
+I quit in windows, to save management hours and as well not wasting computes on GUI and biggest i could use Hyper V perhaps it doesn't support USB passthrough.
+
+### Installing ESXI
+
+Installed ESXI 8, Can access WebUI.
+
+On Installing Windows, Setup Shown it can't install windows because the PC doesn't meet the requirement.
+
+ESXI Web UI shown below Warning
+
+```
+TPM 2.0 device detected but a connection cannot be established.
+```
+
+In MB Bios Enabled, TPM, UEFI etc. Perhaps it doesn't helped.
+
+I also found some users had issue in forwarding Graphic card, and its concerning fact. Because i need to use Graphic card in near future.
+
+### Installing Proxmox VE
+
+I Have installed Proxmox on temp ssd to check OpenRGB.
+
+ASUS Rog X670E-E Devices were found, Both HyperX Rams RGB worked, Motherboard RGB doesn't work.
+
+Tried with all USB pass thought From Proxmox to windows VM, Installed ASUS Armory or Aura SYCN tool, Nothing got detected.
+
+**Even Though Passing all USB and RAW PCI, Windows is not detecting the tool.**
+
+****
+
+### Awesome OpenRGB
+
+Installed OpenRGB on Debian Using this [Guide](https://pmcvtm.com/adding-openrgb-to-proxmox)
+
+#### What Worked
+
+![[CleanShot 2024-11-02 at 01.42.05.png]]
+
+- [x] Memory Lights
+- [ ] Motherboard RGB are not detected, [Created Issue](https://gitlab.com/CalcProgrammer1/OpenRGB/-/issues/4397). #tasks #reasearch #followup
+- [ ] Liquid Cooling Display. #tasks #reasearch
+
+##### Integrate OpenRGB with HomeAssistant
+
+Installed This [Plugin](https://github.com/koying/openrgb_ha) in Home Assistant to control the it from home assistant.
