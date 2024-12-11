@@ -1,11 +1,11 @@
 - **HomeLab**
-  - 1. Building
+  - Building
     - [HomeLab-On-Gaming–Rig](HomeLab/1.Building/1.HomeLab-On-Gaming-Rig.md)
     - [Choosing Operating System](HomeLab/1.Building/2.Choosing-Operating-System.md)
     - [Setting Up Graphic Card](HomeLab/1.Building/3.Setting-Up-Graphic-Card.md)
     - [Kubernetes-On-HomeLab](HomeLab/1.Building/4.Kubernetes-On-HomeLab.md)
     - [Securing Flux With SOPS](HomeLab/1.Building/6.Securing-Flux-With-SOPS.md)
-  - 2. Applications
+  - Applications
     - [CloudNative Postgresql](HomeLab/2.Applications/CloudNative%20Postgresql.md)
     - [Immich](HomeLab/2.Applications/Immich.md)
     - [Paperless NGX](HomeLab/2.Applications/Paperless%20NGX.md)

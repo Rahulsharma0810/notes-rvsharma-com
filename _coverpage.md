@@ -52,27 +52,14 @@
 </style>
 
 <div class="cover-main">
-  <h1>Security List</h1>
-  <p>Curated lists of tools, tips, and resources for protecting digital security and privacy</p>
+  <h1>Rahul Sharma</h1>
+  <p>
+Place where I write about what I read and do, D2D (day-to-day). This is a space for sharing and documenting my thoughts, insights, and experiences as I engage with various materials and activities.
 
-  <div class="features">
-    <div>
-      <h3>Checklist</h3>
-      <p>100+ Tips for preserving privacy and protecting security</p>
-    </div>
-    <div>
-      <h3>Software</h3>
-      <p>Curated list of privacy-respecting software and services</p>
-    </div>
-    <div>
-      <h3>Hardware</h3>
-      <p>DIY and purchasable products for improving data security</p>
-    </div>
-    <div>
-      <h3>Links</h3>
-      <p>Awesome security services, media, tools, and guides</p>
-    </div>
-  </div>
+</p>
+<p>
+If you have suggestions or feedback on the content that I have written, I welcome pull requests. Please make sure that any changes you propose are well-formatted and easy to read. Your contributions will help to make this a valuable resource for myself and others who are interested in similar topics.
+</p>
 
-  <a href="https://github.com" class="github-button">View on GitHub</a>
+  <a href="https://rvsharma.com" class="github-button">View Profile</a>
 </div>
