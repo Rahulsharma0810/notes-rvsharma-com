@@ -6,7 +6,7 @@ If you have suggestions or feedback on the content that I have written, I welcom
 
 ## ~ Rahul Sharma
 
-[![rvsharma banner](display_banner.png)](https://rvsharma.com)
+[![rvsharma banner](Src/images/display_banner.png)](https://rvsharma.com)
 
 <h2 align='center'> Sr Cloud Security Consultant (GCP) / DevSecOps Enthusiast </h2>
 

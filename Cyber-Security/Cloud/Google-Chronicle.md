@@ -7,9 +7,9 @@ Overview:
 - Dave Harold, a Principal Security Strategist at Google Cloud, is providing an overview of the Chronicle Unified Data Model (UDM).
 - This will cover the need for normalization in security analytics and how UDM normalization works in Chronicle.
 
-![](2023-02-11-18-53-32.png)
+![](attachments/2023-02-11-18-53-32.png)
 
-![](2023-02-11-18-54-05.png)
+![](attachments/2023-02-11-18-54-05.png)
 
 The Need for Normalization:
 
@@ -29,7 +29,7 @@ UDM Normalization in Chronicle:
 
 UDM Events:
 
-![](2023-02-11-18-54-34.png)
+![](attachments/2023-02-11-18-54-34.png)
 
 ## What is Chronicle?
 
@@ -85,11 +85,11 @@ Overview of Chronicle's Ingestion Service:
 - Parsing is done through Logstash-style configuration files that extract, manipulate, and write data into a UDM event or entity.
 - Over 500 [default parsers](https://cloud.google.com/chronicle/docs/ingestion/parser-list/supported-default-parsers) are available for standard log formats, making it easy for customers to bring their security logs and start using the platform.
 
-![](2023-02-13-16-36-47.png)
+![](attachments/2023-02-13-16-36-47.png)
 
-![](2023-02-13-17-12-30.png)
+![](attachments/2023-02-13-17-12-30.png)
 
-![](2023-02-13-17-13-05.png)
+![](attachments/2023-02-13-17-13-05.png)
 
 **Default Parsers:**
 
@@ -144,7 +144,7 @@ message: This is an error message
 
 Chronicles provides API for configuring parsers.
 
-![](2023-02-13-17-36-19.png)
+![](attachments/2023-02-13-17-36-19.png)
 
 Prebuilt tool for interacting with Parser API - <https://github.com/chronicle/cbn-tool>
 
@@ -152,7 +152,7 @@ Getting Data: [List of Supported data / log sources
 launch](https://cloud.google.com/chronicle/docs/supported-datasets)
 
 There are four main methods of getting data into Google Chronicle:
-![](2023-02-13-18-04-18.png)
+![](attachments/2023-02-13-18-04-18.png)
 
 - Chronicle forwarder.
 - Pulling data from cloud sources.
@@ -161,7 +161,7 @@ There are four main methods of getting data into Google Chronicle:
 
 **Chronicle forwarder:**
 
-![](2023-02-13-18-05-17.png)
+![](attachments/2023-02-13-18-05-17.png)
 
 - Primarily used for gathering data from on-premises sources but can also be deployed in cloud environments.
 - Deployed as a Docker container running on Linux VM (Windows version also exists).
@@ -171,7 +171,7 @@ There are four main methods of getting data into Google Chronicle:
 
 **Pulling data from cloud sources:**
 
-![](2023-02-13-18-07-56.png)
+![](attachments/2023-02-13-18-07-56.png)
 
 - Data from sources like GCS, S3, Azure Blob Storage, Microsoft 365, Azure Active Directory, and others can be fetched directly.
 - Requires configuring API token or credentials.
@@ -179,17 +179,17 @@ There are four main methods of getting data into Google Chronicle:
 
 **Pushing data through the ingestion API:**
 
-![](2023-02-13-18-09-22.png)
+![](attachments/2023-02-13-18-09-22.png)
 
 - Presents a way for partners and MSPs to send data directly to Chronicle without using forwarders or cloud source feeds.
 - Four distinct endpoints, authenticated with an OAuth token.
 - Endpoints allow posting data in unstructured log format or pre-formatted UDM format.
 
-![](2023-02-13-18-09-57.png)
+![](attachments/2023-02-13-18-09-57.png)
 
 **Direct ingestion:**
 
-![](2023-02-13-18-10-22.png)
+![](attachments/2023-02-13-18-10-22.png)
 
 - Only applicable to Google Cloud data.
 - Recently introduced in the Google Cloud console.
@@ -267,7 +267,7 @@ YARA-L is widely used by malware analysts, incident responders, and security res
 
 ### Creating Rules
 
-![](2023-02-16-04-47-15.png)
+![](attachments/2023-02-16-04-47-15.png)
 
 Basic Rule Syntax
 

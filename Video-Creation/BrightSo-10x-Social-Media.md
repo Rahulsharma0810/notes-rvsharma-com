@@ -14,7 +14,7 @@ Sidharth Talk:
 
 How to get idea:
 
-![[2024-12-11_15-40-51.png]]
+![[attachments/2024-12-11_15-40-51.png]]
 
 - [ ] Steal
 	- [ ] Look
@@ -35,4 +35,4 @@ In 2 Second
 @brightso
 
 
-![[2024-12-11_15-41-03.png]]
+![[attachments/2024-12-11_15-41-03.png]]
