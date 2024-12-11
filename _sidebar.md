@@ -1,6 +1,6 @@
 - **HomeLab**
   - 1. Building
-    - [1.Building-HomeLab-On-Gaming–Rig](1.HomeLab-On-Gaming-Rig.md)
+    - [HomeLab-On-Gaming–Rig](HomeLab/1.Building/1.HomeLab-On-Gaming-Rig.md])
     - [Choosing Operating System](HomeLab/1.Building/2.Choosing-Operating-System.md)
     - [Setting Up Graphic Card](HomeLab/1.Building/3.Setting-Up-Graphic-Card.md)
     - [Kubernetes-On-HomeLab](HomeLab/1.Building/4.Kubernetes-On-HomeLab.md)
