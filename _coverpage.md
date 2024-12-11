@@ -36,7 +36,7 @@
     background: rgba(255, 255, 255, 0.2);
   }
 
-  .github-button {
+  .cta-button {
     display: inline-block;
     padding: 20px 20px;
     background-color: #444;
@@ -54,12 +54,10 @@
 <div class="cover-main">
   <h1>Rahul Sharma</h1>
   <p>
-Place where I write about what I read and do, D2D (day-to-day). This is a space for sharing and documenting my thoughts, insights, and experiences as I engage with various materials and activities.
-
-</p>
-<p>
-If you have suggestions or feedback on the content that I have written, I welcome pull requests. Please make sure that any changes you propose are well-formatted and easy to read. Your contributions will help to make this a valuable resource for myself and others who are interested in similar topics.
-</p>
-
-  <a href="https://rvsharma.com" class="github-button">View Profile</a>
+  Place where I write about what I read and do, D2D (day-to-day). This is a space for sharing and documenting my thoughts, insights, and experiences as I engage with various materials and activities.
+  </p>
+  <p>
+  If you have suggestions or feedback on the content that I have written, I welcome pull requests. Please make sure that any changes you propose are well-formatted and easy to read. Your contributions will help to make this a valuable resource for myself and others who are interested in similar topics.
+  </p>
+  <a href="https://rvsharma.com" class="cta-button">View Profile</a>
 </div>
