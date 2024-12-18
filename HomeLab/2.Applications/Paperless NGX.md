@@ -1,7 +1,7 @@
 
 Not using oci://ghcr.io/gabe565/charts
 
-Becasue the chart doesn't support extraVolumes, extraVolumesMounts, Needed for hooking custom script in PaprlessNgx
+Because the chart doesn't support extraVolumes, extraVolumesMounts, Needed for hooking custom script in PaprlessNgx
 
 We need to attach configmap in pod like
 
@@ -15,7 +15,6 @@ We need to attach configmap in pod like
     - name: script-volume
       mountPath: /usr/src/paperless/scripts
 ```
-
 
 
 While Connecting Google SSO, One Regular Login, Connect your Account with Google by Going to Paperlessngx Profile page.
