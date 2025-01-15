@@ -1,9 +1,4 @@
-# 🌏 Public/Notes/Books/[Draft] Don’t Sweat the small stuffs.md
-
-Read from 21-31 Topic.
-
 ## 24. Spend a Moment Every Day Thinking of Someone to Thank
-
 
 Thoughts
 
@@ -14,7 +9,6 @@ Thus coincidence are not in the hands of humans, even when we try hell out of sh
 “25. Smile at Strangers, Look into Their Eyes, and Say Hello”
 
 Try this in gym, visit as you wake up.
-
 
 
 29. Become a better listener

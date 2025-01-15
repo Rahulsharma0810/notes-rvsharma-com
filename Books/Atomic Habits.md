@@ -6,17 +6,17 @@
 - Success is the product of daily habits, not one-time transformations.
 - Small changes are initially unnoticeable (known as the "valley of disappointment"). To see results, consistency is crucial; growth becomes exponential over time.
 - Goals set direction, but systems drive progress. Focus on the process, not just the outcome.
-- Layers of behavior change:
+- Layers of behaviour change:
     - **Outcomes:** What you achieve.
     - **Processes:** The actions leading to the outcome.
     - **Identity:** Who you believe you are or want to become (most important for lasting change).
 
-**The Four Laws of Behavior Change:**
+**The Four Laws of Behaviour Change:**
 
 ### 1. Make It Obvious (CUE)
 
 - **Habit scorecard:**
-    - List daily behaviors.
+    - List daily behaviours.
     - Label habits as positive, negative, or neutral.
     - “Unless you make the unconscious conscious, it will direct your life, and you will call it fate.”
 - **Implementation strategy:** Specify time and place for new habits (e.g., "I will read for 15 minutes at 6 a.m. in the bedroom").
