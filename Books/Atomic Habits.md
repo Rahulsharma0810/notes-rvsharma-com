@@ -55,3 +55,8 @@
 - Focus on systems over goals to create sustainable change.
 - Stay patient; results compound over time.
 - Align habits with the identity of the person you wish to become.
+
+
+
+
+Create a designated space for your specific task. For instance, set up a table exclusively for reading, a chair for relaxing, and a desk for working. This approach helps you avoid distractions from surrounding objects and reinforces a habit associated with specific objects.
