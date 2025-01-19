@@ -57,6 +57,8 @@
 - Align habits with the identity of the person you wish to become.
 
 
+“Small changes in context can lead to significant shifts in behavior over time. Every habit is initiated by a cue, and we tend to notice cues that stand out. To make good habits easier to adopt, make the cues of those habits obvious in your environment. Gradually, your habits become associated not just with a single trigger but with the entire context surrounding the behavior. As a result, the context becomes the cue. This makes it easier to build new habits in a new environment because you’re not fighting against old cues.
+
 
 
 Create a designated space for your specific task. For instance, set up a table exclusively for reading, a chair for relaxing, and a desk for working. This approach helps you avoid distractions from surrounding objects and reinforces a habit associated with specific objects.
