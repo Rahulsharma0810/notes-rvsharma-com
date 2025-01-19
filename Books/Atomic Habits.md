@@ -67,3 +67,24 @@ Create a designated space for your specific task. For instance, set up a table e
 
 Chapter 7
 Most of our habits can be cured with the help of certain places. For instance, at one place, Yamuna Bank in Mathura, my friends and I used to smoke cigarettes. I haven’t smoked a cigarette in the last two or three years whenever I visit that same place, the bank of the river. However, I still crave smoking a cigarette because I’ve developed a certain feeling of pleasure associated with that particular place.
+
+
+# The Habits Cheat Sheet
+
+## How to Create a Good Habit
+
+| **Law**                 | **Suggestion**                                                                                                                                   |
+|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| **1st Law: Make It Obvious** | - Fill out the Habits Scorecard. Write down your current habits to become aware of them.<br>- Use implementation intentions: "I will [BEHAVIOR] at [TIME] in [LOCATION]."<br>- Use habit stacking: "After [CURRENT HABIT], I will [NEW HABIT]."<br>- Design your environment. Make the cues of good habits obvious and visible. |
+| **2nd Law: Make It Attractive** | - Use temptation bundling. Pair an action you want to do with an action you need to do.<br>- Join a culture where your desired behavior is the normal behavior.<br>- Create a motivation ritual. Do something you enjoy immediately before a difficult habit. |
+| **3rd Law: Make It Easy** | - Reduce friction. Decrease the number of steps between you and your good habits.<br>- Prime the environment. Prepare your environment to make future actions easier.<br>- Master the decisive moment. Optimize the small choices that deliver outsized impact.<br>- Use the Two-Minute Rule. Downscale your habits until they can be done in two minutes or less.<br>- Automate your habits. Invest in technology and one-time purchases that lock in future behavior. |
+| **4th Law: Make It Satisfying** | - Use reinforcement. Give yourself an immediate reward when you complete your habit.<br>- Make "doing nothing" enjoyable. When avoiding a bad habit, design a way to see the benefits.<br>- Use a habit tracker. Keep track of your habit streak and "don't break the chain."<br>- Never miss twice. When you forget to do a habit, make sure you get back on track immediately. |
+
+## How to Break a Bad Habit
+
+| **Law**                           | **Suggestion**                                                                                                                                                              |
+| --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **1st Law: Make It Invisible**    | - Reduce exposure. Remove the cues of your bad habits from your environment.                                                                                                |
+| **2nd Law: Make It Unattractive** | - Reframe your mindset. Highlight the benefits of avoiding your bad habits.                                                                                                 |
+| **3rd Law: Make It Difficult**    | - Increase friction. Increase the number of steps between you and your bad habits.<br>- Use a commitment device. Restrict your future choices to the ones that benefit you. |
+| **4th Law: Make It Unsatisfying** | - Get an accountability partner. Ask someone to watch your behavior.<br>- Create a habit contract. Make the costs of your bad habits public and painful.                    |
