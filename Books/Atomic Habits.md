@@ -66,3 +66,4 @@ To make good habits easier to adopt, make the cues of those habits obvious in yo
 Create a designated space for your specific task. For instance, set up a table exclusively for reading, a chair for relaxing, and a desk for working. This approach helps you avoid distractions from surrounding objects and reinforces a habit associated with specific objects.
 
 Chapter 7
+Most of our habits can be cured with the help of certain places. For instance, at one place, Yamuna Bank in Mathura, my friends and I used to smoke cigarettes. I haven’t smoked a cigarette in the last two or three years whenever I visit that same place, the bank of the river. However, I still crave smoking a cigarette because I’ve developed a certain feeling of pleasure associated with that particular place.
