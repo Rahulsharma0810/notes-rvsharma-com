@@ -88,3 +88,106 @@ Most of our habits can be cured with the help of certain places. For instance, a
 | **2nd Law: Make It Unattractive** | - Reframe your mindset. Highlight the benefits of avoiding your bad habits.                                                                                                 |
 | **3rd Law: Make It Difficult**    | - Increase friction. Increase the number of steps between you and your bad habits.<br>- Use a commitment device. Restrict your future choices to the ones that benefit you. |
 | **4th Law: Make It Unsatisfying** | - Get an accountability partner. Ask someone to watch your behavior.<br>- Create a habit contract. Make the costs of your bad habits public and painful.                    |
+### Chapter 10
+
+- The inversion of the 2nd Law of Behaviour Change is make it unattractive.
+- Every behaviour has a surface level craving and a deeper underlying motive.
+- Your habits are modern-day solutions to ancient desires. 
+- The cause of your habits is actually the prediction that precedes them. The prediction leads to a feeling. 
+- Highlight the benefits of avoiding a bad habit to make it seem unattractive.
+- Habits are attractive when we associate them with positive feelings and unattractive when we associate them with negative feelings. Create a motivation ritual by doing something you enjoy immediately before a difficult habit.
+
+### Chapter 11
+#### Walk Slowly But never backward
+
+- The 3rd Law of Behaviour Change is make it easy.
+- The most effective form of learning is practice, not planning.
+- Focus on taking action, not being in motion.
+- Habit formation is the process by which a behaviour becomes progressively more automatic through repetition.
+- The amount of time you have been performing a habit is not as important as the number of times you have performed it.
+
+> You form a habit not by the duration of time, but by the number of attempts or the amount of time you’ve invested in the action. 
+> The common question people ask when learning a new musical instrument is how much time it takes to master it. Perhaps the answer lies in the frequency of practice sessions. If you can practice once a day, it might take longer than if you could practice ten times a day. By following the reputation approach, the key is to focus on repetition and make the most of your practice time.
+
+
+#### Chapter 12
+#### The Law of Least Effort
+
+- Human behaviour follows the Law of Least Effort. We will naturally gravitate toward the option that requires the least amount of work.
+- Create an environment where doing the right thing is as easy as possible.
+- Reduce the friction associated with good behaviours. When friction is low, habits are easy.
+- Increase the friction associated with bad behaviours . When friction is high, habits are difficult.
+- Prime your environment to make future actions easier.”
+
+> For instance, while drinking alcohol, after preparing a peg, put the whiskey bottle back on the bar. If you want another peg, you’ll have to fumble with picking the bottle up from the bar again.
+
+
+### Chapter 13
+How to make good habit in evitable and bad habit, impossible.
+
+- The inversion of the 3rd Law of Behaviour Change is make it difficult.
+- A commitment device is a choice you make in the present that locks in better behaviour in the future.
+- The ultimate way to lock in future behaviour is to automate your habits.
+- Onetime choices—like buying a better mattress or enrolling in an automatic savings plan—are single actions that automate your future habits and deliver increasing returns over time.
+- Using technology to automate your habits is the most reliable and effective way to guarantee the right behaviour.
+
+
+
+### Chapter 15
+
+Make it Satisfying 
+
+•	The 4th Law of Behaviour Change is make it satisfying.
+•	We are more likely to repeat a behaviour when the experience is satisfying.
+•	The human brain evolved to prioritise immediate rewards over delayed rewards.
+•	The Cardinal Rule of Behaviour Change: What is immediately rewarded is repeated. What is immediately punished is avoided.
+•	To get a habit to stick you need to feel immediately successful—even if it’s in a small way.
+- The first three laws of behaviour change—make it obvious, make it attractive, and make it easy—increase the odds that a behaviour will be performed this time.
+•	The fourth law of behaviour change—make it satisfying—increases the odds that a behaviour will be repeated next time”
+
+> We are leaving in delayed return environment. The meaning is we do not get reactions of the action on the same time. This results our bad habits reactions not to cross in the short time, and the same goes for good habits as well. Someone will be still smoking a cigarette, knowing that it will reduce his life cycle and health. On the other hand. Someone will still ref usees to go and exercise, intentionally, knowing that in the long run, it will improve His mental and physical health humans are made for fast environment, feedback creatures. We always font the result of the action just after doing the action. For example, eating food will stop my hunger right now sleeping right now. Will stop the cab for sleep and relax me instantly.
+
+
+Chapter 16
+
+•	One of the most satisfying feelings is the feeling of making progress.
+•	A habit tracker is a simple way to measure whether you did a habit—like marking an X on a calendar.
+•	Habit trackers and other visual forms of measurement can make your habits satisfying by providing clear evidence of your progress.
+•	Don’t break the chain. Try to keep your habit streak alive.
+•	Never miss twice. If you miss one day, try to get back on track as quickly as possible.
+•	Just because you can measure something doesn’t mean it’s the most important thing.
+
+Chapter 17
+
+- The inversion of the 4th Law of Behaviour Change is make it unsatisfying.
+- We are less likely to repeat a bad habit if it is painful or unsatisfying.
+- An accountability partner can create an immediate cost to inaction. We care deeply about what others think of us, and we do not want others to have a lesser opinion of us.
+- A habit contract can be used to add a social cost to any behaviour. It makes the costs of violating your promises public and painful.
+- Knowing that someone else is watching you can be a powerful motivator.
+
+
+## ADVANCED TACTICS
+**How to Go from Being Merely Good to Being Truly Great**
+
+
+•	The secret to maximising your odds of success is to choose the right field of competition.
+•	Pick the right habit and progress is easy. Pick the wrong habit and life is a struggle.
+•	Genes cannot be easily changed, which means they provide a powerful advantage in favourable circumstances and a serious disadvantage in unfavourable circumstances.
+•	Habits are easier when they align with your natural abilities. Choose the habits that best suit you.
+•	Play a game that favours your strengths.If you can’t find a game that favours you, create one.
+•	Genes do not eliminate the need for hard work. They clarify it They tell us what to work hard on.
+
+Chapter 19
+
+The Goldilocks Rule states that humans experience peak motivation when working on tasks that are right on the edge of their current abilities.
+The greatest threat to success is not failure but boredom.
+As habits become routine, they become less interesting and less satisfying. We get bored.
+Anyone can work hard when they feel motivated. It’s the ability to keep going when work isn’t exciting that makes the difference.
+Professionals stick to the schedule; amateurs let life get in the way.”
+
+### Chapter 20
+
+- The upside of habits is that we can do things without thinking. The downside is that we stop paying attention to little errors.
+- Habits + Deliberate Practice = Mastery
+- Reflection and review is a process that allows you to remain conscious of your performance over time.
+- The tighter we cling to an identity, the harder it becomes to grow beyond it.”
