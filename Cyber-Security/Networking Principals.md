@@ -272,7 +272,7 @@ Data follows a **structured flow** from **application → physical medium** and 
    - Browser generates **HTTP headers** and request body.
 
 2. **Presentation Layer (Layer 6)**  
-   - JSON data is **serialized** into bytes.
+   - JSON data is **Serialized** into bytes.
    - If **HTTPS**, data is **encrypted using TLS**.
 
 3. **Session Layer (Layer 5)**  
@@ -292,7 +292,7 @@ Data follows a **structured flow** from **application → physical medium** and 
    - Frames are prepared for transmission.
 
 7. **Physical Layer (Layer 1)**  
-   - Data is transmitted **over radio, fiber, or copper wires**.
+   - Data is transmitted **over radio, Fiber, or copper wires**.
    - On the receiving end, this process **reverses**.
 
 ---
@@ -300,13 +300,13 @@ Data follows a **structured flow** from **application → physical medium** and 
 ## **The OSI Model & Networking Devices**
 Each networking device operates at **specific OSI layers**:
 
-| **Device**          | **OSI Layer** | **Function** |
-|---------------------|-------------|-------------|
-| **Switch**         | Layer 2      | Routes frames using **MAC addresses**. |
-| **Router**         | Layer 3      | Routes packets based on **IP addresses**. |
-| **Firewall**       | Layer 3/4    | Filters traffic based on **IP, port, or protocol**. |
-| **Load Balancer**  | Layer 4/7    | Distributes requests **(TCP-level or HTTP-level)**. |
-| **Proxy Server**   | Layer 7      | Intercepts & modifies HTTP requests (e.g., **CDN, caching**). |
+| **Device**        | **OSI Layer** | **Function**                                                  |
+| ----------------- | ------------- | ------------------------------------------------------------- |
+| **Switch**        | Layer 2       | Routes frames using **MAC addresses**.                        |
+| **Router**        | Layer 3       | Routes packets based on **IP addresses**.                     |
+| **Firewall**      | Layer 3/4     | Filters traffic based on **IP, port, or protocol**.           |
+| **Load Balancer** | Layer 4/7     | Distributes requests **(TCP-level or HTTP-level)**.           |
+| **Proxy Server**  | Layer 7       | Intercepts & modifies HTTP requests (e.g., **CDN, caching**). |
 
 ---
 
@@ -323,7 +323,6 @@ Each networking device operates at **specific OSI layers**:
   - Reduces **unnecessary complexity**.
 
 ---
-
 ## **OSI Model Limitations & Criticism**
 
 1. **Too Many Layers**  
