@@ -230,7 +230,8 @@ QUIC was designed to address TCP’s relatively slow handshake procedures & **HO
 
 ![1695788083563.jpg](blob:capacitor://localhost/c3aaaaa4-9d85-4e3e-ad32-f1b288c514c5)
 
-Till L 4 Anyone or un
+Till L 4 Anyone or Intruder can read the because till at this layer nothing is encrypted. 
+
 
 ---
 
