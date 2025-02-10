@@ -53,3 +53,7 @@ The Course Is Presented By Hussein Naseer on [Udemy](https://www.udemy.com/cours
   - Help both developers and network professionals grasp the **“why”** behind certain behaviors (e.g., why certain connections get dropped or throttle).
 
 ---
+
+UDP is simple protocol.
+
+TCP is subset for UDP.
