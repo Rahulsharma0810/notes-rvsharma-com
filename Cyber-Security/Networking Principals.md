@@ -228,6 +228,8 @@ Each layer provides a **specific function** in the communication process.
 
 QUIC was designed to address TCP’s relatively slow handshake procedures & **HOL (Head of Line ) Blocking,  HOL** is performance issue that occurs when a SEQ of packets is held up by the first packet in the line. The issue is common in TCP. On The other QUIC minimise the HOL by allowing multiple streams of data to be multiplex over a single connection. QUIC, loss or delay in one stream does not block other streams because QUIC handles packet loss and retransmissions at the individual stream level rather than at the connection level as TCP does.
 
+![1695788083563.jpg](blob:capacitor://localhost/c3aaaaa4-9d85-4e3e-ad32-f1b288c514c5)
+
 ---
 
 ### **Layer 3 - Network Layer**
