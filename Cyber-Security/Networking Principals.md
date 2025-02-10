@@ -192,6 +192,7 @@ PDNTSPA
 
 Each layer provides a **specific function** in the communication process.
 
+![OSI-Model-.webp](blob:capacitor://localhost/f6d3902c-9cf9-4a70-bdb4-f7e93aed5ffe)
 ### **Layer 7 - Application Layer**
 - **What it does**: This is where applications **interact** with the network.
 - **Examples**:
