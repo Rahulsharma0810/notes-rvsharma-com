@@ -334,4 +334,3 @@ Each networking device operates at **specific OSI layers**:
 - **Networking devices operate at different layers** (switches = Layer 2, routers = Layer 3, firewalls = Layer 3/4, proxies = Layer 7).
 - **Most real-world networking follows the TCP/IP model**, which simplifies OSI’s **7 layers into 4**.
 
-> **Next Topic**: How does data routing actually work at the network layer?
