@@ -231,8 +231,7 @@ QUIC was designed to address TCP’s relatively slow handshake procedures & **HO
 ![1695788083563.jpg](blob:capacitor://localhost/c3aaaaa4-9d85-4e3e-ad32-f1b288c514c5)
 
 Till L 4 Anyone or Intruder can read the because till at this layer nothing is encrypted.
-Your i
-
+Your ISP too.
 
 ---
 
@@ -241,6 +240,8 @@ Your i
 - **Examples**:
   - **IP, ICMP (ping), BGP (Border Gateway Protocol)**.
   - **VPNs operate at Layer 3** (e.g., encapsulating one IP packet inside another).
+
+Most VPN work in Layer 2, As they add source IP. 
 
 ---
 
