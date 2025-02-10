@@ -116,7 +116,7 @@ The Course Is Presented By Hussein Naseer on [Udemy](https://www.udemy.com/cours
 
 ---
 
-## **Reducing Client Dependencies**
+## **Reducing Client Depende nncies**
 - **Monolith Problem**: Older applications required **all dependencies** (drivers, libraries, database connectors) on a **single machine**.
 - **Client-Server Fix**:
   - **Clients** now only **send requests**.
@@ -151,5 +151,3 @@ The Course Is Presented By Hussein Naseer on [Udemy](https://www.udemy.com/cours
 - **Edge computing** is shifting some workload back to clients.
 - **3-tier architecture** provides a structured way to separate UI, logic, and database.
 - **Standardized communication protocols** are critical for interoperability.
-
-> **Next Topic**: How do we establish reliable communication between clients and servers? 
