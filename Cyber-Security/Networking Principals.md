@@ -187,6 +187,9 @@ The Course Is Presented By Hussein Naseer on [Udemy](https://www.udemy.com/cours
 ---
 
 ## **The 7 Layers of the OSI Model**
+
+PDNTSPA
+
 Each layer provides a **specific function** in the communication process.
 
 ### **Layer 7 - Application Layer**
