@@ -230,7 +230,8 @@ QUIC was designed to address TCP’s relatively slow handshake procedures & **HO
 
 ![1695788083563.jpg](blob:capacitor://localhost/c3aaaaa4-9d85-4e3e-ad32-f1b288c514c5)
 
-Till L 4 Anyone or Intruder can read the because till at this layer nothing is encrypted. 
+Till L 4 Anyone or Intruder can read the because till at this layer nothing is encrypted.
+Your i
 
 
 ---
@@ -248,6 +249,8 @@ Till L 4 Anyone or Intruder can read the because till at this layer nothing is e
 - **Examples**:
   - **Ethernet (802.3), Wi-Fi (802.11), ARP (Address Resolution Protocol)**.
   - **Switches operate at Layer 2**, forwarding frames based on **MAC addresses**.
+
+Most VPNs are Layer 2
 
 ---
 
