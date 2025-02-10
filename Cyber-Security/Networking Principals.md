@@ -226,7 +226,8 @@ Each layer provides a **specific function** in the communication process.
   - **UDP (stateless, fast, unordered packets)**.
   - **QUIC (built on UDP for faster HTTP/3 communication)**.
 
-Quic was built to cater TCP, Relativerly slow handshoke procedures. 
+Quic was designed to address TCP’s relatively slow handshake procedures & HOL (Head of Line ) Blocking,  HOL is performance issue that occurs when a sea of packets is held up 
+
 
 ---
 
