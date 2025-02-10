@@ -1,64 +1,55 @@
 The Course Is Presented By Hussein Naseer on [Udemy](https://www.udemy.com/course/fundamentals-of-networking-for-effective-backend-design/learn/lecture/31096404#overview)
 
-Who is this course for?
+# Who Is This Course For?
 
-This course is designed to bridge the knowledge gap between backend engineers, frontend engineers, and network engineers by providing a deep understanding of how networking and backend applications interact.  
+## 1. Backend Engineers
+- **Primary Audience**: The instructor designed the course for backend engineers who build applications consumed by client/front-end software.
+- **Key Focus**: 
+  - Revealing what happens “behind the scenes” at the OS/network level.
+  - Explaining how incoming network segments (TCP segments) flow to the correct process.
+  - Bridging the gap between application-level code and lower-level networking.
 
-1. Backend Engineers
+## 2. Frontend Engineers
+- **Motivation**: Frontend developers often invoke backend APIs and need to know:
+  - How a request travels from the client to the server.
+  - Why certain slowdowns might occur in the network layers rather than in the backend code.
+- **Outcome**:
+  - Gain a deeper understanding of network bottlenecks.
+  - Diagnose issues more effectively (e.g., distinguishing application-side delays from network latency or OS-level constraints).
 
-• Primarily built for backend engineers developing applications consumed by clients.
+## 3. Network Engineers
+- **Reason**: Many network specialists have deep knowledge of Layers 1–7 but may not see the full picture of how application code (like Node.js, Python, etc.) interacts with the OS and network stack.
+- **Goal**: Bridge the gap between network configuration/packet flow and how the application layer actually responds or resets connections.
 
-• Many backend engineers don’t fully understand what happens behind the scenes when a request reaches their application.
+---
 
-• Key areas covered:
+# Why This Matters
 
-• How the operating system handles incoming network segments.
+## 1. Bridging the Foggy Gap  
+- Networking fundamentals are often treated as a **“black box”** by application developers.  
+- Likewise, network engineers may not grasp the specifics of how an application handles connections.
 
-• What ports or processes are listening for incoming traffic.
+## 2. Diagnosing Issues  
+- Slow requests can arise from various layers:
+  - Application logic
+  - OS-level constraints
+  - Network routing or capacity
+- A holistic understanding prevents blaming the **wrong** layer (e.g., blaming backend code when the problem lies in network congestion).
 
-• Why a request (TCP segment) gets directed to a specific process.
+## 3. Building End-to-End Mental Models  
+- Knowledge of how data flows from **client → OS → network → backend code** clarifies performance bottlenecks.
+- Encourages better design decisions at both the frontend (request logic) and backend (server configuration, protocol usage).
 
-• The goal is to remove the “foggy” understanding of networking in backend development and build a strong foundational knowledge.
+---
 
-  
+# Additional Points to Remember
 
-2. Frontend Engineers Moving to Backend
+- **Terminology**: The instructor often refers to “segments,” which typically means **TCP segments** in the networking stack.
+- **OSI/TCP Model**:  
+  - While the OSI model has **7 layers** (with Layer 7 = Application), real-world protocols often blend layers (**TCP/IP model**).  
+  - Understanding which layer is responsible for each part of the process is crucial (e.g., TCP **reset packets** might be triggered by the OS or the application).
+- **Aim of the Course**:  
+  - Reduce confusion by showcasing how the **OS, networking stack, and application environment** interact.
+  - Help both developers and network professionals grasp the **“why”** behind certain behaviors (e.g., why certain connections get dropped or throttle).
 
-• Useful for frontend engineers transitioning to backend development.
-
-• Frontend developers interact with backend APIs, but often don’t understand what happens after making a request.
-
-• Helps them trace a request from the frontend to the backend, identify bottlenecks, and differentiate between backend slowness and network latency.
-
-• Covers deeper networking fundamentals beyond what’s typically encountered in frontend development.
-
-  
-
-1. Network Engineers Interested in Backend Development
-
-• Helps network engineers who want to build or understand backend applications.
-
-• Many network engineers see everything above Layer 7 as “just an application” without considering deeper interactions.
-
-• Covers:
-
-• How applications handle network traffic.
-
-• Why certain network behaviors (e.g., TCP resets) occur.
-
-• How backend applications interact with networking layers.
-
-• Aims to bridge the knowledge gap between backend engineering and networking.
-
-  
-
-Core Objective of the Course
-
-• Eliminate the black-box perception of backend networking.
-
-• Equip engineers with the knowledge to debug and optimize network interactions efficiently.
-
-• Provide foundational knowledge that applies across backend, frontend, and networking disciplines.
-
-  
-If you are a backend engineer, a frontend engineer learning backend, or a network engineer wanting to understand backend applications better, this course is for you.
+---
