@@ -114,6 +114,9 @@ The Course Is Presented By Hussein Naseer on [Udemy](https://www.udemy.com/cours
 - **Now**: **Edge computing** enables **some** computation on client-side.
 - **Example**: IoT devices (e.g., sensors) perform initial **data processing** before sending results to a **central server**.
 
+**Edge Computing** enables some computation on the client-side, thus reducing latency and improving response times in networks. ^edgeComputing 
+
+
 ---
 
 ## **Reducing Client Dependencies**
