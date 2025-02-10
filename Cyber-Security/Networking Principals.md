@@ -1,87 +1,64 @@
 The Course Is Presented By Hussein Naseer on [Udemy](https://www.udemy.com/course/fundamentals-of-networking-for-effective-backend-design/learn/lecture/31096404#overview)
 
-Anyone who started their CS engineering Directly through frameworks. Engineers most of the time doesn't know what is going behind for example TCP connection, Performance degradation etc. 
+Who is this course for?
 
-So who is this course for?
+This course is designed to bridge the knowledge gap between backend engineers, frontend engineers, and network engineers by providing a deep understanding of how networking and backend applications interact.  
 
-I specifically built this course for back end engineer like myself who are really building back in applications
+1. Backend Engineers
 
-that clients consume, but they don't really necessarily understand what is going on behind the scenes.
+• Primarily built for backend engineers developing applications consumed by clients.
 
-When a segment arrives at their application, what the operating system is doing, what is the application
+• Many backend engineers don’t fully understand what happens behind the scenes when a request reaches their application.
 
-is listening on, and why the segment goes to a certain process but not the other.
+• Key areas covered:
 
-It's effectively tries to unveil and remove the blinds from this, you know, foggy, understanding
+• How the operating system handles incoming network segments.
 
-and trying to build a bridge.
+• What ports or processes are listening for incoming traffic.
 
-That gap, as I talked about previously and also remember that the fact that we're using the word back
+• Why a request (TCP segment) gets directed to a specific process.
 
-and kind of indicate that there is a frontend that consumes that back in and mostly the medium that
+• The goal is to remove the “foggy” understanding of networking in backend development and build a strong foundational knowledge.
 
-connects the back end to the front end is networking.
+  
 
-So really good idea to understand what is happening behind the scenes when you're building these basic
+2. Frontend Engineers Moving to Backend
 
-fundamentals.
+• Useful for frontend engineers transitioning to backend development.
 
-This course is also very good for frontend engineer who are trying to build back in application or built
+• Frontend developers interact with backend APIs, but often don’t understand what happens after making a request.
 
-back in application before.
+• Helps them trace a request from the frontend to the backend, identify bottlenecks, and differentiate between backend slowness and network latency.
 
-Because guess what?
+• Covers deeper networking fundamentals beyond what’s typically encountered in frontend development.
 
-Frontend engineers are those who make the calls to the back end to an API to consume it.
+  
 
-So it's really interesting to send a call and really follow the call all the way to the back end and
+1. Network Engineers Interested in Backend Development
 
-make sure that it actually reaches.
+• Helps network engineers who want to build or understand backend applications.
 
-So if there is a slowdown in a certain request, it doesn't mean that a back in is slow.
+• Many network engineers see everything above Layer 7 as “just an application” without considering deeper interactions.
 
-Could be the networking between this point, to this point has certain limitation and it's good to understand
+• Covers:
 
-that there could be a configuration in your client side when it comes to the network and is way lower
+• How applications handle network traffic.
 
-level down beneath you.
+• Why certain network behaviors (e.g., TCP resets) occur.
 
-You know it doesn't it's not something you as on the application necessarily without Node.js or Python
+• How backend applications interact with networking layers.
 
-as low level is so understanding that and once you really understand is what really matters here when
+• Aims to bridge the knowledge gap between backend engineering and networking.
 
-you understand you know what to do.
+  
 
-When you don't understand, it becomes really a black box and you're just left out with more confusion.
+Core Objective of the Course
 
-Because also for network engineers who are interested to build back end or frontend applications and
+• Eliminate the black-box perception of backend networking.
 
-not rendering already understand these basic fundamentals.
+• Equip engineers with the knowledge to debug and optimize network interactions efficiently.
 
-You know, some, some of them you don't understand everything.
+• Provide foundational knowledge that applies across backend, frontend, and networking disciplines.
 
-Nobody does, obviously.
-
-But that gap that we talked about between the application and the networking is really huge.
-
-And you'll be surprised that most of the networking that I met, we don't see the application.
-
-They treat everything above Layer seven as an application, although there are so many other layers
-
-above that, you know, it's not just, oh, why is the application doing sending a reset to the socket?
-
-Well, sometimes the even the back end engineer doesn't understand why is happening, not necessarily.
-
-Right.
-
-So there is a huge gap between the network engineer and the backend engineer and I try to bridge that
-
-gap as much as possible.
-
-Sometimes I fail, sometimes I succeed.
-
-But this is the goal of this course, at least to bridge this gap.
-
-So if you are networking Jews who want to build application and you want to even to refresh your memory
-
-on this kind of thing, I think this course, this course might be for you.
+  
+If you are a backend engineer, a frontend engineer learning backend, or a network engineer wanting to understand backend applications better, this course is for you.
