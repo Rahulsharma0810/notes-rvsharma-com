@@ -272,7 +272,7 @@ Data follows a **structured flow** from **application → physical medium** and 
    - Browser generates **HTTP headers** and request body.
 
 2. **Presentation Layer (Layer 6)**  
-   - JSON data is **Serialized** into bytes.
+   - JSON data is **Serialized** (Process of converting an object or data structure into json format strings )into bytes.
    - If **HTTPS**, data is **encrypted using TLS**.
 
 3. **Session Layer (Layer 5)**  
