@@ -226,7 +226,7 @@ Each layer provides a **specific function** in the communication process.
   - **UDP (stateless, fast, unordered packets)**.
   - **QUIC (built on UDP for faster HTTP/3 communication)**.
 
-QUIC was designed to address TCP’s relatively slow handshake procedures & **HOL (Head of Line ) Blocking,  HOL** is performance issue that occurs when a SEQ of packets is held up by the first packet in the line. The issue is common in TCP. On the O
+QUIC was designed to address TCP’s relatively slow handshake procedures & **HOL (Head of Line ) Blocking,  HOL** is performance issue that occurs when a SEQ of packets is held up by the first packet in the line. The issue is common in TCP. On The other QUIC minimise the HOL by allowing multiple streams of data to be multiplex over a single connection. QUIC, loss or delay in one stream does not block other streams because QUIC handles packet loss and retransmissions at the individual stream level rather than at the connection level as TCP does.
 
 ---
 
