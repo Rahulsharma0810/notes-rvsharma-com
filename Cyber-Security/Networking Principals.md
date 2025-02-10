@@ -326,9 +326,6 @@ Each networking device operates at **specific OSI layers**:
 
 ## **OSI Model Limitations & Criticism**
 
-
-
-
 1. **Too Many Layers**  
    - **Presentation & Session layers** are rarely discussed in practical applications.
    - Many **modern protocols** don’t strictly adhere to the OSI model.
@@ -342,10 +339,8 @@ Each networking device operates at **specific OSI layers**:
    - **Networking professionals** often think in **TCP/IP terms** rather than **OSI layers**.
 
 ---
-
 ## **Key Takeaways**
 - **OSI Model** provides a **structured way** to understand networking.
 - **Layered abstraction** allows for **independent development & innovation**.
 - **Networking devices operate at different layers** (switches = Layer 2, routers = Layer 3, firewalls = Layer 3/4, proxies = Layer 7).
 - **Most real-world networking follows the TCP/IP model**, which simplifies OSI’s **7 layers into 4**.
-
