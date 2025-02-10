@@ -325,15 +325,19 @@ Each networking device operates at **specific OSI layers**:
 ---
 
 ## **OSI Model Limitations & Criticism**
-8. **Too Many Layers**  
+
+
+
+
+1. **Too Many Layers**  
    - **Presentation & Session layers** are rarely discussed in practical applications.
    - Many **modern protocols** don’t strictly adhere to the OSI model.
 
-9. **Rigid Classification**  
+2. **Rigid Classification**  
    - Some applications span **multiple layers** (e.g., **TLS affects both Layer 5 & Layer 6**).
    - Real-world implementations are often **blended**.
 
-10. **The TCP/IP Model is More Widely Used**  
+3. **The TCP/IP Model is More Widely Used**  
    - The **internet itself** is built around TCP/IP, **not OSI**.
    - **Networking professionals** often think in **TCP/IP terms** rather than **OSI layers**.
 
