@@ -116,7 +116,7 @@ The Course Is Presented By Hussein Naseer on [Udemy](https://www.udemy.com/cours
 
 ---
 
-## **Reducing Client Depende nncies**
+## **Reducing Client Dependencies**
 - **Monolith Problem**: Older applications required **all dependencies** (drivers, libraries, database connectors) on a **single machine**.
 - **Client-Server Fix**:
   - **Clients** now only **send requests**.
