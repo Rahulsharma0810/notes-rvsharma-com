@@ -53,9 +53,103 @@ The Course Is Presented By Hussein Naseer on [Udemy](https://www.udemy.com/cours
   - Help both developers and network professionals grasp the **“why”** behind certain behaviors (e.g., why certain connections get dropped or throttle).
 
 ---
+# Client-Server Architecture: The Foundation of Distributed Computing
 
->  UDP is simple protocol.
-> TCP is subset for UDP.
+## **Introduction**
+- **The Revolution**: The **client-server model** fundamentally changed computing by **separating** the client and server, allowing different components to execute on separate machines.
+- **Before vs. After**:
+  - **Before**: Mainframes ran everything centrally.
+  - **Now**: Clients are **lightweight**, offloading **heavy computation** to **powerful servers**.
 
+---
 
-Edge Computing, Client 
+## **Why Client-Server?**
+1. **Cost & Resource Efficiency**
+   - Machines are **expensive**; applications are **complex**.
+   - Splitting workload = cheaper **commodity hardware** for clients, while **beefier** servers handle intensive tasks.
+
+2. **Modularity & Scalability**
+   - Breaking down applications into **multiple components** makes them easier to manage.
+   - Inspired **microservices architecture**, where small services interact with each other.
+
+3. **Performance Optimization**
+   - Servers handle **resource-intensive tasks** (CPU-heavy, RAM-heavy, I/O-intensive).
+   - Clients stay **lightweight** (e.g., thin clients, tablets, IoT devices).
+
+---
+
+## **The Birth of Remote Procedure Call (RPC)**
+- **Concept**: Clients send a request for the server to execute a function remotely and return results.
+- **Evolution**:
+  - Early RPCs (1960s-70s) lacked **standardization**.
+  - **gRPC (Google RPC)** is a modern standard that enables efficient cross-platform communication.
+
+---
+
+## **Advantages of Client-Server Model**
+4. **Centralized Processing**
+   - Servers centralize workload, allowing for **better scaling**.
+   - Many clients can **reuse** a single powerful server instead of duplicating logic.
+
+5. **Better Maintainability**
+   - Clients remain **lightweight**, reducing dependency bloat.
+   - Servers manage **libraries, databases, and business logic**.
+
+6. **Improved Deployment & Updates**
+   - Changes in **business logic** only require **server updates**, not client-side modifications.
+   - This model **simplifies version control** and reduces compatibility issues.
+
+---
+
+## **Client-Server & Microservices: Similar, but Different**
+- **Microservices** borrow from the **client-server model**:
+  - Large **monoliths** were split into **smaller** services.
+  - Each service performs **specific** functions and interacts via **network calls**.
+- **Caveat**: The instructor warns against **overusing microservices**, citing complexity.
+
+---
+
+## **Edge Computing & Modern Trends**
+- **Traditionally**: Clients only performed **lightweight** tasks.
+- **Now**: **Edge computing** enables **some** computation on client-side.
+- **Example**: IoT devices (e.g., sensors) perform initial **data processing** before sending results to a **central server**.
+
+---
+
+## **Reducing Client Dependencies**
+- **Monolith Problem**: Older applications required **all dependencies** (drivers, libraries, database connectors) on a **single machine**.
+- **Client-Server Fix**:
+  - **Clients** now only **send requests**.
+  - **Servers** handle dependencies (e.g., **database connections**).
+  - Leads to **smaller binaries**, **faster startups**, and **better modularity**.
+
+---
+
+## **Client-Server & 3-Tier Architecture**
+- **3-Tier Architecture** is a **specialized** version of the client-server model:
+  - **Client Layer**: UI or frontend application.
+  - **Application Layer**: Server with business logic.
+  - **Database Layer**: Dedicated database backend.
+- **Advantage**: Improved **scalability, security, and maintainability**.
+
+---
+
+## **The Need for a Standardized Communication Model**
+- **Problem**: In early client-server systems, **communication** was unstructured.
+- **Key Challenge**: How do we reliably transfer data across machines?
+- **Solution**:
+  - **Standardized networking protocols** (e.g., TCP/IP).
+  - **Remote communication standards** (e.g., REST, RPC, gRPC).
+  - **Middleware** solutions to facilitate connectivity.
+
+---
+
+## **Key Takeaways**
+- **Client-server model enables** distributed computing by **offloading** expensive workloads to powerful servers.
+- **RPC introduced remote execution**, leading to modern standards like **gRPC**.
+- **Microservices evolved from client-server** but have their own trade-offs.
+- **Edge computing** is shifting some workload back to clients.
+- **3-tier architecture** provides a structured way to separate UI, logic, and database.
+- **Standardized communication protocols** are critical for interoperability.
+
+> **Next Topic**: How do we establish reliable communication between clients and servers? 
