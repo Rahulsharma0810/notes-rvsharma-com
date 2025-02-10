@@ -54,6 +54,7 @@ The Course Is Presented By Hussein Naseer on [Udemy](https://www.udemy.com/cours
 
 ---
 
-UDP is simple protocol.
+>  UDP is simple protocol.
+> TCP is subset for UDP.
 
-TCP is subset for UDP.
+
