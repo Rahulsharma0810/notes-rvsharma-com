@@ -153,3 +153,8 @@ The Course Is Presented By Hussein Naseer on [Udemy](https://www.udemy.com/cours
 - **Edge computing** is shifting some workload back to clients.
 - **3-tier architecture** provides a structured way to separate UI, logic, and database.
 - **Standardized communication protocols** are critical for interoperability.
+
+
+---
+
+# OSI Modal
