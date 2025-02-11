@@ -34,6 +34,8 @@ Example: J.K. Rowling renting a room in a luxury hotel to afford the isolation f
 
 _Idea: When starting a new project/initiative, take a week off from work to really immerse yourself in that project totally, so that when you return to a normal schedule the project is part of who you are and putting it into your schedule is much more natural._
 
+
+White Board effect and explaining to duck principles
 #### **4DX (Four Disciplines of Execution) applied to deep work**
 
 1. **Focus on the wildly important.** Identify a small number of ambitious outcomes to pursue with your deep work hours. Example: Cal's goal was to publish five papers per year. This is both necessary for tenure and a higher rate of work than he was used to, which provided the pressure to achieve that goal.
