@@ -42,6 +42,7 @@ explaining to duck principles
 #### **4DX (Four Disciplines of Execution) applied to deep work**
 
 1. **Focus on the wildly important.** Identify a small number of ambitious outcomes to pursue with your deep work hours. Example: Cal's goal was to publish five papers per year. This is both necessary for tenure and a higher rate of work than he was used to, which provided the pressure to achieve that goal.
+>  if you want to win war for attention
 
 2. **Act on the lead measures.** Two metrics to consider - lag measures and lead measures. Lag measures actually tell you how well you're doing (e.g. projects completed per year) lead measures are the ones you can actually iterate on during the process (e.g. time spent in deep work dedicated to the goal).
 
