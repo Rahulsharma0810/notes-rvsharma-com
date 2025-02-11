@@ -11,6 +11,8 @@ What follows are my notes on the _how_ of applying Deep Work principles. If yo
 - **Monastic:** practitioners have a well-defined, highly valued, and individualized (or small team) professional goal which the bulk of their success depends on. Example: cutting edge research, writing novels, etc. Practitioners basically live their life as monks of deep work. Not so good for managers or people who don't necessarily have a tangible product they can point to or are working on.
     
 - **Bimodal:** Dividing the year (or month, or week) into stretches (at least one day) of deep work isolation while spending the rest of your time in more shallow spaces, networking, attending conferences, teaching, etc. Usually pursued by those who would be monastic but can't succeed without substantial commitments to non-deep pursuits. For example: Jung working in his tower for months at a time but then coming back to Zurich to earn money as a teacher and networking in coffeehouses. Cal states more people can make use of this philosophy than one might think.
+
+> people will usually respect your right to become inaccessible if these periods are well defined and well advertised, and outside these stretches, you’re once again easy to find.
     
 - **Rhythmic:** Have a daily depth ritual (e.g. 1-2 hours in the morning) or otherwise schedule it into your day every day. Good for deep work beginners and for people who definitely can't step away to work in isolation.
     
