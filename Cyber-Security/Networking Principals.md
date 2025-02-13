@@ -724,3 +724,7 @@ Each networking device operates at **specific OSI layers**:
 See tcpdump man pages. 
 
 
+## Routing Example.
+
+Switch works as Layer 2
+
