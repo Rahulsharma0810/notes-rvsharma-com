@@ -727,3 +727,5 @@ See tcpdump man pages.
 ## Routing Example.
 
 Switch works as Layer 2, they are smart to know which physical port (RJ 45) to send the data.
+
+Hubs are not smart they send the request to all. 
