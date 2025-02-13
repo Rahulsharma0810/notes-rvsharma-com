@@ -351,4 +351,4 @@ Each networking device operates at **specific OSI layers**:
 ![wireshark-capture-ip-header-fields.png](blob:capacitor://localhost/df9b9e5a-61e2-4294-9560-0faf219f9f2b)
 
 
-ECN - Buffer Fill, ECN will be true. 
+ECN - Buffer Fill, ECN will be true on congestion.
