@@ -1,1 +1,0 @@
-The language we use doesn’t always justify what we actually see and experience. 
