@@ -9,9 +9,14 @@ Overview.
 - Own Cloud Risk Engine.
 
 
+SCID
+
 Security Graph: Model of the Cloud Environment as node and edge graph. Query return results for every distinct matching pattern.
 
 Controls: 
 
+Issues:
 
-Each control may create 
+Dashboard. 
+
+Each control may create different issues.
