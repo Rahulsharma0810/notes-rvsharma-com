@@ -351,4 +351,92 @@ Each networking device operates at **specific OSI layers**:
 ![wireshark-capture-ip-header-fields.png](blob:capacitor://localhost/df9b9e5a-61e2-4294-9560-0faf219f9f2b)
 
 
-ECN - Buffer Fill, ECN will be true on congestion.
+# Section 3: The IP Building Blocks
+
+## **Introduction**
+- The **IP protocol** is the foundation of networking at **Layer 3 (Network Layer)**.
+- This section covers **IP addresses, subnet masks, gateways, and routing fundamentals**.
+- **Key questions to understand**:
+  - What happens when you send an **IP packet**?
+  - How does an **IP address** determine **network & host portions**?
+  - Why do we need a **subnet mask** and **default gateway**?
+
+---
+
+## **IP Address Basics**
+- An **IP address** is a **Layer 3 property** and uniquely identifies a device on a network.
+- It can be **assigned dynamically (DHCP)** or **statically configured**.
+- **IPv4** uses **4 bytes (32 bits)**, while **IPv6** uses **16 bytes (128 bits)**.
+- **Structure**: `A.B.C.D /X`
+  - Each **byte (A, B, C, D)** is **8 bits**.
+  - The `/X` represents the **network portion** of the address.
+  
+---
+
+## **Network vs. Host Portions**
+- **An IP address consists of**:
+  - **Network portion** (identifies the network/subnet)
+  - **Host portion** (identifies a specific device in that subnet)
+- Example: `192.168.254.0/24`
+  - **First 24 bits** (`192.168.254`) = **Network ID**
+  - **Last 8 bits** (`0-255`) = **Host ID**
+  - Allows **256 possible addresses** (`0-255`), but **2 are reserved** (Network & Broadcast addresses).
+
+---
+
+## **Subnet Mask**
+- Defines how **network & host portions** are divided.
+- **Example**: `255.255.255.0`
+  - **Binary**: `11111111.11111111.11111111.00000000`
+  - The `1s` represent the **network portion**.
+  - The `0s` represent the **host portion**.
+- Used to determine if a destination IP is **in the same subnet** or not.
+
+---
+
+## **Default Gateway**
+- A **router or network device** that directs packets **outside the subnet**.
+- If a destination is **outside the subnet**, the packet is sent to the **default gateway**.
+- **Each network device needs**:
+  1. **IP Address**
+  2. **Subnet Mask**
+  3. **Default Gateway**
+
+---
+
+## **Routing and Packet Delivery**
+- **Scenario 1: Host-to-Host (Same Subnet)**
+  - Devices communicate using **MAC addresses** (Layer 2).
+  - No routing required; packets are sent **directly**.
+
+- **Scenario 2: Host-to-Host (Different Subnet)**
+  - The subnet mask **reveals** that the destination is **outside the subnet**.
+  - The packet is sent to the **default gateway**, which forwards it appropriately.
+  
+---
+
+## **IP Routing Example**
+### **Case 1: Same Subnet Communication**
+- **Source**: `192.168.1.3/24`
+- **Destination**: `192.168.1.12/24`
+- **Subnet Mask**: `255.255.255.0`
+- **Binary Calculation Confirms:** Both belong to `192.168.1.0/24`
+- **Action**: Device sends packet directly using MAC address.
+
+### **Case 2: Different Subnet Communication**
+- **Source**: `192.168.1.3/24`
+- **Destination**: `192.168.2.5/24`
+- **Subnet Mask**: `255.255.255.0`
+- **Binary Calculation Confirms:** Different networks (`192.168.1.0` vs `192.168.2.0`)
+- **Action**: Send packet to **default gateway**, which routes it to `192.168.2.0` network.
+
+---
+
+## **Key Takeaways**
+- **IP addresses** consist of **network and host portions**, defined by the **subnet mask**.
+- **Subnet masks** help determine if a packet stays within a subnet or must be routed.
+- **Default gateways** are used when the destination is **outside the local subnet**.
+- **Routers make inter-subnet communication possible** by forwarding packets accordingly.
+- Understanding subnets is crucial for **efficient network design and troubleshooting**.
+
+> **Next Topic:** The IP Packet Structure & Routing Process
