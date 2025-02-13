@@ -383,7 +383,6 @@ Each networking device operates at **specific OSI layers**:
   - Allows **256 possible addresses** (`0-255`), but **2 are reserved** (Network & Broadcast addresses).
 
 ---
-
 ## **Subnet Mask**
 - Defines how **network & host portions** are divided.
 - **Example**: `255.255.255.0`
@@ -393,7 +392,6 @@ Each networking device operates at **specific OSI layers**:
 - Used to determine if a destination IP is **in the same subnet** or not.
 
 ---
-
 ## **Default Gateway**
 - A **router or network device** that directs packets **outside the subnet**.
 - If a destination is **outside the subnet**, the packet is sent to the **default gateway**.
@@ -403,7 +401,6 @@ Each networking device operates at **specific OSI layers**:
   3. **Default Gateway**
 
 ---
-
 ## **Routing and Packet Delivery**
 - **Scenario 1: Host-to-Host (Same Subnet)**
   - Devices communicate using **MAC addresses** (Layer 2).
@@ -437,4 +434,5 @@ Each networking device operates at **specific OSI layers**:
 - **Subnet masks** help determine if a packet stays within a subnet or must be routed.
 - **Default gateways** are used when the destination is **outside the local subnet**.
 - **Routers make inter-subnet communication possible** by forwarding packets accordingly.
-- Understanding subnets is crucial for **efficient network design and troubleshooting**
+- Understanding subnets is crucial for **efficient network design and troubleshooting**.
+
