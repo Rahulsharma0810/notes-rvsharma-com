@@ -9,5 +9,9 @@ Overview.
 - Own Cloud Risk Engine.
 
 
-Security Graph: Model of the Cloud Environment as node and edge graph. Query return results for eve
+Security Graph: Model of the Cloud Environment as node and edge graph. Query return results for every distinct matching pattern.
+
 Controls: 
+
+
+Each control may create 
