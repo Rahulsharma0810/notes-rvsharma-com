@@ -436,3 +436,93 @@ Each networking device operates at **specific OSI layers**:
 - **Routers make inter-subnet communication possible** by forwarding packets accordingly.
 - Understanding subnets is crucial for **efficient network design and troubleshooting**.
 
+# Chapter: IP Packets
+
+## **Introduction**
+- Now that we have discussed the **building blocks of IP**, let's dive deeper into **IP packets**.
+- The **IP packet** is the fundamental unit of data transmitted over a network.
+- **Key components**:
+  1. **Headers** – Contain metadata about the packet.
+  2. **Data (Payload)** – The actual content being transmitted.
+
+---
+
+## **Anatomy of an IP Packet**
+- **Two main sections**:
+  - **Header (Metadata & Routing Information)**
+  - **Data (Payload being transmitted)**
+- The **header size is typically 20 bytes**, but can go up to **60 bytes** with options.
+- The **maximum total packet size is 65,536 bytes**, but most packets are much smaller due to **MTU (Maximum Transmission Unit) constraints** (typically **1500 bytes** for Ethernet).
+
+---
+
+## **IP Packet Structure**
+### **1. Header Fields**
+| Field | Description |
+|--------|-------------|
+| **Version** | Specifies **IPv4 or IPv6** |
+| **Internet Header Length (IHL)** | Defines the **header size** (default 20 bytes) |
+| **Total Length** | Specifies the **entire packet size** (header + data) |
+| **Time to Live (TTL)** | Prevents infinite loops by decrementing at each hop |
+| **Protocol** | Indicates the **protocol inside the packet** (TCP, UDP, ICMP, etc.) |
+| **Source IP Address** | Identifies the **sender** |
+| **Destination IP Address** | Identifies the **recipient** |
+| **Fragmentation Information** | Helps divide large packets into smaller chunks |
+
+### **2. Data (Payload)**
+- The **actual content** being sent.
+- Can be **TCP/UDP data, HTTP requests, ICMP messages, etc.**.
+
+---
+
+## **Understanding MTU & Fragmentation**
+- **MTU (Maximum Transmission Unit)**:
+  - Defines the **maximum packet size** that can be transmitted **without fragmentation**.
+  - Ethernet MTU is typically **1500 bytes**.
+- **Fragmentation**:
+  - Occurs when a packet is **larger than the MTU**.
+  - The router **splits the packet** into multiple fragments.
+  - Each fragment **carries part of the original data** and is reassembled at the destination.
+- **Problems with Fragmentation**:
+  - **Increases latency**.
+  - **Higher chance of packet loss**.
+  - Some protocols **disable fragmentation** for performance reasons (e.g., QUIC, which runs over UDP).
+
+---
+
+## **Time to Live (TTL) & Routing**
+- **Why is TTL important?**
+  - Prevents **packets from looping endlessly**.
+  - Every time a packet **passes through a router**, the TTL value **decreases by 1**.
+  - If TTL reaches **zero**, the packet is **discarded** and an ICMP **Time Exceeded** message is sent back to the sender.
+- **Used in Traceroute**:
+  - Sends packets with **incremental TTL values**.
+  - Each router along the path **responds**, allowing mapping of the network route.
+
+---
+
+## **Explicit Congestion Notification (ECN)**
+- Designed to **signal congestion before packet loss occurs**.
+- **How it works**:
+  - If a router is **experiencing congestion**, it marks the **ECN bits** in the packet.
+  - The receiver **acknowledges the congestion**, allowing the sender to **slow down transmissions** before dropping packets.
+- **Benefit**: **Prevents unnecessary packet loss & improves performance**.
+
+---
+
+## **IP Packet Lifecycle (Example)**
+1. A **client** (192.168.1.2) sends a **TCP request** to a **server** (10.0.0.5).
+2. The packet passes through **multiple routers**.
+3. Each router **checks the TTL and decrements it**.
+4. If the **packet size exceeds the MTU**, it gets **fragmented**.
+5. The **destination server receives the packet**, reassembles it (if fragmented), and processes the request.
+
+---
+
+## **Key Takeaways**
+- An **IP packet** consists of **headers + data**.
+- The **header contains essential routing information**.
+- **TTL prevents infinite loops** by expiring packets over time.
+- **MTU constraints affect packet fragmentation & performance**.
+- **Explicit Congestion Notification (ECN) helps prevent packet loss**.
+- Understanding **IP packet structure** is crucial for **network debugging & performance optimization**.
