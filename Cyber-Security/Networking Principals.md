@@ -346,3 +346,6 @@ Each networking device operates at **specific OSI layers**:
 
 ## Internet Protocol
 
+![IPv4-Datagram-Header.jpg](blob:capacitor://localhost/56b85140-63de-4782-9bd0-704267a6880d)
+
+![wireshark-capture-ip-header-fields.png](blob:capacitor://localhost/df9b9e5a-61e2-4294-9560-0faf219f9f2b)
