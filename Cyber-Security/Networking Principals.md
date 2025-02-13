@@ -716,3 +716,11 @@ Each networking device operates at **specific OSI layers**:
 - **ARP is vulnerable to spoofing attacks**, making security precautions necessary.
 
 > **Next Topic:** Network Address Translation (NAT) and how IP addresses are managed across networks.
+
+
+
+## Capturing  IP, ARP and ICMP Packets
+
+See tcpdump man pages. 
+
+
