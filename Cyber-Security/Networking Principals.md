@@ -731,3 +731,10 @@ Switch works as Layer 2, they are smart to know which physical port (RJ 45) to s
 Hubs are not smart they send the request to all. 
 
 Router play role for Layer 3 and layer 2 as well if you don't have switch in betweem.
+
+
+### UnderStanding Subnet Mask Calculations 
+
+Usable IPs=2(32−subnet bits)−2
+
+255.255.255.0 = 2 (32-1) -2 
