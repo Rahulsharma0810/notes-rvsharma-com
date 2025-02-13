@@ -738,4 +738,5 @@ Router play role for Layer 3 and layer 2 as well if you don't have switch in bet
 Usable IPs=2(32−subnet bits)−2
 
 255.255.255.0 = 2 (8) -2 = 254
-255.255.254.0 = 2 (9) -2 = 254
+255.255.254.0 = 2 (9) -2 = 510
+255.255.253.0= 2 (10) - 2 = 1022
