@@ -729,3 +729,5 @@ See tcpdump man pages.
 Switch works as Layer 2, they are smart to know which physical port (RJ 45) to send the data.
 
 Hubs are not smart they send the request to all. 
+
+Router play role for Layer 3 and layer 2 as well if you don't have switch in betweem.
