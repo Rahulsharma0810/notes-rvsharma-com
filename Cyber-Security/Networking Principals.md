@@ -836,8 +836,7 @@ UDP packets have a **simple header format**, which consists of **only 4 fields (
 - **No built-in retransmission, congestion control, or flow control** (handled by the application layer if needed).
 
 
-
-# Section 5: Connections, Sockets, and Queues
+# Connections, Sockets, and Queues
 
 ## **Introduction**
 - In this section, we dive into **TCP sockets**, connection handling, and **kernel networking data structures**.
@@ -938,6 +937,6 @@ When a server listens, **two important queues** are created:
 - **Socket sharding distributes traffic across multiple processes**, improving performance.
 - **SYN Flood Attacks can overwhelm servers**, but **mitigation techniques like SYN Cookies help protect against them**.
 
-> **Next Topic:** Handling Data Transmission in TCP Connections.
+
 
 
