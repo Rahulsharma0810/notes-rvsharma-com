@@ -745,4 +745,96 @@ Usable IPs=2(32−subnet bits)−2
 ## UDP
 
 
+# Section 4: User Datagram Protocol (UDP)
+
+## **Introduction**
+- **UDP (User Datagram Protocol)** is a simple, lightweight, and fast **Layer 4 protocol** that sits on top of **IP (Layer 3)**.
+- Unlike **TCP**, UDP is **connectionless and stateless**, meaning it does not require prior communication or maintain any session information.
+- UDP is widely used in applications where **low latency** and **real-time communication** are critical.
+
+---
+
+## **Why UDP?**
+- **No connection establishment** – No handshake required; data can be sent immediately.
+- **Low overhead** – Only an **8-byte header**, compared to TCP’s **20+ bytes**.
+- **No retransmissions** – If a packet is lost, UDP does not attempt to recover it.
+- **Fast and efficient** – Suitable for applications that **do not require reliability**.
+
+---
+
+## **Key Features of UDP**
+- **Connectionless** – Each packet (datagram) is **independent**.
+- **Unreliable** – No guarantee of delivery, order, or duplicate protection.
+- **Stateless** – Server does not maintain any client session.
+- **Uses Ports** – Allows multiple applications on the same device to communicate via **port numbers**.
+- **Low Latency** – Used in real-time applications where speed is more important than reliability.
+
+---
+
+## **Common Use Cases for UDP**
+1. **Video Streaming** – Minor data loss is acceptable for real-time performance.
+2. **VoIP (Voice over IP) and WebRTC** – Communication protocols require fast, low-latency transmission.
+3. **DNS (Domain Name System)** – Queries are small and need quick responses.
+4. **Online Gaming** – High-speed data exchange where missing a few packets is tolerable.
+5. **VPNs (Virtual Private Networks)** – Reduces overhead for encrypted tunnels.
+
+---
+
+## **UDP Packet Structure**
+UDP packets have a **simple header format**, which consists of **only 4 fields (8 bytes total)**:
+
+| Field          | Size  | Description |
+|---------------|-------|-------------|
+| **Source Port** | 2 Bytes | Port number of the sender |
+| **Destination Port** | 2 Bytes | Port number of the receiver |
+| **Length** | 2 Bytes | Total size of the UDP packet (header + data) |
+| **Checksum** | 2 Bytes | Error-checking mechanism (optional) |
+| **Data** | Variable | The actual application data |
+
+- The **checksum** field is used for error detection but is **optional** in IPv 4 (mandatory in IPv 6).
+- The **length** field helps in parsing the packet correctly.
+
+---
+
+## **Multiplexing and Demultiplexing in UDP**
+- **Multiplexing** – Multiple applications can use UDP by **binding to different ports** on the same IP address.
+- **Demultiplexing** – When a UDP packet arrives, the OS directs it to the correct application **based on the destination port**.
+- **Example:**
+  - A **DNS request (port 53)** and a **VoIP call (port 5060)** can occur simultaneously on the same machine.
+
+---
+
+## **How UDP Works (Example Communication)**
+6. **Client Application (App A) wants to send data to Server Application (App X):**
+   - **Client IP:** `10.0.0.1`, **Client Port:** `55555`
+   - **Server IP:** `10.0.0.2`, **Server Port:** `53`
+   - The packet structure:
+     - **Source IP:** `10.0.0.1`
+     - **Destination IP:** `10.0.0.2`
+     - **Source Port:** `55555`
+     - **Destination Port:** `53`
+     - **Data:** DNS Query
+7. **Server responds with a reply:**
+   - The **destination and source ports are swapped** to correctly route the response.
+   - This ensures the client receives the data at the correct process.
+
+---
+
+## **Limitations of UDP**
+- **No Reliability** – If a packet is lost, the sender will not retransmit it.
+- **No Flow Control** – No mechanism to prevent overwhelming the receiver.
+- **No Congestion Control** – Can lead to network congestion.
+- **Message Size Limit** – UDP packets are limited to **65,535 bytes**, but most networks impose a lower limit (~1500 bytes MTU).
+
+---
+
+## **Summary**
+- **UDP is a lightweight, fast, and connectionless protocol** that operates at **Layer 4**.
+- **Stateless and unreliable**, but **efficient for real-time communication**.
+- **Used in video streaming, VoIP, gaming, DNS, and VPNs**.
+- **Multiplexing and demultiplexing** allow multiple applications to use UDP simultaneously.
+- **No built-in retransmission, congestion control, or flow control** (handled by the application layer if needed).
+
+
+
 
