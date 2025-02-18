@@ -936,5 +936,116 @@ When a server listens, **two important queues** are created:
 - **SYN Flood Attacks can overwhelm servers**, but **mitigation techniques like SYN Cookies help protect against them**.
 
 
+---
+
+---
+
+# Section 5: Transmission Control Protocol (TCP)
+
+## **Introduction**
+- **TCP (Transmission Control Protocol)** is a **Layer 4 protocol** that provides **reliable, ordered, and error-checked** delivery of data.
+- Unlike **UDP**, TCP is **connection-oriented** and **stateful**, meaning it establishes and maintains a connection before transmitting data.
+- Used in applications where **accuracy and reliability** are more important than speed.
+
+---
+
+## **Why TCP?**
+- **Reliable Delivery** – Ensures all packets arrive at the destination.
+- **Order Guarantee** – Data arrives in the correct sequence.
+- **Error Checking & Recovery** – Retransmits lost or corrupted packets.
+- **Flow & Congestion Control** – Prevents overwhelming the receiver and network.
+- **Bi-directional Communication** – Supports continuous two-way data exchange.
+
+---
+
+## **Key Features of TCP**
+- **Connection-Oriented** – Requires a handshake to establish a connection.
+- **Stateful** – Maintains a session with unique identifiers.
+- **Reliable** – Ensures successful data transmission.
+- **Segment Ordering** – Uses sequence numbers to reconstruct the correct order.
+- **Error Detection & Correction** – Uses checksums to detect corruption.
+- **Flow Control** – Adjusts transmission speed based on receiver capacity.
+- **Congestion Control** – Adapts to network conditions to prevent congestion.
+
+---
+
+## **Common Use Cases for TCP**
+1. **Web Browsing (HTTP/HTTPS)** – Ensures reliable page loading.
+2. **File Transfers (FTP, SFTP)** – Guarantees data integrity.
+3. **Email (SMTP, IMAP, POP 3)** – Reliable message transmission.
+4. **Database Connections (MySQL, PostgreSQL)** – Ensures consistent transactions.
+5. **Remote Shell Access (SSH, Telnet)** – Maintains stable and secure connections.
+
+---
+
+## **TCP Packet Structure**
+TCP packets contain a **header** and **data payload**. The header is **at least 20 bytes** but can extend up to **60 bytes**.
+
+| Field              | Size   | Description |
+|------------------|--------|-------------|
+| **Source Port**  | 2 Bytes | Port number of the sender |
+| **Destination Port** | 2 Bytes | Port number of the receiver |
+| **Sequence Number** | 4 Bytes | Order of the transmitted segments |
+| **Acknowledgment Number** | 4 Bytes | Confirms received data |
+| **Header Length** | 4 Bits | Specifies TCP header size |
+| **Flags (SYN, ACK, FIN, etc.)** | 9 Bits | Control bits for connection handling |
+| **Window Size** | 2 Bytes | Controls flow of data |
+| **Checksum** | 2 Bytes | Error-checking mechanism |
+| **Urgent Pointer** | 2 Bytes | Indicates priority data (rarely used) |
+| **Options** | Variable | Extra parameters (e.g., maximum segment size) |
+| **Data** | Variable | The actual application data |
+
+- TCP headers contain **important control information** to manage the connection and ensure data integrity.
+- **Flags** such as **SYN, ACK, FIN** are used to control the connection lifecycle.
+
+---
+
+## **TCP Connection Establishment (Three-Way Handshake)**
+To establish a reliable connection, TCP follows a **three-step handshake**:
+6. **Client sends SYN (Synchronize)** – Initiates connection with a sequence number.
+7. **Server responds with SYN-ACK (Synchronize-Acknowledge)** – Acknowledges the request and sends its own sequence number.
+8. **Client sends ACK (Acknowledge)** – Finalizes connection establishment.
+
+Once this handshake is complete, data transmission can begin.
+
+---
+
+## **TCP Connection Termination (Four-Way Handshake)**
+Closing a TCP connection involves **two FIN (Finish) and ACK (Acknowledge) messages**:
+9. **Client sends FIN** – Requests to terminate connection.
+10. **Server responds with ACK** – Acknowledges termination request.
+11. **Server sends FIN** – Initiates server-side termination.
+12. **Client responds with ACK** – Final acknowledgment before closing.
+
+After termination, the connection enters the **TIME_WAIT state** to ensure all delayed packets are handled before fully closing.
+
+---
+
+## **Reliability Mechanisms in TCP**
+13. **Acknowledgments (ACKs)** – Confirms received segments.
+14. **Sequence Numbers** – Ensures proper data ordering.
+15. **Retransmissions** – Lost packets are resent.
+16. **Flow Control (Sliding Window)** – Adjusts data flow based on receiver’s buffer size.
+17. **Congestion Control** – Adapts transmission rate based on network congestion.
+
+---
+
+## **Limitations of TCP**
+- **Higher Overhead** – Large headers increase latency.
+- **Slow Startup** – Handshakes add initial delay.
+- **Not Suitable for Real-Time Applications** – Retransmissions cause delays.
+- **Vulnerable to SYN Flood Attacks** – Attackers can exploit the handshake process to overwhelm a server.
+
+---
+
+## **Summary**
+- **TCP is a connection-oriented, reliable protocol** designed for accurate data transmission.
+- **Three-way handshake establishes connections**, ensuring communication integrity.
+- **Ensures ordered, error-free data delivery** with retransmissions and acknowledgments.
+- **Used in web browsing, file transfers, email, databases, and secure shell connections**.
+- **Higher overhead than UDP but offers better reliability and control**.
+
+
+
 
 
