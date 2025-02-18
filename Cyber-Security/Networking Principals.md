@@ -742,7 +742,6 @@ Usable IPs=2(32−subnet bits)−2
 ---
 ## UDP
 
-
 # Section 4: User Datagram Protocol (UDP)
 
 ## **Introduction**
