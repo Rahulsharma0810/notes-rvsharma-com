@@ -939,6 +939,104 @@ When a server listens, **two important queues** are created:
 ---
 
 
+**Connections, Sockets, and Queues**
+
+### **Introduction**
+- This lecture covers **sockets, connections, and network data structures** in the kernel.
+- Understanding how **connections are established and managed** is crucial for backend applications.
+- We'll also explore **queues** and how they facilitate **efficient network communication**.
+
+---
+
+### **What is a Socket?**
+- A **socket** is a data structure in the kernel representing a communication endpoint.
+- In **Linux**, a socket is treated as a **file descriptor** (everything is a file in Linux).
+- In **Windows**, sockets are implemented as **objects**.
+- A **listening socket** is created when a server listens for incoming connections.
+
+---
+
+### **Listening for Connections**
+- To listen for connections, a server binds to a **specific IP address and port**.
+- Each **network interface** (NIC) can have its own **IP address**.
+- Virtual network interfaces allow multiple **IP addresses** on the same machine.
+- By default, many applications listen on **all available interfaces** (e.g., `0.0.0.0`).
+- This can be **dangerous**, as it may expose the service to the public internet.
+- Example of listening on a local interface:
+  ```bash
+  netcat -l 127.0.0.1 -p 8080
+  ```
+
+---
+
+### **Listening Socket File Descriptor**
+- When a process **listens on a port**, it receives a **file descriptor (FD)**.
+- This FD represents the listening socket but **does not yet contain a connection**.
+- Example of opening a listening socket in Node. Js:
+  ```javascript
+  const net = require('net');
+  const server = net.createServer((socket) => {
+      console.log('New connection');
+  });
+  server.listen(8080, '127.0.0.1');
+  ```
+- A **listening socket** does not store client-specific data.
+
+---
+
+### **Socket Queues**
+- Every listening socket has **two queues**:
+  1. **SYN Queue**: Stores partially established connections (before handshake completion).
+  2. **Accept Queue**: Stores fully established connections.
+- These queues are managed by the **kernel**.
+- The size of these queues is determined by the **backlog parameter** when calling `listen()`.
+- If the accept queue is full, new connections **fail**.
+
+---
+
+### **Three-Way Handshake**
+- TCP connections are established via a **three-way handshake**:
+  1. **Client sends SYN** (synchronize) to initiate the connection.
+  2. **Server responds with SYN-ACK** (synchronize-acknowledge).
+  3. **Client replies with ACK**, completing the handshake.
+- Once complete, the connection moves from the **SYN queue to the Accept queue**.
+
+---
+
+### **Handling Connections in the Kernel**
+- The kernel manages **connection state and TCP metadata**.
+- Applications call **`accept()`** to remove a connection from the **accept queue** and start communication.
+- Each accepted connection gets a **new file descriptor**, separate from the listening socket.
+- If `accept()` is **not called fast enough**, the accept queue **fills up** and new connections fail.
+
+---
+
+### **Socket Sharding for Scalability**
+- A single server process **may not handle** a large number of connections.
+- **Socket sharding** allows multiple processes to share the same listening port.
+- Implemented using **SO_REUSEPORT** to create distinct sockets bound to the same port.
+- The kernel then **load balances** connections across multiple processes.
+- Used in **Nginx, Envoy, HAProxy** to handle high traffic efficiently.
+
+---
+
+### **Problems and Solutions**
+| **Problem**                           | **Solution**                                        |
+| ------------------------------------- | --------------------------------------------------- |
+| SYN queue fills up (SYN flood attack) | Use **SYN cookies** and **timeouts**                |
+| Accept queue fills up                 | Increase backlog or use **multi-threading**         |
+| Backend does not accept fast enough   | Use **asynchronous IO** (e.g., `epoll`, `io_uring`) |
+| Exposed to public unintentionally     | Bind to specific **trusted interfaces**             |
+
+---
+
+### **Summary**
+- A **socket** represents a communication endpoint, created when a server listens on a port.
+- **TCP connections** involve a **three-way handshake** before being fully established.
+- **Two queues** manage connections: **SYN queue** (partially established) and **accept queue** (fully established).
+- The **kernel handles** connection state but relies on the application to accept connections.
+- **Socket sharding** and **backlog tuning** help scale high-traffic applications.
+- **Efficient handling of connections** is key to **backend performance** and **security**.
 
 
 ---
