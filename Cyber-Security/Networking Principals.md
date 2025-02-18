@@ -25,18 +25,18 @@ The Course Is Presented By Hussein Nasser on [Udemy](https://www.udemy.com/cours
 
 # Why This Matters
 
-## 1. Bridging the Foggy Gap  
+## 1. Bridging the Foggy Gap
 - Networking fundamentals are often treated as a **“black box”** by application developers.  
 - Likewise, network engineers may not grasp the specifics of how an application handles connections.
 
-## 2. Diagnosing Issues  
+## 2. Diagnosing Issues
 - Slow requests can arise from various layers:
   - Application logic
   - OS-level constraints
   - Network routing or capacity
 - A holistic understanding prevents blaming the **wrong** layer (e.g., blaming backend code when the problem lies in network congestion).
 
-## 3. Building End-to-End Mental Models  
+## 3. Building End-to-End Mental Models
 - Knowledge of how data flows from **client → OS → network → backend code** clarifies performance bottlenecks.
 - Encourages better design decisions at both the frontend (request logic) and backend (server configuration, protocol usage).
 
