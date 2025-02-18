@@ -114,8 +114,6 @@ The Course Is Presented By Hussein Nasser on [Udemy](https://www.udemy.com/cours
 - **Now**: #voc **Edge computing** enables **some** computation on client-side.
 - **Example**: IoT devices (e.g., sensors) perform initial **data processing** before sending results to a **central server**.
 
-
-
 ---
 
 ## **Reducing Client Dependencies**
