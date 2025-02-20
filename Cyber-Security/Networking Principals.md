@@ -1344,3 +1344,27 @@ CWND (Bytes)
 • **Security and connectivity issues** arise due to NAT’s stateful nature and address translation.
 
 Continue to the next topic: **Layer 4 Load Balancing**.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+Manual Notes:
+
+
