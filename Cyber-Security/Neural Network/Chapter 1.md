@@ -89,9 +89,7 @@
 ## **10. Parameter Count**
 
 • Entire network ≈ **13,000 parameters**:
-
-• Weights + biases across layers.
-
+	• Weights + biases across layers.
 • These are the **tunable knobs** of the model.
 
 ---
@@ -99,55 +97,18 @@
 ## **11. Network as a Function**
 
 • A neural network is a **function**:
-
-• Input: 784 numbers (pixels).
-
-• Output: 10 numbers (digit probabilities).
-
+	• Input: 784 numbers (pixels).
+	• Output: 10 numbers (digit probabilities).
 • Internally:
-
-• Multiple matrix-vector products.
-
-• Non-linear activations (like sigmoid or ReLU).
+	• Multiple matrix-vector products.
+	• Non-linear activations (like sigmoid or ReLU).
 
 ---
 
 ## **12. Debugging the Network**
 
 • Viewing neurons as components helps debug or improve networks.
-
 • Encourages exploration beyond treating models as black boxes.
 
 ---
 
-**13. Looking Ahead**
-
-• This video explains **structure** only.
-
-• Next video will cover:
-
-• **Training** the model.
-
-• **Backpropagation** and **gradient descent**.
-
-• How weights/biases get optimized.
-
----
-
-**14. Expert Insight — Sigmoid vs ReLU**
-
-• Guest: **Lisha Li** (PhD in deep learning theory).
-
-• Sigmoid:
-
-• Inspired by biology.
-
-• Smooth but harder to train deep networks.
-
-• ReLU:
-
-• Simpler: max(0, x)
-
-• Better for deep architectures.
-
-• Becomes active only when inputs exceed 0.
