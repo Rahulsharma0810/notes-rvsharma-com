@@ -20,7 +20,6 @@ My Top Goals
 - Able to Restore.
 	- [ ] Every Week automation to test these restoration.
 
-
 ### Troubleshooting Disk space 
 
 In case of backups failed, pg-wal folder keeps filing, attach a pod 
