@@ -4,7 +4,7 @@
     - [Choosing Operating System](HomeLab/1.Building/2.Choosing-Operating-System.md)
     - [Setting Up Graphic Card](HomeLab/1.Building/3.Setting-Up-Graphic-Card.md)
     - [Kubernetes-On-HomeLab](HomeLab/1.Building/4.Kubernetes-On-HomeLab.md)
-    - [Kuberenetes-Persistent-Storage-CSI]
+    - [Kuberenetes-Persistent-Storage-CSI][HomeLab/1.Building/5.Kuberenetes-Persistent-Storage-CSI|5.Kuberenetes-Persistent-Storage-CSI]
     - [Securing Flux With SOPS](HomeLab/1.Building/6.Securing-Flux-With-SOPS.md)
   - Applications
     - [CloudNative Postgresql](HomeLab/2.Applications/CloudNative%20Postgresql.md)
