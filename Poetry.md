@@ -23,5 +23,8 @@ https://www.instagram.com/reel/DHQr5ijJRug/?igsh=NnJjcW9pdzN3aXk1
 
 Dil ki basti bhi ajeeb basti hai, Roz ujadti hai roz basti hai.
 
+---
 
 Don‘t hookup where you vlookup
+#humour #officeoneliner
+
