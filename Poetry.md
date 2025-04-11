@@ -16,7 +16,9 @@ banner: "https://images.unsplash.com/photo-1520179737749-b7752f6f56fb?q=80&w=128
  वो आईने मैं कैसे बर्दाश्त करती होगी खुदको 
 उसे तो धोखेबाज़ लोगो से सख़्त नफ़रत थी । 
 
-
+ करूँ क्या के वो आए याका यक ,
+  निगाहों को रोकूँ या दिल को संभालूँ?
+  
 https://www.instagram.com/reel/DHbFzt-TwQt/?igsh=aW52M3M1Z3F5OXdh
 
 https://www.instagram.com/reel/DHS90XchSTT/?igsh=eG94bjl4c3ljYTdx
