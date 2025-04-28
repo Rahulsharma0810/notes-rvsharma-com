@@ -19,7 +19,9 @@ My Top Goals
 		```
 - Able to Restore.
 	- [ ] Every Week automation to test these restoration.
-### Troubleshooting Disk space 
+### Troubleshooting 
+
+#### Disk space 
 
 In case of backups failed, pg-wal folder keeps filing, attach a pod 
 
@@ -28,3 +30,7 @@ kubectl debug -n kube-system -it --image alpine node/$NODE -- cd /host/var/mnt/
 ```
 
 Delete some unnecessary files until cluster comes ups again.
+
+#### Reset Counter 
+
+Deleting the pod will reset the counter, However make sure you have backup.
