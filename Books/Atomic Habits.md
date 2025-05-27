@@ -109,7 +109,6 @@ Most of our habits can be cured with the help of certain places. For instance, a
 > You form a habit not by the duration of time, but by the number of attempts or the amount of time you’ve invested in the action. 
 > The common question people ask when learning a new musical instrument is how much time it takes to master it. Perhaps the answer lies in the frequency of practice sessions. If you can practice once a day, it might take longer than if you could practice ten times a day. By following the reputation approach, the key is to focus on repetition and make the most of your practice time.
 
-
 #### Chapter 12
 #### The Law of Least Effort
 
@@ -130,8 +129,6 @@ How to make good habit in evitable and bad habit, impossible.
 - The ultimate way to lock in future behaviour is to automate your habits.
 - Onetime choices—like buying a better mattress or enrolling in an automatic savings plan—are single actions that automate your future habits and deliver increasing returns over time.
 - Using technology to automate your habits is the most reliable and effective way to guarantee the right behaviour.
-
-
 
 ### Chapter 15
 
