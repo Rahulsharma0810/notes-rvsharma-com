@@ -3,6 +3,8 @@ Licence Type: Paid / Propriety.
 
 Issues:  Multiple Finding collected by Wiz from multiple domains.
 
+Finding: Could be a vulnerability in this machine or a internet access to this machine. These are individual findings.  
+
 
 - How to check ownership of the resources, in Wiz Itself. 
 
