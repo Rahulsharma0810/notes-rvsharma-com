@@ -1,5 +1,8 @@
 
-Licence Type: Paid / Properaity.
+Licence Type: Paid / Propriety.
+
+Issues:  Multiple Finding collected by Wiz from multiple domains.
+
 
 - How to check ownership of the resources, in Wiz Itself. 
 
