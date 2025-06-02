@@ -1,3 +1,6 @@
-Modal Context Protocol, is a standard to integrate 3 rd Party Integrations with LLM.
+Modal Context Protocol, is a standard to integrate 3 rd Party tools, data soures and APIs with LLM.
 
-This Help Individual Contributor to Eliminate Glue code for different Integrations. 
+This Help Individual Contributor to 
+- Eliminate Glue code.
+- Modularity. 
+- Agent Eco
