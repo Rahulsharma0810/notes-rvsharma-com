@@ -13,4 +13,4 @@ The Agent First Check interact with Weather API, It found best weather for vacat
 
 And the Send the details back to you email, as well add a calendar invite.
 
-To achieve all of these things, you need to manage of  auth, input/output schemas and Format. With MCP you can streamline these efforts and work under protocol.
+To achieve all of these things, you need to manage with auth, input/output schemas and Format. With MCP you can streamline these efforts and work under protocol.
