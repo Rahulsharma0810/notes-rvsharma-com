@@ -4,4 +4,8 @@ This Help Individual Contributor to
 - Eliminate Glue code.
 - Modularity. 
 - Agent Ecosystem Support. 
-- Better Developer 
+
+
+You Can think this for example you want create a Travel Planning agent. 
+
+
