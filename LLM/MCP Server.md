@@ -3,4 +3,4 @@ Modal Context Protocol, is a standard to integrate 3 rd Party tools, data soures
 This Help Individual Contributor to 
 - Eliminate Glue code.
 - Modularity. 
-- Agent Eco
+- Agent Ecosystem Support. 
