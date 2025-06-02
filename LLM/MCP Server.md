@@ -9,6 +9,8 @@ This helps individual contributors to:
 
 You can think of it like this — for example, you want to create a **Travel Planning Agent**. Let’s say you’d like to go to **Singapore**.
 
+Basically MCP is a way to integrate with other Tools APIs. For example Airbnb Api, Booking. Com, Accuweather APIs. 
+
 The agent first interacts with a **weather API**. If it finds the weather is good for a vacation, it then goes to a **flights API** for price searches, and then to a **hotel booking API**.
 
 Once it finds that flights and hotels are available on the same day, it proceeds with the booking.
@@ -19,8 +21,6 @@ To achieve all of this, you normally need to manage auth, input/output schemas, 
 
 With MCP, you can **streamline these efforts** and operate under a consistent protocol.
 
-Bascially MCP is a way to in
-
-For Example, AccuWeather 
+Below is the List 
 https://github.com/wong2/awesome-mcp-servers?tab=readme-ov-file
 ---
