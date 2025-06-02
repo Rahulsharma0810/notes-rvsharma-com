@@ -1,16 +1,26 @@
-Modal Context Protocol, is a standard to integrate 3 rd Party tools, data sources and APIs with LLM.
+Modal Context Protocol is a standard to integrate **third-party tools**, **data sources**, and **APIs** with LLMs.
 
-MCP is like **an API app store for LLMs and agents** — plug, play, and go.
+MCP is like **an API app store for LLMs and agents** — plug, play, and go.  
 
-This Help Individual Contributor to 
-- Eliminate Glue code.
-- Modularity. 
-- Agent Ecosystem Support. 
+This helps individual contributors to:
+- Eliminate glue code.
+- Enable modularity.
+- Support agent ecosystems.
 
-You Can think this for example you want create a Travel Planning agent, For Example you would like to go let's Singapore.
+You can think of it like this — for example, you want to create a **Travel Planning Agent**. Let’s say you’d like to go to **Singapore**.
 
-The Agent First Check interact with Weather API, It found best weather for vacation, then it go flights API for price searches and then to Hotetl Booking API, Once it found the flight and hotel available on same day to it proceed for booking
+The agent first interacts with a **weather API**. If it finds the weather is good for a vacation, it then goes to a **flights API** for price searches, and then to a **hotel booking API**.
 
-And the Send the details back to you email, as well add a calendar invite.
+Once it finds that flights and hotels are available on the same day, it proceeds with the booking.
 
-To achieve all of these things, you need to manage with auth, input/output schemas and Format. With MCP you can streamline these efforts and work under protocol.
+Then, it sends the details to your **email**, and also adds a **calendar invite**.
+
+To achieve all of this, you normally need to manage auth, input/output schemas, and formatting.
+
+With MCP, you can **streamline these efforts** and operate under a consistent protocol.
+
+Bascially MCP is a way to in
+
+For Example, AccuWeather 
+https://github.com/wong2/awesome-mcp-servers?tab=readme-ov-file
+---
