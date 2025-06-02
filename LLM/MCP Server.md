@@ -21,6 +21,6 @@ To achieve all of this, you normally need to manage auth, input/output schemas, 
 
 With MCP, you can **streamline these efforts** and operate under a consistent protocol.
 
-Below is the List 
+Below is the List of Awesome MCP Servers.
 https://github.com/wong2/awesome-mcp-servers?tab=readme-ov-file
 ---
