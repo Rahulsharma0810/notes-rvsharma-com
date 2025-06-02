@@ -1,10 +1,11 @@
 Modal Context Protocol, is a standard to integrate 3 rd Party tools, data soures and APIs with LLM.
 
+MCP is like **an API app store for LLMs and agents** — plug, play, and go.
+
 This Help Individual Contributor to 
 - Eliminate Glue code.
 - Modularity. 
 - Agent Ecosystem Support. 
-
 
 You Can think this for example you want create a Travel Planning agent, For Example you would like to go let's Singapore.
 
