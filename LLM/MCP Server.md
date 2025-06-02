@@ -1,0 +1,1 @@
+Modal Context Protocal, is a standard to intregrate 3 rd Party Intregregrations 
