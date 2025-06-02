@@ -1,4 +1,4 @@
-Modal Context Protocol, is a standard to integrate 3 rd Party tools, data soures and APIs with LLM.
+Modal Context Protocol, is a standard to integrate 3 rd Party tools, data sources and APIs with LLM.
 
 MCP is like **an API app store for LLMs and agents** — plug, play, and go.
 
@@ -13,4 +13,4 @@ The Agent First Check interact with Weather API, It found best weather for vacat
 
 And the Send the details back to you email, as well add a calendar invite.
 
-To achieve all of these things, you need to sort, auth, input/output schemas and Format. With MCP you can streamline these efforts and work under protocol.
+To achieve all of these things, you need to manage of  auth, input/output schemas and Format. With MCP you can streamline these efforts and work under protocol.
