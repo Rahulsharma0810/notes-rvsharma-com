@@ -2,14 +2,14 @@ Modal Context Protocol is a standard to integrate **third-party tools**, **data 
 
 MCP is like **an API app store for LLMs and agents** — plug, play, and go.  
 
-This helps individual contributors to:
+This helps developers contributors to:
 - Eliminate glue code.
 - Enable modularity.
 - Support agent ecosystems.
 
 You can think of it like this — for example, you want to create a **Travel Planning Agent**. Let’s say you’d like to go to **Singapore**.
 
-Basically MCP is a way to integrate with other Tools APIs. For example Airbnb Api, Booking. Com, Accuweather APIs. 
+Basically MCP is a way to integrate with other Tools APIs. For example Airbnb Api, Booking. Com, Accu-weather APIs.
 
 The agent first interacts with a **weather API**. If it finds the weather is good for a vacation, it then goes to a **flights API** for price searches, and then to a **hotel booking API**.
 
