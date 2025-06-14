@@ -34,8 +34,16 @@ Delete some unnecessary files until cluster comes ups again.
 
 #### Permission Error 
 
+```
+{"level":"info","ts":"2025-06-14T06:32:21.391015806Z","logger":"initdb","msg":"initdb: error: could not create directory \"/var/lib/postgresql/data/pgdata\": Permission denied\n","pipe":"stderr","logging_pod":"pg-n8n-cluster-1-initdb"}
+```
 
-Chown -R 26: tape /host/var/mnt/ssd_nvme_predator_GM 7000/cloudnative-pg/n 8 n/
+```
+#Get Into Node and Navigate to Dir and change permission
+kubectl debug -n kube-system -it --image alpine node/i1-1806-talos-worker01
+Chown -R 26: tape /host/var/mnt/ssd_nvme_predator_GM 7000/cloudnative-pg/DIR/
+
+```
 
 #### Reset Counter 
 
