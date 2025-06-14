@@ -31,6 +31,12 @@ kubectl debug -n kube-system -it --image alpine node/$NODE -- cd /host/var/mnt/
 
 Delete some unnecessary files until cluster comes ups again.
 
+
+#### Permission Error 
+
+
+Chown -R 26: tape /host/var/mnt/ssd_nvme_predator_GM 7000/cloudnative-pg/n 8 n/
+
 #### Reset Counter 
 
 Deleting the pod will reset the counter, However make sure you have backup.
