@@ -1,7 +1,7 @@
 ---
 banner: "https://images.unsplash.com/photo-1520179737749-b7752f6f56fb?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 ---
-खुली आँखों से दिखता हूँ ज़माना साला है 
+खुली आँखों से दिखता हूँ ज़माना सारा ये ।
 पर तुम्हें देखने के लिए आंखें बंद करनी पड़ती है ।
 
 वो जो ख़ुदकुशी करना चाहता है 
@@ -13,10 +13,10 @@ banner: "https://images.unsplash.com/photo-1520179737749-b7752f6f56fb?q=80&w=128
 सब के असली चेहरे ना दिखा ए ज़िन्दगी 
 कुछ से हमको मोहब्बत है ।
 
- वो आईने मैं कैसे बर्दाश्त करती होगी खुदको 
+वो आईने मैं कैसे बर्दाश्त करती होगी खुदको 
 उसे तो धोखेबाज़ लोगो से सख़्त नफ़रत थी । 
 
- करूँ क्या के वो आए याका यक ,
+करूँ क्या के वो आए याका यक ,
 निगाहों को रोकूँ या दिल को संभालूँ?
   
 https://www.instagram.com/reel/DHbFzt-TwQt/?igsh=aW52M3M1Z3F5OXdh
@@ -36,4 +36,3 @@ Dil ki basti bhi ajeeb basti hai, Roz ujadti hai roz basti hai.
 
 Don‘t hookup where you vlookup
 #humour #officeoneliner
-
