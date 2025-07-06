@@ -26,9 +26,10 @@ https://www.instagram.com/reel/DHbFzt-TwQt/?igsh=aW52M3M1Z3F5OXdh
 
 https://www.instagram.com/reel/DHS90XchSTT/?igsh=eG94bjl4c3ljYTdx
 
-https://www.instagram.com/reel/DHDFPiWySfu/?igsh=MXB3eGsybjFiOGxjeQ==
+तू पिला तो रहा है पर ध्यान रहे 
+मैं ज़्यादा पी लेता हूँ तो होश मैं आ जाता हूँ ।
 
-https://www.instagram.com/reel/DHQr5ijJRug/?igsh=NnJjcW9pdzN3aXk1
+https://www.instagram.com/reel/DHDFPiWySfu/?igsh=MXB3eGsybjFiOGxjeQ==
 
 हर चीज़ अपने वक़्त पर अच्छी लगती है और एक तुम हो जो हर वक़्त अच्छी लगती हो
 
