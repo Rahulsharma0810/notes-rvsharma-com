@@ -27,10 +27,9 @@ https://www.instagram.com/reel/DHDFPiWySfu/?igsh=MXB3eGsybjFiOGxjeQ==
 
 https://www.instagram.com/reel/DHQr5ijJRug/?igsh=NnJjcW9pdzN3aXk1
 
-हर चीज़ अपने वक़्त par अच्छी लगती है और एक तुम हो jo हर वक़्त अच्छी लगती हो
+हर चीज़ अपने वक़्त पर अच्छी लगती है और एक तुम हो जो हर वक़्त अच्छी लगती हो
 
-
-Dil ki basti bhi ajeeb basti hai, Roz ujadti hai roz basti hai.
+दिल की बस्ती भी अजीब बस्ती है, रोज़ उजाड़ती है रोज़ बस्ती है।
 
 ---
 
