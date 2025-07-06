@@ -33,6 +33,10 @@ https://www.instagram.com/reel/DHDFPiWySfu/?igsh=MXB3eGsybjFiOGxjeQ==
 
 दिल की बस्ती भी अजीब बस्ती है, रोज़ उजाड़ती है रोज़ बस्ती है।
 
+भूके मार जाएँगे मर जाएँगे मेरी कबर के कीड़े 
+Es इस क़दर खाया है तेरी mohbat
+
+
 ---
 
 Don‘t hookup where you vlookup
