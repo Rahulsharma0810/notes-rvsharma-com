@@ -36,7 +36,6 @@ https://www.instagram.com/reel/DHDFPiWySfu/?igsh=MXB3eGsybjFiOGxjeQ==
 भूके मार जाएँगे मर जाएँगे मेरी कबर के कीड़े 
 इस क़दर खाया है तेरी मोहबत ने मुझे ।
 
-
 ---
 
 Don‘t hookup where you vlookup
