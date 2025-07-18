@@ -42,7 +42,6 @@ Delete some unnecessary files until cluster comes ups again.
 #Get Into Node and Navigate to Dir and change permission
 kubectl debug -n kube-system -it --image alpine node/i1-1806-talos-worker01
 Chown -R 26: tape /host/var/mnt/ssd_nvme_predator_GM 7000/cloudnative-pg/DIR/
-
 ```
 
 #### Reset Counter 
