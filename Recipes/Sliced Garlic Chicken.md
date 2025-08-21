@@ -15,11 +15,8 @@ tags: [chicken, garlic, appetizer, yum-yum-cha, copycat]
 created: {{date}}
 
 ---
-  
 
 # 🍽️ {{title}}
-
-  
 
 **Cuisine:** {{cuisine}}  
 
