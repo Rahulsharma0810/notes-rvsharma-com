@@ -3,7 +3,7 @@ banner: https://images.unsplash.com/photo-1574250730689-790e8fa801bd?q=80&w=2948
 icon: 🏔️
 ---
 
-## Dates:
+# Dates:
 
 - August 15th - 20th
 
