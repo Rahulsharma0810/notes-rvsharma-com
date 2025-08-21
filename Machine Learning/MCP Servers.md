@@ -1,9 +1,8 @@
 ---
-banner: code
+banner: https://images.unsplash.com/photo-1456428746267-a1756408f782?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+icon: 🤖
 ---
-
-
-Modal Context Protocol is a standard to integrate **third-party tools**, **data sources**, and **APIs** with LLMs.
+Context Protocol is a standard to integrate **third-party tools**, **data sources**, and **APIs** with LLMs.
 
 MCP is like **an API app store for LLMs and agents** — plug, play, and go.
 
