@@ -140,11 +140,10 @@ Then cab to home.
 
 ### Bus Bookings
 
-14 August, 23:55 Kashmiri Gate → Shimla
+14 August, 10:30 PM Majnu Ka Tilla → Shimla (9:30 AM)
+15 August, 23:55 Kashmiri Gate → Chandigarh Sector 43
 
-14 August, 23:55 Kashmiri Gate → Chandigarh Sector 43
-
-![22 August, 00:35,  Chandigarh Sector 43 → Kashmiri Gate](attachment:c1b8e19b-5307-4ff2-9afd-e5b86b4a2afd:867afe6b-114d-4831-b64f-eb03e5d4f71d.png)
+22 August, 00:35,  Chandigarh Sector 43 → Kashmiri Gate]
 
 22 August, 00:35, Chandigarh Sector 43 → Kashmiri Gate
 
