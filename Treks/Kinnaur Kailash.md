@@ -1,5 +1,5 @@
 ---
-banner: https://images.unsplash.com/photo-1574250730689-790e8fa801bd?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+banner: "https://images.unsplash.com/photo-1574250730689-790e8fa801bd?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 icon: 🏔️
 ---
 
@@ -7,7 +7,7 @@ icon: 🏔️
 
 - August 15th - 20th
 
-16 Aug Stay At [**Jeeva Homes & Homestay**](https://maps.app.goo.gl/gz9fxMrtAUQiw9v69), at Reckong Peo
+16 Aug Stay At [**Jeeva Homes & Homestay**](https://maps.app.goo.gl/gz9fxMrtAUQiw9v69) at Reckong Peo
 
 17 Aug, Roam in Kalpa Village and suicide point by car.
 
