@@ -12,6 +12,7 @@ tags:
   - copycat
 link: https://food.ndtv.com/recipe-sliced-garlic-chicken-958562#:~:text=Ingredients%20of%20Sliced%20Garlic%20Chicken
 banner:
+"": https://c.ndtvimg.com/2024-03/c29a59jg_chicken_625x300_14_March_24.jpg
 ---
 
 # 🍽️ `= this.title`
