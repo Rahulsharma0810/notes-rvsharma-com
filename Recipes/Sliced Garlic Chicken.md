@@ -1,3 +1,5 @@
+# Brain/Public/Notes/Recipes/Sliced Garlic Chicken.md
+
 ---
 
 type: recipe
@@ -12,19 +14,19 @@ servings: 4
 
 tags: [chicken, garlic, appetizer, yum-yum-cha, copycat]
 
-created: {{date}}
+created: 2025-08-21
 
 ---
 
-# 🍽️ {{title}}
+# 🍽️ `= this.title`
 
-**Cuisine:** {{cuisine}}  
+**Cuisine:** `= this.cuisine`  
 
-**Servings:** {{servings}}  
+**Servings:** `= this.servings`  
 
-**Source:** {{source}}
+**Source:** `= this.source`
 
-  
+
 
 ---
 
@@ -70,19 +72,19 @@ created: {{date}}
 
 ## 👩‍🍳 Method 🍽️
 
-1. **Marinate the chicken** 🍶  
+1. **Marinate the chicken** 🍶
    Combine sliced chicken with egg, salt, water, and cornflour to form a light batter.
 
-2. **Deep-fry** 🍲  
+2. **Deep-fry** 🍲
    Heat oil and fry chicken slices  2 min until pale golden. Drain on paper towels.
 
-3. **Prepare sauce** 🍜  
+3. **Prepare sauce** 🍜
    In a wok, heat oil. Stir-fry dried chilli & garlic 1 min. Add butter, oyster sauce, seasoning powder, cooking wine, soy sauce, and water. Stir well.
 
-4. **Combine** 🍛  
+4. **Combine** 🍛
    Add fried chicken, onion, capsicum, and spring onions. Toss on high heat  2 min until coated.
 
-5. **Serve hot** 🍽️  
+5. **Serve hot** 🍽️
    Garnish with extra spring onion. Best enjoyed immediately.
 
 ## 💡 Notes 📝
