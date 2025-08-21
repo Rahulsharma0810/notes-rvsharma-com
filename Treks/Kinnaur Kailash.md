@@ -1,9 +1,8 @@
 ---
-banner: https://unsplash.com/photos/green-forest-and-snowy-mountains-GKruv1mOqZ0
+banner: Kinner Kailash range of Himalayas
 ---
 
-Banner: dogs
-Icon:
+
 ## Dates:
 
 - August 15th - 20th
