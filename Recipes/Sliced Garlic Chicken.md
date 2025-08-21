@@ -1,10 +1,17 @@
 ---
 type: recipe
 title: Sliced Garlic Chicken
-source: "NDTV Food (Chef Dipesh Darjee)"
+source: NDTV Food (Chef Dipesh Darjee)
 cuisine: Pan-Asian / Indo-Chinese
 servings: 4
-tags: [chicken, garlic, appetizer, yum-yum-cha, copycat]
+tags:
+  - chicken
+  - garlic
+  - appetizer
+  - yum-yum-cha
+  - copycat
+link: https://food.ndtv.com/recipe-sliced-garlic-chicken-958562#:~:text=Ingredients%20of%20Sliced%20Garlic%20Chicken
+banner:
 ---
 
 # 🍽️ `= this.title`
