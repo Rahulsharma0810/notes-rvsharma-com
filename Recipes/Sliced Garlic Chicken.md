@@ -1,36 +1,24 @@
-# Brain/Public/Notes/Recipes/Sliced Garlic Chicken.md
-
 ---
-
 type: recipe
-
 title: Sliced Garlic Chicken
-
 source: "NDTV Food (Chef Dipesh Darjee)"
-
 cuisine: Pan-Asian / Indo-Chinese
-
 servings: 4
-
 tags: [chicken, garlic, appetizer, yum-yum-cha, copycat]
-
-created: 2025-08-21
-
 ---
 
 # 🍽️ `= this.title`
 
-**Cuisine:** `= this.cuisine`  
+**Cuisine:** `= this.cuisine`
 
-**Servings:** `= this.servings`  
+**Servings:** `= this.servings`
 
 **Source:** `= this.source`
-
-
 
 ---
 
 ## ✅ What You Need 🍴
+
 - [ ] Oyster sauce
 - [ ] Aromatic powder (or chicken seasoning)
 - [ ] Chinese cooking wine (Shaoxing)
@@ -44,6 +32,7 @@ created: 2025-08-21
 ## 📝 Ingredients 🥘
 
 ### Chicken & Coating 🍗
+
 - 200 g boneless chicken breast, thinly sliced
 - ½ egg
 - 40 g cornflour
@@ -52,9 +41,11 @@ created: 2025-08-21
 - 1 g white-pepper powder
 
 ### For Frying 🍳
+
 - 200 ml vegetable oil (for deep-frying)
 
 ### Sauce 🥢
+
 - 5 ml oil
 - 5 g dried red chilli (roughly chopped)
 - 20 g garlic, peeled & chopped
@@ -66,6 +57,7 @@ created: 2025-08-21
 - 10 ml water
 
 ### Vegetables 🥦
+
 - 20 g onion, sliced
 - 10 g spring onions, chopped
 - 10 g red capsicum, thin strips
@@ -76,18 +68,19 @@ created: 2025-08-21
    Combine sliced chicken with egg, salt, water, and cornflour to form a light batter.
 
 2. **Deep-fry** 🍲
-   Heat oil and fry chicken slices  2 min until pale golden. Drain on paper towels.
+   Heat oil and fry chicken slices 2 min until pale golden. Drain on paper towels.
 
 3. **Prepare sauce** 🍜
    In a wok, heat oil. Stir-fry dried chilli & garlic 1 min. Add butter, oyster sauce, seasoning powder, cooking wine, soy sauce, and water. Stir well.
 
 4. **Combine** 🍛
-   Add fried chicken, onion, capsicum, and spring onions. Toss on high heat  2 min until coated.
+   Add fried chicken, onion, capsicum, and spring onions. Toss on high heat 2 min until coated.
 
 5. **Serve hot** 🍽️
    Garnish with extra spring onion. Best enjoyed immediately.
 
 ## 💡 Notes 📝
+
 - Adjust chilli for spice preference.
 - Chicken seasoning powder can be swapped with bouillon granules.
 - Keep slices thin for tender bites.
