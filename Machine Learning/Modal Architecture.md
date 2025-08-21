@@ -1,3 +1,7 @@
+---
+banner: https://images.unsplash.com/photo-1645839057098-5ea8761a6b09?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+icon: 🤖
+---
 So the days of one-size-fits-all AI are officially over! Eight powerful model architectures are now reshaping how we interact with AI.
 
 Building upon traditional approaches, these specialized models advances AI's ability to understand, reason, and generate across different domains and modalities.
