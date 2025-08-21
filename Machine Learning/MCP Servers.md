@@ -1,3 +1,7 @@
+---
+banner: code
+---
+
 
 Modal Context Protocol is a standard to integrate **third-party tools**, **data sources**, and **APIs** with LLMs.
 
