@@ -1,7 +1,7 @@
 ---
-banner: Kinner Kailash range of Himalayas
+banner: Kinner Kailash Mountain
+icon: 🏔️
 ---
-
 
 ## Dates:
 
