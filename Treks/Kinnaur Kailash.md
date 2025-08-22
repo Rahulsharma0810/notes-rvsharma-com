@@ -2,25 +2,17 @@
 banner: "https://images.unsplash.com/photo-1574250730689-790e8fa801bd?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 icon: 🏔️
 ---
-
 ## Dates:
-
 2025 August 15th - 20th
 
-🛌 16 Aug Stay At [**Jeeva Homes & Homestay**](https://maps.app.goo.gl/gz9fxMrtAUQiw9v69) at Reckong Peo
-
-🚙 17 Aug, Roam in Kalpa Village and suicide point by car.
-
-18 Aug
-
-| Date        | Location | Elevation | Notes                                             |
-| ----------- | -------- | --------- | ------------------------------------------------- |
-| 15 Aug, Thu | Shimla   |           | Reached Shimla & Shimla to Reckeong Peo           |
-| 16 Aug, Fri |          |           | 🛌 Stay At [**Jeeva Homes & Homestay              |
-| 17 Aug, Sat |          |           | 🚙 Roam in Kalpa Village and suicide point by car |
-| 18 Aug, Sun |          |           |                                                   |
-| 19 Aug, Mon |          |           |                                                   |
-| 20 Aug, Tue |          |           |                                                   |
+| Date        | Location      | Elevation | Notes                                                                          |
+| ----------- | ------------- | --------- | ------------------------------------------------------------------------------ |
+| 15 Aug, Thu | Shimla        |           | Reached Shimla & Shimla to Reckeong Peo                                        |
+| 16 Aug, Fri | Reckong Peo   |           | 🛌 Stay At [Jeeva Homes & Homestay](https://maps.app.goo.gl/gz9fxMrtAUQiw9v69) |
+| 17 Aug, Sat | Kalpa Village |           | 🚙 Roam in Kalpa Village and suicide point by car                              |
+| 18 Aug, Sun |               |           | Ponwari Village to Ganesh Park                                                 |
+| 19 Aug, Mon |               |           | Ganesh Park 2 AM                                                               |
+| 20 Aug, Tue |               |           |                                                                                |
 
 ### 📍 Starting Point: Ponwari Village
 
