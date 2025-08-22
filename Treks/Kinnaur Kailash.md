@@ -13,6 +13,15 @@ icon: 🏔️
 
 18 Aug
 
+| Date        | Location | Elevation | Notes                                             |
+| ----------- | -------- | --------- | ------------------------------------------------- |
+| 15 Aug, Thu | Shimla   |           | Reached Shimla & Shimla to Reckeong Peo           |
+| 16 Aug, Fri |          |           | 🛌 Stay At [**Jeeva Homes & Homestay              |
+| 17 Aug, Sat |          |           | 🚙 Roam in Kalpa Village and suicide point by car |
+| 18 Aug, Sun |          |           |                                                   |
+| 19 Aug, Mon |          |           |                                                   |
+| 20 Aug, Tue |          |           |                                                   |
+
 ### 📍 Starting Point: Ponwari Village
 
 - Elevation:  
