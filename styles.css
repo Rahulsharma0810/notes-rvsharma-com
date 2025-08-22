@@ -1,0 +1,65 @@
+body {
+  font-family: 'Cutive Mono', monospace;
+  background: #060b2b;
+  margin: 0;
+  color: #fff;
+}
+
+a {
+  color: #fff;
+}
+
+.cover-main {
+  text-align: center;
+  padding-top: 60px;
+}
+
+.cover-main img {
+  width: 160px;
+  margin: 20px auto;
+}
+
+.cover-main h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.cover-main p.tagline {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.feature-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem auto;
+  max-width: 900px;
+}
+
+.feature-grid a {
+  display: block;
+  width: 200px;
+  padding: 1.2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.feature-grid a small {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+}
+
+.github-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.8rem 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+}
