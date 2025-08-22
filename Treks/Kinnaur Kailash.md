@@ -5,7 +5,7 @@ icon: 🏔️
 
 ## Dates:
 
-August 15th - 20th
+2025 August 15th - 20th
 
 🛌 16 Aug Stay At [**Jeeva Homes & Homestay**](https://maps.app.goo.gl/gz9fxMrtAUQiw9v69) at Reckong Peo
 
