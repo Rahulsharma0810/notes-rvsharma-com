@@ -3,19 +3,19 @@ banner: "https://images.unsplash.com/photo-1574250730689-790e8fa801bd?q=80&w=294
 icon: 🏔️
 ---
 
-# Dates:
+## Dates:
 
-- August 15th - 20th
+August 15th - 20th
 
-16 Aug Stay At [**Jeeva Homes & Homestay**](https://maps.app.goo.gl/gz9fxMrtAUQiw9v69) at Reckong Peo
+🛌 16 Aug Stay At [**Jeeva Homes & Homestay**](https://maps.app.goo.gl/gz9fxMrtAUQiw9v69) at Reckong Peo
 
-17 Aug, Roam in Kalpa Village and suicide point by car.
+🚙 17 Aug, Roam in Kalpa Village and suicide point by car.
 
 18 Aug
 
 ### 📍 Starting Point: Ponwari Village
 
-- Elevation:
+- Elevation:  
 
 ---
 
