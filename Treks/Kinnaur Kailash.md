@@ -73,6 +73,7 @@ Then cab to home.
 - [x] Backpack (40–60L)
 - [x] Dark chocolates Or Pre-Workout
 - [x] Daypack (10–20L)
+- [ ] Sight Glasses (Only reamless rectangle)
 - [x] Sunglasses
 - [x] Rain cover for backpack
 - [x] Hydration bladder (2L)
