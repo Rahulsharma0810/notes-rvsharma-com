@@ -10,8 +10,8 @@ icon: 🏔️
 | 15 Aug, Thu | Shimla        |           | Reached Shimla & Shimla to Reckeong Peo                                        |
 | 16 Aug, Fri | Reckong Peo   |           | 🛌 Stay At [Jeeva Homes & Homestay](https://maps.app.goo.gl/gz9fxMrtAUQiw9v69) |
 | 17 Aug, Sat | Kalpa Village |           | 🚙 Roam in Kalpa Village and suicide point by car                              |
-| 18 Aug, Sun |               |           | Ponwari Village to Ganesh Park                                                 |
-| 19 Aug, Mon |               |           | Ganesh Park 2 AM                                                               |
+| 18 Aug, Sun |               |           | Ponwari Village → Ganesh Park                                                  |
+| 19 Aug, Mon |               |           |                                                                                |
 | 20 Aug, Tue |               |           |                                                                                |
 
 ### 📍 Starting Point: Ponwari Village
