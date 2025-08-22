@@ -36,7 +36,7 @@ Started at 2 AM in night.
 
 Reached at Ganesh Bagh at 6 AM.
 
-Reached at 11:30 parvati kund, even crosssed it according to google map. But friends returning from parvati kund told me, its still 2 hours of trek far.
+Reached at 11:30 parvati kund, even crossed it according to google map. But friends returning from parvati kund told me, its still 2 hours of trek far.
 
 Kinnaur Kailash generally closes at 12 PM, but at the day the closes it 1 PM. i hadn’t trekked to Kinnaur Kailash because from parvati bagh it takes another 2 hours to climb.
 
