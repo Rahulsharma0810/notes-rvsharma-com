@@ -2,18 +2,18 @@
 
 [![rvsharma banner](Src/images/display_banner.png)](https://rvsharma.com)
 
-<h2 align='center'> Sr Cloud Security Consultant / DevSecOps Enthusiast </h2>
+<h2 align='center'> Sr. Staff Security Enginner</h2>
 
 <h4 align='center'>Profile <a href="https://rvsharma.com">https://rvsharma.com</h4>
 
 <p align='center'>
-<a href="https://www.linkedin.com/in/rahulvinodsharma/"><img height="30" src="images/linkedin.png?raw=true"></a>&nbsp;&nbsp;
-<a href="https://www.youtube.com/channel/UCSlmOqPT6tjHc9pjLik8K7w"><img height="30" src="images/youtube.png?raw=true"></a>&nbsp;&nbsp;
-<a href="https://wa.me/919711937092"><img height="30" src="images/whatsapp.png?raw=true"></a>&nbsp;&nbsp;
-<a href="https://github.com/Rahulsharma0810"><img height="30" src="images/github.png?raw=true"></a>&nbsp;&nbsp;
-<a href="https://twitter.com/rahulsharma0810"><img height="30" src="images/twitter.png?raw=true"></a>&nbsp;&nbsp;
-<a href="https://www.instagram.com/hacker.rvsharma/"><img height="30" src="images/instagram.png?raw=true"></a>&nbsp;&nbsp;
-<a href="https://www.facebook.com/rahulsharma0810"><img height="30" src="images/facebook.png?raw=true"></a>
+<a href="https://www.linkedin.com/in/rahulvinodsharma/"><img height="30" src="https://img.icons8.com/color/48/linkedin.png"></a>&nbsp;&nbsp;
+<a href="https://www.youtube.com/channel/UCSlmOqPT6tjHc9pjLik8K7w"><img height="30" src="https://img.icons8.com/color/48/youtube-play.png"></a>&nbsp;&nbsp;
+<a href="https://wa.me/919711937092"><img height="30" src="https://img.icons8.com/color/48/whatsapp--v1.png"></a>&nbsp;&nbsp;
+<a href="https://github.com/Rahulsharma0810"><img height="30" src="https://img.icons8.com/nolan/50/github.png"></a>&nbsp;&nbsp;
+<a href="https://twitter.com/rahulsharma0810"><img height="30" src="https://img.icons8.com/badges/50/twitterx.png"></a>&nbsp;&nbsp;
+<a href="https://www.instagram.com/hacker.rvsharma/"><img height="30" src="https://img.icons8.com/color/48/instagram-new--v1.png"></a>&nbsp;&nbsp;
+<a href="https://www.facebook.com/rahulsharma0810"><img height="30" src="https://img.icons8.com/fluency/50/facebook.png"></a>
 </p>
 
 ### My Digital Garden 🌱
@@ -52,6 +52,7 @@ I write blog posts, most of which you will find on my [Medium](https://medium.co
 - **HashiCorp**
   - [Terraform Associate - 2021 Mar](https://www.credly.com/badges/443ab208-b305-48f2-b0ce-4fd50df5faf8/public_url)
 - **Cloud-Native Computing Foundation**
+
   - [Certified Kubernetes Administrator (CKA) - 2020 Nov](https://www.credly.com/badges/8d8a8c96-3361-4fe0-a09d-d98c3ce77e73/public_url)
   - [Certified Kubernetes Administrator (CKA) - 2023 May](https://www.credly.com/badges/600e2563-5db7-481f-9d3a-6674863f3c3c/public_url)
 
